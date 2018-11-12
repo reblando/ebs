@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Tue Oct 30 13:35:26 2018
+    on Mon Nov  5 16:48:15 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -67,22 +67,19 @@ else:
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 welcome = visual.TextStim(win=win, name='welcome',
-    text='Welcome to the Role Assumption Task!\n\n(press the space bar to continue)',
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
-# Initialize components for Routine "rb_opening"
-rb_openingClock = core.Clock()
-text = visual.TextStim(win=win, name='text',
-    text='You will assume 8 different roles today while reading various stories. \n\nThese roles will be as follows: \n\n\n\n\n\n(press the space bar to continue)\n\n',
+text_12 = visual.TextStim(win=win, name='text_12',
+    text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.25), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=0.0);
+    depth=-2.0);
 
 # Initialize components for Routine "restaurant_critic"
 restaurant_criticClock = core.Clock()
@@ -153,7 +150,7 @@ image_5 = visual.ImageStim(
 # Initialize components for Routine "narrative_intro"
 narrative_introClock = core.Clock()
 text_10 = visual.TextStim(win=win, name='text_10',
-    text='Questions:\n1. How does the person who is initiating the breakup feel before they do it?\r\n 2. Why does the initiator want to break up?\r 3. How does the person being broken up with respond?\r 4. Do the partners leave on good terms?\r',
+    text='Questions:\n1. How does the person who is initiating the breakup feel before they do it? \n 2. Why does the initiator want to break up?  3. How does the person being broken up with respond?  4. Do the partners leave on good terms? ',
     font='Arial',
     pos=(0, -.25), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -201,9 +198,12 @@ introClock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
+welcome.setText(instruct_text)
 key_resp_6 = event.BuilderKeyResponse()
+text_12.setText(instruct_text2
+)
 # keep track of which components have finished
-introComponents = [welcome, key_resp_6]
+introComponents = [welcome, key_resp_6, text_12]
 for thisComponent in introComponents:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -243,6 +243,13 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
+    # *text_12* updates
+    if t >= 0.0 and text_12.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_12.tStart = t
+        text_12.frameNStart = frameN  # exact frame index
+        text_12.setAutoDraw(True)
+    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -272,85 +279,6 @@ if key_resp_6.keys != None:  # we had a response
     thisExp.addData('key_resp_6.rt', key_resp_6.rt)
 thisExp.nextEntry()
 # the Routine "intro" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "rb_opening"-------
-t = 0
-rb_openingClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-# update component parameters for each repeat
-key_resp_7 = event.BuilderKeyResponse()
-# keep track of which components have finished
-rb_openingComponents = [text, key_resp_7]
-for thisComponent in rb_openingComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "rb_opening"-------
-while continueRoutine:
-    # get current time
-    t = rb_openingClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text* updates
-    if t >= 0.0 and text.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        text.tStart = t
-        text.frameNStart = frameN  # exact frame index
-        text.setAutoDraw(True)
-    
-    # *key_resp_7* updates
-    if t >= 0.0 and key_resp_7.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        key_resp_7.tStart = t
-        key_resp_7.frameNStart = frameN  # exact frame index
-        key_resp_7.status = STARTED
-        # keyboard checking is just starting
-        win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
-        event.clearEvents(eventType='keyboard')
-    if key_resp_7.status == STARTED:
-        theseKeys = event.getKeys(keyList=['space'])
-        
-        # check for quit:
-        if "escape" in theseKeys:
-            endExpNow = True
-        if len(theseKeys) > 0:  # at least one key was pressed
-            key_resp_7.keys = theseKeys[-1]  # just the last key pressed
-            key_resp_7.rt = key_resp_7.clock.getTime()
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in rb_openingComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # check for quit (the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "rb_opening"-------
-for thisComponent in rb_openingComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# check responses
-if key_resp_7.keys in ['', [], None]:  # No response was made
-    key_resp_7.keys=None
-thisExp.addData('key_resp_7.keys',key_resp_7.keys)
-if key_resp_7.keys != None:  # we had a response
-    thisExp.addData('key_resp_7.rt', key_resp_7.rt)
-thisExp.nextEntry()
-# the Routine "rb_opening" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "restaurant_critic"-------
@@ -442,8 +370,9 @@ win.flip()
 event.waitKeys(keyList=['space'])
 continueRoutine = False
 
+key_resp_12 = event.BuilderKeyResponse()
 # keep track of which components have finished
-airport_customer_experience_manager_2Components = []
+airport_customer_experience_manager_2Components = [key_resp_12]
 for thisComponent in airport_customer_experience_manager_2Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -455,6 +384,27 @@ while continueRoutine:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
+    
+    # *key_resp_12* updates
+    if t >= 0.0 and key_resp_12.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        key_resp_12.tStart = t
+        key_resp_12.frameNStart = frameN  # exact frame index
+        key_resp_12.status = STARTED
+        # keyboard checking is just starting
+        win.callOnFlip(key_resp_12.clock.reset)  # t=0 on next screen flip
+        event.clearEvents(eventType='keyboard')
+    if key_resp_12.status == STARTED:
+        theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            key_resp_12.keys = theseKeys[-1]  # just the last key pressed
+            key_resp_12.rt = key_resp_12.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -478,6 +428,13 @@ for thisComponent in airport_customer_experience_manager_2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
+# check responses
+if key_resp_12.keys in ['', [], None]:  # No response was made
+    key_resp_12.keys=None
+thisExp.addData('key_resp_12.keys',key_resp_12.keys)
+if key_resp_12.keys != None:  # we had a response
+    thisExp.addData('key_resp_12.rt', key_resp_12.rt)
+thisExp.nextEntry()
 # the Routine "airport_customer_experience_manager_2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 

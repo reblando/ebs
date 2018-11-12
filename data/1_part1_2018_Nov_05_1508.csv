@@ -1,0 +1,19 @@
+instruct_text,instruct_text2,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),0,0,0,0,space,1.1055620329934754,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+Welcome to the Job Simulator Task!,(press the space bar to continue),0,0,0,0,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+You will simulate 8 different jobs while reading various stories. ,None,0,1,1,1,space,2.868522735996521,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+You will simulate 8 different jobs while reading various stories. ,None,0,1,1,1,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"In this experiment, you will read 16 stories. For each story you will simulate having a different job.
+
+",None,0,2,2,2,space,22.308262421996915,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"In this experiment, you will read 16 stories. For each story you will simulate having a different job.
+
+",None,0,2,2,2,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+This job will be assigned to you before each story. ,None,0,3,3,3,space,2.3846245349996025,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+This job will be assigned to you before each story. ,None,0,3,3,3,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"While reading each story, you should imagine yourself as having that job. ",None,0,4,4,4,space,12.439455806998012,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"While reading each story, you should imagine yourself as having that job. ",None,0,4,4,4,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"In addition, your task will be to keep track of answers to job-related questions.
+",None,0,5,5,5,space,2.451973201998044,1,001,2018_Nov_05_1508,part1,60.047221855712614,
+"In addition, your task will be to keep track of answers to job-related questions.
+",None,0,5,5,5,,,1,001,2018_Nov_05_1508,part1,60.047221855712614,

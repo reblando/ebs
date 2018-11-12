@@ -1,0 +1,64 @@
+4.7043 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+5.3407 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1272a8cf8>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x127a4e9b0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.3407 	EXP 	window1: recordFrameIntervals = False
+5.5068 	EXP 	window1: recordFrameIntervals = True
+5.6899 	EXP 	window1: recordFrameIntervals = False
+5.7538 	EXP 	Created welcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='welcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+5.7571 	EXP 	Created text_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_12', opacity=1.0, ori=0, pos=array([ 0.  , -0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+5.7764 	EXP 	Imported instructions.xlsx as conditions, 9 conditions, 2 params
+5.7767 	EXP 	Created sequence: sequential, trialTypes=9, nReps=1, seed=None
+5.7770 	EXP 	New trial (rep=0, index=0): OrderedDict([('instruct_text', 'Welcome to the Job Simulator Task!'), ('instruct_text2', '(press the space bar to continue)')])
+5.8214 	EXP 	welcome: text = 'Welcome to the Job Simulator Task!'
+5.8214 	EXP 	text_12: text = '(press the space bar to continue)'
+5.8214 	EXP 	welcome: autoDraw = True
+5.8214 	EXP 	text_12: autoDraw = True
+6.9266 	DATA 	Keypress: space
+6.9272 	EXP 	New trial (rep=0, index=1): OrderedDict([('instruct_text', 'You will simulate 8 different jobs while reading various stories. '), ('instruct_text2', None)])
+6.9582 	EXP 	welcome: autoDraw = False
+6.9582 	EXP 	text_12: autoDraw = False
+6.9582 	EXP 	welcome: text = 'You will simulate 8 different jobs while reading various stories. '
+6.9582 	EXP 	text_12: text = '(press the space bar to continue)'
+6.9582 	EXP 	welcome: autoDraw = True
+6.9582 	EXP 	text_12: autoDraw = True
+9.8263 	DATA 	Keypress: space
+9.8270 	EXP 	New trial (rep=0, index=2): OrderedDict([('instruct_text', 'In this experiment, you will read 16 stories. For each story you will simulate having a different job.\n\n'), ('instruct_text2', None)])
+9.8747 	EXP 	welcome: autoDraw = False
+9.8747 	EXP 	text_12: autoDraw = False
+9.8747 	EXP 	welcome: text = 'In this experiment, you will read 16 stories. For each story you will simulate having a different job.\n\n'
+9.8747 	EXP 	text_12: text = '(press the space bar to continue)'
+9.8747 	EXP 	welcome: autoDraw = True
+9.8747 	EXP 	text_12: autoDraw = True
+32.1689 	DATA 	Keypress: space
+32.1833 	EXP 	New trial (rep=0, index=3): OrderedDict([('instruct_text', 'This job will be assigned to you before each story. '), ('instruct_text2', None)])
+32.2162 	EXP 	welcome: autoDraw = False
+32.2162 	EXP 	text_12: autoDraw = False
+32.2162 	EXP 	welcome: text = 'This job will be assigned to you before each story. '
+32.2162 	EXP 	text_12: text = '(press the space bar to continue)'
+32.2162 	EXP 	welcome: autoDraw = True
+32.2162 	EXP 	text_12: autoDraw = True
+34.6006 	DATA 	Keypress: space
+34.6011 	EXP 	New trial (rep=0, index=4): OrderedDict([('instruct_text', 'While reading each story, you should imagine yourself as having that job. '), ('instruct_text2', None)])
+34.6325 	EXP 	welcome: autoDraw = False
+34.6325 	EXP 	text_12: autoDraw = False
+34.6325 	EXP 	welcome: text = 'While reading each story, you should imagine yourself as having that job. '
+34.6325 	EXP 	text_12: text = '(press the space bar to continue)'
+34.6325 	EXP 	welcome: autoDraw = True
+34.6325 	EXP 	text_12: autoDraw = True
+47.0716 	DATA 	Keypress: space
+47.0722 	EXP 	New trial (rep=0, index=5): OrderedDict([('instruct_text', 'In addition, your task will be to keep track of answers to job-related questions.\n'), ('instruct_text2', None)])
+47.1042 	EXP 	welcome: autoDraw = False
+47.1042 	EXP 	text_12: autoDraw = False
+47.1042 	EXP 	welcome: text = 'In addition, your task will be to keep track of answers to job-related questions.\n'
+47.1042 	EXP 	text_12: text = '(press the space bar to continue)'
+47.1042 	EXP 	welcome: autoDraw = True
+47.1042 	EXP 	text_12: autoDraw = True
+49.5559 	DATA 	Keypress: space
+49.5565 	EXP 	New trial (rep=0, index=6): OrderedDict([('instruct_text', 'There are four question for each job. You will have to try to memorize these questions and then remember your answers to the questions. You will asked about the answer to these questions at end of the experiment. '), ('instruct_text2', None)])
+49.6151 	EXP 	welcome: autoDraw = False
+49.6151 	EXP 	text_12: autoDraw = False
+49.6151 	EXP 	welcome: text = 'There are four question for each job. You will have to try to memorize these questions and then remember your answers to the questions. You will asked about the answer to these questions at end of the experiment. '
+49.6151 	EXP 	text_12: text = '(press the space bar to continue)'
+49.6151 	EXP 	welcome: autoDraw = True
+49.6151 	EXP 	text_12: autoDraw = True
+53.0243 	DATA 	Keypress: escape
+53.2931 	EXP 	window1: mouseVisible = True

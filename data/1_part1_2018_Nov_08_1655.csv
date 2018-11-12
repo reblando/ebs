@@ -1,0 +1,19 @@
+instruct_text,instruct_text2,Q1,Q2,Q3,Q4,D1,D2,roleName,rolePic,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,0,0,0,0,,,,,space,0.5898596869956236,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,,,,,,,0,1,1,1,,,,,space,0.16694653700687923,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+This job will be assigned to you before each story. ,None,,,,,,,,,0,2,2,2,,,,,space,0.08466695799143054,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+"While reading each story, you should imagine yourself as having that job. ",None,,,,,,,,,0,3,3,3,,,,,space,0.13424304698128253,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+There are 8 possible jobs you could be asked to simulate.,None,,,,,,,,,0,4,4,4,,,,,space,0.10181739399558865,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+"In addition, your task will be to answer job-related questions.
+",None,,,,,,,,,0,5,5,5,,,,,space,0.10052528098458424,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+There are four question per job.,None,,,,,,,,,0,6,6,6,,,,,space,0.1341422249970492,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,,,,,,,,,0,7,7,7,,,,,space,0.3343760999850929,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+You will asked about the answers to these questions at end of the experiment. ,None,,,,,,,,,0,8,8,8,,,,,space,0.3684945769782644,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,,,,,,,,,0,9,9,9,,,,,space,0.2839521129790228,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,,,,,,,,,0,10,10,10,,,,,space,0.38468402400030755,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+Press the space bar to begin learning the jobs and the questions for each one.,None,,,,,,,,,0,11,11,11,,,,,space,0.3526570480025839,,,,,,,,,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,,,,,0,0,0,0,,,space,0.7915207789919805,space,0.26831221001339145,space,0.4014035389991477,space,0.46907729300437495,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,restaurant_critic.jpg,,,,,0,1,1,1,,,space,0.15242392601794563,space,1.9690437079989351,space,0.33524184999987483,space,0.16850338701624423,1,001,2018_Nov_08_1655,part1,59.66799047415228,
+,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,,,,,1,0,2,0,,,space,0.600883564009564,space,0.2025055150152184,space,0.1691226929833647,space,0.33503095200285316,1,001,2018_Nov_08_1655,part1,59.66799047415228,

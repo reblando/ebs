@@ -1,0 +1,46 @@
+instruct_text,thisRole,roleName,rolePic,thisQuestion,storyText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_7.keys,key_resp_7.rt,key_resp_8.keys,key_resp_8.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_9.keys,key_resp_9.rt,participant,session,date,expName,frameRate,
+,,,,,,,,,,,,,,,,,,,,,,space,59.021157338000194,,,,,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,,,,,,,,,,,,,,,,,,,,space,20.923845805002202,,,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+"In this experiment, you will read 16 stories. For each story you will assume a particular role.
+
+",,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,9.071255453000049,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+This role will be assigned to you before each story. ,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,2.9671873369989044,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+"While reading each story, you should imagine yourself as having that role. ",,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,3.7695710710031562,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+"In addition, your task will be to keep track of answers to role-related questions.
+",,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,2.470092731000477,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+There are four question for each role you will be asked to answer. You will have to try to memorize these questions and then remember your answers to the questions. ,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,12.23728678200132,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+"There will be a short quiz on these questions before the actual task begins that must be passed in order to continue. However, before each story, there will be a reminder of what these questions are.  ",,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.4014648730008048,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+There will be a recall test on your answers to these questions at the end of the experiment.,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,space,0.5518782330000249,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+Press the space bar to begin learning the questions for each role.,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,space,0.5349690170005488,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_br.xlsx,Business Reporter,business_reporter.jpg,"1: What industry are the business people in?
+",,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,space,5.6740453530001105,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_br.xlsx,Business Reporter,business_reporter.jpg,"2: What is being negotiated and how much money is at stake?
+",,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,space,0.2684190830004809,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_br.xlsx,Business Reporter,business_reporter.jpg,3: What is the response to the proposed deal? ,,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,space,0.1692823369994585,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_br.xlsx,Business Reporter,business_reporter.jpg,"4: What comes about from the business proposal?
+",,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,space,0.35149188799914555,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_br.xlsx,Business Reporter,business_reporter.jpg,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_rc.xlsx,Restaurant Critic,restaurant_critic.jpg,"1: How is the restaurant decorated?
+",,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,space,0.48571725399960997,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_rc.xlsx,Restaurant Critic,restaurant_critic.jpg,"2: What are the menus like?
+",,,,,,0,1,1,1,0,1,1,1,,,,,,,,,,,space,0.13441644600243308,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_rc.xlsx,Restaurant Critic,restaurant_critic.jpg,"3: What do the clients order?
+",,,,,,0,1,1,1,0,2,2,2,,,,,,,,,,,space,0.10082443600185798,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_rc.xlsx,Restaurant Critic,restaurant_critic.jpg,"4: How do the clients like the food?
+",,,,,,0,1,1,1,0,3,3,3,,,,,,,,,,,space,0.10152973899675999,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,q_rc.xlsx,Restaurant Critic,restaurant_critic.jpg,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.7674845270012156,,,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,Story 1: Thomas and Sadie,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,space,0.4696677350002574,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"Thomas got to the restaurant early, dreading the conversation he was about to have. ",,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,space,0.6842347269994207,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"When Sadie entered, she found him deep in thought on a bench by the door. ",,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,space,0.16853295400142088,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"The restaurant had a kitschy charm, and was reminiscent of a diner from the 70’s.",,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,space,0.16871398500006762,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"When Thomas noticed Sadie, he jumped up and gave her a side hug. ",,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,space,0.8513711759987928,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,“How was your day?” he asked.,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,space,0.16935138199914945,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"She clung onto him, “It was okay.",,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,space,0.16716983299920685,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,I missed you today.”,,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,space,0.15094181599852163,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,He looked at the hostess coming toward them.,,,,,,,,,,,,,0,8,8,8,,,,,,,,,,,space,0.13510970799688948,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"“Alright, you two right this way,” she said.",,,,,,,,,,,,,0,9,9,9,,,,,,,,,,,space,0.2503658200002974,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,“Can we have a table in the back?” Thomas asked.,,,,,,,,,,,,,0,10,10,10,,,,,,,,,,,space,0.15128805600033957,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"She replied, “Yes of course.”",,,,,,,,,,,,,0,11,11,11,,,,,,,,,,,space,0.11780615400130046,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,"She led them to the back of the restaurant, where there were dimly lit tables.",,,,,,,,,,,,,0,12,12,12,,,,,,,,,,,space,0.1340265430008003,1,001,2018_Oct_31_1515,try2,60.3557932977934,
+,,,,,“Is this okay?” the hostess asked.,,,,,,,,,,,,,0,13,13,13,,,,,,,,,,,space,0.13477777500156662,1,001,2018_Oct_31_1515,try2,60.3557932977934,

@@ -1,0 +1,67 @@
+Q1,Q2,Q3,Q4,D1,D2,roleName,rolePic,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,0,0,0,0,0,0,0,0,space,0.7872582889976911,space,0.15098974699503742,space,0.1685449460055679,space,0.4515394829795696,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,0,0,0,0,1,0,1,0,space,1.9193777910259087,space,0.2509898520074785,space,0.31855125800939277,space,0.40162175201112404,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,0,0,0,0,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,restaurant_critic.jpg,0,1,1,1,0,0,0,0,space,0.6374263150210027,space,0.21801509999204427,space,0.3027484959748108,space,0.5686208069964778,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,restaurant_critic.jpg,0,1,1,1,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+Who notices who first? Why/how?,"How does the couple start talking?
+","Which of the people proposes going on an actual date? What do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,matchmaker.jpg,0,2,2,2,0,0,0,0,space,30.294706469983794,space,0.9351992669980973,space,1.402700475009624,space,1.6017179030168336,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+Who notices who first? Why/how?,"How does the couple start talking?
+","Which of the people proposes going on an actual date? What do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,matchmaker.jpg,0,2,2,2,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,weddingplanner.jpg,0,3,3,3,0,0,0,0,space,0.9846736449981108,space,0.10119595500873402,space,0.48321113199926913,space,0.9857722359884065,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,weddingplanner.jpg,0,3,3,3,1,0,1,0,space,0.35200761500163935,space,0.3190020759939216,space,0.30252546299016103,space,0.3168135509768035,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,weddingplanner.jpg,0,3,3,3,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,acem.jpg,0,4,4,4,0,0,0,0,space,1.0015949419757817,space,0.4357080310001038,space,0.33391758901416324,space,0.43454332498367876,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,acem.jpg,0,4,4,4,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",gscem.jpg,0,5,5,5,0,0,0,0,space,4.339818323991494,space,0.2846757380175404,space,0.3840620949922595,space,0.5184977790049743,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",gscem.jpg,0,5,5,5,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"What is the lecture hall like?
+",What is class they are in and what is the day’s lecture about?,"What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,dean.jpg,0,6,6,6,0,0,0,0,space,17.6902873479994,space,0.9190663080080412,space,0.6827366369834635,space,0.6019528059987351,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"What is the lecture hall like?
+",What is class they are in and what is the day’s lecture about?,"What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,dean.jpg,0,6,6,6,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",couples.jpeg,0,7,7,7,0,0,0,0,space,1.0522646220051683,space,0.18545639602234587,space,0.40259125901502557,space,0.669374731980497,1,001,2018_Nov_09_1502,part1,59.98375604124579,
+"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",couples.jpeg,0,7,7,7,,,,,,,,,,,,,1,001,2018_Nov_09_1502,part1,59.98375604124579,

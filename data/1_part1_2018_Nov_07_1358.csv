@@ -1,0 +1,13 @@
+instruct_text,instruct_text2,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),0,0,0,0,space,1.0036719350027852,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+Welcome to the Job Simulator Task!,(press the space bar to continue),0,0,0,0,,,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,0,1,1,1,space,4.486228127003415,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,0,1,1,1,,,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+This job will be assigned to you before each story. ,None,0,2,2,2,space,2.01875663199462,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+This job will be assigned to you before each story. ,None,0,2,2,2,,,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+"While reading each story, you should imagine yourself as having that job. ",None,0,3,3,3,space,4.419262629991863,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+"While reading each story, you should imagine yourself as having that job. ",None,0,3,3,3,,,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+There are 8 possible jobs you could be asked to simulate.,None,0,4,4,4,space,2.3862824740062933,1,001,2018_Nov_07_1358,part1,59.96030915261941,
+There are 8 possible jobs you could be asked to simulate.,None,0,4,4,4,,,1,001,2018_Nov_07_1358,part1,59.96030915261941,

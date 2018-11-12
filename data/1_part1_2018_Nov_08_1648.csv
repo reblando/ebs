@@ -1,0 +1,15 @@
+instruct_text,instruct_text2,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,thisRole,roleName,rolePic,key_resp_6.keys,key_resp_6.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),0,0,0,0,,,,,,,,space,1.38677406302304,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,0,1,1,1,,,,,,,,space,0.11778985700220801,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+This job will be assigned to you before each story. ,None,0,2,2,2,,,,,,,,space,0.10175072797574103,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+"While reading each story, you should imagine yourself as having that job. ",None,0,3,3,3,,,,,,,,space,0.10264509700937197,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+There are 8 possible jobs you could be asked to simulate.,None,0,4,4,4,,,,,,,,space,0.08488300599856302,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+"In addition, your task will be to answer job-related questions.
+",None,0,5,5,5,,,,,,,,space,0.20240509399445727,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+There are four question per job.,None,0,6,6,6,,,,,,,,space,0.15162405799492262,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,0,7,7,7,,,,,,,,space,0.1175233109970577,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+You will asked about the answers to these questions at end of the experiment. ,None,0,8,8,8,,,,,,,,space,0.26758119199075736,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,0,9,9,9,,,,,,,,space,0.13479987499886192,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,0,10,10,10,,,,,,,,space,0.3180846069881227,1,001,2018_Nov_08_1648,part1,60.01394951739069,
+Press the space bar to begin learning the jobs and the questions for each one.,None,0,11,11,11,,,,,,,,space,0.13552722398890182,1,001,2018_Nov_08_1648,part1,60.01394951739069,
