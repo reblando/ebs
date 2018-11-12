@@ -1,0 +1,28 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.052664809016278014,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.4511694980028551,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+This job will be assigned to you before each story. ,None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,1.1353521560085937,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+"While reading each story, you should imagine yourself as having that job. ",None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.2005588350002654,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+There are 8 possible jobs you could be asked to simulate.,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.16779901401605457,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+These jobs are as follows:,None,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.1681112729711458,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,0,0,6,,,,,,,,,,,,,,,space,0.16860352997900918,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,1,1,2,,,,,,,,,,,,,,,space,0.3352639480144717,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,2,2,3,,,,,,,,,,,,,,,space,0.3521238070097752,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,3,3,7,,,,,,,,,,,,,,,space,0.38469510301365517,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,space,0.4009992720093578,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,5,5,0,,,,,,,,,,,,,,,space,0.3521785089978948,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,6,6,5,,,,,,,,,,,,,,,space,0.5350638710078783,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,7,7,1,,,,,,,,,,,,,,,space,0.4346189429925289,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+"In addition, your task will be to answer job-related questions.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,0.7670383290096652,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+There are four question per job.,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,0.2680582780158147,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,0.2841666059975978,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+You will be asked about the answers to these questions at end of the experiment. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,0.2836653279955499,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,0.3008380229875911,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,0.43575214000884444,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+Press the space bar to begin learning the jobs and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,0.5021673440060113,,,,,,,,,,,1,001,2018_Nov_12_1636,part1,59.710974286855226,
+,,restaurant_critic.jpg,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,0,0,0,1,0,0,0,0,,,,,space,0.7866796900052577,space,0.3343234060157556,space,1.0672561889805365,space,0.7508650519885123,1,001,2018_Nov_12_1636,part1,59.710974286855226,

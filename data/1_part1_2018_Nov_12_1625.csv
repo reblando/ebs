@@ -1,0 +1,36 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,3.089580372994533,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.31882827798835933,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+This job will be assigned to you before each story. ,None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,0.30229395400965586,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+"While reading each story, you should imagine yourself as having that job. ",None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.3346991860016715,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+There are 8 possible jobs you could be asked to simulate.,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.41779189099906944,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+These jobs are as follows:,None,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.4849233749846462,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,0,0,3,,,,,,,,,,,,,,,space,0.06787937000626698,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,space,0.23443642500205897,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,2,2,7,,,,,,,,,,,,,,,space,0.3020113480160944,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,3,3,0,,,,,,,,,,,,,,,space,0.3017785119882319,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,4,4,5,,,,,,,,,,,,,,,space,0.11766230600187555,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,5,5,6,,,,,,,,,,,,,,,space,0.4345830419915728,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,6,6,2,,,,,,,,,,,,,,,space,0.4680736650188919,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,7,7,4,,,,,,,,,,,,,,,space,0.6017170709965285,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+"In addition, your task will be to answer job-related questions.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,0.8010438430064823,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+There are four question per job.,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,0.4687388509919401,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,0.45200387699878775,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+You will be asked about the answers to these questions at end of the experiment. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,0.46870443198713474,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,0.4509828820009716,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,0.48556282799108885,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+Press the space bar to begin learning the jobs and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,0.5683157320017926,,,,,,,,,,,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,0,0,2,0,0,0,0,,,,,space,1.006090912007494,space,1.618213798996294,space,0.8008317750063725,space,0.6688161359925289,1,001,2018_Nov_12_1625,part1,59.97069687611572,
+,,matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,0,0,2,1,0,1,0,,,,,space,9.505591807013843,space,0.4518810010049492,space,1.5534678190015256,space,0.717601721000392,1,001,2018_Nov_12_1625,part1,59.97069687611572,

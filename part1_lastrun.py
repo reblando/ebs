@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Mon Nov 12 15:38:17 2018
+    on Mon Nov 12 16:53:55 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -210,6 +210,16 @@ image_8 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
+
+# Initialize components for Routine "intro_practicetest"
+intro_practicetestClock = core.Clock()
+text_5 = visual.TextStim(win=win, name='text_5',
+    text='indicate the order in which you saw the questions\nby pressing the number listed before the selected question:',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Initialize components for Routine "test"
 testClock = core.Clock()
@@ -1113,6 +1123,84 @@ for thisTrial_3 in trials_3:
         # the Routine "q4" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
+        # ------Prepare to start Routine "intro_practicetest"-------
+        t = 0
+        intro_practicetestClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        key_resp_4 = event.BuilderKeyResponse()
+        # keep track of which components have finished
+        intro_practicetestComponents = [text_5, key_resp_4]
+        for thisComponent in intro_practicetestComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "intro_practicetest"-------
+        while continueRoutine:
+            # get current time
+            t = intro_practicetestClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *text_5* updates
+            if t >= 0.0 and text_5.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_5.tStart = t
+                text_5.frameNStart = frameN  # exact frame index
+                text_5.setAutoDraw(True)
+            
+            # *key_resp_4* updates
+            if t >= 0.0 and key_resp_4.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                key_resp_4.tStart = t
+                key_resp_4.frameNStart = frameN  # exact frame index
+                key_resp_4.status = STARTED
+                # keyboard checking is just starting
+                win.callOnFlip(key_resp_4.clock.reset)  # t=0 on next screen flip
+                event.clearEvents(eventType='keyboard')
+            if key_resp_4.status == STARTED:
+                theseKeys = event.getKeys(keyList=['space'])
+                
+                # check for quit:
+                if "escape" in theseKeys:
+                    endExpNow = True
+                if len(theseKeys) > 0:  # at least one key was pressed
+                    key_resp_4.keys = theseKeys[-1]  # just the last key pressed
+                    key_resp_4.rt = key_resp_4.clock.getTime()
+                    # a response ends the routine
+                    continueRoutine = False
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in intro_practicetestComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "intro_practicetest"-------
+        for thisComponent in intro_practicetestComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # check responses
+        if key_resp_4.keys in ['', [], None]:  # No response was made
+            key_resp_4.keys=None
+        trials.addData('key_resp_4.keys',key_resp_4.keys)
+        if key_resp_4.keys != None:  # we had a response
+            trials.addData('key_resp_4.rt', key_resp_4.rt)
+        # the Routine "intro_practicetest" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
         # ------Prepare to start Routine "test"-------
         t = 0
         testClock.reset()  # clock
@@ -1122,7 +1210,7 @@ for thisTrial_3 in trials_3:
         from psychopy import visual, core, event
         
         Q = np.array([Q1, Q2, Q3, Q4, D1, D2])
-        correct = np.array([1,1,1,1,0,0], dtype=bool)
+        correct = np.array([1,2,3,4,0,0], dtype=int)
         randperm = np.random.permutation(6) 
         Q = Q[randperm] 
         correct = correct[randperm]
@@ -1218,22 +1306,22 @@ for thisTrial_3 in trials_3:
                 question6_2.setAutoDraw(True)
             #key press 1 
             if event.getKeys(['1']):
-                if correct[0] == 1:
+                if correct[0] == (checkCount + 1):
                     if test1 == 0:
                         test1 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[0] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 2
             if event.getKeys(['2']):
-                if correct[1] == 1:
+                if correct[1] == (checkCount + 1):
                     if test2 == 0:
                         test2 = 1
                         checkCount += 1
@@ -1243,67 +1331,67 @@ for thisTrial_3 in trials_3:
                 elif correct[1] == 0:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #key press 3 
             if event.getKeys(['3']):
-                if correct[2] == 1:
+                if correct[2] == (checkCount + 1):
                     if test3 == 0:
                         test3 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[2] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 4
             if event.getKeys(['4']):
-                if correct[3] == 1:
+                if correct[3] == (checkCount + 1):
                     if test4 == 0:
                         test4 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[3] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #key press 5 
             if event.getKeys(['5']):
-                if correct[4] == 1:
+                if correct[4] == (checkCount + 1):
                     if test5 == 0:
                         test5 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[4] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 6
             if event.getKeys(['6']):
-                if correct[5] == 1:
+                if correct[5] == (checkCount + 1):
                     if test6 == 0:
                         test6 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[5] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
                     
             
@@ -1539,7 +1627,7 @@ for thisTrial_5 in trials_5:
         from psychopy import visual, core, event
         
         Q = np.array([Q1, Q2, Q3, Q4, D1, D2])
-        correct = np.array([1,1,1,1,0,0], dtype=bool)
+        correct = np.array([1,2,3,4,0,0], dtype=int)
         randperm = np.random.permutation(6) 
         Q = Q[randperm] 
         correct = correct[randperm]
@@ -1635,22 +1723,22 @@ for thisTrial_5 in trials_5:
                 question6.setAutoDraw(True)
             #key press 1 
             if event.getKeys(['1']):
-                if correct[0] == 1:
+                if correct[0] == (checkCount + 1):
                     if test1 == 0:
                         test1 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[0] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 2
             if event.getKeys(['2']):
-                if correct[1] == 1:
+                if correct[1] == (checkCount + 1):
                     if test2 == 0:
                         test2 = 1
                         checkCount += 1
@@ -1660,67 +1748,67 @@ for thisTrial_5 in trials_5:
                 elif correct[1] == 0:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #key press 3 
             if event.getKeys(['3']):
-                if correct[2] == 1:
+                if correct[2] == (checkCount + 1):
                     if test3 == 0:
                         test3 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[2] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 4
             if event.getKeys(['4']):
-                if correct[3] == 1:
+                if correct[3] == (checkCount + 1):
                     if test4 == 0:
                         test4 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[3] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #key press 5 
             if event.getKeys(['5']):
-                if correct[4] == 1:
+                if correct[4] == (checkCount + 1):
                     if test5 == 0:
                         test5 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[4] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
             
             #keypress 6
             if event.getKeys(['6']):
-                if correct[5] == 1:
+                if correct[5] == (checkCount + 1):
                     if test6 == 0:
                         test6 = 1
                         checkCount += 1
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[5] == 0:
+                else:
                     redx.draw()
                     win.flip()
-                    core.wait(2)
+                    core.wait(1)
                     continueRoutine = False
                     
             

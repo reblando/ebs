@@ -1,0 +1,28 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.2564734620100353,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.13608320499770343,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+This job will be assigned to you before each story. ,None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,0.11820441301097162,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+"While reading each story, you should imagine yourself as having that job. ",None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.10088025897857733,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+There are 8 possible jobs you could be asked to simulate.,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.1003066929988563,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+These jobs are as follows:,None,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.11722886800998822,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,0,0,2,,,,,,,,,,,,,,,space,0.11889947901363485,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,1,1,6,,,,,,,,,,,,,,,space,0.15208236599573866,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,2,2,5,,,,,,,,,,,,,,,space,0.00170198900741525,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,3,3,0,,,,,,,,,,,,,,,space,0.08229764201678336,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,4,4,3,,,,,,,,,,,,,,,space,0.0002854049962479621,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,5,5,1,,,,,,,,,,,,,,,space,0.3846428229880985,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,6,6,7,,,,,,,,,,,,,,,space,0.2510443490173202,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,7,7,4,,,,,,,,,,,,,,,space,0.2351945110131055,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+"In addition, your task will be to answer job-related questions.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,0.23527667298913002,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+There are four question per job.,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,0.26895487200818025,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,0.18493103500804864,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+You will be asked about the answers to these questions at end of the experiment. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,0.2862793510139454,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,0.2663070859853178,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,0.3519566770119127,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+Press the space bar to begin learning the jobs and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,0.4361472019809298,,,,,,,,,,,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,space,0.052642034977907315,space,0.5343023770255968,space,0.1185705859970767,space,0.41753696600790136,1 ,001,2018_Nov_12_1626,part1,59.86724832822441,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.834171458001947,space,3.217250988993328,space,0.6508027359959669,space,0.5670344440150075,,,,,,
