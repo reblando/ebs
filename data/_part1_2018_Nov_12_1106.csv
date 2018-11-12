@@ -1,0 +1,14 @@
+Q1,Q2,Q3,Q4,D1,D2,roleName,rolePic,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,participant,session,date,expName,frameRate,
+What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,0,0,0,0,0,0,0,0,space,0.3522806759865489,space,1.6028587279724889,space,1.0697208319907077,space,1.602737794019049,,001,2018_Nov_12_1106,part1,59.6825975531644,
+What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,business_reporter.jpg,0,0,0,0,,,,,,,,,,,,,,001,2018_Nov_12_1106,part1,59.6825975531644,
+How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,restaurant_critic.jpg,0,1,1,1,0,0,0,0,space,0.5544862360111438,space,0.3515479000052437,space,0.3681338769965805,space,0.4526725809846539,,001,2018_Nov_12_1106,part1,59.6825975531644,
+How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,restaurant_critic.jpg,0,1,1,1,,,,,,,,,,,,,,001,2018_Nov_12_1106,part1,59.6825975531644,
+"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",gscem.jpg,0,2,2,5,0,0,0,0,space,6.619562884006882,space,0.5014991690113675,space,1.034419686999172,space,4.71970054297708,,001,2018_Nov_12_1106,part1,59.6825975531644,
+,,,,,,,,,,,,,,,,space,0.41856341299717315,space,0.4687932179949712,,,,,,,,,,

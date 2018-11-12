@@ -1,0 +1,97 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_5.thisRepN,trials_5.thisTrialN,trials_5.thisN,trials_5.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_3.keys,key_resp_3.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5219178429979365,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3185275809955783,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+This job will be assigned to you before each story. ,None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4855243070051074,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+"While reading each story, you should imagine yourself as having that job. ",None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4004958129953593,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+There are 8 possible jobs you could be asked to simulate.,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5009016540134326,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+These jobs are as follows:,None,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4016751509916503,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.3517469280050136,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,1,1,5,,,,,,,,,,,,,,,,,,,,,,,space,0.35117826200439595,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,2,2,7,,,,,,,,,,,,,,,,,,,,,,,space,0.3020155970007181,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,3,3,4,,,,,,,,,,,,,,,,,,,,,,,space,0.35095217800699174,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,4,4,6,,,,,,,,,,,,,,,,,,,,,,,space,0.5019983749953099,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,5,5,3,,,,,,,,,,,,,,,,,,,,,,,space,0.4021147019811906,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,6,6,2,,,,,,,,,,,,,,,,,,,,,,,space,0.45163970201974735,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,7,7,1,,,,,,,,,,,,,,,,,,,,,,,space,0.5505819669924676,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+"In addition, your task will be to answer job-related questions.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.8852422189956997,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+There are four question per job.,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.35156434000236914,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+You will have to try to memorize these questions and then remember your answers to the questions.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,0.3689786519971676,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+You will be asked about the answers to these questions at end of the experiment. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.4172293500159867,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+"In order to help you memorize the questions, there will be a short quiz on them before the actual task begins.",None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.3845657820056658,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+"In addition, before each story, there will be a reminder of what these questions are.  ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.7033569510094821,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+Press the space bar to begin learning the jobs and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,space,0.35180067701730877,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,0,0,0,0,,,,,,,,,,,,,space,0.5018991469987668,space,0.20165602199267596,space,0.30168764301924966,space,0.45154529699357226,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,acem.jpg,,"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,0,1,1,4,0,0,0,0,,,,,,,,,,,,,space,0.4840976530103944,space,0.2677298549970146,space,0.33703036201768555,space,0.4409107370011043,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,acem.jpg,,"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,0,1,1,4,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,couples.jpeg,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,0,2,2,7,0,0,0,0,,,,,,,,,,,,,space,0.7715725509915501,space,0.183315753005445,space,0.284802590002073,space,0.3517342359991744,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,couples.jpeg,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,0,2,2,7,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,weddingplanner.jpg,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,3,3,3,0,0,0,0,,,,,,,,,,,,,space,0.5019131349981762,space,0.0017359560006298125,space,0.2677421460102778,space,0.3680214780033566,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,weddingplanner.jpg,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,restaurant_critic.jpg,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,0,4,4,1,0,0,0,0,,,,,,,,,,,,,space,0.3343197619833518,space,0.2832672939985059,space,0.3182756439782679,space,0.2856109009881038,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,restaurant_critic.jpg,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,dean.jpg,,"What is the lecture hall like?
+","What class are the students  in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,0,5,5,6,0,0,0,0,,,,,,,,,,,,,space,0.5188321780005936,space,0.30228037398774177,space,0.4852990230137948,space,0.5685244670021348,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,dean.jpg,,"What is the lecture hall like?
+","What class are the students  in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,0,5,5,6,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,6,6,2,0,0,0,0,,,,,,,,,,,,,space,0.5705871640238911,space,0.2509815600060392,space,0.28476525397854857,space,0.3516518810065463,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,6,6,2,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,0,7,7,0,0,0,0,0,,,,,,,,,,,,,space,0.8011367779981811,space,0.46765601000515744,space,0.48570296500111,space,0.35100555399549194,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,0,7,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,space,0.6685191899887286,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,restaurant_critic.jpg,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,,,space,5.636344612983521,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,restaurant_critic.jpg,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,,,,,,,,0,1,1,1,1,0,1,0,,,,,,,,,,,,,space,0.635822709009517,1,001,2018_Nov_12_1538,part1,59.89757645972567,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.3705441869969945,,,,,,
