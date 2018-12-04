@@ -1,0 +1,34 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,participant,session,date,expName,frameRate,
+Welcome to the Career Perspectives Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.6050680460175499,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"In this task, you will read 16 stories.",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.7340477770194411,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"Before each story you will be assigned a perspective to assume while reading that story.
+",None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,2.069273476023227,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+You should read the story according to the designated perspective.,None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,2.6537674739956856,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+The perspectives are as follows:,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.7524997380096465,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,0,0,6,,,,,,,,,,,,,,,space,0.8351448019966483,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,1,1,3,,,,,,,,,,,,,,,space,0.6179481360013597,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,2,2,4,,,,,,,,,,,,,,,space,1.9238119919900782,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,3,3,2,,,,,,,,,,,,,,,space,0.8353370429831557,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,4,4,7,,,,,,,,,,,,,,,space,0.9683925820281729,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,5,5,1,,,,,,,,,,,,,,,space,0.9519641000078991,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,6,6,0,,,,,,,,,,,,,,,space,0.8848378909751773,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,7,7,5,,,,,,,,,,,,,,,space,0.8187523430096917,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,3.269447377009783,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+You will answer the questions about each story after reading all 16 stories. ,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,6.9032457519788295,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+There will be four questions to answer per story.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,4.768910255981609,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+These questions are determined by the perspective you take during the story. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,6.970926244975999,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+The questions will be the same for the stories read with the same perspective. ,None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,2.436151347006671,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,7.819759793987032,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+You will have to try to learn these questions with a series of pre-task quizzes.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,2.5026716960128397,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"Once the task has begun, remember your answers to the questions for each story.",None,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,space,3.001250980014447,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+"Again, you will be asked about the answers to these questions for each story at end of the experiment. ",None,,,,,,,,,,,,,,,,,,0,8,8,8,,,,,,,,,space,4.153439994028304,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+Press the space bar to begin learning the perspectives and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,9,9,9,,,,,,,,,space,2.6025973220239393,,,,,,,,,,,,,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,couples.jpeg,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,0,0,0,7,0,0,0,0,,,,,space,4.253616942965891,space,4.553199693968054,space,3.541058855014853,space,1.9525102879852057,space,50.916573101014365,,001,2018_Dec_03_1609,part1,60.09982484804661,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,5.502689247019589,,,,,,,,,,,,,,

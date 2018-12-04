@@ -1,0 +1,13 @@
+8.3720 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+9.1258 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1254bcdd8>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x127ece400>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.1259 	EXP 	window1: recordFrameIntervals = False
+9.2920 	EXP 	window1: recordFrameIntervals = True
+9.4759 	EXP 	window1: recordFrameIntervals = False
+9.5558 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='hello', units='norm', win=Window(...), wrapWidth=1)
+9.5643 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='the following routine\n', units='norm', win=Window(...), wrapWidth=1)
+9.5901 	EXP 	text: autoDraw = True
+18.0308 	DATA 	Keypress: space
+18.0456 	EXP 	text: autoDraw = False
+18.0456 	EXP 	text_2: autoDraw = True
+20.6986 	DATA 	Keypress: space
+20.9707 	EXP 	window1: mouseVisible = True

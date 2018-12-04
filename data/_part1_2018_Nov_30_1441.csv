@@ -1,0 +1,22 @@
+instruct_text,instruct_text2,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,0,0,0,0,,,,,,,,,space,1.5222649840288796,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,0,1,1,1,,,,,,,,,space,0.016857509966939688,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+This job will be assigned to you before each story. ,None,,,0,2,2,2,,,,,,,,,space,1.2857488250010647,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+"While reading each story, you should imagine yourself as having that job. ",None,,,0,3,3,3,,,,,,,,,space,2.3834574880311266,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+There are 8 possible jobs you could be asked to simulate.,None,,,0,4,4,4,,,,,,,,,space,1.1679836949915625,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+These jobs are as follows:,None,,,0,5,5,5,,,,,,,,,space,1.0016687760362402,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,couples.jpeg,"Couples Therapist
+",,,,,0,0,0,7,,,,,,,space,5.136975808010902,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,acem.jpg,Airport Customer Experience Manager,,,,,0,1,1,4,,,,,,,space,1.6176114399568178,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,matchmaker.jpg,Matchmaker,,,,,0,2,2,2,,,,,,,space,1.1020157160237432,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,dean.jpg,Dean of Academic Studies,,,,,0,3,3,6,,,,,,,space,1.484380628040526,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,0,4,4,5,,,,,,,space,2.5192894070059992,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,business_reporter.jpg,Business Reporter,,,,,0,5,5,0,,,,,,,space,22.108329900016543,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,0,6,6,1,,,,,,,space,0.9695580310071819,,001,2018_Nov_30_1441,part1,59.84954997537034,
+,,weddingplanner.jpg,Wedding Planner,,,,,0,7,7,3,,,,,,,space,0.7346431810292415,,001,2018_Nov_30_1441,part1,59.84954997537034,
+"In addition, your task will be to answer job-related questions.
+",(press the space bar to continue),,,,,,,,,,,0,0,0,0,space,2.066351372981444,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+There are four question per job.,None,,,,,,,,,,,0,1,1,1,space,2.7532371470006183,,,,001,2018_Nov_30_1441,part1,59.84954997537034,
+You will have to try to memorize these questions in order and then remember your answers to the questions.,None,,,,,,,,,,,0,2,2,2,space,0.7341122739599086,,,,001,2018_Nov_30_1441,part1,59.84954997537034,

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Mon Nov 12 16:53:55 2018
+    on Mon Dec  3 16:28:08 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -115,6 +115,23 @@ text_12 = visual.TextStim(win=win, name='text_12',
     languageStyle='LTR',
     depth=-2.0);
 
+# Initialize components for Routine "just_perspective_2"
+just_perspective_2Clock = core.Clock()
+text_18 = visual.TextStim(win=win, name='text_18',
+    text='default text',
+    font='Arial',
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+image_9 = visual.ImageStim(
+    win=win, name='image_9',
+    image='sin', mask=None,
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+
 # Initialize components for Routine "q1"
 q1Clock = core.Clock()
 text_8 = visual.TextStim(win=win, name='text_8',
@@ -214,7 +231,7 @@ image_8 = visual.ImageStim(
 # Initialize components for Routine "intro_practicetest"
 intro_practicetestClock = core.Clock()
 text_5 = visual.TextStim(win=win, name='text_5',
-    text='indicate the order in which you saw the questions\nby pressing the number listed before the selected question:',
+    text='indicate the order in which you saw the questions by pressing the number listed before the selected question in the order that the questions were presented:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -726,6 +743,94 @@ for thisTrial_3 in trials_3:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "just_perspective_2"-------
+        t = 0
+        just_perspective_2Clock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        text_18.setText(roleName)
+        image_9.setImage(rolePic)
+        key_resp_14 = event.BuilderKeyResponse()
+        # keep track of which components have finished
+        just_perspective_2Components = [text_18, image_9, key_resp_14]
+        for thisComponent in just_perspective_2Components:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "just_perspective_2"-------
+        while continueRoutine:
+            # get current time
+            t = just_perspective_2Clock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *text_18* updates
+            if t >= 0.0 and text_18.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_18.tStart = t
+                text_18.frameNStart = frameN  # exact frame index
+                text_18.setAutoDraw(True)
+            
+            # *image_9* updates
+            if t >= 0.0 and image_9.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                image_9.tStart = t
+                image_9.frameNStart = frameN  # exact frame index
+                image_9.setAutoDraw(True)
+            
+            # *key_resp_14* updates
+            if t >= 0.0 and key_resp_14.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                key_resp_14.tStart = t
+                key_resp_14.frameNStart = frameN  # exact frame index
+                key_resp_14.status = STARTED
+                # keyboard checking is just starting
+                win.callOnFlip(key_resp_14.clock.reset)  # t=0 on next screen flip
+                event.clearEvents(eventType='keyboard')
+            if key_resp_14.status == STARTED:
+                theseKeys = event.getKeys(keyList=['space'])
+                
+                # check for quit:
+                if "escape" in theseKeys:
+                    endExpNow = True
+                if len(theseKeys) > 0:  # at least one key was pressed
+                    key_resp_14.keys = theseKeys[-1]  # just the last key pressed
+                    key_resp_14.rt = key_resp_14.clock.getTime()
+                    # a response ends the routine
+                    continueRoutine = False
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in just_perspective_2Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "just_perspective_2"-------
+        for thisComponent in just_perspective_2Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # check responses
+        if key_resp_14.keys in ['', [], None]:  # No response was made
+            key_resp_14.keys=None
+        thisExp.addData('key_resp_14.keys',key_resp_14.keys)
+        if key_resp_14.keys != None:  # we had a response
+            thisExp.addData('key_resp_14.rt', key_resp_14.rt)
+        thisExp.nextEntry()
+        # the Routine "just_perspective_2" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # ------Prepare to start Routine "q1"-------
         t = 0

@@ -1,0 +1,18 @@
+instruct_text,instruct_text2,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,0,0,0,0,,,,,,,,,space,1.8545199469663203,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+"In this task, you will read 16 stories. During each one you will simulate having one job.
+",None,,,0,1,1,1,,,,,,,,,space,0.5512494940194301,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+This job will be assigned to you before each story. ,None,,,0,2,2,2,,,,,,,,,space,0.4507556880125776,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+"While reading each story, you should imagine yourself as having that job. ",None,,,0,3,3,3,,,,,,,,,space,0.33502019301522523,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+There are 8 possible jobs you could be asked to simulate.,None,,,0,4,4,4,,,,,,,,,space,0.2505695250001736,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+These jobs are as follows:,None,,,0,5,5,5,,,,,,,,,space,0.2499979130225256,,,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,dean.jpg,Dean of Academic Studies,,,,,0,0,0,6,,,,,,,space,0.16836267005419359,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,business_reporter.jpg,Business Reporter,,,,,0,1,1,0,,,,,,,space,0.657009149028454,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,0,2,2,5,,,,,,,space,2.269545108953025,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,acem.jpg,Airport Customer Experience Manager,,,,,0,3,3,4,,,,,,,space,0.5852894620038569,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,matchmaker.jpg,Matchmaker,,,,,0,4,4,2,,,,,,,space,0.8703048949828371,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,0,5,5,1,,,,,,,space,2.2868931789998896,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,couples.jpeg,"Couples Therapist
+",,,,,0,6,6,7,,,,,,,space,0.4174361890181899,1,001,2018_Nov_27_1107,part1,60.03810341305801,
+,,weddingplanner.jpg,Wedding Planner,,,,,0,7,7,3,,,,,,,space,0.36860501300543547,1,001,2018_Nov_27_1107,part1,60.03810341305801,
