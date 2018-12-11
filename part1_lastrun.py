@@ -5,7 +5,7 @@ This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
     on Mon Dec  3 16:28:08 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
-        Journal of Neuroscience Methods, 162(1-2), 8-13.
+        Journal of Neuroscience Methods, 1z[2(1-2), 8-13.
     Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
         Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
 """

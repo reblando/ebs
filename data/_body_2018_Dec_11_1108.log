@@ -1,0 +1,88 @@
+186.1106 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+186.8533 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1245a8d68>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1282d1240>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+186.8533 	EXP 	window1: recordFrameIntervals = False
+187.0204 	EXP 	window1: recordFrameIntervals = True
+187.2036 	EXP 	window1: recordFrameIntervals = False
+187.2903 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+187.3039 	EXP 	Imported count.xlsx as conditions, 16 conditions, 1 params
+187.3042 	EXP 	Created sequence: sequential, trialTypes=16, nReps=1, seed=None
+187.3044 	EXP 	New trial (rep=0, index=0): OrderedDict([('count', 0)])
+187.3370 	EXP 	text: text = 'Airport Meet Cute'
+187.3370 	EXP 	text: autoDraw = True
+192.3408 	DATA 	Keypress: space
+192.3418 	EXP 	New trial (rep=0, index=1): OrderedDict([('count', 1)])
+192.3719 	EXP 	text: autoDraw = False
+192.3719 	EXP 	text: text = 'Attending a Lecture-Proposal'
+192.3719 	EXP 	text: autoDraw = True
+194.6078 	DATA 	Keypress: space
+194.6218 	EXP 	New trial (rep=0, index=2): OrderedDict([('count', 2)])
+194.6379 	EXP 	text: autoDraw = False
+194.6379 	EXP 	text: text = 'Airport Breakup'
+194.6379 	EXP 	text: autoDraw = True
+195.1568 	DATA 	Keypress: space
+195.1574 	EXP 	New trial (rep=0, index=3): OrderedDict([('count', 3)])
+195.1719 	EXP 	text: autoDraw = False
+195.1719 	EXP 	text: text = 'Attending a Lecture-Business Deal'
+195.1719 	EXP 	text: autoDraw = True
+195.5573 	DATA 	Keypress: space
+195.5579 	EXP 	New trial (rep=0, index=4): OrderedDict([('count', 4)])
+195.5730 	EXP 	text: autoDraw = False
+195.5730 	EXP 	text: text = 'Grocery Shopping- Meet Cute'
+195.5730 	EXP 	text: autoDraw = True
+195.9920 	DATA 	Keypress: space
+196.0074 	EXP 	New trial (rep=0, index=5): OrderedDict([('count', 5)])
+196.0233 	EXP 	text: autoDraw = False
+196.0233 	EXP 	text: text = 'Restaurant Proposal'
+196.0233 	EXP 	text: autoDraw = True
+196.3910 	DATA 	Keypress: space
+196.3918 	EXP 	New trial (rep=0, index=6): OrderedDict([('count', 6)])
+196.4063 	EXP 	text: autoDraw = False
+196.4063 	EXP 	text: text = 'Grocery Shopping- Break up'
+196.4063 	EXP 	text: autoDraw = True
+196.7582 	DATA 	Keypress: space
+196.7589 	EXP 	New trial (rep=0, index=7): OrderedDict([('count', 7)])
+196.7729 	EXP 	text: autoDraw = False
+196.7729 	EXP 	text: text = 'Restaurant Business Deal'
+196.7729 	EXP 	text: autoDraw = True
+197.0742 	DATA 	Keypress: space
+197.0750 	EXP 	New trial (rep=0, index=8): OrderedDict([('count', 8)])
+197.0894 	EXP 	text: autoDraw = False
+197.0894 	EXP 	text: text = 'Attending a Lecture-Meet Cute'
+197.0894 	EXP 	text: autoDraw = True
+197.6251 	DATA 	Keypress: space
+197.6258 	EXP 	New trial (rep=0, index=9): OrderedDict([('count', 9)])
+197.6394 	EXP 	text: autoDraw = False
+197.6394 	EXP 	text: text = 'Airport Proposal'
+197.6394 	EXP 	text: autoDraw = True
+197.9073 	DATA 	Keypress: space
+197.9080 	EXP 	New trial (rep=0, index=10): OrderedDict([('count', 10)])
+197.9235 	EXP 	text: autoDraw = False
+197.9235 	EXP 	text: text = 'Attending a Lecture-Breakup'
+197.9235 	EXP 	text: autoDraw = True
+198.1073 	DATA 	Keypress: space
+198.1079 	EXP 	New trial (rep=0, index=11): OrderedDict([('count', 11)])
+198.1227 	EXP 	text: autoDraw = False
+198.1227 	EXP 	text: text = 'Airport Business Deal'
+198.1227 	EXP 	text: autoDraw = True
+198.4575 	DATA 	Keypress: space
+198.4582 	EXP 	New trial (rep=0, index=12): OrderedDict([('count', 12)])
+198.4730 	EXP 	text: autoDraw = False
+198.4730 	EXP 	text: text = 'Restaurant Meet Cute'
+198.4730 	EXP 	text: autoDraw = True
+198.6907 	DATA 	Keypress: space
+198.6914 	EXP 	New trial (rep=0, index=13): OrderedDict([('count', 13)])
+198.7068 	EXP 	text: autoDraw = False
+198.7068 	EXP 	text: text = 'Grocery Shopping- Proposal'
+198.7068 	EXP 	text: autoDraw = True
+199.0082 	DATA 	Keypress: space
+199.0089 	EXP 	New trial (rep=0, index=14): OrderedDict([('count', 14)])
+199.0233 	EXP 	text: autoDraw = False
+199.0233 	EXP 	text: text = 'Restaurant Breakup'
+199.0233 	EXP 	text: autoDraw = True
+199.2076 	DATA 	Keypress: space
+199.2083 	EXP 	New trial (rep=0, index=15): OrderedDict([('count', 15)])
+199.2228 	EXP 	text: autoDraw = False
+199.2228 	EXP 	text: text = 'Grocery Shopping- Business Deal'
+199.2228 	EXP 	text: autoDraw = True
+199.5409 	DATA 	Keypress: space
+199.8251 	EXP 	window1: mouseVisible = True
