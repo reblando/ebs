@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Tue Dec 11 15:25:29 2018
+    on Tue Dec 11 15:37:39 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -143,7 +143,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
     depth=-2.0);
 image = visual.ImageStim(
     win=win, name='image',
-    image='leonardo.jpg', mask=None,
+    image='sin', mask=None,
     ori=0, pos=(0, -.5), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -273,14 +273,22 @@ for thisTrial in trials:
     if resp.keys == 'l':
         order1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location', 'Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
         this_perspective = storyDict.get(this_order[count], {}).get(order1[count])
+        if order1[count] == 'Social':
+            display_pic = 'leonardo.jpg'
+        else:
+            display_pic = 'cloisters.jpg'
     elif resp.keys == 's':
         order2 = np.array(['Social', 'Social', 'Social', 'Location', 'Location','Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location', 'Location', 'Location', 'Social'])
         this_perspective = storyDict.get(this_order[count], {}).get(order2[count])
-    
+        if order2[count] == 'Social':
+            display_pic = 'leonardo.jpg'
+        else:
+            display_pic = 'cloisters.jpg'
     
     
     key_resp_3 = event.BuilderKeyResponse()
     text_4.setText(this_perspective)
+    image.setImage(display_pic)
     # keep track of which components have finished
     perspectiveComponents = [key_resp_3, text_4, image]
     for thisComponent in perspectiveComponents:
