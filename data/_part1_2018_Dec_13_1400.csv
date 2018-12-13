@@ -1,0 +1,34 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.43898837198503315,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"In this task, you will read 16 stories.",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.2682352520059794,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"Before each story you will be assigned a perspective of a particular career to assume while reading that story.
+",None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,0.13477281399536878,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+You should read the story according to the designated perspective.,None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.1361947760451585,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+The perspectives are as follows:,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.2842517989920452,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,space,0.6849134350195527,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,1,1,3,,,,,,,,,,,,,,,space,0.1683817320736125,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,2,2,7,,,,,,,,,,,,,,,space,0.3360477900132537,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,3,3,5,,,,,,,,,,,,,,,space,0.3023505760356784,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,4,4,1,,,,,,,,,,,,,,,space,0.5519170990446582,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,5,5,6,,,,,,,,,,,,,,,space,0.4844340570271015,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,6,6,4,,,,,,,,,,,,,,,space,0.4501986450050026,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,7,7,2,,,,,,,,,,,,,,,space,0.6029505670303479,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,0.7160367970354855,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+You will answer the questions about each story after reading all 16 stories. ,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,0.20149106800090522,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+There will be four questions to answer per story.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,0.18346893799025565,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+These questions are determined by the perspective you take during the story. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,0.16850496700499207,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+The questions will be the same for the stories read with the same perspective. ,None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,0.35144618107005954,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,0.36750381300225854,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+You will have to try to learn these questions with a series of pre-task quizzes.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,0.45121861004736274,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"Once the story-reading task has begun, remember your answers to the questions for each story.",None,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,space,0.46836622699629515,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+"Again, you will be asked about the answers to these questions for each story at end of the experiment. ",None,,,,,,,,,,,,,,,,,,0,8,8,8,,,,,,,,,space,0.4515141990268603,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+Press the space bar to begin learning the perspectives and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,9,9,9,,,,,,,,,space,0.5521384769817814,,,,,,,,,,,,,,,,001,2018_Dec_13_1400,part1,59.97337816628134,
+,,gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,0,0,0,0,,,,,space,0.6519843840505928,space,0.6509656909620389,space,0.3354956730036065,space,0.3844212209805846,space,0.43442026898264885,space,0.5681060500210151,,001,2018_Dec_13_1400,part1,59.97337816628134,

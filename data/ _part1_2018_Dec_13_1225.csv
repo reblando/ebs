@@ -1,0 +1,17 @@
+instruct_text,instruct_text2,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,0,0,0,0,,,,,,,,,space,0.38898580404929817,,, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+"In this task, you will read 16 stories.",None,,,0,1,1,1,,,,,,,,,space,0.218196286004968,,, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+"Before each story you will be assigned a perspective of a particular career to assume while reading that story.
+",None,,,0,2,2,2,,,,,,,,,space,0.1683877749601379,,, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+You should read the story according to the designated perspective.,None,,,0,3,3,3,,,,,,,,,space,0.3522822179365903,,, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+The perspectives are as follows:,None,,,0,4,4,4,,,,,,,,,space,0.43302098801359534,,, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,dean.jpg,Dean of Academic Studies,,,,,0,0,0,6,,,,,,,space,0.83494302991312, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,couples.jpeg,"Couples Therapist
+",,,,,0,1,1,7,,,,,,,space,0.8685157699510455, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,business_reporter.jpg,Business Reporter,,,,,0,2,2,0,,,,,,,space,0.7694686430040747, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,acem.jpg,Airport Customer Experience Manager,,,,,0,3,3,4,,,,,,,space,2.7192920710658655, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,weddingplanner.jpg,Wedding Planner,,,,,0,4,4,3,,,,,,,space,5.38746339303907, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,matchmaker.jpg,Matchmaker,,,,,0,5,5,2,,,,,,,space,1.0205746280262247, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,0,6,6,5,,,,,,,space,0.7683996841078624, ,001,2018_Dec_13_1225,part1,60.169133879344194,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,0,7,7,1,,,,,,,space,0.8330714229959995, ,001,2018_Dec_13_1225,part1,60.169133879344194,

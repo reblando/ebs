@@ -1,0 +1,17 @@
+instruct_text,instruct_text2,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,0,0,0,0,,,,,,,,,space,0.23856220999732614,,, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+"In this task, you will read 16 stories.",None,,,0,1,1,1,,,,,,,,,space,0.184869255986996,,, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+"Before each story you will be assigned a perspective of a particular career to assume while reading that story.
+",None,,,0,2,2,2,,,,,,,,,space,0.15245461009908468,,, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+You should read the story according to the designated perspective.,None,,,0,3,3,3,,,,,,,,,space,0.31826834403909743,,, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+The perspectives are as follows:,None,,,0,4,4,4,,,,,,,,,space,0.31789678800851107,,, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,matchmaker.jpg,Matchmaker,,,,,0,0,0,2,,,,,,,space,0.6693499280372635, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,acem.jpg,Airport Customer Experience Manager,,,,,0,1,1,4,,,,,,,space,0.5858696170616895, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,weddingplanner.jpg,Wedding Planner,,,,,0,2,2,3,,,,,,,space,0.9358987280866131, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,0,3,3,1,,,,,,,space,0.8179560468997806, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,0,4,4,5,,,,,,,space,0.6680484489770606, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,couples.jpeg,"Couples Therapist
+",,,,,0,5,5,7,,,,,,,space,0.6508730630157515, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,dean.jpg,Dean of Academic Studies,,,,,0,6,6,6,,,,,,,space,0.5675668239127845, ,001,2018_Dec_13_1224,part1,59.94894171868229,
+,,business_reporter.jpg,Business Reporter,,,,,0,7,7,0,,,,,,,space,0.8192353320773691, ,001,2018_Dec_13_1224,part1,59.94894171868229,

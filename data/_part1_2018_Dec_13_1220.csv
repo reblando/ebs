@@ -1,0 +1,13 @@
+instruct_text,instruct_text2,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,0,0,0,0,,,,,space,0.43676665506791323,,,,001,2018_Dec_13_1220,part1,60.027780229649025,
+"In this task, you will read 16 stories.",None,,,0,1,1,1,,,,,space,0.3025969540467486,,,,001,2018_Dec_13_1220,part1,60.027780229649025,
+"Before each story you will be assigned a perspective of a particular career to assume while reading that story.
+",None,,,0,2,2,2,,,,,space,0.3694198689190671,,,,001,2018_Dec_13_1220,part1,60.027780229649025,
+You should read the story according to the designated perspective.,None,,,0,3,3,3,,,,,space,0.3852731629740447,,,,001,2018_Dec_13_1220,part1,60.027780229649025,
+The perspectives are as follows:,None,,,0,4,4,4,,,,,space,0.5008570560021326,,,,001,2018_Dec_13_1220,part1,60.027780229649025,
+,,couples.jpeg,"Couples Therapist
+",,,,,0,0,0,7,,,space,0.7492441890062764,,001,2018_Dec_13_1220,part1,60.027780229649025,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,0,1,1,1,,,space,0.6854997610207647,,001,2018_Dec_13_1220,part1,60.027780229649025,
+,,matchmaker.jpg,Matchmaker,,,,,0,2,2,2,,,space,1.0824311550240964,,001,2018_Dec_13_1220,part1,60.027780229649025,
+,,acem.jpg,Airport Customer Experience Manager,,,,,0,3,3,4,,,space,0.5200857219751924,,001,2018_Dec_13_1220,part1,60.027780229649025,
+,,business_reporter.jpg,Business Reporter,,,,,0,4,4,0,,,space,0.3842361510032788,,001,2018_Dec_13_1220,part1,60.027780229649025,
