@@ -1,0 +1,34 @@
+instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,2.3376450889045373,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"In this task, you will read 16 stories.",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,0.4171841900097206,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"Before each story you will be assigned a perspective of a particular career to assume while reading that story.
+",None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,2.4204597719945014,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+You should read the story according to the designated perspective.,None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.6507393911015242,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+The perspectives are as follows:,None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.5181506790686399,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,0,0,2,,,,,,,,,,,,,,,space,0.5548363700509071,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,space,0.68409094796516,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,2,2,5,,,,,,,,,,,,,,,space,0.5855439010774717,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,3,3,0,,,,,,,,,,,,,,,space,0.5521715170470998,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,space,0.5349286670098081,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,5,5,3,,,,,,,,,,,,,,,space,0.5190413920208812,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,space,0.4204092309810221,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,space,0.6360139460302889,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,space,0.6355999839724973,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+You will answer the questions about each story after reading all 16 stories. ,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,space,0.4686421350343153,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+There will be four questions to answer per story.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,space,0.3510065959999338,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+These questions are determined by the perspective you take during the story. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,space,0.43512576597277075,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+The questions will be the same for the stories read with the same perspective. ,None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,space,0.41855541802942753,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,space,0.41827724501490593,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+You will have to try to learn these questions with a series of pre-task quizzes.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,space,0.40172480198089033,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"Once the story-reading task has begun, remember your answers to the questions for each story.",None,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,space,0.4523060629144311,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+"Again, you will be asked about the answers to these questions for each story at end of the experiment. ",None,,,,,,,,,,,,,,,,,,0,8,8,8,,,,,,,,,space,0.40252974210307,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+Press the space bar to begin learning the perspectives and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,9,9,9,,,,,,,,,space,0.5191561339888722,,,,,,,,,,,,,,,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,weddingplanner.jpg,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone besides the person proposing help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,0,0,3,0,0,0,0,,,,,space,0.6346017000032589,space,1.1342307110317051,space,1.0513222869485617,space,2.0196104139322415,space,0.8176901289261878,space,3.4352664100006223,,001,2019_Jan_03_1202,part1,60.23108159260477,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.46837932197377086,space,0.9841441670432687,space,0.8176446409197524,space,3.070074760937132,space,4.887008305056952,space,1.817772001028061,,,,,,
