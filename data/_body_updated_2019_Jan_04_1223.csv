@@ -1,0 +1,9 @@
+count,storyText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,order of stories,order of perspectives,key_resp_3.keys,key_resp_3.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+0,14,0,0,0,0,0,0,0,0,[14 34 11 22 43 42 23 31 41 21 12 44 33 32 24 13],"['Location' 'Social' 'Social' 'Location' 'Location' 'Social' 'Social'
+ 'Location' 'Location' 'Social' 'Location' 'Social' 'Location' 'Social'
+ 'Location' 'Social']",space,0.519316851045005,space,0.8529274259926751,,001,2019_Jan_04_1223,body_updated,60.16814733899832,
+0,Attending a Lecture Breakup,0,0,0,0,0,1,1,1,,,,,space,0.7363722559530288,,001,2019_Jan_04_1223,body_updated,60.16814733899832,
+0,,0,0,0,0,,,,,,,,,,,,001,2019_Jan_04_1223,body_updated,60.16814733899832,
+1,34,0,1,1,1,0,0,0,0,,,space,0.518577157985419,space,0.35089806804899126,,001,2019_Jan_04_1223,body_updated,60.16814733899832,
+1,Attending a Lecture Business Deal,0,1,1,1,0,1,1,1,,,,,space,0.250172441941686,,001,2019_Jan_04_1223,body_updated,60.16814733899832,
+1,,0,1,1,1,,,,,,,,,,,,001,2019_Jan_04_1223,body_updated,60.16814733899832,

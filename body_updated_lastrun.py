@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Thu Jan  3 11:54:58 2019
+    on Fri Jan  4 13:01:46 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -105,22 +105,22 @@ order_run2 = order_run2[randperm2]
 
 #create a dictionary for all the stories and their values
 
-storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic'},
-             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager'},
-             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager'},
-             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies'},
-             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic'},
-             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager'},
-             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager'},
-             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies'},
-             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic'},
-             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager'},
-             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager'},
-             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies'},
-             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic'},
-             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager'},
-             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager'},
-             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies'}}
+storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic', 'storyFile': 'story_xlsx_files/11.xlsx'},
+             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic', 'storyFile': 'story_xlsx_files/12.xlsx'},
+             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic', 'storyFile': 'story_xlsx_files/13.xlsx'},
+             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic', 'storyFile': 'story_xlsx_files/14.xlsx'},
+             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic', 'storyFile': 'story_xlsx_files/21.xlsx'},
+             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic', 'storyFile': 'story_xlsx_files/22.xlsx'},
+             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic', 'storyFile': 'story_xlsx_files/23.xlsx'},
+             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic', 'storyFile': 'story_xlsx_files/24.xlsx'},
+             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic', 'storyFile': 'story_xlsx_files/31.xlsx'},
+             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic', 'storyFile': 'story_xlsx_files/32.xlsx'},
+             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic', 'storyFile': 'story_xlsx_files/33.xlsx'},
+             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic', 'storyFile': 'story_xlsx_files/34.xlsx'},
+             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic', 'storyFile': 'story_xlsx_files/41.xlsx'},
+             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic', 'storyFile': 'story_xlsx_files/42.xlsx'},
+             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic', 'storyFile': 'story_xlsx_files/43.xlsx'},
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic', 'storyFile': 'story_xlsx_files/44.xlsx'}}
 
 order_stories = np.concatenate((run1, run2), axis =None)
 order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
@@ -150,10 +150,17 @@ text_4 = visual.TextStim(win=win, name='text_4',
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, -.5), size=(0.5, 0.5),
+    ori=0, pos=(0, .5), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
+text_5 = visual.TextStim(win=win, name='text_5',
+    text='(press space to continue)',
+    font='Arial',
+    pos=(0, -.7), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -204,83 +211,33 @@ for thisTrial in trials:
     
     #set the perspective
     this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
-    if this_perspective == 'Couples Therapist':
-        display_pic = 'couples.jpg'
+    if this_perspective == 'jobphotos/Couples Therapist':
+        display_pic = couples.jpg
     if this_perspective == 'Restaurant Critic':
-        display_pic = 'restaurant_critic.jpg'
+        display_pic = 'jobphotos/restaurant_critic.jpg'
     if this_perspective == 'Airport Customer Experience Manager':
-        display_pic = 'acem.jpg'
+        display_pic = 'jobphotos/acem.jpg'
     if this_perspective == 'Grocery Store Customer Experience Manager':
-        display_pic = 'gscem.jpg'
+        display_pic = 'jobphotos/gscem.jpg'
     if this_perspective == 'Dean of Academic Studies':
-        display_pic = 'dean.jpg'
+        display_pic ='jobphotos/dean.jpg'
     if this_perspective == 'Wedding Planner':
-        display_pic = 'weddingplanner.jpg'
+        display_pic = 'jobphotos/weddingplanner.jpg'
     if this_perspective == 'Business Reporter':
-        display_pic = 'business_reporter.jpg'
+        display_pic = 'jobphotos/business_reporter.jpg'
     if this_perspective == 'Matchmaker':
-        display_pic = 'matchmaker.jpg'
+        display_pic = 'jobphotos/matchmaker.jpg'
     
-    #set the story text
-    this_story = order_stories[count]
+    #set the story file and picture
     
-    if this_story == 11:
-        story_file = '11.xlsx'
-        this_story_pic = '11_faces.jpg'
-    if this_story == 12:
-        story_file = '12.xlsx'
-        this_story_pic = '12_faces.jpg'
-    if this_story == 13:
-        story_file = '13.xlsx'
-        this_story_pic = '13_faces.jpg'
-    if this_story == 14:
-        story_file = '14.xlsx'
-        this_story_pic = '14_faces.jpg'
-    if this_story == 21:
-        story_file = '21.xlsx'
-        this_story_pic = '21_faces.jpg'
-    if this_story == 22:
-        story_file = '22.xlsx'
-        this_story_pic = '22_faces.jpg'
-    if this_story == 23:
-        story_file = '23.xlsx'
-        this_story_pic = '23_faces.jpg'
-    if this_story == 24:
-        story_file = '24.xlsx'
-        this_story_pic = '24_faces.jpg'
-    if this_story == 31:
-        story_file = '31.xlsx'
-        this_story_pic = '31_faces.jpg'
-    if this_story == 32:
-        story_file = '32.xlsx'
-        this_story_pic = '32_faces.jpg'
-    if this_story == 33:
-        story_file = '33.xlsx'
-        this_story_pic = '33_faces.jpg'
-    if this_story == 34:
-        story_file = '34.xlsx'
-        this_story_pic = '34_faces.jpg'
-    if this_story == 41:
-        story_file = '41.xlsx'
-        this_story_pic = '41_faces.jpg'
-    if this_story == 42:
-        story_file = '42.xlsx'
-        this_story_pic = '42_faces.jpg'
-    if this_story == 43:
-        story_file = '43.xlsx'
-        this_story_pic = '43_faces.jpg'
-    if this_story == 44:
-        story_file = '44.xlsx'
-        this_story_pic = '44_faces.jpg'
-    
-    
-    
+    this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
+    this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
     
     key_resp_3 = event.BuilderKeyResponse()
     text_4.setText(this_perspective)
     image.setImage(display_pic)
     # keep track of which components have finished
-    perspectiveComponents = [key_resp_3, text_4, image]
+    perspectiveComponents = [key_resp_3, text_4, image, text_5]
     for thisComponent in perspectiveComponents:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -303,7 +260,7 @@ for thisTrial in trials:
             win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
         if key_resp_3.status == STARTED:
-            theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+            theseKeys = event.getKeys(keyList=['space'])
             
             # check for quit:
             if "escape" in theseKeys:
@@ -327,6 +284,13 @@ for thisTrial in trials:
             image.tStart = t
             image.frameNStart = frameN  # exact frame index
             image.setAutoDraw(True)
+        
+        # *text_5* updates
+        if t >= 0.0 and text_5.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_5.tStart = t
+            text_5.frameNStart = frameN  # exact frame index
+            text_5.setAutoDraw(True)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -362,7 +326,7 @@ for thisTrial in trials:
     # set up handler to look after randomisation of conditions etc
     trials_2 = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions(story_file),
+        trialList=data.importConditions(this_story_file),
         seed=None, name='trials_2')
     thisExp.addLoop(trials_2)  # add the loop to the experiment
     thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
@@ -387,10 +351,10 @@ for thisTrial in trials:
         text.setText(storyText
 
 )
-        key_resp_2 = event.BuilderKeyResponse()
+        story_presses = event.BuilderKeyResponse()
         image_2.setImage(this_story_pic)
         # keep track of which components have finished
-        trialComponents = [text, key_resp_2, image_2]
+        trialComponents = [text, story_presses, image_2]
         for thisComponent in trialComponents:
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
@@ -409,26 +373,27 @@ for thisTrial in trials:
                 text.frameNStart = frameN  # exact frame index
                 text.setAutoDraw(True)
             
-            # *key_resp_2* updates
-            if t >= 0.0 and key_resp_2.status == NOT_STARTED:
+            # *story_presses* updates
+            if t >= 0.0 and story_presses.status == NOT_STARTED:
                 # keep track of start time/frame for later
-                key_resp_2.tStart = t
-                key_resp_2.frameNStart = frameN  # exact frame index
-                key_resp_2.status = STARTED
+                story_presses.tStart = t
+                story_presses.frameNStart = frameN  # exact frame index
+                story_presses.status = STARTED
                 # keyboard checking is just starting
-                win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(story_presses.clock.reset)  # t=0 on next screen flip
                 event.clearEvents(eventType='keyboard')
-            if key_resp_2.status == STARTED:
-                theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+            if story_presses.status == STARTED:
+                theseKeys = event.getKeys(keyList=['1', '9'])
                 
                 # check for quit:
                 if "escape" in theseKeys:
                     endExpNow = True
                 if len(theseKeys) > 0:  # at least one key was pressed
-                    key_resp_2.keys = theseKeys[-1]  # just the last key pressed
-                    key_resp_2.rt = key_resp_2.clock.getTime()
-                    # a response ends the routine
-                    continueRoutine = False
+                    if story_presses.keys == []:  # then this was the first keypress
+                        story_presses.keys = theseKeys[0]  # just the first key pressed
+                        story_presses.rt = story_presses.clock.getTime()
+                        # a response ends the routine
+                        continueRoutine = False
             
             # *image_2* updates
             if t >= 0.0 and image_2.status == NOT_STARTED:
@@ -459,11 +424,11 @@ for thisTrial in trials:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         # check responses
-        if key_resp_2.keys in ['', [], None]:  # No response was made
-            key_resp_2.keys=None
-        trials_2.addData('key_resp_2.keys',key_resp_2.keys)
-        if key_resp_2.keys != None:  # we had a response
-            trials_2.addData('key_resp_2.rt', key_resp_2.rt)
+        if story_presses.keys in ['', [], None]:  # No response was made
+            story_presses.keys=None
+        trials_2.addData('story_presses.keys',story_presses.keys)
+        if story_presses.keys != None:  # we had a response
+            trials_2.addData('story_presses.rt', story_presses.rt)
         # the Routine "trial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()

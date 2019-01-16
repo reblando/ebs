@@ -1,0 +1,18 @@
+count,storyText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,order of stories,order of perspectives,story_presses.keys,story_presses.rt,participant,session,date,expName,frameRate,
+0,13,0,0,0,0,0,0,0,0,[13 24 31 42 11 22 44 33 43 41 34 23 14 32 21 12],"['Location' 'Location' 'Location' 'Location' 'Social' 'Social' 'Social'
+ 'Social' 'Location' 'Social' 'Location' 'Social' 'Social' 'Social'
+ 'Location' 'Location']",1,1.651351684005931,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+0,Grocery Shopping Breakup,0,0,0,0,0,1,1,1,,,9,0.1352765499614179,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+0,,0,0,0,0,,,,,,,,,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+1,24,0,1,1,1,0,0,0,0,,,1,0.38576740107964724,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+1,Attending a Lecture Proposal,0,1,1,1,0,1,1,1,,,9,0.08600507595110685,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+1,,0,1,1,1,,,,,,,,,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+2,31,0,2,2,2,0,0,0,0,,,1,0.490329570020549,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+2,Restaurant Business Deal,0,2,2,2,0,1,1,1,,,9,0.06824188702739775,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+2,,0,2,2,2,,,,,,,,,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+3,42,0,3,3,3,0,0,0,0,,,1,0.4342883840436116,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+3,Airport Meet Cute,0,3,3,3,0,1,1,1,,,9,0.0857157550053671,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+3,,0,3,3,3,,,,,,,,,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+4,11,0,4,4,4,0,0,0,0,,,1,2.319357721018605,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+4,Restaurant- Breakup,0,4,4,4,0,1,1,1,,,1,0.868731310009025,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,
+4,,0,4,4,4,,,,,,,,,',001,2019_Jan_15_1245,body_behavioural,59.67491672767414,

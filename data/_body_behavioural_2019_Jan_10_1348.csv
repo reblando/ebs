@@ -1,0 +1,14 @@
+count,storyText,instructText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,order of stories,order of perspectives,story_presses.keys,story_presses.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+0,32,,0,0,0,0,0,0,0,0,,,,,,,,,[32 23 44 14 41 11 22 33 43 24 21 13 12 34 31 42],"['Location' 'Location' 'Location' 'Social' 'Social' 'Location' 'Social'
+ 'Social' 'Location' 'Location' 'Social' 'Social' 'Location' 'Social'
+ 'Location' 'Social']",1,0.8685481540160254,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+0,Airport Business Deal,,0,0,0,0,0,1,1,1,,,,,,,,,,,9,1.0349610570119694,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+0,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+1,23,,0,1,1,1,0,0,0,0,,,,,,,,,,,1,4.301233967067674,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+1,Grocery shopping Proposal,,0,1,1,1,0,1,1,1,,,,,,,,,,,9,0.5681500390637666,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+1,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+,,The next part of the experiment is to recall each story to the best of your ability.,,,,,,,,,0,0,0,0,,,,,,,,,space,7.319474551011808,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+,,"You will be presented with the story title, names, the images, and a blank text box for each story.",,,,,,,,,0,1,1,1,,,,,,,,,space,1.7020776439458132,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+,,Describe the story with as many details as you can remember in the space provided. ,,,,,,,,,0,2,2,2,,,,,,,,,space,0.3852102260570973,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+,,"When you are finished recalling one story, to move onto the next one hit ‘return’. ",,,,,,,,,0,3,3,3,,,,,,,,,space,0.46800015994813293,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,
+,,There is no time limit for your responses. ,,,,,,,,,0,4,4,4,,,,,,,,,space,0.3345754420151934,,001,2019_Jan_10_1348,body_behavioural,60.069230294084754,

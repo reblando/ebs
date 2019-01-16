@@ -1,0 +1,13 @@
+count,storyText,instructText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,order of stories,order of perspectives,story_presses.keys,story_presses.rt,key_resp_2.keys,key_resp_2.rt,recall,participant,session,date,expName,frameRate,
+0,42,,0,0,0,0,0,0,0,0,,,,,,,,,[42 14 33 13 41 22 21 34 32 11 43 44 31 23 12 24],"['Location' 'Social' 'Social' 'Location' 'Social' 'Social' 'Location'
+ 'Location' 'Location' 'Location' 'Social' 'Location' 'Social' 'Location'
+ 'Social' 'Social']",1,0.8851793439825997,,,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+0,Airport Meet Cute,,0,0,0,0,0,1,1,1,,,,,,,,,,,9,0.11973046301864088,,,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+0,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+,,The next part of the experiment is to recall each story to the best of your ability.,,,,,,,,,0,0,0,0,,,,,,,,,space,0.41865716699976474,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+,,"You will be presented with the story title, names, the images, and a blank text box for each story.",,,,,,,,,0,1,1,1,,,,,,,,,space,0.1502066981047392,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+,,Describe the story with as many details as you can remember in the space provided. ,,,,,,,,,0,2,2,2,,,,,,,,,space,0.08593325002584606,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+,,"When you are finished recalling one story, to move onto the next one hit ‘return’. ",,,,,,,,,0,3,3,3,,,,,,,,,space,0.10159920807927847,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+,,There is no time limit for your responses. ,,,,,,,,,0,4,4,4,,,,,,,,,space,0.15160405298229307,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+0,,,,,,,,,,,,,,,0,0,0,0,,,,,,, dksjfklsjf kq,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
+1,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,13,001,2019_Jan_10_1444,body_behavioural,59.91584818518669,
