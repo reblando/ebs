@@ -1,0 +1,7 @@
+count,storyText,locationEvent,storyEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,key_resp_5.keys,key_resp_5.rt,story_presses.keys,participant,session,date,expName,frameRate,
+0,"David saw Anna for the first time when she burst into the airport, her bag skidding behind her half-zipped. ",1,1,,0,0,0,0,0,0,0,0,,,,,,[42 23 32 31 24 13 41 14 34 11 44 33 22 12 43 21],"['Social' 'Location' 'Location' 'Social' 'Social' 'Social' 'Location'
+ 'Location' 'Social' 'Location' 'Location' 'Location' 'Location' 'Social'
+ 'Social' 'Social']",space,1.2692985449684784,None,',001,2019_Jan_22_1412,body_behavioural,59.61637140597608,
+0,,,,,0,0,0,0,,,,,,,,,,,,,,,',001,2019_Jan_22_1412,body_behavioural,59.61637140597608,
+1,"Alex was a distracted, sweaty mess as he walked into the grocery store with Chloe; he was hoping that she wouldn't suspect that he was about to propose",1,,1,0,1,1,1,0,0,0,0,,,,,,,,None,,None,',001,2019_Jan_22_1412,body_behavioural,59.61637140597608,
+1,,,,,0,1,1,1,,,,,,,,,,,,,,,',001,2019_Jan_22_1412,body_behavioural,59.61637140597608,

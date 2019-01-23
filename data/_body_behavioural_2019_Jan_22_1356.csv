@@ -1,0 +1,5 @@
+count,storyText,locationEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,story_presses.keys,participant,session,date,expName,frameRate,
+0,"Maria walked into lecture beside Henry, mentally rehearsing what she should say to break up with him.",1,1,0,0,0,0,0,0,0,0,,,,,,[14 24 13 42 41 32 23 31 43 33 21 34 11 12 22 44],"['Location' 'Social' 'Social' 'Location' 'Social' 'Social' 'Location'
+ 'Location' 'Social' 'Location' 'Location' 'Social' 'Social' 'Location'
+ 'Social' 'Location']",None,,001,2019_Jan_22_1356,body_behavioural,60.30326078058465,
+0,,,,0,0,0,0,,,,,,,,,,,,,,001,2019_Jan_22_1356,body_behavioural,60.30326078058465,

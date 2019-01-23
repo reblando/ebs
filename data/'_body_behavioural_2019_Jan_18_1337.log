@@ -1,0 +1,758 @@
+4.2774 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+4.9490 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1236d9e80>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x125b6f0b8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.9490 	EXP 	window1: recordFrameIntervals = False
+5.1160 	EXP 	window1: recordFrameIntervals = True
+5.2985 	EXP 	window1: recordFrameIntervals = False
+5.5691 	EXP 	window1: mouseVisible = True
+3.6535 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+4.3220 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x123ebbe10>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12405f048>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.3220 	EXP 	window1: recordFrameIntervals = False
+4.4888 	EXP 	window1: recordFrameIntervals = True
+4.6723 	EXP 	window1: recordFrameIntervals = False
+4.7448 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.7465 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+4.7568 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_5', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='(press space to continue)', units='norm', win=Window(...), wrapWidth=1)
+4.7610 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([ 0. , -0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.7623 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+4.7664 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.7716 	EXP 	Created text_24 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_24', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='(press space to continue)', units='norm', win=Window(...), wrapWidth=1)
+4.7861 	EXP 	Created text_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1.5)
+4.7901 	EXP 	Created text_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_10', opacity=1.0, ori=0, pos=array([-0.9 , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.7916 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.7978 	EXP 	Created polygon = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-4.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='polygon', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.7985 	EXP 	Created bottom_line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='bottom_line', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.975]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.7992 	EXP 	Created right_line_2 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='right_line_2', opacity=1.0, ori=array(90.), pos=array([ 0.925, -0.55 ]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.7999 	EXP 	Created left_line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='left_line', opacity=1.0, ori=array(90.), pos=array([-0.925, -0.55 ]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8040 	EXP 	Created text_13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_13', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.8089 	EXP 	Created text_23 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_23', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='(press space to continue)', units='norm', win=Window(...), wrapWidth=1)
+4.8103 	EXP 	Created image_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.8157 	EXP 	Created text_22 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_22', opacity=1.0, ori=0, pos=array([ 0. , -0.5]), rgb=array([255., 255., 255.]), text='(press space to continue)', units='norm', win=Window(...), wrapWidth=1)
+4.8198 	EXP 	Created text_14 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_14', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1.5)
+4.8240 	EXP 	Created text_15 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_15', opacity=1.0, ori=0, pos=array([-0.9 , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.8257 	EXP 	Created image_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_6', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.8266 	EXP 	Created polygon_3 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-4.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='polygon_3', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8273 	EXP 	Created bottom_line_3 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='bottom_line_3', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.5]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8281 	EXP 	Created right_line_3 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='right_line_3', opacity=1.0, ori=array(90.), pos=array([ 0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8289 	EXP 	Created left_line_3 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='left_line_3', opacity=1.0, ori=array(90.), pos=array([-0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8327 	EXP 	Created text_16 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_16', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1.5)
+4.8367 	EXP 	Created text_17 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_17', opacity=1.0, ori=0, pos=array([-0.9 , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.8381 	EXP 	Created image_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_7', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.8389 	EXP 	Created polygon_4 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-4.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='polygon_4', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8397 	EXP 	Created bottom_line_4 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='bottom_line_4', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.5]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8405 	EXP 	Created right_line_4 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='right_line_4', opacity=1.0, ori=array(90.), pos=array([ 0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8414 	EXP 	Created left_line_4 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='left_line_4', opacity=1.0, ori=array(90.), pos=array([-0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8453 	EXP 	Created text_18 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_18', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1.5)
+4.8488 	EXP 	Created text_19 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_19', opacity=1.0, ori=0, pos=array([-0.9 , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.8502 	EXP 	Created image_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_8', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.8509 	EXP 	Created polygon_5 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-4.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='polygon_5', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8516 	EXP 	Created bottom_line_5 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='bottom_line_5', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.5]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8523 	EXP 	Created right_line_5 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='right_line_5', opacity=1.0, ori=array(90.), pos=array([ 0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8530 	EXP 	Created left_line_5 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='left_line_5', opacity=1.0, ori=array(90.), pos=array([-0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8572 	EXP 	Created text_20 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_20', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1.5)
+4.8615 	EXP 	Created text_21 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_21', opacity=1.0, ori=0, pos=array([-0.9 , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+4.8631 	EXP 	Created image_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_9', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), size=array([0.75, 0.75]), texRes=128, units='norm', win=Window(...))
+4.8639 	EXP 	Created polygon_6 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-4.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='polygon_6', opacity=1.0, ori=array(0.), pos=array([ 0.   , -0.125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8646 	EXP 	Created bottom_line_6 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='bottom_line_6', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.5]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8654 	EXP 	Created right_line_6 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='right_line_6', opacity=1.0, ori=array(90.), pos=array([ 0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8663 	EXP 	Created left_line_6 = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace='rgb255', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=20, name='left_line_6', opacity=1.0, ori=array(90.), pos=array([-0.925 , -0.3125]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8749 	EXP 	Imported count.xlsx as conditions, 16 conditions, 1 params
+4.8752 	EXP 	Created sequence: sequential, trialTypes=16, nReps=1, seed=None
+4.8755 	EXP 	New trial (rep=0, index=0): OrderedDict([('count', 0)])
+4.9719 	EXP 	text_4: text = 'Couples Therapist'
+4.9719 	EXP 	image: image = 'jobphotos/couples.jpg'
+4.9719 	EXP 	text_4: autoDraw = True
+4.9719 	EXP 	image: autoDraw = True
+4.9719 	EXP 	text_5: autoDraw = True
+6.0090 	DATA 	Keypress: q
+6.0153 	EXP 	Imported story_xlsx_files/12.xlsx as conditions, 31 conditions, 3 params
+6.0155 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+6.0157 	EXP 	New trial (rep=0, index=0): OrderedDict([('storyText', 'Calvin and Jessie were running late to the airport, and Jessie was fuming at Calvin and ready to end things with him.'), ('locationEvent', 1), ('socialEvent', 1)])
+6.0300 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+6.0897 	EXP 	text_4: autoDraw = False
+6.0897 	EXP 	image: autoDraw = False
+6.0897 	EXP 	text_5: autoDraw = False
+6.0897 	EXP 	text: text = 'Calvin and Jessie were running late to the airport, and Jessie was fuming at Calvin and ready to end things with him.'
+6.0897 	EXP 	image_2: image = 'storypics/12_storypic'
+6.0897 	EXP 	text: autoDraw = True
+6.0897 	EXP 	image_2: autoDraw = True
+6.5072 	DATA 	Keypress: 1
+6.5081 	EXP 	New trial (rep=0, index=1): OrderedDict([('storyText', 'When they entered the airport they had only 45 minutes until their international flight would depart from Jamaica for the US.'), ('locationEvent', 1), ('socialEvent', 1)])
+6.5266 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+6.5567 	EXP 	text: autoDraw = False
+6.5567 	EXP 	image_2: autoDraw = False
+6.5567 	EXP 	text: text = 'When they entered the airport they had only 45 minutes until their international flight would depart from Jamaica for the US.'
+6.5567 	EXP 	image_2: image = 'storypics/12_storypic'
+6.5567 	EXP 	text: autoDraw = True
+6.5567 	EXP 	image_2: autoDraw = True
+6.7249 	DATA 	Keypress: 1
+6.7256 	EXP 	New trial (rep=0, index=2): OrderedDict([('storyText', 'It had been a tough vacation for them, argument-filled and tense from the minute they had landed.'), ('locationEvent', 1), ('socialEvent', 1)])
+6.7389 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+6.7727 	EXP 	text: autoDraw = False
+6.7727 	EXP 	image_2: autoDraw = False
+6.7727 	EXP 	text: text = 'It had been a tough vacation for them, argument-filled and tense from the minute they had landed.'
+6.7727 	EXP 	image_2: image = 'storypics/12_storypic'
+6.7727 	EXP 	text: autoDraw = True
+6.7727 	EXP 	image_2: autoDraw = True
+6.8749 	DATA 	Keypress: 1
+6.8756 	EXP 	New trial (rep=0, index=3): OrderedDict([('storyText', ' Jessie had really had it with Calvin’s constant ramblings about the same excruciatingly boring golfing and work stories, which he insisted on repeating to her regardless of how little interest she showed.'), ('locationEvent', 1), ('socialEvent', 1)])
+6.8989 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+6.9333 	EXP 	text: autoDraw = False
+6.9333 	EXP 	image_2: autoDraw = False
+6.9333 	EXP 	text: text = ' Jessie had really had it with Calvin’s constant ramblings about the same excruciatingly boring golfing and work stories, which he insisted on repeating to her regardless of how little interest she showed.'
+6.9333 	EXP 	image_2: image = 'storypics/12_storypic'
+6.9333 	EXP 	text: autoDraw = True
+6.9333 	EXP 	image_2: autoDraw = True
+7.0250 	DATA 	Keypress: 1
+7.0257 	EXP 	New trial (rep=0, index=4): OrderedDict([('storyText', "Calvin knew that Jessie was upset, but wasn't sure what to do besides attempting to keep his mouth shut for the time being. "), ('locationEvent', 1), ('socialEvent', 1)])
+7.0416 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.0735 	EXP 	text: autoDraw = False
+7.0735 	EXP 	image_2: autoDraw = False
+7.0735 	EXP 	text: text = "Calvin knew that Jessie was upset, but wasn't sure what to do besides attempting to keep his mouth shut for the time being. "
+7.0735 	EXP 	image_2: image = 'storypics/12_storypic'
+7.0735 	EXP 	text: autoDraw = True
+7.0735 	EXP 	image_2: autoDraw = True
+7.1583 	DATA 	Keypress: 1
+7.1591 	EXP 	New trial (rep=0, index=5): OrderedDict([('storyText', ' The security line was luckily very short, and once the online boarding passes were scanned, they were ushered quickly through the metal detector, not having to take off their shoes or remove their liquids from their bags.'), ('locationEvent', 2), ('socialEvent', 1)])
+7.1850 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.2205 	EXP 	text: autoDraw = False
+7.2205 	EXP 	image_2: autoDraw = False
+7.2205 	EXP 	text: text = ' The security line was luckily very short, and once the online boarding passes were scanned, they were ushered quickly through the metal detector, not having to take off their shoes or remove their liquids from their bags.'
+7.2205 	EXP 	image_2: image = 'storypics/12_storypic'
+7.2205 	EXP 	text: autoDraw = True
+7.2205 	EXP 	image_2: autoDraw = True
+7.2917 	DATA 	Keypress: 1
+7.2925 	EXP 	New trial (rep=0, index=6): OrderedDict([('storyText', '“The infrastructure of this airport is really quite poor," said Calvin as they waited for their bags to emerge from the x-ray machine.'), ('locationEvent', 2), ('socialEvent', 1)])
+7.3103 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.3402 	EXP 	text: autoDraw = False
+7.3402 	EXP 	image_2: autoDraw = False
+7.3402 	EXP 	text: text = '“The infrastructure of this airport is really quite poor," said Calvin as they waited for their bags to emerge from the x-ray machine.'
+7.3402 	EXP 	image_2: image = 'storypics/12_storypic'
+7.3402 	EXP 	text: autoDraw = True
+7.3402 	EXP 	image_2: autoDraw = True
+7.4073 	DATA 	Keypress: 1
+7.4080 	EXP 	New trial (rep=0, index=7): OrderedDict([('storyText', '"I really could\'ve hidden something in my shoes quite easily.” '), ('locationEvent', 2), ('socialEvent', 1)])
+7.4191 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.4401 	EXP 	text: autoDraw = False
+7.4401 	EXP 	image_2: autoDraw = False
+7.4401 	EXP 	text: text = '"I really could\'ve hidden something in my shoes quite easily.” '
+7.4401 	EXP 	image_2: image = 'storypics/12_storypic'
+7.4401 	EXP 	text: autoDraw = True
+7.4401 	EXP 	image_2: autoDraw = True
+7.5413 	DATA 	Keypress: 1
+7.5422 	EXP 	New trial (rep=0, index=8): OrderedDict([('storyText', 'Jessie scowled at the conveyor belt, exasperated at his need to broadcast his every inner thought to the world.'), ('locationEvent', 2), ('socialEvent', 1)])
+7.5539 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.5903 	EXP 	text: autoDraw = False
+7.5903 	EXP 	image_2: autoDraw = False
+7.5903 	EXP 	text: text = 'Jessie scowled at the conveyor belt, exasperated at his need to broadcast his every inner thought to the world.'
+7.5903 	EXP 	image_2: image = 'storypics/12_storypic'
+7.5903 	EXP 	text: autoDraw = True
+7.5903 	EXP 	image_2: autoDraw = True
+7.6910 	DATA 	Keypress: 1
+7.6918 	EXP 	New trial (rep=0, index=9): OrderedDict([('storyText', '“What?” he said.'), ('locationEvent', 2), ('socialEvent', 1)])
+7.6976 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.7233 	EXP 	text: autoDraw = False
+7.7233 	EXP 	image_2: autoDraw = False
+7.7233 	EXP 	text: text = '“What?” he said.'
+7.7233 	EXP 	image_2: image = 'storypics/12_storypic'
+7.7233 	EXP 	text: autoDraw = True
+7.7233 	EXP 	image_2: autoDraw = True
+7.8575 	DATA 	Keypress: 1
+7.8581 	EXP 	New trial (rep=0, index=10): OrderedDict([('storyText', 'She balled up her fists and turned to face him.'), ('locationEvent', 2), ('socialEvent', 1)])
+7.8650 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+7.8899 	EXP 	text: autoDraw = False
+7.8899 	EXP 	image_2: autoDraw = False
+7.8899 	EXP 	text: text = 'She balled up her fists and turned to face him.'
+7.8899 	EXP 	image_2: image = 'storypics/12_storypic'
+7.8899 	EXP 	text: autoDraw = True
+7.8899 	EXP 	image_2: autoDraw = True
+8.0081 	DATA 	Keypress: 1
+8.0088 	EXP 	New trial (rep=0, index=11): OrderedDict([('storyText', '“Calvin, I really don’t think I can do this anymore.'), ('locationEvent', 2), ('socialEvent', 2)])
+8.0196 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.0408 	EXP 	text: autoDraw = False
+8.0408 	EXP 	image_2: autoDraw = False
+8.0408 	EXP 	text: text = '“Calvin, I really don’t think I can do this anymore.'
+8.0408 	EXP 	image_2: image = 'storypics/12_storypic'
+8.0408 	EXP 	text: autoDraw = True
+8.0408 	EXP 	image_2: autoDraw = True
+8.1745 	DATA 	Keypress: 1
+8.1752 	EXP 	New trial (rep=0, index=12): OrderedDict([('storyText', 'I think it’s best that once we get to the States we part ways for good.” '), ('locationEvent', 2), ('socialEvent', 2)])
+8.1872 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.2228 	EXP 	text: autoDraw = False
+8.2228 	EXP 	image_2: autoDraw = False
+8.2228 	EXP 	text: text = 'I think it’s best that once we get to the States we part ways for good.” '
+8.2228 	EXP 	image_2: image = 'storypics/12_storypic'
+8.2228 	EXP 	text: autoDraw = True
+8.2228 	EXP 	image_2: autoDraw = True
+8.3412 	DATA 	Keypress: 1
+8.3420 	EXP 	New trial (rep=0, index=13): OrderedDict([('storyText', 'Calvin said nothing as he grabbed his bag and stormed away.'), ('locationEvent', 2), ('socialEvent', 2)])
+8.3493 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.3733 	EXP 	text: autoDraw = False
+8.3733 	EXP 	image_2: autoDraw = False
+8.3733 	EXP 	text: text = 'Calvin said nothing as he grabbed his bag and stormed away.'
+8.3733 	EXP 	image_2: image = 'storypics/12_storypic'
+8.3733 	EXP 	text: autoDraw = True
+8.3733 	EXP 	image_2: autoDraw = True
+8.4906 	DATA 	Keypress: 1
+8.4913 	EXP 	New trial (rep=0, index=14): OrderedDict([('storyText', 'Jessie trailed behind him as they made their way quickly toward their gate, shouting at his back in hopes of getting a response.'), ('locationEvent', 3), ('socialEvent', 2)])
+8.5071 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.5401 	EXP 	text: autoDraw = False
+8.5401 	EXP 	image_2: autoDraw = False
+8.5401 	EXP 	text: text = 'Jessie trailed behind him as they made their way quickly toward their gate, shouting at his back in hopes of getting a response.'
+8.5401 	EXP 	image_2: image = 'storypics/12_storypic'
+8.5401 	EXP 	text: autoDraw = True
+8.5401 	EXP 	image_2: autoDraw = True
+8.6588 	DATA 	Keypress: 1
+8.6596 	EXP 	New trial (rep=0, index=15): OrderedDict([('storyText', ' “So now you have nothing to say?'), ('locationEvent', 3), ('socialEvent', 2)])
+8.6658 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.6894 	EXP 	text: autoDraw = False
+8.6894 	EXP 	image_2: autoDraw = False
+8.6894 	EXP 	text: text = ' “So now you have nothing to say?'
+8.6894 	EXP 	image_2: image = 'storypics/12_storypic'
+8.6894 	EXP 	text: autoDraw = True
+8.6894 	EXP 	image_2: autoDraw = True
+8.7910 	DATA 	Keypress: 1
+8.7918 	EXP 	New trial (rep=0, index=16): OrderedDict([('storyText', 'Every time we talk, you are just looking for a way to steer the conversation back into stories that you are the only one interested in.”'), ('locationEvent', 3), ('socialEvent', 2)])
+8.8111 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.8395 	EXP 	text: autoDraw = False
+8.8395 	EXP 	image_2: autoDraw = False
+8.8395 	EXP 	text: text = 'Every time we talk, you are just looking for a way to steer the conversation back into stories that you are the only one interested in.”'
+8.8395 	EXP 	image_2: image = 'storypics/12_storypic'
+8.8395 	EXP 	text: autoDraw = True
+8.8395 	EXP 	image_2: autoDraw = True
+8.9586 	DATA 	Keypress: 1
+8.9593 	EXP 	New trial (rep=0, index=17): OrderedDict([('storyText', "Calvin didn't slow his pace, gritting his teeth and staring straight ahead. "), ('locationEvent', 3), ('socialEvent', 2)])
+8.9691 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+8.9899 	EXP 	text: autoDraw = False
+8.9899 	EXP 	image_2: autoDraw = False
+8.9899 	EXP 	text: text = "Calvin didn't slow his pace, gritting his teeth and staring straight ahead. "
+8.9899 	EXP 	image_2: image = 'storypics/12_storypic'
+8.9899 	EXP 	text: autoDraw = True
+8.9899 	EXP 	image_2: autoDraw = True
+9.1745 	DATA 	Keypress: 1
+9.1752 	EXP 	New trial (rep=0, index=18): OrderedDict([('storyText', 'The silence was punctuated only by the rapid rhythmic clacking of their suitcase wheels over the tile floor as they continued power-walking through the terminal. '), ('locationEvent', 3), ('socialEvent', 2)])
+9.1936 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+9.2230 	EXP 	text: autoDraw = False
+9.2230 	EXP 	image_2: autoDraw = False
+9.2230 	EXP 	text: text = 'The silence was punctuated only by the rapid rhythmic clacking of their suitcase wheels over the tile floor as they continued power-walking through the terminal. '
+9.2230 	EXP 	image_2: image = 'storypics/12_storypic'
+9.2230 	EXP 	text: autoDraw = True
+9.2230 	EXP 	image_2: autoDraw = True
+9.3413 	DATA 	Keypress: 1
+9.3420 	EXP 	New trial (rep=0, index=19): OrderedDict([('storyText', ' “Well?” Jessie said, and Calvin finally turned to her.'), ('locationEvent', 3), ('socialEvent', 2)])
+9.3505 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+9.3733 	EXP 	text: autoDraw = False
+9.3733 	EXP 	image_2: autoDraw = False
+9.3733 	EXP 	text: text = ' “Well?” Jessie said, and Calvin finally turned to her.'
+9.3733 	EXP 	image_2: image = 'storypics/12_storypic'
+9.3733 	EXP 	text: autoDraw = True
+9.3733 	EXP 	image_2: autoDraw = True
+9.5082 	DATA 	Keypress: 1
+9.5090 	EXP 	New trial (rep=0, index=20): OrderedDict([('storyText', ' “Well Jessie, this makes perfect sense. '), ('locationEvent', 3), ('socialEvent', 3)])
+9.5167 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+9.5394 	EXP 	text: autoDraw = False
+9.5394 	EXP 	image_2: autoDraw = False
+9.5394 	EXP 	text: text = ' “Well Jessie, this makes perfect sense. '
+9.5394 	EXP 	image_2: image = 'storypics/12_storypic'
+9.5394 	EXP 	text: autoDraw = True
+9.5394 	EXP 	image_2: autoDraw = True
+9.6913 	DATA 	Keypress: 1
+9.6920 	EXP 	New trial (rep=0, index=21): OrderedDict([('storyText', 'If you feel this way, then I don’t want to keep boring you, and I agree, let’s part ways once we make it back.'), ('locationEvent', 3), ('socialEvent', 3)])
+9.7097 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+9.7399 	EXP 	text: autoDraw = False
+9.7399 	EXP 	image_2: autoDraw = False
+9.7399 	EXP 	text: text = 'If you feel this way, then I don’t want to keep boring you, and I agree, let’s part ways once we make it back.'
+9.7399 	EXP 	image_2: image = 'storypics/12_storypic'
+9.7399 	EXP 	text: autoDraw = True
+9.7399 	EXP 	image_2: autoDraw = True
+9.8578 	DATA 	Keypress: 1
+9.8586 	EXP 	New trial (rep=0, index=22): OrderedDict([('storyText', 'I thought we were having a lovely time, but if the feeling was not mutual then so be it.”'), ('locationEvent', 3), ('socialEvent', 3)])
+9.8693 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+9.8902 	EXP 	text: autoDraw = False
+9.8902 	EXP 	image_2: autoDraw = False
+9.8902 	EXP 	text: text = 'I thought we were having a lovely time, but if the feeling was not mutual then so be it.”'
+9.8902 	EXP 	image_2: image = 'storypics/12_storypic'
+9.8902 	EXP 	text: autoDraw = True
+9.8902 	EXP 	image_2: autoDraw = True
+10.0410 	DATA 	Keypress: 1
+10.0419 	EXP 	New trial (rep=0, index=23): OrderedDict([('storyText', 'He was clearly hurt, but thought it was pointless to argue. '), ('locationEvent', 3), ('socialEvent', 3)])
+10.0499 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.0736 	EXP 	text: autoDraw = False
+10.0736 	EXP 	image_2: autoDraw = False
+10.0736 	EXP 	text: text = 'He was clearly hurt, but thought it was pointless to argue. '
+10.0736 	EXP 	image_2: image = 'storypics/12_storypic'
+10.0736 	EXP 	text: autoDraw = True
+10.0736 	EXP 	image_2: autoDraw = True
+10.2424 	DATA 	Keypress: 1
+10.2431 	EXP 	New trial (rep=0, index=24): OrderedDict([('storyText', 'They finally made it to the gate, just as they heard the final call for passengers boarding their flight.'), ('locationEvent', 3), ('socialEvent', 3)])
+10.2551 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.2917 	EXP 	text: autoDraw = False
+10.2917 	EXP 	image_2: autoDraw = False
+10.2917 	EXP 	text: text = 'They finally made it to the gate, just as they heard the final call for passengers boarding their flight.'
+10.2917 	EXP 	image_2: image = 'storypics/12_storypic'
+10.2917 	EXP 	text: autoDraw = True
+10.2917 	EXP 	image_2: autoDraw = True
+10.3919 	DATA 	Keypress: 1
+10.3926 	EXP 	New trial (rep=0, index=25): OrderedDict([('storyText', 'They scanned their tickets, and the annoyed flight attendant shooed them onto the jet bridge and then closed the door behind them.'), ('locationEvent', 4), ('socialEvent', 3)])
+10.4082 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.4412 	EXP 	text: autoDraw = False
+10.4412 	EXP 	image_2: autoDraw = False
+10.4412 	EXP 	text: text = 'They scanned their tickets, and the annoyed flight attendant shooed them onto the jet bridge and then closed the door behind them.'
+10.4412 	EXP 	image_2: image = 'storypics/12_storypic'
+10.4412 	EXP 	text: autoDraw = True
+10.4412 	EXP 	image_2: autoDraw = True
+10.5430 	DATA 	Keypress: 1
+10.5579 	EXP 	New trial (rep=0, index=26): OrderedDict([('storyText', 'Luckily, they had forgotten to arrange seats next to each other on the flight back.'), ('locationEvent', 4), ('socialEvent', 3)])
+10.5699 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.5911 	EXP 	text: autoDraw = False
+10.5911 	EXP 	image_2: autoDraw = False
+10.5911 	EXP 	text: text = 'Luckily, they had forgotten to arrange seats next to each other on the flight back.'
+10.5911 	EXP 	image_2: image = 'storypics/12_storypic'
+10.5911 	EXP 	text: autoDraw = True
+10.5911 	EXP 	image_2: autoDraw = True
+10.7261 	DATA 	Keypress: 1
+10.7268 	EXP 	New trial (rep=0, index=27): OrderedDict([('storyText', "They both had first-class tickets, but Jessie was headed for seat 1B while Calvin's ticket was for 4F. "), ('locationEvent', 4), ('socialEvent', 3)])
+10.7447 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.7739 	EXP 	text: autoDraw = False
+10.7739 	EXP 	image_2: autoDraw = False
+10.7739 	EXP 	text: text = "They both had first-class tickets, but Jessie was headed for seat 1B while Calvin's ticket was for 4F. "
+10.7739 	EXP 	image_2: image = 'storypics/12_storypic'
+10.7739 	EXP 	text: autoDraw = True
+10.7739 	EXP 	image_2: autoDraw = True
+10.8589 	DATA 	Keypress: 1
+10.8596 	EXP 	New trial (rep=0, index=28): OrderedDict([('storyText', 'Before Jessie sat down, she took a deep breath and then awkwardly shook Calvin’s hand, mumbling, “Well, have a nice flight.” '), ('locationEvent', 4), ('socialEvent', 4)])
+10.8780 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+10.9080 	EXP 	text: autoDraw = False
+10.9080 	EXP 	image_2: autoDraw = False
+10.9080 	EXP 	text: text = 'Before Jessie sat down, she took a deep breath and then awkwardly shook Calvin’s hand, mumbling, “Well, have a nice flight.” '
+10.9080 	EXP 	image_2: image = 'storypics/12_storypic'
+10.9080 	EXP 	text: autoDraw = True
+10.9080 	EXP 	image_2: autoDraw = True
+11.0271 	DATA 	Keypress: 1
+11.0414 	EXP 	New trial (rep=0, index=29): OrderedDict([('storyText', 'He laughed in disbelief and walked to his window seat three rows back to get ready for takeoff.'), ('locationEvent', 4), ('socialEvent', 4)])
+11.0547 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+11.0760 	EXP 	text: autoDraw = False
+11.0760 	EXP 	image_2: autoDraw = False
+11.0760 	EXP 	text: text = 'He laughed in disbelief and walked to his window seat three rows back to get ready for takeoff.'
+11.0760 	EXP 	image_2: image = 'storypics/12_storypic'
+11.0760 	EXP 	text: autoDraw = True
+11.0760 	EXP 	image_2: autoDraw = True
+11.2096 	DATA 	Keypress: 1
+11.2104 	EXP 	New trial (rep=0, index=30): OrderedDict([('storyText', 'Both were at least relieved that the vacation and the fights were over, and they were looking forward to never having to struggle through another conversation together again.\n'), ('locationEvent', 4), ('socialEvent', 4)])
+11.2295 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+11.2574 	EXP 	text: autoDraw = False
+11.2574 	EXP 	image_2: autoDraw = False
+11.2574 	EXP 	text: text = 'Both were at least relieved that the vacation and the fights were over, and they were looking forward to never having to struggle through another conversation together again.\n'
+11.2574 	EXP 	image_2: image = 'storypics/12_storypic'
+11.2574 	EXP 	text: autoDraw = True
+11.2574 	EXP 	image_2: autoDraw = True
+11.3763 	DATA 	Keypress: 1
+11.3821 	EXP 	Imported recall_instructions.xlsx as conditions, 5 conditions, 1 params
+11.3823 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+11.3825 	EXP 	New trial (rep=0, index=0): OrderedDict([('instructText', 'The next task in the experiment is to recall each story to the best of your ability.')])
+11.4082 	EXP 	text: autoDraw = False
+11.4082 	EXP 	image_2: autoDraw = False
+11.4082 	EXP 	text_6: text = 'The next task in the experiment is to recall each story to the best of your ability.'
+11.4082 	EXP 	text_6: autoDraw = True
+11.4082 	EXP 	text_24: autoDraw = True
+11.5431 	DATA 	Keypress: 1
+12.2433 	DATA 	Keypress: space
+12.2441 	EXP 	New trial (rep=0, index=1): OrderedDict([('instructText', 'You will be presented with the story title, names, the images, and a blank text box for each story.')])
+12.2753 	EXP 	text_6: autoDraw = False
+12.2753 	EXP 	text_24: autoDraw = False
+12.2753 	EXP 	text_6: text = 'You will be presented with the story title, names, the images, and a blank text box for each story.'
+12.2753 	EXP 	text_6: autoDraw = True
+12.2753 	EXP 	text_24: autoDraw = True
+12.7931 	DATA 	Keypress: space
+12.8090 	EXP 	New trial (rep=0, index=2): OrderedDict([('instructText', 'Describe the story with as many details as you can remember in the space provided. ')])
+12.8416 	EXP 	text_6: autoDraw = False
+12.8416 	EXP 	text_24: autoDraw = False
+12.8416 	EXP 	text_6: text = 'Describe the story with as many details as you can remember in the space provided. '
+12.8416 	EXP 	text_6: autoDraw = True
+12.8416 	EXP 	text_24: autoDraw = True
+13.2258 	DATA 	Keypress: space
+13.2265 	EXP 	New trial (rep=0, index=3): OrderedDict([('instructText', 'When you are finished recalling one story, to move onto the next one hit ‘return’. ')])
+13.2584 	EXP 	text_6: autoDraw = False
+13.2584 	EXP 	text_24: autoDraw = False
+13.2584 	EXP 	text_6: text = 'When you are finished recalling one story, to move onto the next one hit ‘return’. '
+13.2584 	EXP 	text_6: autoDraw = True
+13.2584 	EXP 	text_24: autoDraw = True
+13.5601 	DATA 	Keypress: space
+13.5608 	EXP 	New trial (rep=0, index=4): OrderedDict([('instructText', 'There is no time limit for your responses. ')])
+13.5742 	EXP 	text_6: autoDraw = False
+13.5742 	EXP 	text_24: autoDraw = False
+13.5742 	EXP 	text_6: text = 'There is no time limit for your responses. '
+13.5742 	EXP 	text_6: autoDraw = True
+13.5742 	EXP 	text_24: autoDraw = True
+13.9593 	DATA 	Keypress: space
+13.9645 	EXP 	Imported count.xlsx as conditions, 16 conditions, 1 params
+13.9647 	EXP 	Created sequence: sequential, trialTypes=16, nReps=1, seed=None
+13.9649 	EXP 	New trial (rep=0, index=0): OrderedDict([('count', 0)])
+13.9653 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+14.0080 	EXP 	text_6: autoDraw = False
+14.0080 	EXP 	text_24: autoDraw = False
+14.0080 	EXP 	text_10: alignHoriz = 'left'
+14.0080 	EXP 	text_10: alignVert = 'top'
+14.0080 	EXP 	text_10: wrapWidth = 1.8
+14.0080 	EXP 	text_10: height = 0.05
+14.0080 	EXP 	image_4: image = 'storypics/12_storypic'
+14.0080 	EXP 	text_9: autoDraw = True
+14.0080 	EXP 	text_10: autoDraw = True
+14.0080 	EXP 	image_4: autoDraw = True
+14.0080 	EXP 	polygon: autoDraw = True
+14.0080 	EXP 	bottom_line: autoDraw = True
+14.0080 	EXP 	right_line_2: autoDraw = True
+14.0080 	EXP 	left_line: autoDraw = True
+14.8933 	DATA 	Keypress: tab
+14.9013 	EXP 	Imported question_instructions.xlsx as conditions, 5 conditions, 1 params
+14.9015 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+14.9018 	EXP 	New trial (rep=0, index=0): OrderedDict([('instructText', 'The next part of the task is to answer questions about each story.')])
+14.9248 	EXP 	text_9: autoDraw = False
+14.9248 	EXP 	text_10: autoDraw = False
+14.9248 	EXP 	image_4: autoDraw = False
+14.9248 	EXP 	polygon: autoDraw = False
+14.9248 	EXP 	bottom_line: autoDraw = False
+14.9248 	EXP 	right_line_2: autoDraw = False
+14.9248 	EXP 	left_line: autoDraw = False
+14.9248 	EXP 	text_13: text = 'The next part of the task is to answer questions about each story.'
+14.9248 	EXP 	text_13: autoDraw = True
+14.9248 	EXP 	text_23: autoDraw = True
+15.7114 	DATA 	Keypress: space
+15.7120 	EXP 	New trial (rep=0, index=1): OrderedDict([('instructText', 'You will be asked the questions you were asked to remember for the job simulated during each story.')])
+15.7430 	EXP 	text_13: autoDraw = False
+15.7430 	EXP 	text_23: autoDraw = False
+15.7430 	EXP 	text_13: text = 'You will be asked the questions you were asked to remember for the job simulated during each story.'
+15.7430 	EXP 	text_13: autoDraw = True
+15.7430 	EXP 	text_23: autoDraw = True
+16.1446 	DATA 	Keypress: space
+16.1451 	EXP 	New trial (rep=0, index=2): OrderedDict([('instructText', 'You will also be asked questions that we didn’t tell you to think of for that story.')])
+16.1762 	EXP 	text_13: autoDraw = False
+16.1762 	EXP 	text_23: autoDraw = False
+16.1762 	EXP 	text_13: text = 'You will also be asked questions that we didn’t tell you to think of for that story.'
+16.1762 	EXP 	text_13: autoDraw = True
+16.1762 	EXP 	text_23: autoDraw = True
+16.5608 	DATA 	Keypress: space
+16.5622 	DATA 	Keypress: b
+16.5628 	EXP 	New trial (rep=0, index=3): OrderedDict([('instructText', 'We realize that we did not tell you to think of these questions during the story, but do your best to answer all these questions. ')])
+16.5932 	EXP 	text_13: autoDraw = False
+16.5932 	EXP 	text_23: autoDraw = False
+16.5932 	EXP 	text_13: text = 'We realize that we did not tell you to think of these questions during the story, but do your best to answer all these questions. '
+16.5932 	EXP 	text_13: autoDraw = True
+16.5932 	EXP 	text_23: autoDraw = True
+17.0126 	DATA 	Keypress: space
+17.0272 	EXP 	New trial (rep=0, index=4): OrderedDict([('instructText', 'Hit enter to submit your answer and move onto the next question. ')])
+17.0425 	EXP 	text_13: autoDraw = False
+17.0425 	EXP 	text_23: autoDraw = False
+17.0425 	EXP 	text_13: text = 'Hit enter to submit your answer and move onto the next question. '
+17.0425 	EXP 	text_13: autoDraw = True
+17.0425 	EXP 	text_23: autoDraw = True
+17.3944 	DATA 	Keypress: space
+17.3993 	EXP 	Imported count.xlsx as conditions, 16 conditions, 1 params
+17.3995 	EXP 	Created sequence: sequential, trialTypes=16, nReps=1, seed=None
+17.3997 	EXP 	New trial (rep=0, index=0): OrderedDict([('count', 0)])
+17.3998 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+17.4262 	EXP 	text_13: autoDraw = False
+17.4262 	EXP 	text_23: autoDraw = False
+17.4262 	EXP 	image_10: image = 'storypics/12_storypic'
+17.4262 	EXP 	image_10: autoDraw = True
+17.4262 	EXP 	text_22: autoDraw = True
+18.5772 	DATA 	Keypress: space
+18.5880 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+18.6263 	EXP 	image_10: autoDraw = False
+18.6263 	EXP 	text_22: autoDraw = False
+18.6263 	EXP 	text_15: alignHoriz = 'left'
+18.6263 	EXP 	text_15: alignVert = 'top'
+18.6263 	EXP 	text_15: wrapWidth = 1.8
+18.6263 	EXP 	text_15: height = 0.05
+18.6263 	EXP 	text_14: text = 'When the clients arrive at the airport, how much time do they have to go through?'
+18.6263 	EXP 	image_6: image = 'storypics/12_storypic'
+18.6263 	EXP 	text_14: autoDraw = True
+18.6263 	EXP 	text_15: autoDraw = True
+18.6263 	EXP 	image_6: autoDraw = True
+18.6263 	EXP 	polygon_3: autoDraw = True
+18.6263 	EXP 	bottom_line_3: autoDraw = True
+18.6263 	EXP 	right_line_3: autoDraw = True
+18.6263 	EXP 	left_line_3: autoDraw = True
+21.3121 	DATA 	Keypress: apostrophe
+21.4452 	DATA 	Keypress: return
+21.4717 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+21.5116 	EXP 	text_14: autoDraw = False
+21.5116 	EXP 	text_15: autoDraw = False
+21.5116 	EXP 	image_6: autoDraw = False
+21.5116 	EXP 	polygon_3: autoDraw = False
+21.5116 	EXP 	bottom_line_3: autoDraw = False
+21.5116 	EXP 	right_line_3: autoDraw = False
+21.5116 	EXP 	left_line_3: autoDraw = False
+21.5116 	EXP 	text_17: alignHoriz = 'left'
+21.5116 	EXP 	text_17: alignVert = 'top'
+21.5116 	EXP 	text_17: wrapWidth = 1.8
+21.5116 	EXP 	text_17: height = 0.05
+21.5116 	EXP 	text_16: text = 'What do the clients have do at security to comply with the security check?'
+21.5116 	EXP 	image_7: image = 'storypics/12_storypic'
+21.5116 	EXP 	text_16: autoDraw = True
+21.5116 	EXP 	text_17: autoDraw = True
+21.5116 	EXP 	image_7: autoDraw = True
+21.5116 	EXP 	polygon_4: autoDraw = True
+21.5116 	EXP 	bottom_line_4: autoDraw = True
+21.5116 	EXP 	right_line_4: autoDraw = True
+21.5116 	EXP 	left_line_4: autoDraw = True
+22.1124 	DATA 	Keypress: return
+22.1389 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+22.1784 	EXP 	text_16: autoDraw = False
+22.1784 	EXP 	text_17: autoDraw = False
+22.1784 	EXP 	image_7: autoDraw = False
+22.1784 	EXP 	polygon_4: autoDraw = False
+22.1784 	EXP 	bottom_line_4: autoDraw = False
+22.1784 	EXP 	right_line_4: autoDraw = False
+22.1784 	EXP 	left_line_4: autoDraw = False
+22.1784 	EXP 	text_19: alignHoriz = 'left'
+22.1784 	EXP 	text_19: alignVert = 'top'
+22.1784 	EXP 	text_19: wrapWidth = 1.8
+22.1784 	EXP 	text_19: height = 0.05
+22.1784 	EXP 	text_18: text = 'How do the clients feel when they are \xa0walking to the gates?'
+22.1784 	EXP 	image_8: image = 'storypics/12_storypic'
+22.1784 	EXP 	text_18: autoDraw = True
+22.1784 	EXP 	text_19: autoDraw = True
+22.1784 	EXP 	image_8: autoDraw = True
+22.1784 	EXP 	polygon_5: autoDraw = True
+22.1784 	EXP 	bottom_line_5: autoDraw = True
+22.1784 	EXP 	right_line_5: autoDraw = True
+22.1784 	EXP 	left_line_5: autoDraw = True
+22.6958 	DATA 	Keypress: return
+22.7188 	WARNING 	Requested image 'storypics/12_storypic' not found but similar filename 'storypics/12_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+22.7446 	EXP 	text_18: autoDraw = False
+22.7446 	EXP 	text_19: autoDraw = False
+22.7446 	EXP 	image_8: autoDraw = False
+22.7446 	EXP 	polygon_5: autoDraw = False
+22.7446 	EXP 	bottom_line_5: autoDraw = False
+22.7446 	EXP 	right_line_5: autoDraw = False
+22.7446 	EXP 	left_line_5: autoDraw = False
+22.7446 	EXP 	text_21: alignHoriz = 'left'
+22.7446 	EXP 	text_21: alignVert = 'top'
+22.7446 	EXP 	text_21: wrapWidth = 1.8
+22.7446 	EXP 	text_21: height = 0.05
+22.7446 	EXP 	text_20: text = 'Where does each client sit on the plane?'
+22.7446 	EXP 	image_9: image = 'storypics/12_storypic'
+22.7446 	EXP 	text_20: autoDraw = True
+22.7446 	EXP 	text_21: autoDraw = True
+22.7446 	EXP 	image_9: autoDraw = True
+22.7446 	EXP 	polygon_6: autoDraw = True
+22.7446 	EXP 	bottom_line_6: autoDraw = True
+22.7446 	EXP 	right_line_6: autoDraw = True
+22.7446 	EXP 	left_line_6: autoDraw = True
+23.1620 	DATA 	Keypress: return
+23.1786 	EXP 	New trial (rep=0, index=1): OrderedDict([('count', 1)])
+23.1787 	WARNING 	Requested image 'storypics/22_storypic' not found but similar filename 'storypics/22_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+23.2115 	EXP 	text_20: autoDraw = False
+23.2115 	EXP 	text_21: autoDraw = False
+23.2115 	EXP 	image_9: autoDraw = False
+23.2115 	EXP 	polygon_6: autoDraw = False
+23.2115 	EXP 	bottom_line_6: autoDraw = False
+23.2115 	EXP 	right_line_6: autoDraw = False
+23.2115 	EXP 	left_line_6: autoDraw = False
+23.2115 	EXP 	image_10: image = 'storypics/22_storypic'
+23.2115 	EXP 	image_10: autoDraw = True
+23.2115 	EXP 	text_22: autoDraw = True
+23.9460 	DATA 	Keypress: space
+23.9540 	WARNING 	Requested image 'storypics/22_storypic' not found but similar filename 'storypics/22_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+23.9775 	EXP 	image_10: autoDraw = False
+23.9775 	EXP 	text_22: autoDraw = False
+23.9775 	EXP 	text_15: alignHoriz = 'left'
+23.9775 	EXP 	text_15: alignVert = 'top'
+23.9775 	EXP 	text_15: wrapWidth = 1.8
+23.9775 	EXP 	text_15: height = 0.05
+23.9775 	EXP 	text_14: text = 'How does the person who proposed feel before proposing?'
+23.9775 	EXP 	image_6: image = 'storypics/22_storypic'
+23.9775 	EXP 	text_14: autoDraw = True
+23.9775 	EXP 	text_15: autoDraw = True
+23.9775 	EXP 	image_6: autoDraw = True
+23.9775 	EXP 	polygon_3: autoDraw = True
+23.9775 	EXP 	bottom_line_3: autoDraw = True
+23.9775 	EXP 	right_line_3: autoDraw = True
+23.9775 	EXP 	left_line_3: autoDraw = True
+24.4798 	DATA 	Keypress: return
+24.5011 	WARNING 	Requested image 'storypics/22_storypic' not found but similar filename 'storypics/22_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+24.5277 	EXP 	text_14: autoDraw = False
+24.5277 	EXP 	text_15: autoDraw = False
+24.5277 	EXP 	image_6: autoDraw = False
+24.5277 	EXP 	polygon_3: autoDraw = False
+24.5277 	EXP 	bottom_line_3: autoDraw = False
+24.5277 	EXP 	right_line_3: autoDraw = False
+24.5277 	EXP 	left_line_3: autoDraw = False
+24.5277 	EXP 	text_17: alignHoriz = 'left'
+24.5277 	EXP 	text_17: alignVert = 'top'
+24.5277 	EXP 	text_17: wrapWidth = 1.8
+24.5277 	EXP 	text_17: height = 0.05
+24.5277 	EXP 	text_16: text = 'What is the ring like?'
+24.5277 	EXP 	image_7: image = 'storypics/22_storypic'
+24.5277 	EXP 	text_16: autoDraw = True
+24.5277 	EXP 	text_17: autoDraw = True
+24.5277 	EXP 	image_7: autoDraw = True
+24.5277 	EXP 	polygon_4: autoDraw = True
+24.5277 	EXP 	bottom_line_4: autoDraw = True
+24.5277 	EXP 	right_line_4: autoDraw = True
+24.5277 	EXP 	left_line_4: autoDraw = True
+24.5277 	EXP 	text_17: text = ''
+24.7291 	DATA 	Keypress: return
+24.7513 	WARNING 	Requested image 'storypics/22_storypic' not found but similar filename 'storypics/22_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+24.7782 	EXP 	text_16: autoDraw = False
+24.7782 	EXP 	text_17: autoDraw = False
+24.7782 	EXP 	image_7: autoDraw = False
+24.7782 	EXP 	polygon_4: autoDraw = False
+24.7782 	EXP 	bottom_line_4: autoDraw = False
+24.7782 	EXP 	right_line_4: autoDraw = False
+24.7782 	EXP 	left_line_4: autoDraw = False
+24.7782 	EXP 	text_19: alignHoriz = 'left'
+24.7782 	EXP 	text_19: alignVert = 'top'
+24.7782 	EXP 	text_19: wrapWidth = 1.8
+24.7782 	EXP 	text_19: height = 0.05
+24.7782 	EXP 	text_18: text = 'Does anyone help with the proposal?'
+24.7782 	EXP 	image_8: image = 'storypics/22_storypic'
+24.7782 	EXP 	text_18: autoDraw = True
+24.7782 	EXP 	text_19: autoDraw = True
+24.7782 	EXP 	image_8: autoDraw = True
+24.7782 	EXP 	polygon_5: autoDraw = True
+24.7782 	EXP 	bottom_line_5: autoDraw = True
+24.7782 	EXP 	right_line_5: autoDraw = True
+24.7782 	EXP 	left_line_5: autoDraw = True
+24.7782 	EXP 	text_19: text = ''
+25.1470 	DATA 	Keypress: return
+25.1684 	WARNING 	Requested image 'storypics/22_storypic' not found but similar filename 'storypics/22_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+25.1960 	EXP 	text_18: autoDraw = False
+25.1960 	EXP 	text_19: autoDraw = False
+25.1960 	EXP 	image_8: autoDraw = False
+25.1960 	EXP 	polygon_5: autoDraw = False
+25.1960 	EXP 	bottom_line_5: autoDraw = False
+25.1960 	EXP 	right_line_5: autoDraw = False
+25.1960 	EXP 	left_line_5: autoDraw = False
+25.1960 	EXP 	text_21: alignHoriz = 'left'
+25.1960 	EXP 	text_21: alignVert = 'top'
+25.1960 	EXP 	text_21: wrapWidth = 1.8
+25.1960 	EXP 	text_21: height = 0.05
+25.1960 	EXP 	text_20: text = 'Who witnessed the “yes”?'
+25.1960 	EXP 	image_9: image = 'storypics/22_storypic'
+25.1960 	EXP 	text_20: autoDraw = True
+25.1960 	EXP 	text_21: autoDraw = True
+25.1960 	EXP 	image_9: autoDraw = True
+25.1960 	EXP 	polygon_6: autoDraw = True
+25.1960 	EXP 	bottom_line_6: autoDraw = True
+25.1960 	EXP 	right_line_6: autoDraw = True
+25.1960 	EXP 	left_line_6: autoDraw = True
+25.1960 	EXP 	text_21: text = ''
+25.6300 	DATA 	Keypress: return
+25.6465 	EXP 	New trial (rep=0, index=2): OrderedDict([('count', 2)])
+25.6466 	WARNING 	Requested image 'storypics/33_storypic' not found but similar filename 'storypics/33_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+25.6953 	EXP 	text_20: autoDraw = False
+25.6953 	EXP 	text_21: autoDraw = False
+25.6953 	EXP 	image_9: autoDraw = False
+25.6953 	EXP 	polygon_6: autoDraw = False
+25.6953 	EXP 	bottom_line_6: autoDraw = False
+25.6953 	EXP 	right_line_6: autoDraw = False
+25.6953 	EXP 	left_line_6: autoDraw = False
+25.6953 	EXP 	image_10: image = 'storypics/33_storypic'
+25.6953 	EXP 	image_10: autoDraw = True
+25.6953 	EXP 	text_22: autoDraw = True
+26.2142 	DATA 	Keypress: return
+26.4308 	DATA 	Keypress: return
+27.0470 	DATA 	Keypress: space
+27.0539 	WARNING 	Requested image 'storypics/33_storypic' not found but similar filename 'storypics/33_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+27.0797 	EXP 	image_10: autoDraw = False
+27.0797 	EXP 	text_22: autoDraw = False
+27.0797 	EXP 	text_15: alignHoriz = 'left'
+27.0797 	EXP 	text_15: alignVert = 'top'
+27.0797 	EXP 	text_15: wrapWidth = 1.8
+27.0797 	EXP 	text_15: height = 0.05
+27.0797 	EXP 	text_14: text = 'What industry are the business people in?'
+27.0797 	EXP 	image_6: image = 'storypics/33_storypic'
+27.0797 	EXP 	text_14: autoDraw = True
+27.0797 	EXP 	text_15: autoDraw = True
+27.0797 	EXP 	image_6: autoDraw = True
+27.0797 	EXP 	polygon_3: autoDraw = True
+27.0797 	EXP 	bottom_line_3: autoDraw = True
+27.0797 	EXP 	right_line_3: autoDraw = True
+27.0797 	EXP 	left_line_3: autoDraw = True
+27.0797 	EXP 	text_15: text = ''
+27.0883 	WARNING 	Requested image 'storypics/33_storypic' not found but similar filename 'storypics/33_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+27.1130 	EXP 	text_14: autoDraw = False
+27.1130 	EXP 	text_15: autoDraw = False
+27.1130 	EXP 	image_6: autoDraw = False
+27.1130 	EXP 	polygon_3: autoDraw = False
+27.1130 	EXP 	bottom_line_3: autoDraw = False
+27.1130 	EXP 	right_line_3: autoDraw = False
+27.1130 	EXP 	left_line_3: autoDraw = False
+27.1130 	EXP 	text_17: alignHoriz = 'left'
+27.1130 	EXP 	text_17: alignVert = 'top'
+27.1130 	EXP 	text_17: wrapWidth = 1.8
+27.1130 	EXP 	text_17: height = 0.05
+27.1130 	EXP 	text_16: text = 'What is being negotiated and how much money is at stake?'
+27.1130 	EXP 	image_7: image = 'storypics/33_storypic'
+27.1130 	EXP 	text_16: autoDraw = True
+27.1130 	EXP 	text_17: autoDraw = True
+27.1130 	EXP 	image_7: autoDraw = True
+27.1130 	EXP 	polygon_4: autoDraw = True
+27.1130 	EXP 	bottom_line_4: autoDraw = True
+27.1130 	EXP 	right_line_4: autoDraw = True
+27.1130 	EXP 	left_line_4: autoDraw = True
+27.1130 	EXP 	text_17: text = ''
+27.3970 	DATA 	Keypress: return
+27.4189 	WARNING 	Requested image 'storypics/33_storypic' not found but similar filename 'storypics/33_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+27.4466 	EXP 	text_16: autoDraw = False
+27.4466 	EXP 	text_17: autoDraw = False
+27.4466 	EXP 	image_7: autoDraw = False
+27.4466 	EXP 	polygon_4: autoDraw = False
+27.4466 	EXP 	bottom_line_4: autoDraw = False
+27.4466 	EXP 	right_line_4: autoDraw = False
+27.4466 	EXP 	left_line_4: autoDraw = False
+27.4466 	EXP 	text_19: alignHoriz = 'left'
+27.4466 	EXP 	text_19: alignVert = 'top'
+27.4466 	EXP 	text_19: wrapWidth = 1.8
+27.4466 	EXP 	text_19: height = 0.05
+27.4466 	EXP 	text_18: text = 'What is the response to the proposed deal?'
+27.4466 	EXP 	image_8: image = 'storypics/33_storypic'
+27.4466 	EXP 	text_18: autoDraw = True
+27.4466 	EXP 	text_19: autoDraw = True
+27.4466 	EXP 	image_8: autoDraw = True
+27.4466 	EXP 	polygon_5: autoDraw = True
+27.4466 	EXP 	bottom_line_5: autoDraw = True
+27.4466 	EXP 	right_line_5: autoDraw = True
+27.4466 	EXP 	left_line_5: autoDraw = True
+27.4466 	EXP 	text_19: text = ''
+27.5800 	DATA 	Keypress: return
+27.6025 	WARNING 	Requested image 'storypics/33_storypic' not found but similar filename 'storypics/33_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+27.6289 	EXP 	text_18: autoDraw = False
+27.6289 	EXP 	text_19: autoDraw = False
+27.6289 	EXP 	image_8: autoDraw = False
+27.6289 	EXP 	polygon_5: autoDraw = False
+27.6289 	EXP 	bottom_line_5: autoDraw = False
+27.6289 	EXP 	right_line_5: autoDraw = False
+27.6289 	EXP 	left_line_5: autoDraw = False
+27.6289 	EXP 	text_21: alignHoriz = 'left'
+27.6289 	EXP 	text_21: alignVert = 'top'
+27.6289 	EXP 	text_21: wrapWidth = 1.8
+27.6289 	EXP 	text_21: height = 0.05
+27.6289 	EXP 	text_20: text = 'What comes about from the business proposal?'
+27.6289 	EXP 	image_9: image = 'storypics/33_storypic'
+27.6289 	EXP 	text_20: autoDraw = True
+27.6289 	EXP 	text_21: autoDraw = True
+27.6289 	EXP 	image_9: autoDraw = True
+27.6289 	EXP 	polygon_6: autoDraw = True
+27.6289 	EXP 	bottom_line_6: autoDraw = True
+27.6289 	EXP 	right_line_6: autoDraw = True
+27.6289 	EXP 	left_line_6: autoDraw = True
+27.6289 	EXP 	text_21: text = ''
+27.7633 	DATA 	Keypress: return
+27.7794 	EXP 	New trial (rep=0, index=3): OrderedDict([('count', 3)])
+27.7796 	WARNING 	Requested image 'storypics/43_storypic' not found but similar filename 'storypics/43_storypic.jpg' exists. This will be used instead but changing the filename is advised.
+27.8290 	EXP 	text_20: autoDraw = False
+27.8290 	EXP 	text_21: autoDraw = False
+27.8290 	EXP 	image_9: autoDraw = False
+27.8290 	EXP 	polygon_6: autoDraw = False
+27.8290 	EXP 	bottom_line_6: autoDraw = False
+27.8290 	EXP 	right_line_6: autoDraw = False
+27.8290 	EXP 	left_line_6: autoDraw = False
+27.8290 	EXP 	image_10: image = 'storypics/43_storypic'
+27.8290 	EXP 	image_10: autoDraw = True
+27.8290 	EXP 	text_22: autoDraw = True
+27.8973 	DATA 	Keypress: return
+28.0149 	DATA 	Keypress: return
+28.5646 	DATA 	Keypress: escape
+28.8422 	EXP 	window1: mouseVisible = True

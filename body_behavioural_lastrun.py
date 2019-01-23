@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Wed Jan 16 10:30:48 2019
+    on Tue Jan 22 16:05:27 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -63,6 +63,17 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+
+# Initialize components for Routine "ask_to_assume"
+ask_to_assumeClock = core.Clock()
+text_33 = visual.TextStim(win=win, name='text_33',
+    text='PLEASE ASSUME THE ROLE OF:',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
 
 # Initialize components for Routine "perspective"
 perspectiveClock = core.Clock()
@@ -125,6 +136,15 @@ storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'L
 order_stories = np.concatenate((run1, run2), axis =None)
 order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
 
+#create complementary perspectives list for non-primed questions
+other_perspectives = []
+
+for i in range(0,16):
+    if order_perspectives[i] == 'Social':
+        other_pespectives = other_perspectives.append('Location')
+    else:
+        other_pespectives = other_perspectives.append('Social')
+
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
 
@@ -178,6 +198,21 @@ image_2 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
+
+text_34 = visual.TextStim(win=win, name='text_34',
+    text="Press '1' if you think this sentence is the beginning of a new 'part' of the story",
+    font='Arial',
+    pos=(-.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+text_35 = visual.TextStim(win=win, name='text_35',
+    text="Press '9' if you think this sentence is in the same 'part' of the story as the previous sentence. ",
+    font='Arial',
+    pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
 
 # Initialize components for Routine "recall_instructions"
 recall_instructionsClock = core.Clock()
@@ -496,6 +531,218 @@ left_line_6 = visual.Line(
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
 
+# Initialize components for Routine "question5"
+question5Clock = core.Clock()
+
+text_25 = visual.TextStim(win=win, name='text_25',
+    text='default text',
+    font='Arial',
+    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+text_26 = visual.TextStim(win=win, name='text_26',
+    text='default text',
+    font='Arial',
+    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+image_11 = visual.ImageStim(
+    win=win, name='image_11',
+    image='sin', mask=None,
+    ori=0, pos=(0, .5), size=(.75, .75),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+polygon_7 = visual.Line(
+    win=win, name='polygon_7',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-4.0, interpolate=True)
+bottom_line_7 = visual.Line(
+    win=win, name='bottom_line_7',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.5),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-5.0, interpolate=True)
+right_line_7 = visual.Line(
+    win=win, name='right_line_7',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-6.0, interpolate=True)
+left_line_7 = visual.Line(
+    win=win, name='left_line_7',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-7.0, interpolate=True)
+
+# Initialize components for Routine "question6"
+question6Clock = core.Clock()
+
+text_27 = visual.TextStim(win=win, name='text_27',
+    text='default text',
+    font='Arial',
+    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+text_28 = visual.TextStim(win=win, name='text_28',
+    text='default text',
+    font='Arial',
+    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+image_12 = visual.ImageStim(
+    win=win, name='image_12',
+    image='sin', mask=None,
+    ori=0, pos=(0, .5), size=(.75, .75),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+polygon_8 = visual.Line(
+    win=win, name='polygon_8',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-4.0, interpolate=True)
+bottom_line_8 = visual.Line(
+    win=win, name='bottom_line_8',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.5),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-5.0, interpolate=True)
+right_line_8 = visual.Line(
+    win=win, name='right_line_8',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-6.0, interpolate=True)
+left_line_8 = visual.Line(
+    win=win, name='left_line_8',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-7.0, interpolate=True)
+
+# Initialize components for Routine "question7"
+question7Clock = core.Clock()
+
+text_29 = visual.TextStim(win=win, name='text_29',
+    text='default text',
+    font='Arial',
+    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+text_30 = visual.TextStim(win=win, name='text_30',
+    text='default text',
+    font='Arial',
+    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+image_13 = visual.ImageStim(
+    win=win, name='image_13',
+    image='sin', mask=None,
+    ori=0, pos=(0, .5), size=(.75, .75),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+polygon_9 = visual.Line(
+    win=win, name='polygon_9',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-4.0, interpolate=True)
+bottom_line_9 = visual.Line(
+    win=win, name='bottom_line_9',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.5),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-5.0, interpolate=True)
+right_line_9 = visual.Line(
+    win=win, name='right_line_9',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-6.0, interpolate=True)
+left_line_9 = visual.Line(
+    win=win, name='left_line_9',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-7.0, interpolate=True)
+
+# Initialize components for Routine "question8"
+question8Clock = core.Clock()
+
+text_31 = visual.TextStim(win=win, name='text_31',
+    text='default text',
+    font='Arial',
+    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+text_32 = visual.TextStim(win=win, name='text_32',
+    text='default text',
+    font='Arial',
+    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+image_14 = visual.ImageStim(
+    win=win, name='image_14',
+    image='sin', mask=None,
+    ori=0, pos=(0, .5), size=(.75, .75),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+polygon_10 = visual.Line(
+    win=win, name='polygon_10',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-4.0, interpolate=True)
+bottom_line_10 = visual.Line(
+    win=win, name='bottom_line_10',
+    start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
+    ori=0, pos=(0, -.5),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-5.0, interpolate=True)
+right_line_10 = visual.Line(
+    win=win, name='right_line_10',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-6.0, interpolate=True)
+left_line_10 = visual.Line(
+    win=win, name='left_line_10',
+    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.3125),
+    lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[128,128,128], fillColorSpace='rgb255',
+    opacity=1, depth=-7.0, interpolate=True)
+
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
@@ -518,6 +765,90 @@ for thisTrial in trials:
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "ask_to_assume"-------
+    t = 0
+    ask_to_assumeClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    key_resp_5 = event.BuilderKeyResponse()
+    
+    # keep track of which components have finished
+    ask_to_assumeComponents = [text_33, key_resp_5]
+    for thisComponent in ask_to_assumeComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "ask_to_assume"-------
+    while continueRoutine:
+        # get current time
+        t = ask_to_assumeClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_33* updates
+        if t >= 0.0 and text_33.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_33.tStart = t
+            text_33.frameNStart = frameN  # exact frame index
+            text_33.setAutoDraw(True)
+        
+        # *key_resp_5* updates
+        if t >= 0.0 and key_resp_5.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_5.tStart = t
+            key_resp_5.frameNStart = frameN  # exact frame index
+            key_resp_5.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_5.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_5.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_5.rt = key_resp_5.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        for key in event.getKeys():
+            if key in ['q']: 
+                trials.finished = 1
+                continueRoutine = False
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in ask_to_assumeComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "ask_to_assume"-------
+    for thisComponent in ask_to_assumeComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_5.keys in ['', [], None]:  # No response was made
+        key_resp_5.keys=None
+    trials.addData('key_resp_5.keys',key_resp_5.keys)
+    if key_resp_5.keys != None:  # we had a response
+        trials.addData('key_resp_5.rt', key_resp_5.rt)
+    
+    # the Routine "ask_to_assume" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "perspective"-------
     t = 0
@@ -647,8 +978,9 @@ for thisTrial in trials:
 )
         story_presses = event.BuilderKeyResponse()
         image_2.setImage(this_story_pic)
+        
         # keep track of which components have finished
-        trialComponents = [text, story_presses, image_2]
+        trialComponents = [text, story_presses, image_2, text_34, text_35]
         for thisComponent in trialComponents:
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
@@ -695,6 +1027,24 @@ for thisTrial in trials:
                 image_2.tStart = t
                 image_2.frameNStart = frameN  # exact frame index
                 image_2.setAutoDraw(True)
+            for key in event.getKeys():
+                if key in ['q']: 
+                    trials_2.finished = 1
+                    continueRoutine = False
+            
+            # *text_34* updates
+            if t >= 0.0 and text_34.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_34.tStart = t
+                text_34.frameNStart = frameN  # exact frame index
+                text_34.setAutoDraw(True)
+            
+            # *text_35* updates
+            if t >= 0.0 and text_35.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_35.tStart = t
+                text_35.frameNStart = frameN  # exact frame index
+                text_35.setAutoDraw(True)
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -723,6 +1073,7 @@ for thisTrial in trials:
         trials_2.addData('story_presses.keys',story_presses.keys)
         if story_presses.keys != None:  # we had a response
             trials_2.addData('story_presses.rt', story_presses.rt)
+        
         # the Routine "trial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -928,9 +1279,12 @@ for thisTrial_4 in trials_4:
                 captured_string = captured_string + ';'
             elif key in ['option']:
                 captured_string = captured_string
+            elif key in ['lshift','rshift']:
+                shift_flag = True
+                captured_string = captured_string + ' '
             elif key in ['minus']:
                 captured_string = captured_string+'-'
-            elif key in ['lshift','rshift','up','down','left','right','return']:
+            elif key in ['up','down','left','right','return']:
                 pass
             else: 
                 captured_string = captured_string+key
@@ -1251,50 +1605,180 @@ for thisTrial_6 in trials_6:
     text_15.wrapWidth = 1.8
     text_15.height = .05
     
+    #flip coin
+    value = random()
     
-    
-    #set questions
     this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
-    if this_perspective == 'Couples Therapist':
-        question1 = 'How does the person who is initiating the breakup feel before they do it?'
-        question2 ='Why does the initiator want to break up?'
-        question3 ='How does the person being broken up with respond?'
-        question4 = 'Do the partners leave on good terms?'
-    if this_perspective == 'Restaurant Critic':
-        question1 = 'How is the restaurant decorated?'
-        question2 ='What are the menus like?'
-        question3 = 'What do the clients order?'
-        question4 = 'How do the clients like the food?'
-    if this_perspective == 'Airport Customer Experience Manager':
-        question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
-        question2 ='What do the clients have do at security to comply with the security check?'
-        question3 ='How do the clients feel when they are  walking to the gates?'
-        question4 ='Where does each client sit on the plane?' 
-    if this_perspective == 'Grocery Store Customer Experience Manager':
-        question1 = 'What is the grocery store like upon entering?'
-        question2 ='What items do the clients pick out?'
-        question3 ='How is the checkout line and how long do the clients wait in line?'
-        question4 = 'How much are the groceries and what method of payment do the clients use?'
-    if this_perspective == 'Dean of Academic Studies':
-        question1 = 'What is the lecture hall like?'
-        question2 ='What class are the students  in and what is the day’s lecture about?'
-        question3 ='What is something taught in lecture?'
-        question4 = 'When is the next assessment in the class?'
-    if this_perspective == 'Wedding Planner':
-        question1 = 'How does the person who proposed feel before proposing?'
-        question2 ='What is the ring like?'
-        question3 ='Does anyone help with the proposal?'
-        question4 = 'Who witnessed the “yes”?'
-    if this_perspective == 'Business Reporter':
-        question1 = 'What industry are the business people in?'
-        question2 = 'What is being negotiated and how much money is at stake?'
-        question3 = 'What is the response to the proposed deal?'
-        question4 =  'What comes about from the business proposal?'
-    if this_perspective == 'Matchmaker':
-        question1 = 'Who notices who first and why do they notice the other?'
-        question2 ='How does the couple start talking?'
-        question3 ='Which of the people proposes going on an actual date and what do they propose?'
-        question4 = 'Who leaves first and why do they have to go?'
+    other_perspective = storyDict.get(order_stories[count], {}).get(other_perspectives[count])
+    #set questions
+    if value < .5:
+        question_order = 'primed first'
+        this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
+        if this_perspective == 'Couples Therapist':
+            question1 = 'How does the person who is initiating the breakup feel before they do it?'
+            question2 ='Why does the initiator want to break up?'
+            question3 ='How does the person being broken up with respond?'
+            question4 = 'Do the partners leave on good terms?'
+        if this_perspective == 'Restaurant Critic':
+            question1 = 'How is the restaurant decorated?'
+            question2 ='What are the menus like?'
+            question3 = 'What do the clients order?'
+            question4 = 'How do the clients like the food?'
+        if this_perspective == 'Airport Customer Experience Manager':
+            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question2 ='What do the clients have do at security to comply with the security check?'
+            question3 ='How do the clients feel when they are  walking to the gates?'
+            question4 ='Where does each client sit on the plane?' 
+        if this_perspective == 'Grocery Store Customer Experience Manager':
+            question1 = 'What is the grocery store like upon entering?'
+            question2 ='What items do the clients pick out?'
+            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question4 = 'How much are the groceries and what method of payment do the clients use?'
+        if this_perspective == 'Dean of Academic Studies':
+            question1 = 'What is the lecture hall like?'
+            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question3 ='What is something taught in lecture?'
+            question4 = 'When is the next assessment in the class?'
+        if this_perspective == 'Wedding Planner':
+            question1 = 'How does the person who proposed feel before proposing?'
+            question2 ='What is the ring like?'
+            question3 ='Does anyone help with the proposal?'
+            question4 = 'Who witnessed the “yes”?'
+        if this_perspective == 'Business Reporter':
+            question1 = 'What industry are the business people in?'
+            question2 = 'What is being negotiated and how much money is at stake?'
+            question3 = 'What is the response to the proposed deal?'
+            question4 =  'What comes about from the business proposal?'
+        if this_perspective == 'Matchmaker':
+            question1 = 'Who notices who first and why do they notice the other?'
+            question2 ='How does the couple start talking?'
+            question3 ='Which of the people proposes going on an actual date and what do they propose?'
+            question4 = 'Who leaves first and why do they have to go?'
+    
+        if other_perspective == 'Couples Therapist':
+            question5 = 'How does the person who is initiating the breakup feel before they do it?'
+            question6 ='Why does the initiator want to break up?'
+            question7 ='How does the person being broken up with respond?'
+            question8 = 'Do the partners leave on good terms?'
+        if other_perspective == 'Restaurant Critic':
+            question5 = 'How is the restaurant decorated?'
+            question6 ='What are the menus like?'
+            question7 = 'What do the clients order?'
+            question8 = 'How do the clients like the food?'
+        if other_perspective == 'Airport Customer Experience Manager':
+            question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question6 ='What do the clients have do at security to comply with the security check?'
+            question7 ='How do the clients feel when they are  walking to the gates?'
+            question8 ='Where does each client sit on the plane?' 
+        if other_perspective == 'Grocery Store Customer Experience Manager':
+            question5 = 'What is the grocery store like upon entering?'
+            question6 ='What items do the clients pick out?'
+            question7 ='How is the checkout line and how long do the clients wait in line?'
+            question8 = 'How much are the groceries and what method of payment do the clients use?'
+        if other_perspective == 'Dean of Academic Studies':
+            question5 = 'What is the lecture hall like?'
+            question6 ='What class are the students  in and what is the day’s lecture about?'
+            question7 ='What is something taught in lecture?'
+            question8 = 'When is the next assessment in the class?'
+        if other_perspective == 'Wedding Planner':
+            question5 = 'How does the person who proposed feel before proposing?'
+            question6 ='What is the ring like?'
+            question7 ='Does anyone help with the proposal?'
+            question8 = 'Who witnessed the “yes”?'
+        if other_perspective == 'Business Reporter':
+            question5 = 'What industry are the business people in?'
+            question6 = 'What is being negotiated and how much money is at stake?'
+            question7 = 'What is the response to the proposed deal?'
+            question8 =  'What comes about from the business proposal?'
+        if other_perspective == 'Matchmaker':
+            question5 = 'Who notices who first and why do they notice the other?'
+            question6 ='How does the couple start talking?'
+            question7 ='Which of the people proposes going on an actual date and what do they propose?'
+            question8 = 'Who leaves first and why do they have to go?'
+    else:
+        question_order = 'non-primed first'
+        if other_perspective == 'Couples Therapist':
+            question1 = 'How does the person who is initiating the breakup feel before they do it?'
+            question2 ='Why does the initiator want to break up?'
+            question3 ='How does the person being broken up with respond?'
+            question4 = 'Do the partners leave on good terms?'
+        if other_perspective == 'Restaurant Critic':
+            question1 = 'How is the restaurant decorated?'
+            question2 ='What are the menus like?'
+            question3 = 'What do the clients order?'
+            question4 = 'How do the clients like the food?'
+        if other_perspective == 'Airport Customer Experience Manager':
+            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question2 ='What do the clients have do at security to comply with the security check?'
+            question3 ='How do the clients feel when they are  walking to the gates?'
+            question4 ='Where does each client sit on the plane?' 
+        if other_perspective == 'Grocery Store Customer Experience Manager':
+            question1 = 'What is the grocery store like upon entering?'
+            question2 ='What items do the clients pick out?'
+            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question4 = 'How much are the groceries and what method of payment do the clients use?'
+        if other_perspective == 'Dean of Academic Studies':
+            question1 = 'What is the lecture hall like?'
+            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question3 ='What is something taught in lecture?'
+            question4 = 'When is the next assessment in the class?'
+        if other_perspective == 'Wedding Planner':
+            question1 = 'How does the person who proposed feel before proposing?'
+            question2 ='What is the ring like?'
+            question3 ='Does anyone help with the proposal?'
+            question4 = 'Who witnessed the “yes”?'
+        if other_perspective == 'Business Reporter':
+            question1 = 'What industry are the business people in?'
+            question2 = 'What is being negotiated and how much money is at stake?'
+            question3 = 'What is the response to the proposed deal?'
+            question4 =  'What comes about from the business proposal?'
+        if other_perspective == 'Matchmaker':
+            question1 = 'Who notices who first and why do they notice the other?'
+            question2 ='How does the couple start talking?'
+            question3 ='Which of the people proposes going on an actual date and what do they propose?'
+            question4 = 'Who leaves first and why do they have to go?'
+    
+        if this_perspective == 'Couples Therapist':
+            question5 = 'How does the person who is initiating the breakup feel before they do it?'
+            question6 ='Why does the initiator want to break up?'
+            question7 ='How does the person being broken up with respond?'
+            question8 = 'Do the partners leave on good terms?'
+        if this_perspective == 'Restaurant Critic':
+            question5 = 'How is the restaurant decorated?'
+            question6 ='What are the menus like?'
+            question7 = 'What do the clients order?'
+            question8 = 'How do the clients like the food?'
+        if this_perspective == 'Airport Customer Experience Manager':
+            question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question6 ='What do the clients have do at security to comply with the security check?'
+            question7 ='How do the clients feel when they are  walking to the gates?'
+            question8 ='Where does each client sit on the plane?' 
+        if this_perspective == 'Grocery Store Customer Experience Manager':
+            question5 = 'What is the grocery store like upon entering?'
+            question6 ='What items do the clients pick out?'
+            question7 ='How is the checkout line and how long do the clients wait in line?'
+            question8 = 'How much are the groceries and what method of payment do the clients use?'
+        if this_perspective == 'Dean of Academic Studies':
+            question5 = 'What is the lecture hall like?'
+            question6 ='What class are the students  in and what is the day’s lecture about?'
+            question7 ='What is something taught in lecture?'
+            question8 = 'When is the next assessment in the class?'
+        if this_perspective == 'Wedding Planner':
+            question5 = 'How does the person who proposed feel before proposing?'
+            question6 ='What is the ring like?'
+            question7 ='Does anyone help with the proposal?'
+            question8 = 'Who witnessed the “yes”?'
+        if this_perspective == 'Business Reporter':
+            question5 = 'What industry are the business people in?'
+            question6 = 'What is being negotiated and how much money is at stake?'
+            question7 = 'What is the response to the proposed deal?'
+            question8 =  'What comes about from the business proposal?'
+        if this_perspective == 'Matchmaker':
+            question5 = 'Who notices who first and why do they notice the other?'
+            question6 ='How does the couple start talking?'
+            question7 ='Which of the people proposes going on an actual date and what do they propose?'
+            question8 = 'Who leaves first and why do they have to go?'
+    
     
     text_14.setText(question1)
     image_6.setImage(this_recall_pic)
@@ -1421,8 +1905,8 @@ for thisTrial_6 in trials_6:
     for thisComponent in question1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('question1_correct_perspective', captured_string)
-    
+    thisExp.addData('question1_answer', captured_string)
+    thisExp.addData('order of question', question_order)
     # the Routine "question1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1569,7 +2053,7 @@ for thisTrial_6 in trials_6:
     for thisComponent in question2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('question2_correct_perspective', captured_string)
+    thisExp.addData('question2_answer', captured_string)
     # the Routine "question2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1716,7 +2200,7 @@ for thisTrial_6 in trials_6:
     for thisComponent in question3Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('question3_correct_perspective', captured_string)
+    thisExp.addData('question3_answer', captured_string)
     # the Routine "question3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1862,12 +2346,603 @@ for thisTrial_6 in trials_6:
     for thisComponent in question4Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('question4_correct_perspective', captured_string)
+    thisExp.addData('question4_answer', captured_string)
     # the Routine "question4" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "question5"-------
+    t = 0
+    question5Clock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    cursorCounter=0
+    cursorVariable='|'
+    captured_string=''
+    subject_response_finished=False
+    shift_flag = False
+    text_26.alignHoriz ='left'
+    text_26.alignVert = 'top'
+    text_26.wrapWidth = 1.8
+    text_26.height = .05
+    
+    
+    text_25.setText(question5)
+    image_11.setImage(this_recall_pic)
+    # keep track of which components have finished
+    question5Components = [text_25, text_26, image_11, polygon_7, bottom_line_7, right_line_7, left_line_7]
+    for thisComponent in question5Components:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "question5"-------
+    while continueRoutine:
+        # get current time
+        t = question5Clock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        if subject_response_finished:
+            final_response=captured_string
+            continueRoutine=False
+        for key in event.getKeys():
+            if key in ['escape']: 
+                core.quit()
+            elif key in ['delete','backspace']:
+                captured_string = captured_string[:-1] 
+            elif key in ['return']:
+                thisExp.addData('recall', captured_string)
+                subject_response_finished=True
+            elif key in ['space']:
+                captured_string = captured_string+' '
+            elif key in ['dollar']:
+                captured_string = captured_string + '$'
+            elif key in ['exclamation']:
+                captured_string = captured_string + '!'
+            elif key in ['period']:
+                captured_string = captured_string+'.'
+            elif key in ['comma']:
+                captured_string = captured_string+','
+            elif key in ['apostrophe']:
+                captured_string = captured_string+"'"
+            elif key in ['slash']:
+                captured_string = captured_string+'/'
+            elif key in ['semicolon']:
+                captured_string = captured_string + ';'
+            elif key in ['option']:
+                captured_string = captured_string
+            elif key in ['minus']:
+                captured_string = captured_string+'-'
+            elif key in ['lshift','rshift','up','down','left','right','return']:
+                pass
+            else: 
+                captured_string = captured_string+key
+            # this next line formats the output. you can remove or modify as necessary
+            captured_string=captured_string.capitalize()
+        
+        # *text_25* updates
+        if t >= 0.0 and text_25.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_25.tStart = t
+            text_25.frameNStart = frameN  # exact frame index
+            text_25.setAutoDraw(True)
+        
+        # *text_26* updates
+        if t >= 0.0 and text_26.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_26.tStart = t
+            text_26.frameNStart = frameN  # exact frame index
+            text_26.setAutoDraw(True)
+        if text_26.status == STARTED:  # only update if drawing
+            text_26.setText(captured_string, log=False)
+        
+        # *image_11* updates
+        if t >= 0.0 and image_11.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_11.tStart = t
+            image_11.frameNStart = frameN  # exact frame index
+            image_11.setAutoDraw(True)
+        
+        # *polygon_7* updates
+        if t >= 0.0 and polygon_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            polygon_7.tStart = t
+            polygon_7.frameNStart = frameN  # exact frame index
+            polygon_7.setAutoDraw(True)
+        
+        # *bottom_line_7* updates
+        if t >= 0.0 and bottom_line_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            bottom_line_7.tStart = t
+            bottom_line_7.frameNStart = frameN  # exact frame index
+            bottom_line_7.setAutoDraw(True)
+        
+        # *right_line_7* updates
+        if t >= 0.0 and right_line_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            right_line_7.tStart = t
+            right_line_7.frameNStart = frameN  # exact frame index
+            right_line_7.setAutoDraw(True)
+        
+        # *left_line_7* updates
+        if t >= 0.0 and left_line_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            left_line_7.tStart = t
+            left_line_7.frameNStart = frameN  # exact frame index
+            left_line_7.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in question5Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "question5"-------
+    for thisComponent in question5Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('question5_answer', captured_string)
+    # the Routine "question5" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "question6"-------
+    t = 0
+    question6Clock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    cursorCounter=0
+    cursorVariable='|'
+    captured_string=''
+    subject_response_finished=False
+    shift_flag = False
+    text_28.alignHoriz ='left'
+    text_28.alignVert = 'top'
+    text_28.wrapWidth = 1.8
+    text_28.height = .05
+    
+    
+    text_27.setText(question6)
+    image_12.setImage(this_recall_pic)
+    # keep track of which components have finished
+    question6Components = [text_27, text_28, image_12, polygon_8, bottom_line_8, right_line_8, left_line_8]
+    for thisComponent in question6Components:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "question6"-------
+    while continueRoutine:
+        # get current time
+        t = question6Clock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        if subject_response_finished:
+            final_response=captured_string
+            continueRoutine=False
+        for key in event.getKeys():
+            if key in ['escape']: 
+                core.quit()
+            elif key in ['delete','backspace']:
+                captured_string = captured_string[:-1] 
+            elif key in ['return']:
+                thisExp.addData('recall', captured_string)
+                subject_response_finished=True
+            elif key in ['space']:
+                captured_string = captured_string+' '
+            elif key in ['dollar']:
+                captured_string = captured_string + '$'
+            elif key in ['exclamation']:
+                captured_string = captured_string + '!'
+            elif key in ['period']:
+                captured_string = captured_string+'.'
+            elif key in ['comma']:
+                captured_string = captured_string+','
+            elif key in ['apostrophe']:
+                captured_string = captured_string+"'"
+            elif key in ['slash']:
+                captured_string = captured_string+'/'
+            elif key in ['semicolon']:
+                captured_string = captured_string + ';'
+            elif key in ['option']:
+                captured_string = captured_string
+            elif key in ['minus']:
+                captured_string = captured_string+'-'
+            elif key in ['lshift','rshift','up','down','left','right','return']:
+                pass
+            else: 
+                captured_string = captured_string+key
+            # this next line formats the output. you can remove or modify as necessary
+            captured_string=captured_string.capitalize()
+        
+        # *text_27* updates
+        if t >= 0.0 and text_27.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_27.tStart = t
+            text_27.frameNStart = frameN  # exact frame index
+            text_27.setAutoDraw(True)
+        
+        # *text_28* updates
+        if t >= 0.0 and text_28.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_28.tStart = t
+            text_28.frameNStart = frameN  # exact frame index
+            text_28.setAutoDraw(True)
+        if text_28.status == STARTED:  # only update if drawing
+            text_28.setText(captured_string, log=False)
+        
+        # *image_12* updates
+        if t >= 0.0 and image_12.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_12.tStart = t
+            image_12.frameNStart = frameN  # exact frame index
+            image_12.setAutoDraw(True)
+        
+        # *polygon_8* updates
+        if t >= 0.0 and polygon_8.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            polygon_8.tStart = t
+            polygon_8.frameNStart = frameN  # exact frame index
+            polygon_8.setAutoDraw(True)
+        
+        # *bottom_line_8* updates
+        if t >= 0.0 and bottom_line_8.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            bottom_line_8.tStart = t
+            bottom_line_8.frameNStart = frameN  # exact frame index
+            bottom_line_8.setAutoDraw(True)
+        
+        # *right_line_8* updates
+        if t >= 0.0 and right_line_8.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            right_line_8.tStart = t
+            right_line_8.frameNStart = frameN  # exact frame index
+            right_line_8.setAutoDraw(True)
+        
+        # *left_line_8* updates
+        if t >= 0.0 and left_line_8.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            left_line_8.tStart = t
+            left_line_8.frameNStart = frameN  # exact frame index
+            left_line_8.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in question6Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "question6"-------
+    for thisComponent in question6Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('question6_answer', captured_string)
+    # the Routine "question6" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "question7"-------
+    t = 0
+    question7Clock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    cursorCounter=0
+    cursorVariable='|'
+    captured_string=''
+    subject_response_finished=False
+    shift_flag = False
+    text_30.alignHoriz ='left'
+    text_30.alignVert = 'top'
+    text_30.wrapWidth = 1.8
+    text_30.height = .05
+    
+    
+    text_29.setText(question7
+)
+    image_13.setImage(this_recall_pic)
+    # keep track of which components have finished
+    question7Components = [text_29, text_30, image_13, polygon_9, bottom_line_9, right_line_9, left_line_9]
+    for thisComponent in question7Components:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "question7"-------
+    while continueRoutine:
+        # get current time
+        t = question7Clock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        if subject_response_finished:
+            final_response=captured_string
+            continueRoutine=False
+        for key in event.getKeys():
+            if key in ['escape']: 
+                core.quit()
+            elif key in ['delete','backspace']:
+                captured_string = captured_string[:-1] 
+            elif key in ['return']:
+                thisExp.addData('recall', captured_string)
+                subject_response_finished=True
+            elif key in ['space']:
+                captured_string = captured_string+' '
+            elif key in ['dollar']:
+                captured_string = captured_string + '$'
+            elif key in ['exclamation']:
+                captured_string = captured_string + '!'
+            elif key in ['period']:
+                captured_string = captured_string+'.'
+            elif key in ['comma']:
+                captured_string = captured_string+','
+            elif key in ['apostrophe']:
+                captured_string = captured_string+"'"
+            elif key in ['slash']:
+                captured_string = captured_string+'/'
+            elif key in ['semicolon']:
+                captured_string = captured_string + ';'
+            elif key in ['option']:
+                captured_string = captured_string
+            elif key in ['minus']:
+                captured_string = captured_string+'-'
+            elif key in ['lshift','rshift','up','down','left','right','return']:
+                pass
+            else: 
+                captured_string = captured_string+key
+            # this next line formats the output. you can remove or modify as necessary
+            captured_string=captured_string.capitalize()
+        
+        # *text_29* updates
+        if t >= 0.0 and text_29.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_29.tStart = t
+            text_29.frameNStart = frameN  # exact frame index
+            text_29.setAutoDraw(True)
+        
+        # *text_30* updates
+        if t >= 0.0 and text_30.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_30.tStart = t
+            text_30.frameNStart = frameN  # exact frame index
+            text_30.setAutoDraw(True)
+        if text_30.status == STARTED:  # only update if drawing
+            text_30.setText(captured_string, log=False)
+        
+        # *image_13* updates
+        if t >= 0.0 and image_13.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_13.tStart = t
+            image_13.frameNStart = frameN  # exact frame index
+            image_13.setAutoDraw(True)
+        
+        # *polygon_9* updates
+        if t >= 0.0 and polygon_9.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            polygon_9.tStart = t
+            polygon_9.frameNStart = frameN  # exact frame index
+            polygon_9.setAutoDraw(True)
+        
+        # *bottom_line_9* updates
+        if t >= 0.0 and bottom_line_9.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            bottom_line_9.tStart = t
+            bottom_line_9.frameNStart = frameN  # exact frame index
+            bottom_line_9.setAutoDraw(True)
+        
+        # *right_line_9* updates
+        if t >= 0.0 and right_line_9.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            right_line_9.tStart = t
+            right_line_9.frameNStart = frameN  # exact frame index
+            right_line_9.setAutoDraw(True)
+        
+        # *left_line_9* updates
+        if t >= 0.0 and left_line_9.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            left_line_9.tStart = t
+            left_line_9.frameNStart = frameN  # exact frame index
+            left_line_9.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in question7Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "question7"-------
+    for thisComponent in question7Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('question7_answer', captured_string)
+    # the Routine "question7" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "question8"-------
+    t = 0
+    question8Clock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    cursorCounter=0
+    cursorVariable='|'
+    captured_string=''
+    subject_response_finished=False
+    shift_flag = False
+    text_32.alignHoriz ='left'
+    text_32.alignVert = 'top'
+    text_32.wrapWidth = 1.8
+    text_32.height = .05
+    
+    
+    text_31.setText(question8)
+    image_14.setImage(this_recall_pic)
+    # keep track of which components have finished
+    question8Components = [text_31, text_32, image_14, polygon_10, bottom_line_10, right_line_10, left_line_10]
+    for thisComponent in question8Components:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "question8"-------
+    while continueRoutine:
+        # get current time
+        t = question8Clock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        if subject_response_finished:
+            final_response=captured_string
+            continueRoutine=False
+        for key in event.getKeys():
+            if key in ['escape']: 
+                core.quit()
+            elif key in ['delete','backspace']:
+                captured_string = captured_string[:-1] 
+            elif key in ['return']:
+                thisExp.addData('recall', captured_string)
+                subject_response_finished=True
+            elif key in ['space']:
+                captured_string = captured_string+' '
+            elif key in ['dollar']:
+                captured_string = captured_string + '$'
+            elif key in ['exclamation']:
+                captured_string = captured_string + '!'
+            elif key in ['period']:
+                captured_string = captured_string+'.'
+            elif key in ['comma']:
+                captured_string = captured_string+','
+            elif key in ['apostrophe']:
+                captured_string = captured_string+"'"
+            elif key in ['slash']:
+                captured_string = captured_string+'/'
+            elif key in ['semicolon']:
+                captured_string = captured_string + ';'
+            elif key in ['option']:
+                captured_string = captured_string
+            elif key in ['minus']:
+                captured_string = captured_string+'-'
+            elif key in ['lshift','rshift','up','down','left','right','return']:
+                pass
+            else: 
+                captured_string = captured_string+key
+            # this next line formats the output. you can remove or modify as necessary
+            captured_string=captured_string.capitalize()
+        
+        # *text_31* updates
+        if t >= 0.0 and text_31.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_31.tStart = t
+            text_31.frameNStart = frameN  # exact frame index
+            text_31.setAutoDraw(True)
+        
+        # *text_32* updates
+        if t >= 0.0 and text_32.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_32.tStart = t
+            text_32.frameNStart = frameN  # exact frame index
+            text_32.setAutoDraw(True)
+        if text_32.status == STARTED:  # only update if drawing
+            text_32.setText(captured_string, log=False)
+        
+        # *image_14* updates
+        if t >= 0.0 and image_14.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_14.tStart = t
+            image_14.frameNStart = frameN  # exact frame index
+            image_14.setAutoDraw(True)
+        
+        # *polygon_10* updates
+        if t >= 0.0 and polygon_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            polygon_10.tStart = t
+            polygon_10.frameNStart = frameN  # exact frame index
+            polygon_10.setAutoDraw(True)
+        
+        # *bottom_line_10* updates
+        if t >= 0.0 and bottom_line_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            bottom_line_10.tStart = t
+            bottom_line_10.frameNStart = frameN  # exact frame index
+            bottom_line_10.setAutoDraw(True)
+        
+        # *right_line_10* updates
+        if t >= 0.0 and right_line_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            right_line_10.tStart = t
+            right_line_10.frameNStart = frameN  # exact frame index
+            right_line_10.setAutoDraw(True)
+        
+        # *left_line_10* updates
+        if t >= 0.0 and left_line_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            left_line_10.tStart = t
+            left_line_10.frameNStart = frameN  # exact frame index
+            left_line_10.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in question8Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "question8"-------
+    for thisComponent in question8Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('question8_answer', captured_string)
+    # the Routine "question8" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'trials_6'
+
+
+
+
+
+
 
 
 

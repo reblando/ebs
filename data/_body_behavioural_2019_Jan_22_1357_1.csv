@@ -1,0 +1,5 @@
+count,storyText,locationEvent,socialEvent,locationEventSize,socialEventSize,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,story_presses.keys,participant,session,date,expName,frameRate,
+0,Alvira and Senna walked into the restaurant hand in sweaty hand with quite different expectations: Senna was going to propose tonight and Alvira had no idea.,1,1,None,None,0,0,0,0,0,0,0,0,,,,,,[21 24 33 44 32 41 13 12 42 43 23 22 31 11 14 34],"['Social' 'Location' 'Social' 'Social' 'Location' 'Location' 'Location'
+ 'Social' 'Location' 'Social' 'Location' 'Social' 'Location' 'Social'
+ 'Location' 'Social']",None,,001,2019_Jan_22_1357,body_behavioural,59.74608703151624,
+0,,,,,,0,0,0,0,,,,,,,,,,,,,,001,2019_Jan_22_1357,body_behavioural,59.74608703151624,

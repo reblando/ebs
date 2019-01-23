@@ -1,0 +1,11 @@
+count,storyText,instructText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,order of stories,order of perspectives,story_presses.keys,story_presses.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+0,23,,0,0,0,0,0,0,0,0,,,,,,,,,[23 13 12 34 22 41 31 44 21 33 11 43 24 42 14 32],"['Social' 'Location' 'Social' 'Social' 'Location' 'Social' 'Location'
+ 'Location' 'Location' 'Social' 'Social' 'Location' 'Social' 'Social'
+ 'Location' 'Location']",1,0.4172065149759874,,,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+0,Grocery shopping Proposal,,0,0,0,0,0,1,1,1,,,,,,,,,,,9,0.7184124840423465,,,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+0,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+,,The next task in the experiment is to recall each story to the best of your ability.,,,,,,,,,0,0,0,0,,,,,,,,,space,0.4690974960103631,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+,,"You will be presented with the story title, names, the images, and a blank text box for each story.",,,,,,,,,0,1,1,1,,,,,,,,,space,0.18477971001993865,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+,,Describe the story with as many details as you can remember in the space provided. ,,,,,,,,,0,2,2,2,,,,,,,,,space,0.15236767299938947,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+,,"When you are finished recalling one story, to move onto the next one hit ‘return’. ",,,,,,,,,0,3,3,3,,,,,,,,,space,0.16874270199332386,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
+,,There is no time limit for your responses. ,,,,,,,,,0,4,4,4,,,,,,,,,space,0.3188362360233441,,001,2019_Jan_18_1434,body_behavioural,60.24947467599066,
