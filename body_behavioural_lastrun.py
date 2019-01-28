@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Tue Jan 22 16:05:27 2019
+    on Mon Jan 28 11:39:06 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -200,16 +200,16 @@ image_2 = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 
 text_34 = visual.TextStim(win=win, name='text_34',
-    text="Press '1' if you think this sentence is the beginning of a new 'part' of the story",
+    text="Press '9' if you think this sentence is the beginning of a new 'part' of the story",
     font='Arial',
-    pos=(-.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 text_35 = visual.TextStim(win=win, name='text_35',
-    text="Press '9' if you think this sentence is in the same 'part' of the story as the previous sentence. ",
+    text="Press '1' if you think this sentence is in the same 'part' of the story as the previous sentence. ",
     font='Arial',
-    pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(-.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
@@ -353,24 +353,31 @@ polygon_3 = visual.Line(
 bottom_line_3 = visual.Line(
     win=win, name='bottom_line_3',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_3 = visual.Line(
     win=win, name='right_line_3',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_3 = visual.Line(
     win=win, name='left_line_3',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+image_15 = visual.ImageStim(
+    win=win, name='image_15',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question2"
 question2Clock = core.Clock()
@@ -406,24 +413,31 @@ polygon_4 = visual.Line(
 bottom_line_4 = visual.Line(
     win=win, name='bottom_line_4',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_4 = visual.Line(
     win=win, name='right_line_4',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_4 = visual.Line(
     win=win, name='left_line_4',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+image_16 = visual.ImageStim(
+    win=win, name='image_16',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question3"
 question3Clock = core.Clock()
@@ -459,24 +473,31 @@ polygon_5 = visual.Line(
 bottom_line_5 = visual.Line(
     win=win, name='bottom_line_5',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_5 = visual.Line(
     win=win, name='right_line_5',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_5 = visual.Line(
     win=win, name='left_line_5',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+image_17 = visual.ImageStim(
+    win=win, name='image_17',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question4"
 question4Clock = core.Clock()
@@ -512,24 +533,31 @@ polygon_6 = visual.Line(
 bottom_line_6 = visual.Line(
     win=win, name='bottom_line_6',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_6 = visual.Line(
     win=win, name='right_line_6',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_6 = visual.Line(
     win=win, name='left_line_6',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+image_18 = visual.ImageStim(
+    win=win, name='image_18',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question5"
 question5Clock = core.Clock()
@@ -565,24 +593,31 @@ polygon_7 = visual.Line(
 bottom_line_7 = visual.Line(
     win=win, name='bottom_line_7',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_7 = visual.Line(
     win=win, name='right_line_7',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_7 = visual.Line(
     win=win, name='left_line_7',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+image_19 = visual.ImageStim(
+    win=win, name='image_19',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question6"
 question6Clock = core.Clock()
@@ -618,24 +653,31 @@ polygon_8 = visual.Line(
 bottom_line_8 = visual.Line(
     win=win, name='bottom_line_8',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_8 = visual.Line(
     win=win, name='right_line_8',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_8 = visual.Line(
     win=win, name='left_line_8',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+pic = visual.ImageStim(
+    win=win, name='pic',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question7"
 question7Clock = core.Clock()
@@ -671,24 +713,31 @@ polygon_9 = visual.Line(
 bottom_line_9 = visual.Line(
     win=win, name='bottom_line_9',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_9 = visual.Line(
     win=win, name='right_line_9',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_9 = visual.Line(
     win=win, name='left_line_9',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+pics2 = visual.ImageStim(
+    win=win, name='pics2',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question8"
 question8Clock = core.Clock()
@@ -724,24 +773,31 @@ polygon_10 = visual.Line(
 bottom_line_10 = visual.Line(
     win=win, name='bottom_line_10',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.5),
+    ori=0, pos=(0, -.3),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_10 = visual.Line(
     win=win, name='right_line_10',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_10 = visual.Line(
     win=win, name='left_line_10',
-    start=(-(.375, 1)[0]/2.0, 0), end=(+(.375, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.3125),
+    start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
+    ori=90, pos=(-.925, -.2125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+pic3 = visual.ImageStim(
+    win=win, name='pic3',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.6), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -1470,10 +1526,9 @@ for thisTrial_5 in trials_5:
     # check responses
     if key_resp_3.keys in ['', [], None]:  # No response was made
         key_resp_3.keys=None
-    thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+    trials_5.addData('key_resp_3.keys',key_resp_3.keys)
     if key_resp_3.keys != None:  # we had a response
-        thisExp.addData('key_resp_3.rt', key_resp_3.rt)
-    thisExp.nextEntry()
+        trials_5.addData('key_resp_3.rt', key_resp_3.rt)
     # the Routine "questions_instructions2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
@@ -1615,31 +1670,37 @@ for thisTrial_6 in trials_6:
         question_order = 'primed first'
         this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
         if this_perspective == 'Couples Therapist':
+            pic1 = 'jobphotos/couples.jpg'
             question1 = 'How does the person who is initiating the breakup feel before they do it?'
             question2 ='Why does the initiator want to break up?'
             question3 ='How does the person being broken up with respond?'
             question4 = 'Do the partners leave on good terms?'
         if this_perspective == 'Restaurant Critic':
+            pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
             question2 ='What are the menus like?'
-            question3 = 'What do the clients order?'
+            question3 = 'What do the clients order?' 
             question4 = 'How do the clients like the food?'
         if this_perspective == 'Airport Customer Experience Manager':
+            pic1 = 'jobphotos/acem.jpg'
             question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
             question2 ='What do the clients have do at security to comply with the security check?'
             question3 ='How do the clients feel when they are  walking to the gates?'
             question4 ='Where does each client sit on the plane?' 
         if this_perspective == 'Grocery Store Customer Experience Manager':
+            pic1 = 'jobphotos/gscem.jpg'
             question1 = 'What is the grocery store like upon entering?'
             question2 ='What items do the clients pick out?'
             question3 ='How is the checkout line and how long do the clients wait in line?'
             question4 = 'How much are the groceries and what method of payment do the clients use?'
         if this_perspective == 'Dean of Academic Studies':
+            pic1 ='jobphotos/dean.jpg'
             question1 = 'What is the lecture hall like?'
             question2 ='What class are the students  in and what is the day’s lecture about?'
             question3 ='What is something taught in lecture?'
             question4 = 'When is the next assessment in the class?'
         if this_perspective == 'Wedding Planner':
+            pic1 = 'jobphotos/weddingplanner.jpg'
             question1 = 'How does the person who proposed feel before proposing?'
             question2 ='What is the ring like?'
             question3 ='Does anyone help with the proposal?'
@@ -1650,47 +1711,56 @@ for thisTrial_6 in trials_6:
             question3 = 'What is the response to the proposed deal?'
             question4 =  'What comes about from the business proposal?'
         if this_perspective == 'Matchmaker':
-            question1 = 'Who notices who first and why do they notice the other?'
+            pic1 = 'jobphotos/matchmaker.jpg'
+            question1 = 'Who notices who first and why do they notice the other?' 
             question2 ='How does the couple start talking?'
             question3 ='Which of the people proposes going on an actual date and what do they propose?'
             question4 = 'Who leaves first and why do they have to go?'
     
         if other_perspective == 'Couples Therapist':
+            pic2 = 'jobphotos/couples.jpg'
             question5 = 'How does the person who is initiating the breakup feel before they do it?'
             question6 ='Why does the initiator want to break up?'
             question7 ='How does the person being broken up with respond?'
             question8 = 'Do the partners leave on good terms?'
         if other_perspective == 'Restaurant Critic':
+            pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
             question6 ='What are the menus like?'
             question7 = 'What do the clients order?'
             question8 = 'How do the clients like the food?'
         if other_perspective == 'Airport Customer Experience Manager':
+            pic2 = 'jobphotos/acem.jpg'
             question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
             question6 ='What do the clients have do at security to comply with the security check?'
             question7 ='How do the clients feel when they are  walking to the gates?'
             question8 ='Where does each client sit on the plane?' 
         if other_perspective == 'Grocery Store Customer Experience Manager':
+            pic2 = 'jobphotos/gscem.jpg'
             question5 = 'What is the grocery store like upon entering?'
             question6 ='What items do the clients pick out?'
             question7 ='How is the checkout line and how long do the clients wait in line?'
             question8 = 'How much are the groceries and what method of payment do the clients use?'
         if other_perspective == 'Dean of Academic Studies':
+            pic2 ='jobphotos/dean.jpg'
             question5 = 'What is the lecture hall like?'
             question6 ='What class are the students  in and what is the day’s lecture about?'
             question7 ='What is something taught in lecture?'
             question8 = 'When is the next assessment in the class?'
         if other_perspective == 'Wedding Planner':
+            pic2 = 'jobphotos/weddingplanner.jpg'
             question5 = 'How does the person who proposed feel before proposing?'
             question6 ='What is the ring like?'
             question7 ='Does anyone help with the proposal?'
             question8 = 'Who witnessed the “yes”?'
         if other_perspective == 'Business Reporter':
+            pic2 = 'jobphotos/business_reporter.jpg'
             question5 = 'What industry are the business people in?'
             question6 = 'What is being negotiated and how much money is at stake?'
             question7 = 'What is the response to the proposed deal?'
             question8 =  'What comes about from the business proposal?'
         if other_perspective == 'Matchmaker':
+            pic2 = 'jobphotos/matchmaker.jpg'
             question5 = 'Who notices who first and why do they notice the other?'
             question6 ='How does the couple start talking?'
             question7 ='Which of the people proposes going on an actual date and what do they propose?'
@@ -1698,82 +1768,98 @@ for thisTrial_6 in trials_6:
     else:
         question_order = 'non-primed first'
         if other_perspective == 'Couples Therapist':
+            pic1 = 'jobphotos/couples.jpg'
             question1 = 'How does the person who is initiating the breakup feel before they do it?'
             question2 ='Why does the initiator want to break up?'
             question3 ='How does the person being broken up with respond?'
             question4 = 'Do the partners leave on good terms?'
         if other_perspective == 'Restaurant Critic':
+            pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
             question2 ='What are the menus like?'
             question3 = 'What do the clients order?'
             question4 = 'How do the clients like the food?'
         if other_perspective == 'Airport Customer Experience Manager':
+            pic1 = 'jobphotos/acem.jpg'
             question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
             question2 ='What do the clients have do at security to comply with the security check?'
             question3 ='How do the clients feel when they are  walking to the gates?'
             question4 ='Where does each client sit on the plane?' 
         if other_perspective == 'Grocery Store Customer Experience Manager':
+            pic1 = 'jobphotos/gscem.jpg'
             question1 = 'What is the grocery store like upon entering?'
             question2 ='What items do the clients pick out?'
             question3 ='How is the checkout line and how long do the clients wait in line?'
             question4 = 'How much are the groceries and what method of payment do the clients use?'
         if other_perspective == 'Dean of Academic Studies':
+            pic1 ='jobphotos/dean.jpg'
             question1 = 'What is the lecture hall like?'
             question2 ='What class are the students  in and what is the day’s lecture about?'
             question3 ='What is something taught in lecture?'
             question4 = 'When is the next assessment in the class?'
         if other_perspective == 'Wedding Planner':
+            pic1 = 'jobphotos/weddingplanner.jpg'
             question1 = 'How does the person who proposed feel before proposing?'
             question2 ='What is the ring like?'
             question3 ='Does anyone help with the proposal?'
             question4 = 'Who witnessed the “yes”?'
         if other_perspective == 'Business Reporter':
+            pic1 = 'jobphotos/business_reporter.jpg'
             question1 = 'What industry are the business people in?'
             question2 = 'What is being negotiated and how much money is at stake?'
             question3 = 'What is the response to the proposed deal?'
             question4 =  'What comes about from the business proposal?'
         if other_perspective == 'Matchmaker':
+            pic1 = 'jobphotos/matchmaker.jpg'
             question1 = 'Who notices who first and why do they notice the other?'
             question2 ='How does the couple start talking?'
             question3 ='Which of the people proposes going on an actual date and what do they propose?'
             question4 = 'Who leaves first and why do they have to go?'
     
         if this_perspective == 'Couples Therapist':
+            pic2 = 'jobphotos/couples.jpg'
             question5 = 'How does the person who is initiating the breakup feel before they do it?'
             question6 ='Why does the initiator want to break up?'
             question7 ='How does the person being broken up with respond?'
             question8 = 'Do the partners leave on good terms?'
         if this_perspective == 'Restaurant Critic':
+            pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
             question6 ='What are the menus like?'
             question7 = 'What do the clients order?'
             question8 = 'How do the clients like the food?'
         if this_perspective == 'Airport Customer Experience Manager':
+            pic2 = 'jobphotos/acem.jpg'
             question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
             question6 ='What do the clients have do at security to comply with the security check?'
             question7 ='How do the clients feel when they are  walking to the gates?'
             question8 ='Where does each client sit on the plane?' 
         if this_perspective == 'Grocery Store Customer Experience Manager':
+            pic2 = 'jobphotos/gscem.jpg'
             question5 = 'What is the grocery store like upon entering?'
             question6 ='What items do the clients pick out?'
             question7 ='How is the checkout line and how long do the clients wait in line?'
             question8 = 'How much are the groceries and what method of payment do the clients use?'
         if this_perspective == 'Dean of Academic Studies':
+            pic2 ='jobphotos/dean.jpg'
             question5 = 'What is the lecture hall like?'
             question6 ='What class are the students  in and what is the day’s lecture about?'
             question7 ='What is something taught in lecture?'
             question8 = 'When is the next assessment in the class?'
         if this_perspective == 'Wedding Planner':
+            pic2 = 'jobphotos/weddingplanner.jpg'
             question5 = 'How does the person who proposed feel before proposing?'
             question6 ='What is the ring like?'
             question7 ='Does anyone help with the proposal?'
             question8 = 'Who witnessed the “yes”?'
         if this_perspective == 'Business Reporter':
+            pic2 = 'jobphotos/business_reporter.jpg'
             question5 = 'What industry are the business people in?'
             question6 = 'What is being negotiated and how much money is at stake?'
             question7 = 'What is the response to the proposed deal?'
             question8 =  'What comes about from the business proposal?'
         if this_perspective == 'Matchmaker':
+            pic2 = 'jobphotos/matchmaker.jpg'
             question5 = 'Who notices who first and why do they notice the other?'
             question6 ='How does the couple start talking?'
             question7 ='Which of the people proposes going on an actual date and what do they propose?'
@@ -1782,8 +1868,9 @@ for thisTrial_6 in trials_6:
     
     text_14.setText(question1)
     image_6.setImage(this_recall_pic)
+    image_15.setImage(pic1)
     # keep track of which components have finished
-    question1Components = [text_14, text_15, image_6, polygon_3, bottom_line_3, right_line_3, left_line_3]
+    question1Components = [text_14, text_15, image_6, polygon_3, bottom_line_3, right_line_3, left_line_3, image_15]
     for thisComponent in question1Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -1884,6 +1971,13 @@ for thisTrial_6 in trials_6:
             left_line_3.frameNStart = frameN  # exact frame index
             left_line_3.setAutoDraw(True)
         
+        # *image_15* updates
+        if t >= 0.0 and image_15.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_15.tStart = t
+            image_15.frameNStart = frameN  # exact frame index
+            image_15.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -1930,8 +2024,9 @@ for thisTrial_6 in trials_6:
     text_16.setText(question2
 )
     image_7.setImage(this_recall_pic)
+    image_16.setImage(pic1)
     # keep track of which components have finished
-    question2Components = [text_16, text_17, image_7, polygon_4, bottom_line_4, right_line_4, left_line_4]
+    question2Components = [text_16, text_17, image_7, polygon_4, bottom_line_4, right_line_4, left_line_4, image_16]
     for thisComponent in question2Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2032,6 +2127,13 @@ for thisTrial_6 in trials_6:
             left_line_4.frameNStart = frameN  # exact frame index
             left_line_4.setAutoDraw(True)
         
+        # *image_16* updates
+        if t >= 0.0 and image_16.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_16.tStart = t
+            image_16.frameNStart = frameN  # exact frame index
+            image_16.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2077,8 +2179,9 @@ for thisTrial_6 in trials_6:
     text_18.setText(question3
 )
     image_8.setImage(this_recall_pic)
+    image_17.setImage(pic1)
     # keep track of which components have finished
-    question3Components = [text_18, text_19, image_8, polygon_5, bottom_line_5, right_line_5, left_line_5]
+    question3Components = [text_18, text_19, image_8, polygon_5, bottom_line_5, right_line_5, left_line_5, image_17]
     for thisComponent in question3Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2179,6 +2282,13 @@ for thisTrial_6 in trials_6:
             left_line_5.frameNStart = frameN  # exact frame index
             left_line_5.setAutoDraw(True)
         
+        # *image_17* updates
+        if t >= 0.0 and image_17.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_17.tStart = t
+            image_17.frameNStart = frameN  # exact frame index
+            image_17.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2223,8 +2333,9 @@ for thisTrial_6 in trials_6:
     
     text_20.setText(question4)
     image_9.setImage(this_recall_pic)
+    image_18.setImage(pic1)
     # keep track of which components have finished
-    question4Components = [text_20, text_21, image_9, polygon_6, bottom_line_6, right_line_6, left_line_6]
+    question4Components = [text_20, text_21, image_9, polygon_6, bottom_line_6, right_line_6, left_line_6, image_18]
     for thisComponent in question4Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2325,6 +2436,13 @@ for thisTrial_6 in trials_6:
             left_line_6.frameNStart = frameN  # exact frame index
             left_line_6.setAutoDraw(True)
         
+        # *image_18* updates
+        if t >= 0.0 and image_18.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_18.tStart = t
+            image_18.frameNStart = frameN  # exact frame index
+            image_18.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2369,8 +2487,9 @@ for thisTrial_6 in trials_6:
     
     text_25.setText(question5)
     image_11.setImage(this_recall_pic)
+    image_19.setImage(pic2)
     # keep track of which components have finished
-    question5Components = [text_25, text_26, image_11, polygon_7, bottom_line_7, right_line_7, left_line_7]
+    question5Components = [text_25, text_26, image_11, polygon_7, bottom_line_7, right_line_7, left_line_7, image_19]
     for thisComponent in question5Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2471,6 +2590,13 @@ for thisTrial_6 in trials_6:
             left_line_7.frameNStart = frameN  # exact frame index
             left_line_7.setAutoDraw(True)
         
+        # *image_19* updates
+        if t >= 0.0 and image_19.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_19.tStart = t
+            image_19.frameNStart = frameN  # exact frame index
+            image_19.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2515,8 +2641,9 @@ for thisTrial_6 in trials_6:
     
     text_27.setText(question6)
     image_12.setImage(this_recall_pic)
+    pic.setImage(pic2)
     # keep track of which components have finished
-    question6Components = [text_27, text_28, image_12, polygon_8, bottom_line_8, right_line_8, left_line_8]
+    question6Components = [text_27, text_28, image_12, polygon_8, bottom_line_8, right_line_8, left_line_8, pic]
     for thisComponent in question6Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2617,6 +2744,13 @@ for thisTrial_6 in trials_6:
             left_line_8.frameNStart = frameN  # exact frame index
             left_line_8.setAutoDraw(True)
         
+        # *pic* updates
+        if t >= 0.0 and pic.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            pic.tStart = t
+            pic.frameNStart = frameN  # exact frame index
+            pic.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2662,8 +2796,9 @@ for thisTrial_6 in trials_6:
     text_29.setText(question7
 )
     image_13.setImage(this_recall_pic)
+    pics2.setImage(pic2)
     # keep track of which components have finished
-    question7Components = [text_29, text_30, image_13, polygon_9, bottom_line_9, right_line_9, left_line_9]
+    question7Components = [text_29, text_30, image_13, polygon_9, bottom_line_9, right_line_9, left_line_9, pics2]
     for thisComponent in question7Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2764,6 +2899,13 @@ for thisTrial_6 in trials_6:
             left_line_9.frameNStart = frameN  # exact frame index
             left_line_9.setAutoDraw(True)
         
+        # *pics2* updates
+        if t >= 0.0 and pics2.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            pics2.tStart = t
+            pics2.frameNStart = frameN  # exact frame index
+            pics2.setAutoDraw(True)
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2808,8 +2950,9 @@ for thisTrial_6 in trials_6:
     
     text_31.setText(question8)
     image_14.setImage(this_recall_pic)
+    pic3.setImage(pic2)
     # keep track of which components have finished
-    question8Components = [text_31, text_32, image_14, polygon_10, bottom_line_10, right_line_10, left_line_10]
+    question8Components = [text_31, text_32, image_14, polygon_10, bottom_line_10, right_line_10, left_line_10, pic3]
     for thisComponent in question8Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2909,6 +3052,13 @@ for thisTrial_6 in trials_6:
             left_line_10.tStart = t
             left_line_10.frameNStart = frameN  # exact frame index
             left_line_10.setAutoDraw(True)
+        
+        # *pic3* updates
+        if t >= 0.0 and pic3.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            pic3.tStart = t
+            pic3.frameNStart = frameN  # exact frame index
+            pic3.setAutoDraw(True)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine

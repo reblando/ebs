@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Fri Jan 18 14:59:19 2019
+    on Fri Jan 25 11:49:08 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1974,6 +1974,7 @@ for thisTrial_5 in trials_5:
                 continueRoutine=False
             if checkCount == 4:
                 this_image = 'bar5.jpeg'
+                trials_7.finished = True
             
             if checkCount == 1:
                 this_image = 'bar2.png'
