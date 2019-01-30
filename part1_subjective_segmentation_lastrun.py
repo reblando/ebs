@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Fri Jan 25 11:49:08 2019
+    on Wed Jan 30 15:20:35 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -2133,16 +2133,16 @@ t = 0
 end_of_introClock.reset()  # clock
 frameN = -1
 continueRoutine = True
-routineTimer.add(1.000000)
 # update component parameters for each repeat
+key_resp_7 = event.BuilderKeyResponse()
 # keep track of which components have finished
-end_of_introComponents = [text]
+end_of_introComponents = [text, key_resp_7]
 for thisComponent in end_of_introComponents:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
 # -------Start Routine "end_of_intro"-------
-while continueRoutine and routineTimer.getTime() > 0:
+while continueRoutine:
     # get current time
     t = end_of_introClock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
@@ -2157,6 +2157,27 @@ while continueRoutine and routineTimer.getTime() > 0:
     frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
     if text.status == STARTED and t >= frameRemains:
         text.setAutoDraw(False)
+    
+    # *key_resp_7* updates
+    if t >= 0.0 and key_resp_7.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        key_resp_7.tStart = t
+        key_resp_7.frameNStart = frameN  # exact frame index
+        key_resp_7.status = STARTED
+        # keyboard checking is just starting
+        win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
+        event.clearEvents(eventType='keyboard')
+    if key_resp_7.status == STARTED:
+        theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            key_resp_7.keys = theseKeys[-1]  # just the last key pressed
+            key_resp_7.rt = key_resp_7.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2179,6 +2200,15 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in end_of_introComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_7.keys in ['', [], None]:  # No response was made
+    key_resp_7.keys=None
+thisExp.addData('key_resp_7.keys',key_resp_7.keys)
+if key_resp_7.keys != None:  # we had a response
+    thisExp.addData('key_resp_7.rt', key_resp_7.rt)
+thisExp.nextEntry()
+# the Routine "end_of_intro" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Mon Jan 28 11:39:06 2019
+    on Wed Jan 30 14:54:26 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -798,6 +798,16 @@ pic3 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
+
+# Initialize components for Routine "end_of_task"
+end_of_taskClock = core.Clock()
+text_36 = visual.TextStim(win=win, name='text_36',
+    text='end of task',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -3088,6 +3098,88 @@ for thisTrial_6 in trials_6:
     
 # completed 1 repeats of 'trials_6'
 
+
+# ------Prepare to start Routine "end_of_task"-------
+t = 0
+end_of_taskClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+key_resp_6 = event.BuilderKeyResponse()
+# keep track of which components have finished
+end_of_taskComponents = [text_36, key_resp_6]
+for thisComponent in end_of_taskComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "end_of_task"-------
+while continueRoutine:
+    # get current time
+    t = end_of_taskClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_36* updates
+    if t >= 0.0 and text_36.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_36.tStart = t
+        text_36.frameNStart = frameN  # exact frame index
+        text_36.setAutoDraw(True)
+    frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_36.status == STARTED and t >= frameRemains:
+        text_36.setAutoDraw(False)
+    
+    # *key_resp_6* updates
+    if t >= 0.0 and key_resp_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        key_resp_6.tStart = t
+        key_resp_6.frameNStart = frameN  # exact frame index
+        key_resp_6.status = STARTED
+        # keyboard checking is just starting
+        win.callOnFlip(key_resp_6.clock.reset)  # t=0 on next screen flip
+        event.clearEvents(eventType='keyboard')
+    if key_resp_6.status == STARTED:
+        theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            key_resp_6.keys = theseKeys[-1]  # just the last key pressed
+            key_resp_6.rt = key_resp_6.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in end_of_taskComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # check for quit (the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "end_of_task"-------
+for thisComponent in end_of_taskComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_6.keys in ['', [], None]:  # No response was made
+    key_resp_6.keys=None
+thisExp.addData('key_resp_6.keys',key_resp_6.keys)
+if key_resp_6.keys != None:  # we had a response
+    thisExp.addData('key_resp_6.rt', key_resp_6.rt)
+thisExp.nextEntry()
+# the Routine "end_of_task" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 
 
