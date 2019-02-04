@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Thu Jan 31 17:25:01 2019
+    on Mon Feb  4 15:32:56 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -234,7 +234,7 @@ image_8 = visual.ImageStim(
 # Initialize components for Routine "intro_practicetest"
 intro_practicetestClock = core.Clock()
 text_5 = visual.TextStim(win=win, name='text_5',
-    text='indicate the order in which you saw the questions by pressing the number listed before the selected question in the order that the questions were presented:',
+    text='indicate the order in which questions appeared:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -506,10 +506,9 @@ for thisTrial_2 in trials_2:
     # check responses
     if key_resp_8.keys in ['', [], None]:  # No response was made
         key_resp_8.keys=None
-    thisExp.addData('key_resp_8.keys',key_resp_8.keys)
+    trials_2.addData('key_resp_8.keys',key_resp_8.keys)
     if key_resp_8.keys != None:  # we had a response
-        thisExp.addData('key_resp_8.rt', key_resp_8.rt)
-    thisExp.nextEntry()
+        trials_2.addData('key_resp_8.rt', key_resp_8.rt)
     
     # the Routine "intro" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
