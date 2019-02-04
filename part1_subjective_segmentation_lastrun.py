@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Mon Feb  4 15:32:56 2019
+    on Mon Feb  4 17:21:38 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -73,14 +73,14 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-text_17 = visual.TextStim(win=win, name='text_17',
-    text='default text',
-    font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 
+image_10 = visual.ImageStim(
+    win=win, name='image_10',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.5), size=(1, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
 
 # Initialize components for Routine "shows_jobs"
 shows_jobsClock = core.Clock()
@@ -428,11 +428,10 @@ for thisTrial_2 in trials_2:
     # update component parameters for each repeat
     welcome_2.setText(instruct_text)
     key_resp_8 = event.BuilderKeyResponse()
-    text_17.setText(instruct_text2
-)
     
+    image_10.setImage(this_pic)
     # keep track of which components have finished
-    introComponents = [welcome_2, key_resp_8, text_17]
+    introComponents = [welcome_2, key_resp_8, image_10]
     for thisComponent in introComponents:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -471,16 +470,16 @@ for thisTrial_2 in trials_2:
                 key_resp_8.rt = key_resp_8.clock.getTime()
                 # a response ends the routine
                 continueRoutine = False
-        
-        # *text_17* updates
-        if t >= 0.0 and text_17.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text_17.tStart = t
-            text_17.frameNStart = frameN  # exact frame index
-            text_17.setAutoDraw(True)
         if event.getKeys(['q']):
             trials_2.finished = True
             continueRoutine=False
+        
+        # *image_10* updates
+        if t >= 0.0 and image_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_10.tStart = t
+            image_10.frameNStart = frameN  # exact frame index
+            image_10.setAutoDraw(True)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
