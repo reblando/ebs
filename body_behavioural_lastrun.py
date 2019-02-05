@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Wed Jan 30 14:54:26 2019
+    on Tue Feb  5 12:19:38 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -181,6 +181,70 @@ text_5 = visual.TextStim(win=win, name='text_5',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
+
+# Initialize components for Routine "intro_test"
+intro_testClock = core.Clock()
+text_37 = visual.TextStim(win=win, name='text_37',
+    text='indicate the order in which questions appeared:',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "perspective_test"
+perspective_testClock = core.Clock()
+
+question1_2 = visual.TextStim(win=win, name='question1_2',
+    text='default text',
+    font='Arial',
+    pos=(0, .60), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+question2_2 = visual.TextStim(win=win, name='question2_2',
+    text='default text',
+    font='Arial',
+    pos=(0, .35), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+question3_2 = visual.TextStim(win=win, name='question3_2',
+    text='default text',
+    font='Arial',
+    pos=(0, .12), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+question4_2 = visual.TextStim(win=win, name='question4_2',
+    text='default text',
+    font='Arial',
+    pos=(0, -.12), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+question5_2 = visual.TextStim(win=win, name='question5_2',
+    text='default text',
+    font='Arial',
+    pos=(0, -.35), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
+question6_2 = visual.TextStim(win=win, name='question6_2',
+    text='default text',
+    font='Arial',
+    pos=(0, -.6), height=0.1, wrapWidth=2, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-6.0);
+
+image_15 = visual.ImageStim(
+    win=win, name='image_15',
+    image='sin', mask=None,
+    ori=0, pos=(0, -.85), size=(0.25, 0.125),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -371,13 +435,6 @@ left_line_3 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-image_15 = visual.ImageStim(
-    win=win, name='image_15',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question2"
 question2Clock = core.Clock()
@@ -431,13 +488,6 @@ left_line_4 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-image_16 = visual.ImageStim(
-    win=win, name='image_16',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question3"
 question3Clock = core.Clock()
@@ -491,13 +541,6 @@ left_line_5 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-image_17 = visual.ImageStim(
-    win=win, name='image_17',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question4"
 question4Clock = core.Clock()
@@ -551,13 +594,6 @@ left_line_6 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-image_18 = visual.ImageStim(
-    win=win, name='image_18',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question5"
 question5Clock = core.Clock()
@@ -611,13 +647,6 @@ left_line_7 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-image_19 = visual.ImageStim(
-    win=win, name='image_19',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question6"
 question6Clock = core.Clock()
@@ -671,13 +700,6 @@ left_line_8 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-pic = visual.ImageStim(
-    win=win, name='pic',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question7"
 question7Clock = core.Clock()
@@ -731,13 +753,6 @@ left_line_9 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-pics2 = visual.ImageStim(
-    win=win, name='pics2',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "question8"
 question8Clock = core.Clock()
@@ -791,13 +806,6 @@ left_line_10 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-pic3 = visual.ImageStim(
-    win=win, name='pic3',
-    image='sin', mask=None,
-    ori=0, pos=(0, -.6), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
 
 # Initialize components for Routine "end_of_task"
 end_of_taskClock = core.Clock()
@@ -816,7 +824,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count.xlsx'),
+    trialList=data.importConditions('count_8.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -916,103 +924,503 @@ for thisTrial in trials:
     # the Routine "ask_to_assume" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # ------Prepare to start Routine "perspective"-------
-    t = 0
-    perspectiveClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
-    # update component parameters for each repeat
+    # set up handler to look after randomisation of conditions etc
+    trials_7 = data.TrialHandler(nReps=5, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='trials_7')
+    thisExp.addLoop(trials_7)  # add the loop to the experiment
+    thisTrial_7 = trials_7.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_7.rgb)
+    if thisTrial_7 != None:
+        for paramName in thisTrial_7:
+            exec('{} = thisTrial_7[paramName]'.format(paramName))
     
-    #set the perspective
-    this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
-    if this_perspective == 'Couples Therapist':
-        display_pic = 'jobphotos/couples.jpg'
-    if this_perspective == 'Restaurant Critic':
-        display_pic = 'jobphotos/restaurant_critic.jpg'
-    if this_perspective == 'Airport Customer Experience Manager':
-        display_pic = 'jobphotos/acem.jpg'
-    if this_perspective == 'Grocery Store Customer Experience Manager':
-        display_pic = 'jobphotos/gscem.jpg'
-    if this_perspective == 'Dean of Academic Studies':
-        display_pic ='jobphotos/dean.jpg'
-    if this_perspective == 'Wedding Planner':
-        display_pic = 'jobphotos/weddingplanner.jpg'
-    if this_perspective == 'Business Reporter':
-        display_pic = 'jobphotos/business_reporter.jpg'
-    if this_perspective == 'Matchmaker':
-        display_pic = 'jobphotos/matchmaker.jpg'
-    
-    #set the story file and picture
-    
-    this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
-    this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
-    
-    text_4.setText(this_perspective)
-    image.setImage(display_pic)
-    # keep track of which components have finished
-    perspectiveComponents = [text_4, image, text_5]
-    for thisComponent in perspectiveComponents:
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    
-    # -------Start Routine "perspective"-------
-    while continueRoutine:
-        # get current time
-        t = perspectiveClock.getTime()
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        for key in event.getKeys():
-            if key in ['space']: 
-                continueRoutine = False
-            if key in ['q']: 
-                trials.finished = 1
-                continueRoutine = False
+    for thisTrial_7 in trials_7:
+        currentLoop = trials_7
+        # abbreviate parameter names if possible (e.g. rgb = thisTrial_7.rgb)
+        if thisTrial_7 != None:
+            for paramName in thisTrial_7:
+                exec('{} = thisTrial_7[paramName]'.format(paramName))
         
-        # *text_4* updates
-        if t >= 0.0 and text_4.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text_4.tStart = t
-            text_4.frameNStart = frameN  # exact frame index
-            text_4.setAutoDraw(True)
+        # ------Prepare to start Routine "perspective"-------
+        t = 0
+        perspectiveClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
         
-        # *image* updates
-        if t >= 0.0 and image.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image.tStart = t
-            image.frameNStart = frameN  # exact frame index
-            image.setAutoDraw(True)
+        #set the perspective
+        this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
+        if this_perspective == 'Couples Therapist':
+            display_pic = 'jobphotos/couples.jpg'
+            question1 = 'How does the person who is initiating the breakup feel before they do it?'
+            question2 ='Why does the initiator want to break up?'
+            question3 ='How does the person being broken up with respond?'
+            question4 = 'Do the partners leave on good terms?'
+            question5 = 'Does the person being broken up with expect that this is coming?'
+            question6 = 'For how long has the initiator been wanting to break up?'
+        if this_perspective == 'Restaurant Critic':
+            display_pic = 'jobphotos/restaurant_critic.jpg'
+            question1 = 'How is the restaurant decorated?'
+            question2 ='What are the menus like?'
+            question3 = 'What do the clients order?' 
+            question4 = 'How do the clients like the food?'
+            question5 = 'What meal is being served?'
+            question6 = 'How old is the waiter?'
+        if this_perspective == 'Airport Customer Experience Manager':
+            display_pic = 'jobphotos/acem.jpg'
+            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question2 ='What do the clients have do at security to comply with the security check?'
+            question3 ='How do the clients feel when they are  walking to the gates?'
+            question4 ='Where does each client sit on the plane?' 
+            question5 = 'Are the security guides friendly or rude?'
+            question6 = 'Are the airport restrooms clean?'
+        if this_perspective == 'Grocery Store Customer Experience Manager':
+            display_pic = 'jobphotos/gscem.jpg'
+            question1 = 'What is the grocery store like upon entering?'
+            question2 ='What items do the clients pick out?'
+            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question4 = 'How much are the groceries and what method of payment do the clients use?'
+            question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
+            question6 = 'What type of grocery bags do the clients use?'
+        if this_perspective == 'Dean of Academic Studies':
+            display_pic ='jobphotos/dean.jpg'
+            question1 = 'What is the lecture hall like?'
+            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question3 ='What is something taught in lecture?'
+            question4 = 'When is the next assessment in the class?'
+            question5 = 'Are the students paying attention?'
+            question6 = 'Are the desks comfortable?'
+        if this_perspective == 'Wedding Planner':
+            display_pic = 'jobphotos/weddingplanner.jpg'
+            question1 = 'How does the person who proposed feel before proposing?'
+            question2 ='What is the ring like?'
+            question3 ='Does anyone help with the proposal?'
+            question4 = 'Who witnessed the “yes”?'
+            question5 = 'Is anyone taking pictures of the proposal?'
+            question6 = 'How long does the proposal take?'
+        if this_perspective == 'Business Reporter':
+            display_pic = 'jobphotos/business_reporter.jpg'
+            question1 = 'What industry are the business people in?'
+            question2 = 'What is being negotiated and how much money is at stake?'
+            question3 = 'What is the response to the proposed deal?'
+            question4 =  'What comes about from the business proposal?'
+            question5 = 'Is the deal fair?'
+            question6 =  'How long does it take to make the deal?'
+        if this_perspective == 'Matchmaker':
+            display_pic = 'jobphotos/matchmaker.jpg'
+            question1 = 'Who notices who first and why do they notice the other?' 
+            question2 ='How does the couple start talking?'
+            question3 ='Which of the people proposes going on an actual date and what do they propose?'
+            question4 = 'Who leaves first and why do they have to go?'
+            question5 = 'Is the couple going to get married?'
+            question6 = 'Who shows more interest?'
         
-        # *text_5* updates
-        if t >= 0.0 and text_5.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text_5.tStart = t
-            text_5.frameNStart = frameN  # exact frame index
-            text_5.setAutoDraw(True)
+        #set the story file and picture
         
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
+        this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
+        
+        text_4.setText(this_perspective)
+        image.setImage(display_pic)
+        # keep track of which components have finished
+        perspectiveComponents = [text_4, image, text_5]
         for thisComponent in perspectiveComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
+        # -------Start Routine "perspective"-------
+        while continueRoutine:
+            # get current time
+            t = perspectiveClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            for key in event.getKeys():
+                if key in ['space']: 
+                    continueRoutine = False
+                if key in ['q']: 
+                    trials.finished = 1
+                    continueRoutine = False
+            
+            # *text_4* updates
+            if t >= 0.0 and text_4.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_4.tStart = t
+                text_4.frameNStart = frameN  # exact frame index
+                text_4.setAutoDraw(True)
+            
+            # *image* updates
+            if t >= 0.0 and image.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                image.tStart = t
+                image.frameNStart = frameN  # exact frame index
+                image.setAutoDraw(True)
+            
+            # *text_5* updates
+            if t >= 0.0 and text_5.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_5.tStart = t
+                text_5.frameNStart = frameN  # exact frame index
+                text_5.setAutoDraw(True)
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in perspectiveComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # -------Ending Routine "perspective"-------
+        for thisComponent in perspectiveComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # ------Prepare to start Routine "intro_test"-------
+        t = 0
+        intro_testClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        key_resp_7 = event.BuilderKeyResponse()
+        # keep track of which components have finished
+        intro_testComponents = [text_37, key_resp_7]
+        for thisComponent in intro_testComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "intro_test"-------
+        while continueRoutine:
+            # get current time
+            t = intro_testClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *text_37* updates
+            if t >= 0.0 and text_37.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_37.tStart = t
+                text_37.frameNStart = frameN  # exact frame index
+                text_37.setAutoDraw(True)
+            
+            # *key_resp_7* updates
+            if t >= 0.0 and key_resp_7.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                key_resp_7.tStart = t
+                key_resp_7.frameNStart = frameN  # exact frame index
+                key_resp_7.status = STARTED
+                # keyboard checking is just starting
+                win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
+                event.clearEvents(eventType='keyboard')
+            if key_resp_7.status == STARTED:
+                theseKeys = event.getKeys(keyList=['space'])
+                
+                # check for quit:
+                if "escape" in theseKeys:
+                    endExpNow = True
+                if len(theseKeys) > 0:  # at least one key was pressed
+                    key_resp_7.keys = theseKeys[-1]  # just the last key pressed
+                    key_resp_7.rt = key_resp_7.clock.getTime()
+                    # a response ends the routine
+                    continueRoutine = False
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in intro_testComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "intro_test"-------
+        for thisComponent in intro_testComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # check responses
+        if key_resp_7.keys in ['', [], None]:  # No response was made
+            key_resp_7.keys=None
+        trials_7.addData('key_resp_7.keys',key_resp_7.keys)
+        if key_resp_7.keys != None:  # we had a response
+            trials_7.addData('key_resp_7.rt', key_resp_7.rt)
+        # the Routine "intro_test" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # ------Prepare to start Routine "perspective_test"-------
+        t = 0
+        perspective_testClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        from psychopy import visual, core, event
+        
+        Q = np.array([question1, question2, question3, question4, question5, question6])
+        correct = np.array([1,2,3,4,0,0], dtype=int)
+        randperm = np.random.permutation(6) 
+        Q = Q[randperm] 
+        correct = correct[randperm]
+        
+        text1 = "1: " + Q[0]
+        text2 = "2: " + Q[1]
+        text3 = "3: " + Q[2]
+        text4 = "4: " + Q[3]
+        text5 = "5: " + Q[4]
+        text6 = "6: " + Q[5]
+        
+        this_image = 'bar1.png'
+        
+        
+        
+        check = visual.ImageStim(win, 'checkmark.png')
+        redx = visual.ImageStim(win, 'redx.png')
+        
+        thumbsup = visual.ImageStim(win, 'thumbsup.png')
+        
+        
+        
+        checkCount = 0
+        test1 = 0
+        test2 = 0
+        test3 = 0
+        test4 = 0
+        test5 = 0
+        test6 = 0
+        
+        
+        question1_2.setText(text1)
+        question2_2.setText(text2
+)
+        question3_2.setText(text3)
+        question4_2.setText(text4)
+        question5_2.setText(text5
+)
+        question6_2.setText(text6)
+        
+        # keep track of which components have finished
+        perspective_testComponents = [question1_2, question2_2, question3_2, question4_2, question5_2, question6_2, image_15]
+        for thisComponent in perspective_testComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "perspective_test"-------
+        while continueRoutine:
+            # get current time
+            t = perspective_testClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            
+            # *question1_2* updates
+            if t >= 0.0 and question1_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question1_2.tStart = t
+                question1_2.frameNStart = frameN  # exact frame index
+                question1_2.setAutoDraw(True)
+            
+            # *question2_2* updates
+            if t >= 0.0 and question2_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question2_2.tStart = t
+                question2_2.frameNStart = frameN  # exact frame index
+                question2_2.setAutoDraw(True)
+            
+            # *question3_2* updates
+            if t >= 0.0 and question3_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question3_2.tStart = t
+                question3_2.frameNStart = frameN  # exact frame index
+                question3_2.setAutoDraw(True)
+            
+            # *question4_2* updates
+            if t >= 0.0 and question4_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question4_2.tStart = t
+                question4_2.frameNStart = frameN  # exact frame index
+                question4_2.setAutoDraw(True)
+            
+            # *question5_2* updates
+            if t >= 0.0 and question5_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question5_2.tStart = t
+                question5_2.frameNStart = frameN  # exact frame index
+                question5_2.setAutoDraw(True)
+            
+            # *question6_2* updates
+            if t >= 0.0 and question6_2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                question6_2.tStart = t
+                question6_2.frameNStart = frameN  # exact frame index
+                question6_2.setAutoDraw(True)
+            if this_image == 'bar5.jpeg':
+                thumbsup.draw()
+                win.flip()
+                core.wait(1.5)
+                trials_7.finished= True 
+                continueRoutine = False
+            #key press 1 
+            if event.getKeys(['1']):
+                if correct[0] == (checkCount + 1):
+                    if test1 == 0:
+                        test1 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                else:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+            
+            #keypress 2
+            if event.getKeys(['2']):
+                if correct[1] == (checkCount + 1):
+                    if test2 == 0:
+                        test2 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                elif correct[1] == 0:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+            
+            #key press 3 
+            if event.getKeys(['3']):
+                if correct[2] == (checkCount + 1):
+                    if test3 == 0:
+                        test3 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                else:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+            
+            #keypress 4
+            if event.getKeys(['4']):
+                if correct[3] == (checkCount + 1):
+                    if test4 == 0:
+                        test4 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                else:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+            
+            #key press 5 
+            if event.getKeys(['5']):
+                if correct[4] == (checkCount + 1):
+                    if test5 == 0:
+                        test5 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                else:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+            
+            #keypress 6
+            if event.getKeys(['6']):
+                if correct[5] == (checkCount + 1):
+                    if test6 == 0:
+                        test6 = 1
+                        checkCount += 1
+                        check.draw()
+                        win.flip()
+                        core.wait(.15)
+                else:
+                    redx.draw()
+                    win.flip()
+                    core.wait(1)
+                    continueRoutine = False
+                    
+            
+            if event.getKeys(['q']):
+                trials_7.finished = True
+                trials.finished = True
+                continueRoutine=False
+            if checkCount == 4:
+                this_image = 'bar5.jpeg'
+            
+            if checkCount == 1:
+                this_image = 'bar2.png'
+            if checkCount == 2: 
+                this_image = 'bar3.jpeg'
+            if checkCount == 3:
+                this_image = 'bar4.png'
+            
+            # *image_15* updates
+            if t >= 0.0 and image_15.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                image_15.tStart = t
+                image_15.frameNStart = frameN  # exact frame index
+                image_15.setAutoDraw(True)
+            if image_15.status == STARTED:  # only update if drawing
+                image_15.setImage(this_image, log=False)
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in perspective_testComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "perspective_test"-------
+        for thisComponent in perspective_testComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        
+        # the Routine "perspective_test" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 5 repeats of 'trials_7'
     
-    # -------Ending Routine "perspective"-------
-    for thisComponent in perspectiveComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    
-    # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
     trials_2 = data.TrialHandler(nReps=1, method='sequential', 
@@ -1263,7 +1671,7 @@ for thisTrial_3 in trials_3:
 # set up handler to look after randomisation of conditions etc
 trials_4 = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count.xlsx'),
+    trialList=data.importConditions('count_8.xlsx'),
     seed=None, name='trials_4')
 thisExp.addLoop(trials_4)  # add the loop to the experiment
 thisTrial_4 = trials_4.trialList[0]  # so we can initialise stimuli with some values
@@ -1549,7 +1957,7 @@ for thisTrial_5 in trials_5:
 # set up handler to look after randomisation of conditions etc
 trials_6 = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count.xlsx'),
+    trialList=data.importConditions('count_8.xlsx'),
     seed=None, name='trials_6')
 thisExp.addLoop(trials_6)  # add the loop to the experiment
 thisTrial_6 = trials_6.trialList[0]  # so we can initialise stimuli with some values
@@ -1602,7 +2010,6 @@ for thisTrial_6 in trials_6:
             key_resp_4.frameNStart = frameN  # exact frame index
             key_resp_4.status = STARTED
             # keyboard checking is just starting
-            win.callOnFlip(key_resp_4.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
         if key_resp_4.status == STARTED:
             theseKeys = event.getKeys(keyList=['space'])
@@ -1611,8 +2018,6 @@ for thisTrial_6 in trials_6:
             if "escape" in theseKeys:
                 endExpNow = True
             if len(theseKeys) > 0:  # at least one key was pressed
-                key_resp_4.keys = theseKeys[-1]  # just the last key pressed
-                key_resp_4.rt = key_resp_4.clock.getTime()
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1645,12 +2050,6 @@ for thisTrial_6 in trials_6:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     
-    # check responses
-    if key_resp_4.keys in ['', [], None]:  # No response was made
-        key_resp_4.keys=None
-    trials_6.addData('key_resp_4.keys',key_resp_4.keys)
-    if key_resp_4.keys != None:  # we had a response
-        trials_6.addData('key_resp_4.rt', key_resp_4.rt)
     # the Routine "story_image" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1660,6 +2059,7 @@ for thisTrial_6 in trials_6:
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
+    event.clearEvents()
     cursorCounter=0
     cursorVariable='|'
     captured_string=''
@@ -1878,9 +2278,8 @@ for thisTrial_6 in trials_6:
     
     text_14.setText(question1)
     image_6.setImage(this_recall_pic)
-    image_15.setImage(pic1)
     # keep track of which components have finished
-    question1Components = [text_14, text_15, image_6, polygon_3, bottom_line_3, right_line_3, left_line_3, image_15]
+    question1Components = [text_14, text_15, image_6, polygon_3, bottom_line_3, right_line_3, left_line_3]
     for thisComponent in question1Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -1981,13 +2380,6 @@ for thisTrial_6 in trials_6:
             left_line_3.frameNStart = frameN  # exact frame index
             left_line_3.setAutoDraw(True)
         
-        # *image_15* updates
-        if t >= 0.0 and image_15.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image_15.tStart = t
-            image_15.frameNStart = frameN  # exact frame index
-            image_15.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2034,9 +2426,8 @@ for thisTrial_6 in trials_6:
     text_16.setText(question2
 )
     image_7.setImage(this_recall_pic)
-    image_16.setImage(pic1)
     # keep track of which components have finished
-    question2Components = [text_16, text_17, image_7, polygon_4, bottom_line_4, right_line_4, left_line_4, image_16]
+    question2Components = [text_16, text_17, image_7, polygon_4, bottom_line_4, right_line_4, left_line_4]
     for thisComponent in question2Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2137,13 +2528,6 @@ for thisTrial_6 in trials_6:
             left_line_4.frameNStart = frameN  # exact frame index
             left_line_4.setAutoDraw(True)
         
-        # *image_16* updates
-        if t >= 0.0 and image_16.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image_16.tStart = t
-            image_16.frameNStart = frameN  # exact frame index
-            image_16.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2189,9 +2573,8 @@ for thisTrial_6 in trials_6:
     text_18.setText(question3
 )
     image_8.setImage(this_recall_pic)
-    image_17.setImage(pic1)
     # keep track of which components have finished
-    question3Components = [text_18, text_19, image_8, polygon_5, bottom_line_5, right_line_5, left_line_5, image_17]
+    question3Components = [text_18, text_19, image_8, polygon_5, bottom_line_5, right_line_5, left_line_5]
     for thisComponent in question3Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2292,13 +2675,6 @@ for thisTrial_6 in trials_6:
             left_line_5.frameNStart = frameN  # exact frame index
             left_line_5.setAutoDraw(True)
         
-        # *image_17* updates
-        if t >= 0.0 and image_17.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image_17.tStart = t
-            image_17.frameNStart = frameN  # exact frame index
-            image_17.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2343,9 +2719,8 @@ for thisTrial_6 in trials_6:
     
     text_20.setText(question4)
     image_9.setImage(this_recall_pic)
-    image_18.setImage(pic1)
     # keep track of which components have finished
-    question4Components = [text_20, text_21, image_9, polygon_6, bottom_line_6, right_line_6, left_line_6, image_18]
+    question4Components = [text_20, text_21, image_9, polygon_6, bottom_line_6, right_line_6, left_line_6]
     for thisComponent in question4Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2446,13 +2821,6 @@ for thisTrial_6 in trials_6:
             left_line_6.frameNStart = frameN  # exact frame index
             left_line_6.setAutoDraw(True)
         
-        # *image_18* updates
-        if t >= 0.0 and image_18.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image_18.tStart = t
-            image_18.frameNStart = frameN  # exact frame index
-            image_18.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2497,9 +2865,8 @@ for thisTrial_6 in trials_6:
     
     text_25.setText(question5)
     image_11.setImage(this_recall_pic)
-    image_19.setImage(pic2)
     # keep track of which components have finished
-    question5Components = [text_25, text_26, image_11, polygon_7, bottom_line_7, right_line_7, left_line_7, image_19]
+    question5Components = [text_25, text_26, image_11, polygon_7, bottom_line_7, right_line_7, left_line_7]
     for thisComponent in question5Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2600,13 +2967,6 @@ for thisTrial_6 in trials_6:
             left_line_7.frameNStart = frameN  # exact frame index
             left_line_7.setAutoDraw(True)
         
-        # *image_19* updates
-        if t >= 0.0 and image_19.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            image_19.tStart = t
-            image_19.frameNStart = frameN  # exact frame index
-            image_19.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2651,9 +3011,8 @@ for thisTrial_6 in trials_6:
     
     text_27.setText(question6)
     image_12.setImage(this_recall_pic)
-    pic.setImage(pic2)
     # keep track of which components have finished
-    question6Components = [text_27, text_28, image_12, polygon_8, bottom_line_8, right_line_8, left_line_8, pic]
+    question6Components = [text_27, text_28, image_12, polygon_8, bottom_line_8, right_line_8, left_line_8]
     for thisComponent in question6Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2754,13 +3113,6 @@ for thisTrial_6 in trials_6:
             left_line_8.frameNStart = frameN  # exact frame index
             left_line_8.setAutoDraw(True)
         
-        # *pic* updates
-        if t >= 0.0 and pic.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            pic.tStart = t
-            pic.frameNStart = frameN  # exact frame index
-            pic.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2806,9 +3158,8 @@ for thisTrial_6 in trials_6:
     text_29.setText(question7
 )
     image_13.setImage(this_recall_pic)
-    pics2.setImage(pic2)
     # keep track of which components have finished
-    question7Components = [text_29, text_30, image_13, polygon_9, bottom_line_9, right_line_9, left_line_9, pics2]
+    question7Components = [text_29, text_30, image_13, polygon_9, bottom_line_9, right_line_9, left_line_9]
     for thisComponent in question7Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2909,13 +3260,6 @@ for thisTrial_6 in trials_6:
             left_line_9.frameNStart = frameN  # exact frame index
             left_line_9.setAutoDraw(True)
         
-        # *pics2* updates
-        if t >= 0.0 and pics2.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            pics2.tStart = t
-            pics2.frameNStart = frameN  # exact frame index
-            pics2.setAutoDraw(True)
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2960,9 +3304,8 @@ for thisTrial_6 in trials_6:
     
     text_31.setText(question8)
     image_14.setImage(this_recall_pic)
-    pic3.setImage(pic2)
     # keep track of which components have finished
-    question8Components = [text_31, text_32, image_14, polygon_10, bottom_line_10, right_line_10, left_line_10, pic3]
+    question8Components = [text_31, text_32, image_14, polygon_10, bottom_line_10, right_line_10, left_line_10]
     for thisComponent in question8Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -3062,13 +3405,6 @@ for thisTrial_6 in trials_6:
             left_line_10.tStart = t
             left_line_10.frameNStart = frameN  # exact frame index
             left_line_10.setAutoDraw(True)
-        
-        # *pic3* updates
-        if t >= 0.0 and pic3.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            pic3.tStart = t
-            pic3.frameNStart = frameN  # exact frame index
-            pic3.setAutoDraw(True)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -3180,6 +3516,8 @@ if key_resp_6.keys != None:  # we had a response
 thisExp.nextEntry()
 # the Routine "end_of_task" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
+
+
 
 
 
