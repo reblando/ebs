@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Thu Jan  3 12:17:34 2019
+    on Tue Feb  5 13:10:30 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -98,22 +98,15 @@ text_2 = visual.TextStim(win=win, name='text_2',
     languageStyle='LTR',
     depth=-2.0);
 
-# Initialize components for Routine "intro"
-introClock = core.Clock()
-welcome = visual.TextStim(win=win, name='welcome',
+# Initialize components for Routine "intro2"
+intro2Clock = core.Clock()
+text_6 = visual.TextStim(win=win, name='text_6',
     text='default text',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-text_12 = visual.TextStim(win=win, name='text_12',
-    text='default text',
-    font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 
 # Initialize components for Routine "just_perspective_2"
 just_perspective_2Clock = core.Clock()
@@ -610,87 +603,78 @@ for thisTrial_4 in trials_4:
 
 
 # set up handler to look after randomisation of conditions etc
-loop3 = data.TrialHandler(nReps=1, method='sequential', 
+trials_8 = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('instructions2.xlsx'),
-    seed=None, name='loop3')
-thisExp.addLoop(loop3)  # add the loop to the experiment
-thisLoop3 = loop3.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisLoop3.rgb)
-if thisLoop3 != None:
-    for paramName in thisLoop3:
-        exec('{} = thisLoop3[paramName]'.format(paramName))
+    seed=None, name='trials_8')
+thisExp.addLoop(trials_8)  # add the loop to the experiment
+thisTrial_8 = trials_8.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
+if thisTrial_8 != None:
+    for paramName in thisTrial_8:
+        exec('{} = thisTrial_8[paramName]'.format(paramName))
 
-for thisLoop3 in loop3:
-    currentLoop = loop3
-    # abbreviate parameter names if possible (e.g. rgb = thisLoop3.rgb)
-    if thisLoop3 != None:
-        for paramName in thisLoop3:
-            exec('{} = thisLoop3[paramName]'.format(paramName))
+for thisTrial_8 in trials_8:
+    currentLoop = trials_8
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_8.rgb)
+    if thisTrial_8 != None:
+        for paramName in thisTrial_8:
+            exec('{} = thisTrial_8[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "intro"-------
+    # ------Prepare to start Routine "intro2"-------
     t = 0
-    introClock.reset()  # clock
+    intro2Clock.reset()  # clock
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
-    welcome.setText(instruct_text)
-    key_resp_6 = event.BuilderKeyResponse()
-    text_12.setText(instruct_text2
-)
+    text_6.setText(instruct_text)
+    key_resp_5 = event.BuilderKeyResponse()
     # keep track of which components have finished
-    introComponents = [welcome, key_resp_6, text_12]
-    for thisComponent in introComponents:
+    intro2Components = [text_6, key_resp_5]
+    for thisComponent in intro2Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
     
-    # -------Start Routine "intro"-------
+    # -------Start Routine "intro2"-------
     while continueRoutine:
         # get current time
-        t = introClock.getTime()
+        t = intro2Clock.getTime()
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *welcome* updates
-        if t >= 0.0 and welcome.status == NOT_STARTED:
+        # *text_6* updates
+        if t >= 0.0 and text_6.status == NOT_STARTED:
             # keep track of start time/frame for later
-            welcome.tStart = t
-            welcome.frameNStart = frameN  # exact frame index
-            welcome.setAutoDraw(True)
+            text_6.tStart = t
+            text_6.frameNStart = frameN  # exact frame index
+            text_6.setAutoDraw(True)
         
-        # *key_resp_6* updates
-        if t >= 0.0 and key_resp_6.status == NOT_STARTED:
+        # *key_resp_5* updates
+        if t >= 0.0 and key_resp_5.status == NOT_STARTED:
             # keep track of start time/frame for later
-            key_resp_6.tStart = t
-            key_resp_6.frameNStart = frameN  # exact frame index
-            key_resp_6.status = STARTED
+            key_resp_5.tStart = t
+            key_resp_5.frameNStart = frameN  # exact frame index
+            key_resp_5.status = STARTED
             # keyboard checking is just starting
-            win.callOnFlip(key_resp_6.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
-        if key_resp_6.status == STARTED:
+        if key_resp_5.status == STARTED:
             theseKeys = event.getKeys(keyList=['space'])
             
             # check for quit:
             if "escape" in theseKeys:
                 endExpNow = True
             if len(theseKeys) > 0:  # at least one key was pressed
-                key_resp_6.keys = theseKeys[-1]  # just the last key pressed
-                key_resp_6.rt = key_resp_6.clock.getTime()
+                key_resp_5.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_5.rt = key_resp_5.clock.getTime()
                 # a response ends the routine
                 continueRoutine = False
-        
-        # *text_12* updates
-        if t >= 0.0 and text_12.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text_12.tStart = t
-            text_12.frameNStart = frameN  # exact frame index
-            text_12.setAutoDraw(True)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in introComponents:
+        for thisComponent in intro2Components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -703,21 +687,21 @@ for thisLoop3 in loop3:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "intro"-------
-    for thisComponent in introComponents:
+    # -------Ending Routine "intro2"-------
+    for thisComponent in intro2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # check responses
-    if key_resp_6.keys in ['', [], None]:  # No response was made
-        key_resp_6.keys=None
-    loop3.addData('key_resp_6.keys',key_resp_6.keys)
-    if key_resp_6.keys != None:  # we had a response
-        loop3.addData('key_resp_6.rt', key_resp_6.rt)
-    # the Routine "intro" was not non-slip safe, so reset the non-slip timer
+    if key_resp_5.keys in ['', [], None]:  # No response was made
+        key_resp_5.keys=None
+    trials_8.addData('key_resp_5.keys',key_resp_5.keys)
+    if key_resp_5.keys != None:  # we had a response
+        trials_8.addData('key_resp_5.rt', key_resp_5.rt)
+    # the Routine "intro2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1 repeats of 'loop3'
+# completed 1 repeats of 'trials_8'
 
 
 # set up handler to look after randomisation of conditions etc

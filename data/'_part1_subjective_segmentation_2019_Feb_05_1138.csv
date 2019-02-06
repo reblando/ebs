@@ -1,0 +1,60 @@
+instruct_text,this_pic,rolePic,job,instruct_text2,Q1,Q2,Q3,Q4,D1,D2,roleName,instructText,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_5.thisRepN,trials_5.thisTrialN,trials_5.thisN,trials_5.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_8.thisRepN,trials_8.thisTrialN,trials_8.thisN,trials_8.thisIndex,key_resp_8.keys,key_resp_8.rt,key_resp_2.keys,key_resp_2.rt,key_resp_6.keys,key_resp_6.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,key_resp_3.keys,key_resp_3.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,instructions_photos/pixel.png,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5029951890028315,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"In this task, you’ll first be introduced to the perspectives of 8 different jobs. ",instructions_photos/i1.png,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,4.136445592987002,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+You’ll then learn 4 questions associated with each perspective. ,instructions_photos/i2.png,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,2.551652035996085,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"Subsequently, you will be asked to apply those perspectives and questions to 8 stories.",instructions_photos/i3.png,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,3.536662680999143,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"For each story you read, you will be asked to assume one of the perspectives. ",instructions_photos/i3.png,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,2.8866531730018323,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"While reading, try to remember the perspective and the questions of that perspective. ",instructions_photos/i3.png,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,2.43515296500118,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"After you’re finished reading all the stories, you will be asked to recall the stories and answer questions about them. ",instructions_photos/i4.png,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,3.5020868340070592,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+Let’s begin! The 8 perspectives are as follows:,None,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.1848018400050933,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/dean.jpg,Dean of Academic Studies,,,,,,,,,,,,,,0,0,0,6,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.9033584580029128,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5694292310072342,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,,,0,2,2,4,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.47452076998888515,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,3,3,5,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.46845109899004456,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/business_reporter.jpg,Business Reporter,,,,,,,,,,,,,,0,4,4,0,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3014451890048804,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,,,0,5,5,3,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.27312693098792806,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,,,0,6,6,7,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.28490385199256707,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/matchmaker.jpg,Matchmaker,,,,,,,,,,,,,,0,7,7,2,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.26868933500372805,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+Each of these perspectives will be applied to one story. ,,,,(press space to continue),,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,space,2.720075817007455,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"Each perspective has 4 questions, and you will answer these questions about each story.",,,,None,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,space,3.8688776399940252,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+You’ll answer these questions about each story after reading all 8 stories. ,,,,None,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,space,3.3169779399904655,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+You’ll learn these questions with a series of pre-task quizzes and then the story reading will begin.,,,,None,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,space,2.318983215998742,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+"Once the story-reading task has begun, remember your answers to the questions for each story.",,,,None,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,space,3.785056075998,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+Press the space bar to begin learning the perspectives and the questions for each one.,,,,None,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,space,3.2357696249964647,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,0,0,5,0,0,0,0,,,,,,,,,,,,,,,,,,,space,0.7519450700056041,space,34.92813717799436,space,0.43374442600179464,space,0.318583371990826,space,0.3528329110122286,space,0.41843796300236136,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,0,1,1,7,0,0,0,0,,,,,,,,,,,,,,,,,,,space,0.4010293780011125,space,0.2675576299952809,space,0.21761765200062655,space,0.28440427299938165,space,0.3677916470041964,space,0.48382159500033595,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,0,1,1,7,1,0,1,0,,,,,,,,,,,,,,,,,,,space,0.2699300050007878,space,0.33413166500395164,space,1.1015318340068916,space,0.16866324700822588,space,0.15064307300781365,space,0.5670494640071411,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,0,1,1,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.6018424520007102,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,"Additionally, while reading each story, you will also indicate when you think a new “part” of the story is beginning. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,space,19.491110912000295,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,Some people feel that the stories have natural “parts”.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,space,1.252237969005364,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,You will press “9” if you think the sentence is the beginning of a new “part.”,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,space,1.4017189040023368,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,For example you should press “9” at the beginning of a new story or when you think a different event is beginning. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,space,3.5030250279960455,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,You will press “1” if you think the sentence is in the same “part” as the sentence before. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,space,1.9170657539943932,,,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.6685545530053787,',001,2019_Feb_05_1138,part1_subjective_segmentation,59.94371201584,
