@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Tue Feb  5 12:19:38 2019
+    on Wed Feb  6 10:58:01 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -147,6 +147,8 @@ for i in range(0,16):
 
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
+thisExp.addData('participant 2 order - stories', run2)
+thisExp.addData('participant 2 order  - schemas types', order_run2)
 
 
 
@@ -245,6 +247,115 @@ image_15 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
+
+# Initialize components for Routine "perspective"
+perspectiveClock = core.Clock()
+import numpy as np
+
+a = np.zeros(shape = [4, 4], dtype = int)
+
+s_order = np.array([10, 20, 30, 40], dtype = int)
+
+l_order = np.array([1,2,3,4], dtype = int)
+
+
+np.random.shuffle(s_order)
+np.random.shuffle(l_order)
+
+a[0] += s_order[0]
+a[1] += s_order[1]
+a[2] += s_order[2]
+a[3] += s_order[3]
+
+a[:,0] += l_order[0]
+a[:,1] += l_order[1]
+a[:, 2] += l_order[2]
+a[:, 3] += l_order[3]
+
+run1 = np.array([a[0,0], a[1,1], a[2,0], a[3,1], a[0,2], a[1,3], a[2,2], a[3,3]]) 
+run2 = np.array([a[0,1], a[1,0], a[2,1], a[3,0], a[0,3], a[1,2], a[2,3], a[3,2]]) 
+order_run1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
+order_run2 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
+
+randperm1 = np.random.permutation(8)
+randperm2 = np.random.permutation(8)
+
+run1 = run1[randperm1]
+run2 = run2[randperm2]
+order_run1 = order_run1[randperm1]
+order_run2 = order_run2[randperm2]
+
+
+
+#create a dictionary for all the stories and their values
+
+storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic', 'storyFile': 'story_xlsx_files/11.xlsx'},
+             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic', 'storyFile': 'story_xlsx_files/12.xlsx'},
+             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic', 'storyFile': 'story_xlsx_files/13.xlsx'},
+             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic', 'storyFile': 'story_xlsx_files/14.xlsx'},
+             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic', 'storyFile': 'story_xlsx_files/21.xlsx'},
+             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic', 'storyFile': 'story_xlsx_files/22.xlsx'},
+             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic', 'storyFile': 'story_xlsx_files/23.xlsx'},
+             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic', 'storyFile': 'story_xlsx_files/24.xlsx'},
+             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic', 'storyFile': 'story_xlsx_files/31.xlsx'},
+             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic', 'storyFile': 'story_xlsx_files/32.xlsx'},
+             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic', 'storyFile': 'story_xlsx_files/33.xlsx'},
+             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic', 'storyFile': 'story_xlsx_files/34.xlsx'},
+             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic', 'storyFile': 'story_xlsx_files/41.xlsx'},
+             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic', 'storyFile': 'story_xlsx_files/42.xlsx'},
+             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic', 'storyFile': 'story_xlsx_files/43.xlsx'},
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic', 'storyFile': 'story_xlsx_files/44.xlsx'}}
+
+order_stories = np.concatenate((run1, run2), axis =None)
+order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
+
+#create complementary perspectives list for non-primed questions
+other_perspectives = []
+
+for i in range(0,16):
+    if order_perspectives[i] == 'Social':
+        other_pespectives = other_perspectives.append('Location')
+    else:
+        other_pespectives = other_perspectives.append('Social')
+
+thisExp.addData('order of stories', order_stories)
+thisExp.addData('order of perspectives', order_perspectives)
+thisExp.addData('participant 2 order - stories', run2)
+thisExp.addData('participant 2 order  - schemas types', order_run2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+image = visual.ImageStim(
+    win=win, name='image',
+    image='sin', mask=None,
+    ori=0, pos=(0, .5), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+text_5 = visual.TextStim(win=win, name='text_5',
+    text='(press space to continue)',
+    font='Arial',
+    pos=(0, -.7), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -816,6 +927,7 @@ text_36 = visual.TextStim(win=win, name='text_36',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -1440,6 +1552,152 @@ for thisTrial in trials:
         if thisTrial_2 != None:
             for paramName in thisTrial_2:
                 exec('{} = thisTrial_2[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "perspective"-------
+        t = 0
+        perspectiveClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        
+        #set the perspective
+        this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
+        if this_perspective == 'Couples Therapist':
+            display_pic = 'jobphotos/couples.jpg'
+            question1 = 'How does the person who is initiating the breakup feel before they do it?'
+            question2 ='Why does the initiator want to break up?'
+            question3 ='How does the person being broken up with respond?'
+            question4 = 'Do the partners leave on good terms?'
+            question5 = 'Does the person being broken up with expect that this is coming?'
+            question6 = 'For how long has the initiator been wanting to break up?'
+        if this_perspective == 'Restaurant Critic':
+            display_pic = 'jobphotos/restaurant_critic.jpg'
+            question1 = 'How is the restaurant decorated?'
+            question2 ='What are the menus like?'
+            question3 = 'What do the clients order?' 
+            question4 = 'How do the clients like the food?'
+            question5 = 'What meal is being served?'
+            question6 = 'How old is the waiter?'
+        if this_perspective == 'Airport Customer Experience Manager':
+            display_pic = 'jobphotos/acem.jpg'
+            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
+            question2 ='What do the clients have do at security to comply with the security check?'
+            question3 ='How do the clients feel when they are  walking to the gates?'
+            question4 ='Where does each client sit on the plane?' 
+            question5 = 'Are the security guides friendly or rude?'
+            question6 = 'Are the airport restrooms clean?'
+        if this_perspective == 'Grocery Store Customer Experience Manager':
+            display_pic = 'jobphotos/gscem.jpg'
+            question1 = 'What is the grocery store like upon entering?'
+            question2 ='What items do the clients pick out?'
+            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question4 = 'How much are the groceries and what method of payment do the clients use?'
+            question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
+            question6 = 'What type of grocery bags do the clients use?'
+        if this_perspective == 'Dean of Academic Studies':
+            display_pic ='jobphotos/dean.jpg'
+            question1 = 'What is the lecture hall like?'
+            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question3 ='What is something taught in lecture?'
+            question4 = 'When is the next assessment in the class?'
+            question5 = 'Are the students paying attention?'
+            question6 = 'Are the desks comfortable?'
+        if this_perspective == 'Wedding Planner':
+            display_pic = 'jobphotos/weddingplanner.jpg'
+            question1 = 'How does the person who proposed feel before proposing?'
+            question2 ='What is the ring like?'
+            question3 ='Does anyone help with the proposal?'
+            question4 = 'Who witnessed the “yes”?'
+            question5 = 'Is anyone taking pictures of the proposal?'
+            question6 = 'How long does the proposal take?'
+        if this_perspective == 'Business Reporter':
+            display_pic = 'jobphotos/business_reporter.jpg'
+            question1 = 'What industry are the business people in?'
+            question2 = 'What is being negotiated and how much money is at stake?'
+            question3 = 'What is the response to the proposed deal?'
+            question4 =  'What comes about from the business proposal?'
+            question5 = 'Is the deal fair?'
+            question6 =  'How long does it take to make the deal?'
+        if this_perspective == 'Matchmaker':
+            display_pic = 'jobphotos/matchmaker.jpg'
+            question1 = 'Who notices who first and why do they notice the other?' 
+            question2 ='How does the couple start talking?'
+            question3 ='Which of the people proposes going on an actual date and what do they propose?'
+            question4 = 'Who leaves first and why do they have to go?'
+            question5 = 'Is the couple going to get married?'
+            question6 = 'Who shows more interest?'
+        
+        #set the story file and picture
+        
+        this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
+        this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
+        
+        text_4.setText(this_perspective)
+        image.setImage(display_pic)
+        # keep track of which components have finished
+        perspectiveComponents = [text_4, image, text_5]
+        for thisComponent in perspectiveComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "perspective"-------
+        while continueRoutine:
+            # get current time
+            t = perspectiveClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            for key in event.getKeys():
+                if key in ['space']: 
+                    continueRoutine = False
+                if key in ['q']: 
+                    trials.finished = 1
+                    continueRoutine = False
+            
+            # *text_4* updates
+            if t >= 0.0 and text_4.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_4.tStart = t
+                text_4.frameNStart = frameN  # exact frame index
+                text_4.setAutoDraw(True)
+            
+            # *image* updates
+            if t >= 0.0 and image.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                image.tStart = t
+                image.frameNStart = frameN  # exact frame index
+                image.setAutoDraw(True)
+            
+            # *text_5* updates
+            if t >= 0.0 and text_5.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                text_5.tStart = t
+                text_5.frameNStart = frameN  # exact frame index
+                text_5.setAutoDraw(True)
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in perspectiveComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "perspective"-------
+        for thisComponent in perspectiveComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # ------Prepare to start Routine "trial"-------
         t = 0
@@ -3442,6 +3700,7 @@ frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 key_resp_6 = event.BuilderKeyResponse()
+
 # keep track of which components have finished
 end_of_taskComponents = [text_36, key_resp_6]
 for thisComponent in end_of_taskComponents:
@@ -3485,6 +3744,14 @@ while continueRoutine:
             key_resp_6.rt = key_resp_6.clock.getTime()
             # a response ends the routine
             continueRoutine = False
+    from psychopy import core
+    
+    while True:
+            keys = event.getKeys()
+            if keys:
+                # q quits the experiment
+                if keys[0] == 'q':
+                    core.quit()
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -3514,8 +3781,11 @@ thisExp.addData('key_resp_6.keys',key_resp_6.keys)
 if key_resp_6.keys != None:  # we had a response
     thisExp.addData('key_resp_6.rt', key_resp_6.rt)
 thisExp.nextEntry()
+
 # the Routine "end_of_task" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
+
+
 
 
 
