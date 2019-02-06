@@ -1,0 +1,751 @@
+2.2137 	WARNING 	sounddevice audio lib was requested but not loaded: sounddevice not working
+20.9784 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+21.7205 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10f624cc0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x112152630>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.7206 	EXP 	window1: recordFrameIntervals = False
+21.8774 	EXP 	window1: recordFrameIntervals = True
+22.0610 	EXP 	window1: recordFrameIntervals = False
+22.2256 	EXP 	Created welcome_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='welcome_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2314 	EXP 	Created text_17 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_17', opacity=1.0, ori=0, pos=array([ 0. , -0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2417 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.2475 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([ 0. , -0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2523 	EXP 	Created welcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='welcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2573 	EXP 	Created text_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_12', opacity=1.0, ori=0, pos=array([ 0. , -0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2620 	EXP 	Created text_18 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_18', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=0.5)
+22.2640 	EXP 	Created image_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_9', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.2689 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2737 	EXP 	Created text_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_9', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=0.5)
+22.2757 	EXP 	Created image_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_5', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.2809 	EXP 	Created text_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_10', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2856 	EXP 	Created text_11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_11', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=0.5)
+22.2880 	EXP 	Created image_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_6', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.2929 	EXP 	Created text_13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_13', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.2993 	EXP 	Created text_14 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_14', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=0.5)
+22.3016 	EXP 	Created image_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_7', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.3065 	EXP 	Created text_15 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_15', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.3115 	EXP 	Created text_16 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_16', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=0.5)
+22.3136 	EXP 	Created image_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_8', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.3355 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+22.3410 	EXP 	Created question1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question1_2', opacity=1.0, ori=0, pos=array([0. , 0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3503 	EXP 	Created question2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question2_2', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3568 	EXP 	Created question3_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question3_2', opacity=1.0, ori=0, pos=array([0.  , 0.12]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3616 	EXP 	Created question4_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question4_2', opacity=1.0, ori=0, pos=array([ 0.  , -0.12]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3669 	EXP 	Created question5_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question5_2', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3730 	EXP 	Created question6_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question6_2', opacity=1.0, ori=0, pos=array([ 0. , -0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.3767 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.85]), size=array([0.25 , 0.125]), texRes=128, units='norm', win=Window(...))
+22.3863 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Final Tests', units='norm', win=Window(...), wrapWidth=1)
+22.3883 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+22.3948 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([ 0. , -0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.3997 	EXP 	Created question1_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question1_3', opacity=1.0, ori=0, pos=array([0. , 0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4044 	EXP 	Created question2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question2_3', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4091 	EXP 	Created question3_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question3_3', opacity=1.0, ori=0, pos=array([0.  , 0.12]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4138 	EXP 	Created question4_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question4_3', opacity=1.0, ori=0, pos=array([ 0.  , -0.12]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4188 	EXP 	Created question5_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question5_3', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4234 	EXP 	Created question6_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='question6_3', opacity=1.0, ori=0, pos=array([ 0. , -0.6]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=2)
+22.4255 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.85]), size=array([0.25 , 0.125]), texRes=128, units='norm', win=Window(...))
+22.4304 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+22.4361 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='end of introduction', units='norm', win=Window(...), wrapWidth=1)
+22.4879 	EXP 	Imported instructions.xlsx as conditions, 7 conditions, 2 params
+22.4885 	EXP 	Created sequence: sequential, trialTypes=7, nReps=1, seed=None
+22.4891 	EXP 	New trial (rep=0, index=0): OrderedDict([('instruct_text', 'Welcome to the Job Simulator Task!'), ('instruct_text2', '(press the space bar to continue)')])
+22.5440 	EXP 	welcome_2: text = 'Welcome to the Job Simulator Task!'
+22.5440 	EXP 	text_17: text = '(press the space bar to continue)'
+22.5440 	EXP 	welcome_2: autoDraw = True
+22.5440 	EXP 	text_17: autoDraw = True
+23.8423 	DATA 	Keypress: space
+23.8457 	EXP 	New trial (rep=0, index=1): OrderedDict([('instruct_text', 'In this task, you first be introduced to the perspectives of 8 different careers. '), ('instruct_text2', None)])
+23.8940 	EXP 	welcome_2: autoDraw = False
+23.8940 	EXP 	text_17: autoDraw = False
+23.8940 	EXP 	welcome_2: text = 'In this task, you first be introduced to the perspectives of 8 different careers. '
+23.8940 	EXP 	text_17: text = '(press the space bar to continue)'
+23.8940 	EXP 	welcome_2: autoDraw = True
+23.8940 	EXP 	text_17: autoDraw = True
+25.8467 	DATA 	Keypress: space
+25.8490 	EXP 	New trial (rep=0, index=2): OrderedDict([('instruct_text', 'Then, you will learn 4 questions associated with each perspective. '), ('instruct_text2', None)])
+25.8941 	EXP 	welcome_2: autoDraw = False
+25.8941 	EXP 	text_17: autoDraw = False
+25.8941 	EXP 	welcome_2: text = 'Then, you will learn 4 questions associated with each perspective. '
+25.8941 	EXP 	text_17: text = '(press the space bar to continue)'
+25.8941 	EXP 	welcome_2: autoDraw = True
+25.8941 	EXP 	text_17: autoDraw = True
+27.4156 	DATA 	Keypress: space
+27.4301 	EXP 	New trial (rep=0, index=3): OrderedDict([('instruct_text', 'Subsequently, you will thoroughly read 16 stories while assuming one of those 8 perspectives. '), ('instruct_text2', None)])
+27.4772 	EXP 	welcome_2: autoDraw = False
+27.4772 	EXP 	text_17: autoDraw = False
+27.4772 	EXP 	welcome_2: text = 'Subsequently, you will thoroughly read 16 stories while assuming one of those 8 perspectives. '
+27.4772 	EXP 	text_17: text = '(press the space bar to continue)'
+27.4772 	EXP 	welcome_2: autoDraw = True
+27.4772 	EXP 	text_17: autoDraw = True
+30.4134 	DATA 	Keypress: space
+30.4158 	EXP 	New trial (rep=0, index=4): OrderedDict([('instruct_text', 'While reading, try to remember the questions of the perspective you have assumed. '), ('instruct_text2', None)])
+30.4611 	EXP 	welcome_2: autoDraw = False
+30.4611 	EXP 	text_17: autoDraw = False
+30.4611 	EXP 	welcome_2: text = 'While reading, try to remember the questions of the perspective you have assumed. '
+30.4611 	EXP 	text_17: text = '(press the space bar to continue)'
+30.4611 	EXP 	welcome_2: autoDraw = True
+30.4611 	EXP 	text_17: autoDraw = True
+31.7826 	DATA 	Keypress: space
+31.7968 	EXP 	New trial (rep=0, index=5): OrderedDict([('instruct_text', 'After, you will be asked to answer these questions about the stories you have read. '), ('instruct_text2', None)])
+31.8445 	EXP 	welcome_2: autoDraw = False
+31.8445 	EXP 	text_17: autoDraw = False
+31.8445 	EXP 	welcome_2: text = 'After, you will be asked to answer these questions about the stories you have read. '
+31.8445 	EXP 	text_17: text = '(press the space bar to continue)'
+31.8445 	EXP 	welcome_2: autoDraw = True
+31.8445 	EXP 	text_17: autoDraw = True
+32.4471 	DATA 	Keypress: space
+32.4494 	EXP 	New trial (rep=0, index=6): OrderedDict([('instruct_text', 'The 8 perspectives are as follows:'), ('instruct_text2', None)])
+32.4779 	EXP 	welcome_2: autoDraw = False
+32.4779 	EXP 	text_17: autoDraw = False
+32.4779 	EXP 	welcome_2: text = 'The 8 perspectives are as follows:'
+32.4779 	EXP 	text_17: text = '(press the space bar to continue)'
+32.4779 	EXP 	welcome_2: autoDraw = True
+32.4779 	EXP 	text_17: autoDraw = True
+33.0305 	DATA 	Keypress: space
+33.0530 	EXP 	Imported jobsPics.xlsx as conditions, 8 conditions, 2 params
+33.0564 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+33.0571 	EXP 	New trial (rep=0, index=0): OrderedDict([('rolePic', 'jobphotos/gscem.jpg'), ('job', 'Grocery Store Customer Experience Manager\n')])
+33.2106 	EXP 	welcome_2: autoDraw = False
+33.2106 	EXP 	text_17: autoDraw = False
+33.2106 	EXP 	image: image = 'jobphotos/gscem.jpg'
+33.2106 	EXP 	text_2: text = 'Grocery Store Customer Experience Manager\n'
+33.2106 	EXP 	image: autoDraw = True
+33.2106 	EXP 	text_2: autoDraw = True
+33.9304 	DATA 	Keypress: space
+33.9330 	EXP 	New trial (rep=0, index=1): OrderedDict([('rolePic', 'jobphotos/dean.jpg'), ('job', 'Dean of Academic Studies')])
+33.9947 	EXP 	image: autoDraw = False
+33.9947 	EXP 	text_2: autoDraw = False
+33.9947 	EXP 	image: image = 'jobphotos/dean.jpg'
+33.9947 	EXP 	text_2: text = 'Dean of Academic Studies'
+33.9947 	EXP 	image: autoDraw = True
+33.9947 	EXP 	text_2: autoDraw = True
+34.5157 	DATA 	Keypress: space
+34.5303 	EXP 	New trial (rep=0, index=2): OrderedDict([('rolePic', 'jobphotos/acem.jpg'), ('job', 'Airport Customer Experience Manager')])
+34.5947 	EXP 	image: autoDraw = False
+34.5947 	EXP 	text_2: autoDraw = False
+34.5947 	EXP 	image: image = 'jobphotos/acem.jpg'
+34.5947 	EXP 	text_2: text = 'Airport Customer Experience Manager'
+34.5947 	EXP 	image: autoDraw = True
+34.5947 	EXP 	text_2: autoDraw = True
+34.9804 	DATA 	Keypress: space
+34.9827 	EXP 	New trial (rep=0, index=3): OrderedDict([('rolePic', 'jobphotos/couples.jpeg'), ('job', 'Couples Therapist\n')])
+34.9831 	WARNING 	Requested image 'jobphotos/couples.jpeg' not found but similar filename 'jobphotos/couples.jpg' exists. This will be used instead but changing the filename is advised.
+35.0281 	EXP 	image: autoDraw = False
+35.0281 	EXP 	text_2: autoDraw = False
+35.0281 	EXP 	image: image = 'jobphotos/couples.jpeg'
+35.0281 	EXP 	text_2: text = 'Couples Therapist\n'
+35.0281 	EXP 	image: autoDraw = True
+35.0281 	EXP 	text_2: autoDraw = True
+35.4138 	DATA 	Keypress: space
+35.4161 	EXP 	New trial (rep=0, index=4): OrderedDict([('rolePic', 'jobphotos/restaurant_critic.jpg'), ('job', 'Restaurant Critic')])
+35.4781 	EXP 	image: autoDraw = False
+35.4781 	EXP 	text_2: autoDraw = False
+35.4781 	EXP 	image: image = 'jobphotos/restaurant_critic.jpg'
+35.4781 	EXP 	text_2: text = 'Restaurant Critic'
+35.4781 	EXP 	image: autoDraw = True
+35.4781 	EXP 	text_2: autoDraw = True
+35.7808 	DATA 	Keypress: space
+35.7833 	EXP 	New trial (rep=0, index=5): OrderedDict([('rolePic', 'jobphotos/business_reporter.jpg'), ('job', 'Business Reporter')])
+35.8448 	EXP 	image: autoDraw = False
+35.8448 	EXP 	text_2: autoDraw = False
+35.8448 	EXP 	image: image = 'jobphotos/business_reporter.jpg'
+35.8448 	EXP 	text_2: text = 'Business Reporter'
+35.8448 	EXP 	image: autoDraw = True
+35.8448 	EXP 	text_2: autoDraw = True
+36.1472 	DATA 	Keypress: space
+36.1496 	EXP 	New trial (rep=0, index=6): OrderedDict([('rolePic', 'jobphotos/matchmaker.jpg'), ('job', 'Matchmaker')])
+36.2115 	EXP 	image: autoDraw = False
+36.2115 	EXP 	text_2: autoDraw = False
+36.2115 	EXP 	image: image = 'jobphotos/matchmaker.jpg'
+36.2115 	EXP 	text_2: text = 'Matchmaker'
+36.2115 	EXP 	image: autoDraw = True
+36.2115 	EXP 	text_2: autoDraw = True
+36.4993 	DATA 	Keypress: space
+36.5139 	EXP 	New trial (rep=0, index=7): OrderedDict([('rolePic', 'jobphotos/weddingplanner.jpg'), ('job', 'Wedding Planner')])
+36.5782 	EXP 	image: autoDraw = False
+36.5782 	EXP 	text_2: autoDraw = False
+36.5782 	EXP 	image: image = 'jobphotos/weddingplanner.jpg'
+36.5782 	EXP 	text_2: text = 'Wedding Planner'
+36.5782 	EXP 	image: autoDraw = True
+36.5782 	EXP 	text_2: autoDraw = True
+36.9148 	DATA 	Keypress: space
+36.9505 	EXP 	Imported instructions2.xlsx as conditions, 10 conditions, 2 params
+36.9508 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+36.9512 	EXP 	New trial (rep=0, index=0): OrderedDict([('instruct_text', 'In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.\n'), ('instruct_text2', '(press the space bar to continue)')])
+36.9949 	EXP 	image: autoDraw = False
+36.9949 	EXP 	text_2: autoDraw = False
+36.9949 	EXP 	welcome: text = 'In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.\n'
+36.9949 	EXP 	text_12: text = '(press the space bar to continue)'
+36.9949 	EXP 	welcome: autoDraw = True
+36.9949 	EXP 	text_12: autoDraw = True
+37.6970 	DATA 	Keypress: space
+37.6996 	EXP 	New trial (rep=0, index=1): OrderedDict([('instruct_text', 'You will answer the questions about each story after reading all 16 stories. '), ('instruct_text2', None)])
+37.7449 	EXP 	welcome: autoDraw = False
+37.7449 	EXP 	text_12: autoDraw = False
+37.7449 	EXP 	welcome: text = 'You will answer the questions about each story after reading all 16 stories. '
+37.7449 	EXP 	text_12: text = '(press the space bar to continue)'
+37.7449 	EXP 	welcome: autoDraw = True
+37.7449 	EXP 	text_12: autoDraw = True
+38.2164 	DATA 	Keypress: space
+38.2307 	EXP 	New trial (rep=0, index=2): OrderedDict([('instruct_text', 'There will be four questions to answer per story.'), ('instruct_text2', None)])
+38.2616 	EXP 	welcome: autoDraw = False
+38.2616 	EXP 	text_12: autoDraw = False
+38.2616 	EXP 	welcome: text = 'There will be four questions to answer per story.'
+38.2616 	EXP 	text_12: text = '(press the space bar to continue)'
+38.2616 	EXP 	welcome: autoDraw = True
+38.2616 	EXP 	text_12: autoDraw = True
+38.7304 	DATA 	Keypress: space
+38.7327 	EXP 	New trial (rep=0, index=3): OrderedDict([('instruct_text', 'These questions are determined by the perspective you take during the story. '), ('instruct_text2', None)])
+38.7783 	EXP 	welcome: autoDraw = False
+38.7783 	EXP 	text_12: autoDraw = False
+38.7783 	EXP 	welcome: text = 'These questions are determined by the perspective you take during the story. '
+38.7783 	EXP 	text_12: text = '(press the space bar to continue)'
+38.7783 	EXP 	welcome: autoDraw = True
+38.7783 	EXP 	text_12: autoDraw = True
+39.1972 	DATA 	Keypress: space
+39.1995 	EXP 	New trial (rep=0, index=4): OrderedDict([('instruct_text', 'The questions will be the same for the stories read with the same perspective. '), ('instruct_text2', None)])
+39.2450 	EXP 	welcome: autoDraw = False
+39.2450 	EXP 	text_12: autoDraw = False
+39.2450 	EXP 	welcome: text = 'The questions will be the same for the stories read with the same perspective. '
+39.2450 	EXP 	text_12: text = '(press the space bar to continue)'
+39.2450 	EXP 	welcome: autoDraw = True
+39.2450 	EXP 	text_12: autoDraw = True
+39.4642 	DATA 	Keypress: space
+39.4666 	EXP 	New trial (rep=0, index=5): OrderedDict([('instruct_text', 'Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. '), ('instruct_text2', None)])
+39.5117 	EXP 	welcome: autoDraw = False
+39.5117 	EXP 	text_12: autoDraw = False
+39.5117 	EXP 	welcome: text = 'Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. '
+39.5117 	EXP 	text_12: text = '(press the space bar to continue)'
+39.5117 	EXP 	welcome: autoDraw = True
+39.5117 	EXP 	text_12: autoDraw = True
+39.6977 	DATA 	Keypress: space
+39.7000 	EXP 	New trial (rep=0, index=6): OrderedDict([('instruct_text', 'You will have to try to learn these questions with a series of pre-task quizzes.'), ('instruct_text2', None)])
+39.7451 	EXP 	welcome: autoDraw = False
+39.7451 	EXP 	text_12: autoDraw = False
+39.7451 	EXP 	welcome: text = 'You will have to try to learn these questions with a series of pre-task quizzes.'
+39.7451 	EXP 	text_12: text = '(press the space bar to continue)'
+39.7451 	EXP 	welcome: autoDraw = True
+39.7451 	EXP 	text_12: autoDraw = True
+39.8972 	DATA 	Keypress: space
+39.8995 	EXP 	New trial (rep=0, index=7): OrderedDict([('instruct_text', 'Once the story-reading task has begun, remember your answers to the questions for each story.'), ('instruct_text2', None)])
+39.9451 	EXP 	welcome: autoDraw = False
+39.9451 	EXP 	text_12: autoDraw = False
+39.9451 	EXP 	welcome: text = 'Once the story-reading task has begun, remember your answers to the questions for each story.'
+39.9451 	EXP 	text_12: text = '(press the space bar to continue)'
+39.9451 	EXP 	welcome: autoDraw = True
+39.9451 	EXP 	text_12: autoDraw = True
+40.1307 	DATA 	Keypress: space
+40.1331 	EXP 	New trial (rep=0, index=8): OrderedDict([('instruct_text', 'Again, you will be asked about the answers to these questions for each story at end of the experiment. '), ('instruct_text2', None)])
+40.1784 	EXP 	welcome: autoDraw = False
+40.1784 	EXP 	text_12: autoDraw = False
+40.1784 	EXP 	welcome: text = 'Again, you will be asked about the answers to these questions for each story at end of the experiment. '
+40.1784 	EXP 	text_12: text = '(press the space bar to continue)'
+40.1784 	EXP 	welcome: autoDraw = True
+40.1784 	EXP 	text_12: autoDraw = True
+40.3809 	DATA 	Keypress: space
+40.3832 	EXP 	New trial (rep=0, index=9): OrderedDict([('instruct_text', 'Press the space bar to begin learning the perspectives and the questions for each one.'), ('instruct_text2', None)])
+40.4284 	EXP 	welcome: autoDraw = False
+40.4284 	EXP 	text_12: autoDraw = False
+40.4284 	EXP 	welcome: text = 'Press the space bar to begin learning the perspectives and the questions for each one.'
+40.4284 	EXP 	text_12: text = '(press the space bar to continue)'
+40.4284 	EXP 	welcome: autoDraw = True
+40.4284 	EXP 	text_12: autoDraw = True
+40.6140 	DATA 	Keypress: space
+40.6405 	EXP 	Imported whichRole.xlsx as conditions, 8 conditions, 8 params
+40.6409 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+40.6415 	EXP 	New trial (rep=0, index=0): OrderedDict([('Q1', 'What is the grocery store like upon entering?\n'), ('Q2', 'What items do the clients pick out?\n'), ('Q3', 'How is the checkout line and how long do the clients wait in line?\n'), ('Q4', 'How much are the groceries and what method of payment do the clients use?\n'), ('D1', 'How long does it take for the cashier to scan all of the customers’ groceries?'), ('D2', 'What type of grocery bags do the clients use?'), ('roleName', 'Grocery Store Customer Experience Manager\n'), ('rolePic', 'jobphotos/gscem.jpg')])
+40.6419 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+40.6422 	EXP 	New trial (rep=0, index=0): None
+40.6950 	EXP 	welcome: autoDraw = False
+40.6950 	EXP 	text_12: autoDraw = False
+40.6950 	EXP 	text_18: text = 'Grocery Store Customer Experience Manager\n'
+40.6950 	EXP 	image_9: image = 'jobphotos/gscem.jpg'
+40.6950 	EXP 	text_18: autoDraw = True
+40.6950 	EXP 	image_9: autoDraw = True
+40.8481 	DATA 	Keypress: space
+40.9285 	EXP 	text_18: autoDraw = False
+40.9285 	EXP 	image_9: autoDraw = False
+40.9285 	EXP 	text_8: text = 'A: What is the grocery store like upon entering?\n'
+40.9285 	EXP 	text_9: text = 'Grocery Store Customer Experience Manager\n'
+40.9285 	EXP 	image_5: image = 'jobphotos/gscem.jpg'
+40.9285 	EXP 	text_8: autoDraw = True
+40.9285 	EXP 	text_9: autoDraw = True
+40.9285 	EXP 	image_5: autoDraw = True
+41.7997 	DATA 	Keypress: space
+41.8782 	EXP 	text_8: autoDraw = False
+41.8782 	EXP 	text_9: autoDraw = False
+41.8782 	EXP 	image_5: autoDraw = False
+41.8782 	EXP 	text_10: text = 'B: What items do the clients pick out?\n'
+41.8782 	EXP 	text_11: text = 'Grocery Store Customer Experience Manager\n'
+41.8782 	EXP 	image_6: image = 'jobphotos/gscem.jpg'
+41.8782 	EXP 	text_10: autoDraw = True
+41.8782 	EXP 	text_11: autoDraw = True
+41.8782 	EXP 	image_6: autoDraw = True
+42.1976 	DATA 	Keypress: space
+42.2619 	EXP 	text_10: autoDraw = False
+42.2619 	EXP 	text_11: autoDraw = False
+42.2619 	EXP 	image_6: autoDraw = False
+42.2619 	EXP 	text_13: text = 'C: How is the checkout line and how long do the clients wait in line?\n'
+42.2619 	EXP 	text_14: text = 'Grocery Store Customer Experience Manager\n'
+42.2619 	EXP 	image_7: image = 'jobphotos/gscem.jpg'
+42.2619 	EXP 	text_13: autoDraw = True
+42.2619 	EXP 	text_14: autoDraw = True
+42.2619 	EXP 	image_7: autoDraw = True
+42.5476 	DATA 	Keypress: space
+42.6116 	EXP 	text_13: autoDraw = False
+42.6116 	EXP 	text_14: autoDraw = False
+42.6116 	EXP 	image_7: autoDraw = False
+42.6116 	EXP 	text_15: text = 'D: How much are the groceries and what method of payment do the clients use?\n'
+42.6116 	EXP 	text_16: text = 'Grocery Store Customer Experience Manager\n'
+42.6116 	EXP 	image_8: image = 'jobphotos/gscem.jpg'
+42.6116 	EXP 	text_15: autoDraw = True
+42.6116 	EXP 	text_16: autoDraw = True
+42.6116 	EXP 	image_8: autoDraw = True
+42.8978 	DATA 	Keypress: space
+42.9120 	EXP 	text_15: autoDraw = False
+42.9120 	EXP 	text_16: autoDraw = False
+42.9120 	EXP 	image_8: autoDraw = False
+42.9120 	EXP 	text_5: autoDraw = True
+44.6641 	DATA 	Keypress: space
+44.6880 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='checkmark.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.48055556, 0.75555556]), texRes=128, units='norm', win=Window(...))
+44.6962 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='redx.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.8]), texRes=128, units='norm', win=Window(...))
+44.7144 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='thumbsup.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.66666667, 1.14      ]), texRes=128, units='norm', win=Window(...))
+44.8454 	EXP 	text_5: autoDraw = False
+44.8454 	EXP 	question1_2: text = '1: How much are the groceries and what method of payment do the clients use?\n'
+44.8454 	EXP 	question2_2: text = '2: How is the checkout line and how long do the clients wait in line?\n'
+44.8454 	EXP 	question3_2: text = '3: What is the grocery store like upon entering?\n'
+44.8454 	EXP 	question4_2: text = '4: How long does it take for the cashier to scan all of the customers’ groceries?'
+44.8454 	EXP 	question5_2: text = '5: What items do the clients pick out?\n'
+44.8454 	EXP 	question6_2: text = '6: What type of grocery bags do the clients use?'
+44.8454 	EXP 	question1_2: autoDraw = True
+44.8454 	EXP 	question2_2: autoDraw = True
+44.8454 	EXP 	question3_2: autoDraw = True
+44.8454 	EXP 	question4_2: autoDraw = True
+44.8454 	EXP 	question5_2: autoDraw = True
+44.8454 	EXP 	question6_2: autoDraw = True
+44.8454 	EXP 	image_3: autoDraw = True
+46.0079 	DATA 	Keypress: 1
+47.0808 	EXP 	New trial (rep=1, index=0): None
+47.1122 	EXP 	question1_2: autoDraw = False
+47.1122 	EXP 	question2_2: autoDraw = False
+47.1122 	EXP 	question3_2: autoDraw = False
+47.1122 	EXP 	question4_2: autoDraw = False
+47.1122 	EXP 	question5_2: autoDraw = False
+47.1122 	EXP 	question6_2: autoDraw = False
+47.1122 	EXP 	image_3: autoDraw = False
+47.1122 	EXP 	text_18: text = 'Grocery Store Customer Experience Manager\n'
+47.1122 	EXP 	image_9: image = 'jobphotos/gscem.jpg'
+47.1122 	EXP 	text_18: autoDraw = True
+47.1122 	EXP 	image_9: autoDraw = True
+47.5148 	DATA 	Keypress: space
+47.5455 	EXP 	text_18: autoDraw = False
+47.5455 	EXP 	image_9: autoDraw = False
+47.5455 	EXP 	text_8: text = 'A: What is the grocery store like upon entering?\n'
+47.5455 	EXP 	text_9: text = 'Grocery Store Customer Experience Manager\n'
+47.5455 	EXP 	image_5: image = 'jobphotos/gscem.jpg'
+47.5455 	EXP 	text_8: autoDraw = True
+47.5455 	EXP 	text_9: autoDraw = True
+47.5455 	EXP 	image_5: autoDraw = True
+47.9980 	DATA 	Keypress: space
+48.0289 	EXP 	text_8: autoDraw = False
+48.0289 	EXP 	text_9: autoDraw = False
+48.0289 	EXP 	image_5: autoDraw = False
+48.0289 	EXP 	text_10: text = 'B: What items do the clients pick out?\n'
+48.0289 	EXP 	text_11: text = 'Grocery Store Customer Experience Manager\n'
+48.0289 	EXP 	image_6: image = 'jobphotos/gscem.jpg'
+48.0289 	EXP 	text_10: autoDraw = True
+48.0289 	EXP 	text_11: autoDraw = True
+48.0289 	EXP 	image_6: autoDraw = True
+48.1813 	DATA 	Keypress: space
+48.2290 	EXP 	text_10: autoDraw = False
+48.2290 	EXP 	text_11: autoDraw = False
+48.2290 	EXP 	image_6: autoDraw = False
+48.2290 	EXP 	text_13: text = 'C: How is the checkout line and how long do the clients wait in line?\n'
+48.2290 	EXP 	text_14: text = 'Grocery Store Customer Experience Manager\n'
+48.2290 	EXP 	image_7: image = 'jobphotos/gscem.jpg'
+48.2290 	EXP 	text_13: autoDraw = True
+48.2290 	EXP 	text_14: autoDraw = True
+48.2290 	EXP 	image_7: autoDraw = True
+48.3480 	DATA 	Keypress: space
+48.3957 	EXP 	text_13: autoDraw = False
+48.3957 	EXP 	text_14: autoDraw = False
+48.3957 	EXP 	image_7: autoDraw = False
+48.3957 	EXP 	text_15: text = 'D: How much are the groceries and what method of payment do the clients use?\n'
+48.3957 	EXP 	text_16: text = 'Grocery Store Customer Experience Manager\n'
+48.3957 	EXP 	image_8: image = 'jobphotos/gscem.jpg'
+48.3957 	EXP 	text_15: autoDraw = True
+48.3957 	EXP 	text_16: autoDraw = True
+48.3957 	EXP 	image_8: autoDraw = True
+48.5147 	DATA 	Keypress: space
+48.5290 	EXP 	text_15: autoDraw = False
+48.5290 	EXP 	text_16: autoDraw = False
+48.5290 	EXP 	image_8: autoDraw = False
+48.5290 	EXP 	text_5: autoDraw = True
+48.8980 	DATA 	Keypress: space
+48.9098 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='checkmark.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.48055556, 0.75555556]), texRes=128, units='norm', win=Window(...))
+48.9165 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='redx.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.8]), texRes=128, units='norm', win=Window(...))
+48.9342 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='thumbsup.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.66666667, 1.14      ]), texRes=128, units='norm', win=Window(...))
+49.0290 	EXP 	text_5: autoDraw = False
+49.0290 	EXP 	question1_2: text = '1: What is the grocery store like upon entering?\n'
+49.0290 	EXP 	question2_2: text = '2: How much are the groceries and what method of payment do the clients use?\n'
+49.0290 	EXP 	question3_2: text = '3: How long does it take for the cashier to scan all of the customers’ groceries?'
+49.0290 	EXP 	question4_2: text = '4: What type of grocery bags do the clients use?'
+49.0290 	EXP 	question5_2: text = '5: What items do the clients pick out?\n'
+49.0290 	EXP 	question6_2: text = '6: How is the checkout line and how long do the clients wait in line?\n'
+49.0290 	EXP 	question1_2: autoDraw = True
+49.0290 	EXP 	question2_2: autoDraw = True
+49.0290 	EXP 	question3_2: autoDraw = True
+49.0290 	EXP 	question4_2: autoDraw = True
+49.0290 	EXP 	question5_2: autoDraw = True
+49.0290 	EXP 	question6_2: autoDraw = True
+49.0290 	EXP 	image_3: autoDraw = True
+57.2151 	DATA 	Keypress: 1
+61.6218 	DATA 	Keypress: 5
+61.8142 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+61.8657 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+61.9325 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+61.9991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.0491 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.0989 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.1658 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.2326 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.2991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.3491 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.3991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.4488 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.4991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.5491 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.5991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.6658 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.7158 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.7658 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.8158 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.8658 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.9325 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+62.9992 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+63.0489 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+63.0991 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+63.1491 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+63.1882 	DATA 	Keypress: 6
+66.1992 	DATA 	Keypress: 2
+66.3643 	WARNING 	Requested image 'bar5.jpeg' not found but similar filename 'bar5.jpg' exists. This will be used instead but changing the filename is advised.
+67.9327 	WARNING 	Requested image 'bar5.jpeg' not found but similar filename 'bar5.jpg' exists. This will be used instead but changing the filename is advised.
+67.9725 	EXP 	New trial (rep=0, index=1): OrderedDict([('Q1', 'When the clients arrive at the airport, how much time do they have to go through?\n'), ('Q2', 'What do the clients have do at security to comply with the security check?\n'), ('Q3', 'How do the clients feel when they are \xa0walking to the gates?\n'), ('Q4', 'Where does each client sit on the plane?'), ('D1', 'Are the security guides friendly or rude?'), ('D2', 'Are the airport restrooms clean?'), ('roleName', 'Airport Customer Experience Manager'), ('rolePic', 'jobphotos/acem.jpg')])
+67.9731 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+67.9733 	EXP 	New trial (rep=0, index=0): None
+68.0299 	EXP 	question1_2: autoDraw = False
+68.0299 	EXP 	question2_2: autoDraw = False
+68.0299 	EXP 	question3_2: autoDraw = False
+68.0299 	EXP 	question4_2: autoDraw = False
+68.0299 	EXP 	question5_2: autoDraw = False
+68.0299 	EXP 	question6_2: autoDraw = False
+68.0299 	EXP 	image_3: autoDraw = False
+68.0299 	EXP 	text_18: text = 'Airport Customer Experience Manager'
+68.0299 	EXP 	image_9: image = 'jobphotos/acem.jpg'
+68.0299 	EXP 	text_18: autoDraw = True
+68.0299 	EXP 	image_9: autoDraw = True
+68.4989 	DATA 	Keypress: space
+68.5637 	EXP 	text_18: autoDraw = False
+68.5637 	EXP 	image_9: autoDraw = False
+68.5637 	EXP 	text_8: text = 'A: When the clients arrive at the airport, how much time do they have to go through?\n'
+68.5637 	EXP 	text_9: text = 'Airport Customer Experience Manager'
+68.5637 	EXP 	image_5: image = 'jobphotos/acem.jpg'
+68.5637 	EXP 	text_8: autoDraw = True
+68.5637 	EXP 	text_9: autoDraw = True
+68.5637 	EXP 	image_5: autoDraw = True
+68.8662 	DATA 	Keypress: space
+68.9304 	EXP 	text_8: autoDraw = False
+68.9304 	EXP 	text_9: autoDraw = False
+68.9304 	EXP 	image_5: autoDraw = False
+68.9304 	EXP 	text_10: text = 'B: What do the clients have do at security to comply with the security check?\n'
+68.9304 	EXP 	text_11: text = 'Airport Customer Experience Manager'
+68.9304 	EXP 	image_6: image = 'jobphotos/acem.jpg'
+68.9304 	EXP 	text_10: autoDraw = True
+68.9304 	EXP 	text_11: autoDraw = True
+68.9304 	EXP 	image_6: autoDraw = True
+69.2329 	DATA 	Keypress: space
+69.3138 	EXP 	text_10: autoDraw = False
+69.3138 	EXP 	text_11: autoDraw = False
+69.3138 	EXP 	image_6: autoDraw = False
+69.3138 	EXP 	text_13: text = 'C: How do the clients feel when they are \xa0walking to the gates?\n'
+69.3138 	EXP 	text_14: text = 'Airport Customer Experience Manager'
+69.3138 	EXP 	image_7: image = 'jobphotos/acem.jpg'
+69.3138 	EXP 	text_13: autoDraw = True
+69.3138 	EXP 	text_14: autoDraw = True
+69.3138 	EXP 	image_7: autoDraw = True
+69.5992 	DATA 	Keypress: space
+69.6471 	EXP 	text_13: autoDraw = False
+69.6471 	EXP 	text_14: autoDraw = False
+69.6471 	EXP 	image_7: autoDraw = False
+69.6471 	EXP 	text_15: text = 'D: Where does each client sit on the plane?'
+69.6471 	EXP 	text_16: text = 'Airport Customer Experience Manager'
+69.6471 	EXP 	image_8: image = 'jobphotos/acem.jpg'
+69.6471 	EXP 	text_15: autoDraw = True
+69.6471 	EXP 	text_16: autoDraw = True
+69.6471 	EXP 	image_8: autoDraw = True
+70.1161 	DATA 	Keypress: space
+70.1305 	EXP 	text_15: autoDraw = False
+70.1305 	EXP 	text_16: autoDraw = False
+70.1305 	EXP 	image_8: autoDraw = False
+70.1305 	EXP 	text_5: autoDraw = True
+70.7829 	DATA 	Keypress: space
+70.7946 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='checkmark.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.48055556, 0.75555556]), texRes=128, units='norm', win=Window(...))
+70.8011 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='redx.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.8]), texRes=128, units='norm', win=Window(...))
+70.8190 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='thumbsup.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.66666667, 1.14      ]), texRes=128, units='norm', win=Window(...))
+70.9306 	EXP 	text_5: autoDraw = False
+70.9306 	EXP 	question1_2: text = '1: Where does each client sit on the plane?'
+70.9306 	EXP 	question2_2: text = '2: What do the clients have do at security to comply with the security check?\n'
+70.9306 	EXP 	question3_2: text = '3: When the clients arrive at the airport, how much time do they have to go through?\n'
+70.9306 	EXP 	question4_2: text = '4: Are the airport restrooms clean?'
+70.9306 	EXP 	question5_2: text = '5: How do the clients feel when they are \xa0walking to the gates?\n'
+70.9306 	EXP 	question6_2: text = '6: Are the security guides friendly or rude?'
+70.9306 	EXP 	question1_2: autoDraw = True
+70.9306 	EXP 	question2_2: autoDraw = True
+70.9306 	EXP 	question3_2: autoDraw = True
+70.9306 	EXP 	question4_2: autoDraw = True
+70.9306 	EXP 	question5_2: autoDraw = True
+70.9306 	EXP 	question6_2: autoDraw = True
+70.9306 	EXP 	image_3: autoDraw = True
+82.5404 	DATA 	Keypress: 3
+85.6225 	DATA 	Keypress: 2
+85.7992 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+85.8674 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+85.9174 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+85.9673 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.0177 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.0841 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.1343 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.2008 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.2508 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.3007 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.3673 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.4174 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.4672 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.5339 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.6008 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.6509 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.7175 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.7681 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.8342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.8841 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.9343 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+86.9842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.0341 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.0840 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.1341 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.1841 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.2509 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.3176 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.3842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.4342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.5009 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.5509 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.6009 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.6676 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.7177 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.7678 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.8175 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.8842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.9342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+87.9842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.0345 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.0842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.1344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.1842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.2342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.2842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.3342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.3842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.4341 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.4842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.5509 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.6009 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.6680 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.7176 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.7676 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.8342 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.9010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+88.9511 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.0009 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.0675 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.1344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.1842 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.2510 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.3012 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.3509 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.4010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.4672 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.5170 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.5676 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.6179 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.6676 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.7178 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.7844 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.8344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.9010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+89.9510 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.0010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.0677 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.1177 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.1677 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.2344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.2843 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.3343 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.4011 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.4508 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.5010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.5510 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.6013 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.6510 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.7010 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.7675 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.8177 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.8847 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.9344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+90.9844 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.0344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.1018 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.1677 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.2344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.2845 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.3344 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.4008 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.4675 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.5180 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.5679 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.6178 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.6679 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.7175 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.7845 	WARNING 	Requested image 'bar3.jpeg' not found but similar filename 'bar3.jpg' exists. This will be used instead but changing the filename is advised.
+91.8252 	DATA 	Keypress: 5
+93.6677 	DATA 	Keypress: 1
+93.8333 	WARNING 	Requested image 'bar5.jpeg' not found but similar filename 'bar5.jpg' exists. This will be used instead but changing the filename is advised.
+95.4012 	WARNING 	Requested image 'bar5.jpeg' not found but similar filename 'bar5.jpg' exists. This will be used instead but changing the filename is advised.
+95.4413 	EXP 	New trial (rep=0, index=2): OrderedDict([('Q1', 'Who notices who first and why do they notice the other?\n'), ('Q2', 'How does the couple start talking?\n'), ('Q3', 'Which of the people proposes going on an actual date and what do they propose?\n'), ('Q4', 'Who leaves first and why do they have to go?\n'), ('D1', 'Is the couple going to get married?'), ('D2', 'Who shows more interest?'), ('roleName', 'Matchmaker'), ('rolePic', 'jobphotos/matchmaker.jpg')])
+95.4419 	EXP 	Created sequence: sequential, trialTypes=1, nReps=5, seed=None
+95.4421 	EXP 	New trial (rep=0, index=0): None
+95.4822 	EXP 	question1_2: autoDraw = False
+95.4822 	EXP 	question2_2: autoDraw = False
+95.4822 	EXP 	question3_2: autoDraw = False
+95.4822 	EXP 	question4_2: autoDraw = False
+95.4822 	EXP 	question5_2: autoDraw = False
+95.4822 	EXP 	question6_2: autoDraw = False
+95.4822 	EXP 	image_3: autoDraw = False
+95.4822 	EXP 	text_18: text = 'Matchmaker'
+95.4822 	EXP 	image_9: image = 'jobphotos/matchmaker.jpg'
+95.4822 	EXP 	text_18: autoDraw = True
+95.4822 	EXP 	image_9: autoDraw = True
+95.7846 	DATA 	Keypress: space
+95.8322 	EXP 	text_18: autoDraw = False
+95.8322 	EXP 	image_9: autoDraw = False
+95.8322 	EXP 	text_8: text = 'A: Who notices who first and why do they notice the other?\n'
+95.8322 	EXP 	text_9: text = 'Matchmaker'
+95.8322 	EXP 	image_5: image = 'jobphotos/matchmaker.jpg'
+95.8322 	EXP 	text_8: autoDraw = True
+95.8322 	EXP 	text_9: autoDraw = True
+95.8322 	EXP 	image_5: autoDraw = True
+97.2681 	DATA 	Keypress: space
+97.3157 	EXP 	text_8: autoDraw = False
+97.3157 	EXP 	text_9: autoDraw = False
+97.3157 	EXP 	image_5: autoDraw = False
+97.3157 	EXP 	text_10: text = 'B: How does the couple start talking?\n'
+97.3157 	EXP 	text_11: text = 'Matchmaker'
+97.3157 	EXP 	image_6: image = 'jobphotos/matchmaker.jpg'
+97.3157 	EXP 	text_10: autoDraw = True
+97.3157 	EXP 	text_11: autoDraw = True
+97.3157 	EXP 	image_6: autoDraw = True
+97.7677 	DATA 	Keypress: space
+97.8991 	EXP 	text_10: autoDraw = False
+97.8991 	EXP 	text_11: autoDraw = False
+97.8991 	EXP 	image_6: autoDraw = False
+97.8991 	EXP 	text_13: text = 'C: Which of the people proposes going on an actual date and what do they propose?\n'
+97.8991 	EXP 	text_14: text = 'Matchmaker'
+97.8991 	EXP 	image_7: image = 'jobphotos/matchmaker.jpg'
+97.8991 	EXP 	text_13: autoDraw = True
+97.8991 	EXP 	text_14: autoDraw = True
+97.8991 	EXP 	image_7: autoDraw = True
+98.3350 	DATA 	Keypress: space
+98.3824 	EXP 	text_13: autoDraw = False
+98.3824 	EXP 	text_14: autoDraw = False
+98.3824 	EXP 	image_7: autoDraw = False
+98.3824 	EXP 	text_15: text = 'D: Who leaves first and why do they have to go?\n'
+98.3824 	EXP 	text_16: text = 'Matchmaker'
+98.3824 	EXP 	image_8: image = 'jobphotos/matchmaker.jpg'
+98.3824 	EXP 	text_15: autoDraw = True
+98.3824 	EXP 	text_16: autoDraw = True
+98.3824 	EXP 	image_8: autoDraw = True
+98.8849 	DATA 	Keypress: space
+98.8991 	EXP 	text_15: autoDraw = False
+98.8991 	EXP 	text_16: autoDraw = False
+98.8991 	EXP 	image_8: autoDraw = False
+98.8991 	EXP 	text_5: autoDraw = True
+99.7850 	DATA 	Keypress: q
+100.7349 	DATA 	Keypress: q
+100.9518 	DATA 	Keypress: space
+100.9632 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='checkmark.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.48055556, 0.75555556]), texRes=128, units='norm', win=Window(...))
+100.9702 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='redx.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.8]), texRes=128, units='norm', win=Window(...))
+100.9878 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='thumbsup.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.66666667, 1.14      ]), texRes=128, units='norm', win=Window(...))
+101.0993 	EXP 	text_5: autoDraw = False
+101.0993 	EXP 	question1_2: text = '1: How does the couple start talking?\n'
+101.0993 	EXP 	question2_2: text = '2: Who leaves first and why do they have to go?\n'
+101.0993 	EXP 	question3_2: text = '3: Who shows more interest?'
+101.0993 	EXP 	question4_2: text = '4: Who notices who first and why do they notice the other?\n'
+101.0993 	EXP 	question5_2: text = '5: Which of the people proposes going on an actual date and what do they propose?\n'
+101.0993 	EXP 	question6_2: text = '6: Is the couple going to get married?'
+101.0993 	EXP 	question1_2: autoDraw = True
+101.0993 	EXP 	question2_2: autoDraw = True
+101.0993 	EXP 	question3_2: autoDraw = True
+101.0993 	EXP 	question4_2: autoDraw = True
+101.0993 	EXP 	question5_2: autoDraw = True
+101.0993 	EXP 	question6_2: autoDraw = True
+101.0993 	EXP 	image_3: autoDraw = True
+101.0993 	EXP 	question1_2: autoDraw = False
+101.0993 	EXP 	question2_2: autoDraw = False
+101.0993 	EXP 	question3_2: autoDraw = False
+101.0993 	EXP 	question4_2: autoDraw = False
+101.0993 	EXP 	question5_2: autoDraw = False
+101.0993 	EXP 	question6_2: autoDraw = False
+101.0993 	EXP 	image_3: autoDraw = False
+101.0993 	EXP 	text_3: autoDraw = True
+102.0972 	EXP 	Imported whichRole.xlsx as conditions, 8 conditions, 8 params
+102.0976 	EXP 	Created sequence: sequential, trialTypes=8, nReps=1, seed=None
+102.0981 	EXP 	New trial (rep=0, index=0): OrderedDict([('Q1', 'What industry are the business people in?'), ('Q2', 'What is being negotiated and how much money is at stake?'), ('Q3', 'What is the response to the proposed deal?'), ('Q4', 'What comes about from the business proposal?'), ('D1', 'Is the deal fair?'), ('D2', 'How long does it take to make the deal?'), ('roleName', 'Business Reporter'), ('rolePic', 'jobphotos/business_reporter.jpg')])
+102.0987 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+102.0990 	EXP 	New trial (rep=0, index=0): None
+102.1327 	EXP 	text_3: autoDraw = False
+102.1327 	EXP 	image_2: image = 'jobphotos/business_reporter.jpg'
+102.1327 	EXP 	text_4: text = 'Business Reporter'
+102.1327 	EXP 	image_2: autoDraw = True
+102.1327 	EXP 	text_4: autoDraw = True
+102.8686 	DATA 	Keypress: space
+102.8799 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='checkmark.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.48055556, 0.75555556]), texRes=128, units='norm', win=Window(...))
+102.8872 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='redx.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.8]), texRes=128, units='norm', win=Window(...))
+102.9092 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='thumbsup.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.66666667, 1.14      ]), texRes=128, units='norm', win=Window(...))
+103.0328 	EXP 	image_2: autoDraw = False
+103.0328 	EXP 	text_4: autoDraw = False
+103.0328 	EXP 	question1_3: text = '1: What comes about from the business proposal?'
+103.0328 	EXP 	question2_3: text = '2: How long does it take to make the deal?'
+103.0328 	EXP 	question3_3: text = '3: Is the deal fair?'
+103.0328 	EXP 	question4_3: text = '4: What is the response to the proposed deal?'
+103.0328 	EXP 	question5_3: text = '5: What is being negotiated and how much money is at stake?'
+103.0328 	EXP 	question6_3: text = '6: What industry are the business people in?'
+103.0328 	EXP 	question1_3: autoDraw = True
+103.0328 	EXP 	question2_3: autoDraw = True
+103.0328 	EXP 	question3_3: autoDraw = True
+103.0328 	EXP 	question4_3: autoDraw = True
+103.0328 	EXP 	question5_3: autoDraw = True
+103.0328 	EXP 	question6_3: autoDraw = True
+103.0328 	EXP 	image_4: autoDraw = True
+273.5529 	DATA 	Keypress: q
+273.6377 	EXP 	Imported instructions_segment.xlsx as conditions, 5 conditions, 1 params
+273.6380 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+273.6384 	EXP 	New trial (rep=0, index=0): OrderedDict([('instructText', 'Additionally, while reading each story, you will also indicate when you think a new “part” of the story is beginning. ')])
+273.6779 	EXP 	question1_3: autoDraw = False
+273.6779 	EXP 	question2_3: autoDraw = False
+273.6779 	EXP 	question3_3: autoDraw = False
+273.6779 	EXP 	question4_3: autoDraw = False
+273.6779 	EXP 	question5_3: autoDraw = False
+273.6779 	EXP 	question6_3: autoDraw = False
+273.6779 	EXP 	image_4: autoDraw = False
+273.6779 	EXP 	text_6: text = 'Additionally, while reading each story, you will also indicate when you think a new “part” of the story is beginning. '
+273.6779 	EXP 	text_6: autoDraw = True
+274.3131 	DATA 	Keypress: escape
+274.6258 	EXP 	window1: mouseVisible = True
