@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Thu Feb  7 15:57:38 2019
+    on Fri Feb  8 16:45:02 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -978,6 +978,7 @@ text_36 = visual.TextStim(win=win, name='text_36',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -4005,16 +4006,17 @@ t = 0
 end_of_taskClock.reset()  # clock
 frameN = -1
 continueRoutine = True
+routineTimer.add(1.000000)
 # update component parameters for each repeat
-key_resp_6 = event.BuilderKeyResponse()
+
 # keep track of which components have finished
-end_of_taskComponents = [text_36, key_resp_6]
+end_of_taskComponents = [text_36]
 for thisComponent in end_of_taskComponents:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
 # -------Start Routine "end_of_task"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = end_of_taskClock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
@@ -4029,27 +4031,9 @@ while continueRoutine:
     frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
     if text_36.status == STARTED and t >= frameRemains:
         text_36.setAutoDraw(False)
-    
-    # *key_resp_6* updates
-    if t >= 0.0 and key_resp_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        key_resp_6.tStart = t
-        key_resp_6.frameNStart = frameN  # exact frame index
-        key_resp_6.status = STARTED
-        # keyboard checking is just starting
-        win.callOnFlip(key_resp_6.clock.reset)  # t=0 on next screen flip
-        event.clearEvents(eventType='keyboard')
-    if key_resp_6.status == STARTED:
-        theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
-        
-        # check for quit:
-        if "escape" in theseKeys:
-            endExpNow = True
-        if len(theseKeys) > 0:  # at least one key was pressed
-            key_resp_6.keys = theseKeys[-1]  # just the last key pressed
-            key_resp_6.rt = key_resp_6.clock.getTime()
-            # a response ends the routine
-            continueRoutine = False
+    for key in event.getKeys():
+        if key in ['escape']: 
+            core.quit()
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -4072,15 +4056,8 @@ while continueRoutine:
 for thisComponent in end_of_taskComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-# check responses
-if key_resp_6.keys in ['', [], None]:  # No response was made
-    key_resp_6.keys=None
-thisExp.addData('key_resp_6.keys',key_resp_6.keys)
-if key_resp_6.keys != None:  # we had a response
-    thisExp.addData('key_resp_6.rt', key_resp_6.rt)
-thisExp.nextEntry()
-# the Routine "end_of_task" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
+
+
 
 
 
