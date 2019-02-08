@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
+<<<<<<< HEAD
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Wed Feb  6 15:07:50 2019
+    on Wed Feb  6 15:19:55 2019
+=======
+This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
+    on Thu Feb  7 13:33:14 2019
+>>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -21,13 +26,11 @@ from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
-
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.0.3'
 expName = 'part1_subjective_segmentation'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
@@ -35,7 +38,6 @@ if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
-expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
@@ -43,7 +45,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/part1_subjective_segmentation_lastrun.py',
+    originPath='/Users/alexreblando/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ebs/part1_subjective_segmentation_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -76,14 +78,18 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-text_17 = visual.TextStim(win=win, name='text_17',
-    text='default text',
-    font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 
+image_10 = visual.ImageStim(
+    win=win, name='image_10',
+    image='sin', mask=None,
+<<<<<<< HEAD
+    ori=0, pos=(0, -.5), size=(1, 0.5),
+=======
+    ori=0, pos=(0, -.5), size=.6,
+>>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
 
 # Initialize components for Routine "shows_jobs"
 shows_jobsClock = core.Clock()
@@ -237,7 +243,7 @@ image_8 = visual.ImageStim(
 # Initialize components for Routine "intro_practicetest"
 intro_practicetestClock = core.Clock()
 text_5 = visual.TextStim(win=win, name='text_5',
-    text='indicate the order in which questions appeared:',
+    text='indicate the order in which the questions appeared:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -431,11 +437,10 @@ for thisTrial_2 in trials_2:
     # update component parameters for each repeat
     welcome_2.setText(instruct_text)
     key_resp_8 = event.BuilderKeyResponse()
-    text_17.setText(instruct_text2
-)
     
+    image_10.setImage(this_pic)
     # keep track of which components have finished
-    introComponents = [welcome_2, key_resp_8, text_17]
+    introComponents = [welcome_2, key_resp_8, image_10]
     for thisComponent in introComponents:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -474,20 +479,23 @@ for thisTrial_2 in trials_2:
                 key_resp_8.rt = key_resp_8.clock.getTime()
                 # a response ends the routine
                 continueRoutine = False
-        
-        # *text_17* updates
-        if t >= 0.0 and text_17.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text_17.tStart = t
-            text_17.frameNStart = frameN  # exact frame index
-            text_17.setAutoDraw(True)
         if event.getKeys(['q']):
             trials_2.finished = True
             continueRoutine=False
         
+        # *image_10* updates
+        if t >= 0.0 and image_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image_10.tStart = t
+            image_10.frameNStart = frameN  # exact frame index
+            image_10.setAutoDraw(True)
+<<<<<<< HEAD
+        
         # check for quit (typically the Esc key)
         if endExpNow or event.getKeys(keyList=["escape"]):
             core.quit()
+=======
+>>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -497,6 +505,10 @@ for thisTrial_2 in trials_2:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
         
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -601,10 +613,6 @@ for thisTrial_4 in trials_4:
             trials_4.finished = True
             continueRoutine=False
         
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -613,6 +621,10 @@ for thisTrial_4 in trials_4:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
         
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -717,10 +729,6 @@ for thisLoop3 in loop3:
             loop3.finished = True
             continueRoutine=False
         
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -729,6 +737,10 @@ for thisLoop3 in loop3:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
         
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -847,10 +859,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -859,6 +867,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -946,10 +958,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -958,6 +966,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1045,10 +1057,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1057,6 +1065,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1144,10 +1156,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1156,6 +1164,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1243,10 +1255,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1255,6 +1263,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1321,10 +1333,6 @@ for thisTrial_3 in trials_3:
                     # a response ends the routine
                     continueRoutine = False
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1333,6 +1341,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1576,10 +1588,6 @@ for thisTrial_3 in trials_3:
             if image_3.status == STARTED:  # only update if drawing
                 image_3.setImage(this_image, log=False)
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1588,6 +1596,10 @@ for thisTrial_3 in trials_3:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1640,10 +1652,6 @@ while continueRoutine and routineTimer.getTime() > 0:
     if text_3.status == STARTED and t >= frameRemains:
         text_3.setAutoDraw(False)
     
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -1652,6 +1660,10 @@ while continueRoutine and routineTimer.getTime() > 0:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
+    
+    # check for quit (the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
     
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -1758,10 +1770,6 @@ for thisTrial_5 in trials_5:
                 text_4.frameNStart = frameN  # exact frame index
                 text_4.setAutoDraw(True)
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1770,6 +1778,10 @@ for thisTrial_5 in trials_5:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -2014,10 +2026,6 @@ for thisTrial_5 in trials_5:
             if image_4.status == STARTED:  # only update if drawing
                 image_4.setImage(this_image, log=False)
             
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -2026,6 +2034,10 @@ for thisTrial_5 in trials_5:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
+            
+            # check for quit (the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -2120,10 +2132,6 @@ for thisTrial_8 in trials_8:
             trials_8.finished = True
             continueRoutine=False
         
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -2132,6 +2140,10 @@ for thisTrial_8 in trials_8:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
         
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -2206,10 +2218,6 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -2218,6 +2226,10 @@ while continueRoutine:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
+    
+    # check for quit (the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
     
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen

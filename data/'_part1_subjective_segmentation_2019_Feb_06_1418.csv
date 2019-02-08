@@ -1,0 +1,5 @@
+instruct_text,this_pic,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,key_resp_8.keys,key_resp_8.rt,participant,session,date,expName,frameRate,
+Welcome to the Job Simulator Task!,instructions_photos/pixel.png,0,0,0,0,space,1.019653871000628,',001,2019_Feb_06_1418,part1_subjective_segmentation,59.9611989876323,
+"In this task, you’ll first be introduced to the perspectives of 8 different jobs. ",instructions_photos/i1.png,0,1,1,1,space,1.9536878769995383,',001,2019_Feb_06_1418,part1_subjective_segmentation,59.9611989876323,
+You’ll then learn 4 questions associated with each perspective. ,instructions_photos/i2.png,0,2,2,2,space,0.8175838679999288,',001,2019_Feb_06_1418,part1_subjective_segmentation,59.9611989876323,
+"Subsequently, you will be asked to apply those perspectives and questions to 8 stories.",instructions_photos/i3.png,0,3,3,3,space,1.119085869000628,',001,2019_Feb_06_1418,part1_subjective_segmentation,59.9611989876323,
