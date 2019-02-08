@@ -1,0 +1,67 @@
+﻿instruct_text,instruct_text2,rolePic,job,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_5.thisRepN,trials_5.thisTrialN,trials_5.thisN,trials_5.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_8.thisRepN,trials_8.thisTrialN,trials_8.thisN,trials_8.thisIndex,instructText,key_resp_8.keys,key_resp_8.rt,key_resp_2.keys,key_resp_2.rt,key_resp_6.keys,key_resp_6.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,key_resp_3.keys,key_resp_3.rt,participant,session,date,expName,psychopyVersion,frameRate,
+Welcome to the Job Simulator Task!,(press the space bar to continue),,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.2989981279997664,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"In this task, you first be introduced to the perspectives of 8 different careers. ",None,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.9533155380004246,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"Then, you will learn 4 questions associated with each perspective. ",None,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.5341840970004341,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"Subsequently, you will thoroughly read 16 stories while assuming one of those 8 perspectives. ",None,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,2.936802236999938,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"While reading, try to remember the questions of the perspective you have assumed. ",None,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.3340787330007515,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"After, you will be asked to answer these questions about the stories you have read. ",None,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.603156508000211,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+The 8 perspectives are as follows:,None,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5532108569996126,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.7204233560005378,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/dean.jpg,Dean of Academic Studies,,,,,,,,,,,,0,1,1,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.5339986429999044,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,0,2,2,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.38629838500037295,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,0,3,3,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3863523770005486,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3032675599997674,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/business_reporter.jpg,Business Reporter,,,,,,,,,,,,0,5,5,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3030753849998291,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/matchmaker.jpg,Matchmaker,,,,,,,,,,,,0,6,6,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.3007616449995112,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,0,7,7,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.350738363000346,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"In addition to reading all 16 stories, your task will be to answer perspective-related questions about each story.
+",(press the space bar to continue),,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.7027098000007754,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+You will answer the questions about each story after reading all 16 stories. ,None,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4840345080001498,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+There will be four questions to answer per story.,None,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4693912029997591,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+These questions are determined by the perspective you take during the story. ,None,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4194327129998783,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+The questions will be the same for the stories read with the same perspective. ,None,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.2198023299997658,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"Before reading the stories, you will learn the questions associated with each career perspective in order to help you answer them. ",None,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.18654134499956854,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+You will have to try to learn these questions with a series of pre-task quizzes.,None,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.15267062800012354,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"Once the story-reading task has begun, remember your answers to the questions for each story.",None,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.1862600679996831,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+"Again, you will be asked about the answers to these questions for each story at end of the experiment. ",None,,,,,,,,,,,,,,,,,,0,8,8,8,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.20308450000084122,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+Press the space bar to begin learning the perspectives and the questions for each one.,None,,,,,,,,,,,,,,,,,,0,9,9,9,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.18614631299988105,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,0,0,0,0,,,,,,,,,,,,,,,,,,,,space,0.16744803999972646,space,0.8840510099998937,space,0.31997449999926175,space,0.28632474499954697,space,0.2867041750005228,space,1.7527729699995689,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,1,0,1,0,,,,,,,,,,,,,,,,,,,,space,0.4032011449999118,space,0.4530692119997184,space,0.1531116629994358,space,0.11962545000005775,space,0.1196087099997385,space,0.3696211129999938,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/gscem.jpg,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/acem.jpg,,"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,0,1,1,4,0,0,0,0,,,,,,,,,,,,,,,,,,,,space,0.46963923499970406,space,0.30309389299964096,space,0.3173328200000469,space,0.28606645299987576,space,0.4695453069998621,space,0.6529919349995907,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/acem.jpg,,"When the clients arrive at the airport, how much time do they have to go through?
+","What do the clients have do at security to comply with the security check?
+","How do the clients feel when they are  walking to the gates?
+",Where does each client sit on the plane?,Are the security guides friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,0,1,1,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,2,2,2,0,0,0,0,,,,,,,,,,,,,,,,,,,,space,0.30292467500021303,space,1.4365147899998192,space,0.45256538500052557,space,0.4365560380001625,space,0.5031646349998482,space,2.0532972150003843,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/matchmaker.jpg,,"Who notices who first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,space,0.7364540599992324,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
+,,jobphotos/business_reporter.jpg,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,001,2019_Feb_06_1508,part1_subjective_segmentation,3.0.3,60.01109605144291,
