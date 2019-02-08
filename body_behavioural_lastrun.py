@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Wed Feb  6 10:58:01 2019
+    on Thu Feb  7 15:57:38 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -63,6 +63,23 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+
+# Initialize components for Routine "storycount"
+storycountClock = core.Clock()
+text_38 = visual.TextStim(win=win, name='text_38',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+text_39 = visual.TextStim(win=win, name='text_39',
+    text='Story     out of 8',
+    font='Arial',
+    pos=(0.03, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
 
 # Initialize components for Routine "ask_to_assume"
 ask_to_assumeClock = core.Clock()
@@ -187,7 +204,7 @@ text_5 = visual.TextStim(win=win, name='text_5',
 # Initialize components for Routine "intro_test"
 intro_testClock = core.Clock()
 text_37 = visual.TextStim(win=win, name='text_37',
-    text='indicate the order in which questions appeared:',
+    text='indicate the order in which the questions appeared:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -406,6 +423,23 @@ text_24 = visual.TextStim(win=win, name='text_24',
     languageStyle='LTR',
     depth=-2.0);
 
+# Initialize components for Routine "recallcount_2"
+recallcount_2Clock = core.Clock()
+text_41 = visual.TextStim(win=win, name='text_41',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+text_42 = visual.TextStim(win=win, name='text_42',
+    text='Recall     out of 8',
+    font='Arial',
+    pos=(0.02, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+
 # Initialize components for Routine "recall_3"
 recall_3Clock = core.Clock()
 
@@ -472,6 +506,23 @@ text_23 = visual.TextStim(win=win, name='text_23',
     text='(press space to continue)',
     font='Arial',
     pos=(0, -.4), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+
+# Initialize components for Routine "questioncount"
+questioncountClock = core.Clock()
+text_43 = visual.TextStim(win=win, name='text_43',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+text_44 = visual.TextStim(win=win, name='text_44',
+    text='Question Set     out of 8',
+    font='Arial',
+    pos=(-0.06, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -928,7 +979,6 @@ text_36 = visual.TextStim(win=win, name='text_36',
     languageStyle='LTR',
     depth=0.0);
 
-
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
@@ -951,6 +1001,92 @@ for thisTrial in trials:
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "storycount"-------
+    t = 0
+    storycountClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    text_38.setText((count + 1))
+    key_resp_8 = event.BuilderKeyResponse()
+    # keep track of which components have finished
+    storycountComponents = [text_38, key_resp_8, text_39]
+    for thisComponent in storycountComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "storycount"-------
+    while continueRoutine:
+        # get current time
+        t = storycountClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_38* updates
+        if t >= 0.0 and text_38.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_38.tStart = t
+            text_38.frameNStart = frameN  # exact frame index
+            text_38.setAutoDraw(True)
+        
+        # *key_resp_8* updates
+        if t >= 0.0 and key_resp_8.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_8.tStart = t
+            key_resp_8.frameNStart = frameN  # exact frame index
+            key_resp_8.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_8.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_8.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_8.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_8.rt = key_resp_8.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *text_39* updates
+        if t >= 0.0 and text_39.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_39.tStart = t
+            text_39.frameNStart = frameN  # exact frame index
+            text_39.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in storycountComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "storycount"-------
+    for thisComponent in storycountComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_8.keys in ['', [], None]:  # No response was made
+        key_resp_8.keys=None
+    trials.addData('key_resp_8.keys',key_resp_8.keys)
+    if key_resp_8.keys != None:  # we had a response
+        trials.addData('key_resp_8.rt', key_resp_8.rt)
+    # the Routine "storycount" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "ask_to_assume"-------
     t = 0
@@ -1082,10 +1218,10 @@ for thisTrial in trials:
             question6 = 'How old is the waiter?'
         if this_perspective == 'Airport Customer Experience Manager':
             display_pic = 'jobphotos/acem.jpg'
-            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question2 ='What do the clients have do at security to comply with the security check?'
-            question3 ='How do the clients feel when they are  walking to the gates?'
-            question4 ='Where does each client sit on the plane?' 
+            question1 = 'When the travelers arrive at the airport, how much time do they have to go through the airport?'
+            question2 ='What do the travelers have to do at security to comply with the security check?'
+            question3 ='How do the travelers feel when they are  walking to the gates?'
+            question4 ='Where does each traveler sit on the plane?' 
             question5 = 'Are the security guides friendly or rude?'
             question6 = 'Are the airport restrooms clean?'
         if this_perspective == 'Grocery Store Customer Experience Manager':
@@ -1483,7 +1619,6 @@ for thisTrial in trials:
             
             if event.getKeys(['q']):
                 trials_7.finished = True
-                trials.finished = True
                 continueRoutine=False
             if checkCount == 4:
                 this_image = 'bar5.jpeg'
@@ -1534,6 +1669,152 @@ for thisTrial in trials:
     # completed 5 repeats of 'trials_7'
     
     
+    # ------Prepare to start Routine "perspective"-------
+    t = 0
+    perspectiveClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    
+    #set the perspective
+    this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
+    if this_perspective == 'Couples Therapist':
+        display_pic = 'jobphotos/couples.jpg'
+        question1 = 'How does the person who is initiating the breakup feel before they do it?'
+        question2 ='Why does the initiator want to break up?'
+        question3 ='How does the person being broken up with respond?'
+        question4 = 'Do the partners leave on good terms?'
+        question5 = 'Does the person being broken up with expect that this is coming?'
+        question6 = 'For how long has the initiator been wanting to break up?'
+    if this_perspective == 'Restaurant Critic':
+        display_pic = 'jobphotos/restaurant_critic.jpg'
+        question1 = 'How is the restaurant decorated?'
+        question2 ='What are the menus like?'
+        question3 = 'What do the clients order?' 
+        question4 = 'How do the clients like the food?'
+        question5 = 'What meal is being served?'
+        question6 = 'How old is the waiter?'
+    if this_perspective == 'Airport Customer Experience Manager':
+        display_pic = 'jobphotos/acem.jpg'
+        question1 = 'When the travelers arrive at the airport, how much time do they have to go through the airport?'
+        question2 ='What do the travelers have to do at security to comply with the security check?'
+        question3 ='How do the travelers feel when they are  walking to the gates?'
+        question4 ='Where does each traveler sit on the plane?' 
+        question5 = 'Are the security guides friendly or rude?'
+        question6 = 'Are the airport restrooms clean?'
+    if this_perspective == 'Grocery Store Customer Experience Manager':
+        display_pic = 'jobphotos/gscem.jpg'
+        question1 = 'What is the grocery store like upon entering?'
+        question2 ='What items do the clients pick out?'
+        question3 ='How is the checkout line and how long do the clients wait in line?'
+        question4 = 'How much are the groceries and what method of payment do the clients use?'
+        question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
+        question6 = 'What type of grocery bags do the clients use?'
+    if this_perspective == 'Dean of Academic Studies':
+        display_pic ='jobphotos/dean.jpg'
+        question1 = 'What is the lecture hall like?'
+        question2 ='What class are the students  in and what is the day’s lecture about?'
+        question3 ='What is something taught in lecture?'
+        question4 = 'When is the next assessment in the class?'
+        question5 = 'Are the students paying attention?'
+        question6 = 'Are the desks comfortable?'
+    if this_perspective == 'Wedding Planner':
+        display_pic = 'jobphotos/weddingplanner.jpg'
+        question1 = 'How does the person who proposed feel before proposing?'
+        question2 ='What is the ring like?'
+        question3 ='Does anyone help with the proposal?'
+        question4 = 'Who witnessed the “yes”?'
+        question5 = 'Is anyone taking pictures of the proposal?'
+        question6 = 'How long does the proposal take?'
+    if this_perspective == 'Business Reporter':
+        display_pic = 'jobphotos/business_reporter.jpg'
+        question1 = 'What industry are the business people in?'
+        question2 = 'What is being negotiated and how much money is at stake?'
+        question3 = 'What is the response to the proposed deal?'
+        question4 =  'What comes about from the business proposal?'
+        question5 = 'Is the deal fair?'
+        question6 =  'How long does it take to make the deal?'
+    if this_perspective == 'Matchmaker':
+        display_pic = 'jobphotos/matchmaker.jpg'
+        question1 = 'Who notices who first and why do they notice the other?' 
+        question2 ='How does the couple start talking?'
+        question3 ='Which of the people proposes going on an actual date and what do they propose?'
+        question4 = 'Who leaves first and why do they have to go?'
+        question5 = 'Is the couple going to get married?'
+        question6 = 'Who shows more interest?'
+    
+    #set the story file and picture
+    
+    this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
+    this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
+    
+    text_4.setText(this_perspective)
+    image.setImage(display_pic)
+    # keep track of which components have finished
+    perspectiveComponents = [text_4, image, text_5]
+    for thisComponent in perspectiveComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "perspective"-------
+    while continueRoutine:
+        # get current time
+        t = perspectiveClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        for key in event.getKeys():
+            if key in ['space']: 
+                continueRoutine = False
+            if key in ['q']: 
+                trials.finished = 1
+                continueRoutine = False
+        
+        # *text_4* updates
+        if t >= 0.0 and text_4.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_4.tStart = t
+            text_4.frameNStart = frameN  # exact frame index
+            text_4.setAutoDraw(True)
+        
+        # *image* updates
+        if t >= 0.0 and image.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            image.tStart = t
+            image.frameNStart = frameN  # exact frame index
+            image.setAutoDraw(True)
+        
+        # *text_5* updates
+        if t >= 0.0 and text_5.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_5.tStart = t
+            text_5.frameNStart = frameN  # exact frame index
+            text_5.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in perspectiveComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "perspective"-------
+    for thisComponent in perspectiveComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    
+    # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     trials_2 = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
@@ -1552,152 +1833,6 @@ for thisTrial in trials:
         if thisTrial_2 != None:
             for paramName in thisTrial_2:
                 exec('{} = thisTrial_2[paramName]'.format(paramName))
-        
-        # ------Prepare to start Routine "perspective"-------
-        t = 0
-        perspectiveClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
-        # update component parameters for each repeat
-        
-        #set the perspective
-        this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
-        if this_perspective == 'Couples Therapist':
-            display_pic = 'jobphotos/couples.jpg'
-            question1 = 'How does the person who is initiating the breakup feel before they do it?'
-            question2 ='Why does the initiator want to break up?'
-            question3 ='How does the person being broken up with respond?'
-            question4 = 'Do the partners leave on good terms?'
-            question5 = 'Does the person being broken up with expect that this is coming?'
-            question6 = 'For how long has the initiator been wanting to break up?'
-        if this_perspective == 'Restaurant Critic':
-            display_pic = 'jobphotos/restaurant_critic.jpg'
-            question1 = 'How is the restaurant decorated?'
-            question2 ='What are the menus like?'
-            question3 = 'What do the clients order?' 
-            question4 = 'How do the clients like the food?'
-            question5 = 'What meal is being served?'
-            question6 = 'How old is the waiter?'
-        if this_perspective == 'Airport Customer Experience Manager':
-            display_pic = 'jobphotos/acem.jpg'
-            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question2 ='What do the clients have do at security to comply with the security check?'
-            question3 ='How do the clients feel when they are  walking to the gates?'
-            question4 ='Where does each client sit on the plane?' 
-            question5 = 'Are the security guides friendly or rude?'
-            question6 = 'Are the airport restrooms clean?'
-        if this_perspective == 'Grocery Store Customer Experience Manager':
-            display_pic = 'jobphotos/gscem.jpg'
-            question1 = 'What is the grocery store like upon entering?'
-            question2 ='What items do the clients pick out?'
-            question3 ='How is the checkout line and how long do the clients wait in line?'
-            question4 = 'How much are the groceries and what method of payment do the clients use?'
-            question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
-            question6 = 'What type of grocery bags do the clients use?'
-        if this_perspective == 'Dean of Academic Studies':
-            display_pic ='jobphotos/dean.jpg'
-            question1 = 'What is the lecture hall like?'
-            question2 ='What class are the students  in and what is the day’s lecture about?'
-            question3 ='What is something taught in lecture?'
-            question4 = 'When is the next assessment in the class?'
-            question5 = 'Are the students paying attention?'
-            question6 = 'Are the desks comfortable?'
-        if this_perspective == 'Wedding Planner':
-            display_pic = 'jobphotos/weddingplanner.jpg'
-            question1 = 'How does the person who proposed feel before proposing?'
-            question2 ='What is the ring like?'
-            question3 ='Does anyone help with the proposal?'
-            question4 = 'Who witnessed the “yes”?'
-            question5 = 'Is anyone taking pictures of the proposal?'
-            question6 = 'How long does the proposal take?'
-        if this_perspective == 'Business Reporter':
-            display_pic = 'jobphotos/business_reporter.jpg'
-            question1 = 'What industry are the business people in?'
-            question2 = 'What is being negotiated and how much money is at stake?'
-            question3 = 'What is the response to the proposed deal?'
-            question4 =  'What comes about from the business proposal?'
-            question5 = 'Is the deal fair?'
-            question6 =  'How long does it take to make the deal?'
-        if this_perspective == 'Matchmaker':
-            display_pic = 'jobphotos/matchmaker.jpg'
-            question1 = 'Who notices who first and why do they notice the other?' 
-            question2 ='How does the couple start talking?'
-            question3 ='Which of the people proposes going on an actual date and what do they propose?'
-            question4 = 'Who leaves first and why do they have to go?'
-            question5 = 'Is the couple going to get married?'
-            question6 = 'Who shows more interest?'
-        
-        #set the story file and picture
-        
-        this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')
-        this_story_pic = storyDict.get(order_stories[count], {}).get('pic')
-        
-        text_4.setText(this_perspective)
-        image.setImage(display_pic)
-        # keep track of which components have finished
-        perspectiveComponents = [text_4, image, text_5]
-        for thisComponent in perspectiveComponents:
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        
-        # -------Start Routine "perspective"-------
-        while continueRoutine:
-            # get current time
-            t = perspectiveClock.getTime()
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            for key in event.getKeys():
-                if key in ['space']: 
-                    continueRoutine = False
-                if key in ['q']: 
-                    trials.finished = 1
-                    continueRoutine = False
-            
-            # *text_4* updates
-            if t >= 0.0 and text_4.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                text_4.tStart = t
-                text_4.frameNStart = frameN  # exact frame index
-                text_4.setAutoDraw(True)
-            
-            # *image* updates
-            if t >= 0.0 and image.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                image.tStart = t
-                image.frameNStart = frameN  # exact frame index
-                image.setAutoDraw(True)
-            
-            # *text_5* updates
-            if t >= 0.0 and text_5.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                text_5.tStart = t
-                text_5.frameNStart = frameN  # exact frame index
-                text_5.setAutoDraw(True)
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in perspectiveComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "perspective"-------
-        for thisComponent in perspectiveComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        
-        # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
         
         # ------Prepare to start Routine "trial"-------
         t = 0
@@ -1944,6 +2079,92 @@ for thisTrial_4 in trials_4:
     if thisTrial_4 != None:
         for paramName in thisTrial_4:
             exec('{} = thisTrial_4[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "recallcount_2"-------
+    t = 0
+    recallcount_2Clock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    text_41.setText((count + 1))
+    key_resp_10 = event.BuilderKeyResponse()
+    # keep track of which components have finished
+    recallcount_2Components = [text_41, key_resp_10, text_42]
+    for thisComponent in recallcount_2Components:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "recallcount_2"-------
+    while continueRoutine:
+        # get current time
+        t = recallcount_2Clock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_41* updates
+        if t >= 0.0 and text_41.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_41.tStart = t
+            text_41.frameNStart = frameN  # exact frame index
+            text_41.setAutoDraw(True)
+        
+        # *key_resp_10* updates
+        if t >= 0.0 and key_resp_10.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_10.tStart = t
+            key_resp_10.frameNStart = frameN  # exact frame index
+            key_resp_10.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_10.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_10.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_10.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_10.rt = key_resp_10.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *text_42* updates
+        if t >= 0.0 and text_42.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_42.tStart = t
+            text_42.frameNStart = frameN  # exact frame index
+            text_42.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in recallcount_2Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "recallcount_2"-------
+    for thisComponent in recallcount_2Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_10.keys in ['', [], None]:  # No response was made
+        key_resp_10.keys=None
+    trials_4.addData('key_resp_10.keys',key_resp_10.keys)
+    if key_resp_10.keys != None:  # we had a response
+        trials_4.addData('key_resp_10.rt', key_resp_10.rt)
+    # the Routine "recallcount_2" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "recall_3"-------
     t = 0
@@ -2230,6 +2451,92 @@ for thisTrial_6 in trials_6:
     if thisTrial_6 != None:
         for paramName in thisTrial_6:
             exec('{} = thisTrial_6[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "questioncount"-------
+    t = 0
+    questioncountClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    text_43.setText((count + 1))
+    key_resp_11 = event.BuilderKeyResponse()
+    # keep track of which components have finished
+    questioncountComponents = [text_43, key_resp_11, text_44]
+    for thisComponent in questioncountComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "questioncount"-------
+    while continueRoutine:
+        # get current time
+        t = questioncountClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_43* updates
+        if t >= 0.0 and text_43.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_43.tStart = t
+            text_43.frameNStart = frameN  # exact frame index
+            text_43.setAutoDraw(True)
+        
+        # *key_resp_11* updates
+        if t >= 0.0 and key_resp_11.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_11.tStart = t
+            key_resp_11.frameNStart = frameN  # exact frame index
+            key_resp_11.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_11.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_11.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_11.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_11.rt = key_resp_11.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *text_44* updates
+        if t >= 0.0 and text_44.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_44.tStart = t
+            text_44.frameNStart = frameN  # exact frame index
+            text_44.setAutoDraw(True)
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in questioncountComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # check for quit (the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "questioncount"-------
+    for thisComponent in questioncountComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_11.keys in ['', [], None]:  # No response was made
+        key_resp_11.keys=None
+    trials_6.addData('key_resp_11.keys',key_resp_11.keys)
+    if key_resp_11.keys != None:  # we had a response
+        trials_6.addData('key_resp_11.rt', key_resp_11.rt)
+    # the Routine "questioncount" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "story_image"-------
     t = 0
@@ -3700,7 +4007,6 @@ frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 key_resp_6 = event.BuilderKeyResponse()
-
 # keep track of which components have finished
 end_of_taskComponents = [text_36, key_resp_6]
 for thisComponent in end_of_taskComponents:
@@ -3744,14 +4050,6 @@ while continueRoutine:
             key_resp_6.rt = key_resp_6.clock.getTime()
             # a response ends the routine
             continueRoutine = False
-    from psychopy import core
-    
-    while True:
-            keys = event.getKeys()
-            if keys:
-                # q quits the experiment
-                if keys[0] == 'q':
-                    core.quit()
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -3781,10 +4079,8 @@ thisExp.addData('key_resp_6.keys',key_resp_6.keys)
 if key_resp_6.keys != None:  # we had a response
     thisExp.addData('key_resp_6.rt', key_resp_6.rt)
 thisExp.nextEntry()
-
 # the Routine "end_of_task" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
-
 
 
 
