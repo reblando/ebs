@@ -1,7 +1,0 @@
-count,storyText,locationEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,key_resp_5.keys,key_resp_5.rt,story_presses.keys,participant,session,date,expName,frameRate,
-0,"Simon and Carina noticed each other as they walked into the grocery store at the same time, their carts nearly colliding as they squeezed into the entrance.",1,1,0,0,0,0,0,0,0,0,,,,,,[43 33 11 42 32 21 14 24 22 44 23 31 13 41 34 12],"['Location' 'Social' 'Location' 'Social' 'Location' 'Social' 'Social'
- 'Location' 'Location' 'Social' 'Social' 'Social' 'Location' 'Location'
- 'Location' 'Social']",space,0.43888580200018623,None,,001,2019_Jan_28_1137,body_behavioural,60.31057824868718,
-0,,,,0,0,0,0,,,,,,,,,,,,,,,,001,2019_Jan_28_1137,body_behavioural,60.31057824868718,
-1,"Ms. Bianchi and Ms. Morrison walked into the grocery store at the same time, and, after a moment of mutual recognition, greeted each other and shook hands.",1,1,0,1,1,1,0,0,0,0,,,,,,,,None,,None,,001,2019_Jan_28_1137,body_behavioural,60.31057824868718,
-1,,,,0,1,1,1,,,,,,,,,,,,,,,,001,2019_Jan_28_1137,body_behavioural,60.31057824868718,

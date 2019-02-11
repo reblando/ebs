@@ -1,8 +1,0 @@
-count,storyText,locationEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,key_resp_5.keys,key_resp_5.rt,story_presses.keys,story_presses.rt,participant,session,date,expName,frameRate,
-0,"Charlie saw Alma as they walked into class, and motioned for her to come sit in the back next to him, since they had business to discuss.",1,1,0,0,0,0,0,0,0,0,,,,,,[34 44 42 23 11 13 21 32 41 31 43 14 33 24 22 12],"['Location' 'Social' 'Location' 'Social' 'Social' 'Location' 'Location'
- 'Social' 'Location' 'Social' 'Social' 'Location' 'Location' 'Social'
- 'Location' 'Social']",space,0.619382627075538,1,5.8513770760037005,',001,2019_Jan_22_1605,body_behavioural,59.97218981112212,
-0,"Charlie and Alma were both economics students with entrepreneurial bents, both very busy, and both in the same class.",1,1,0,0,0,0,0,1,1,1,,,,,,,,,,None,,',001,2019_Jan_22_1605,body_behavioural,59.97218981112212,
-0,,,,0,0,0,0,,,,,,,,,,,,,,,,',001,2019_Jan_22_1605,body_behavioural,59.97218981112212,
-1,"Leon and  Ariana hurried into the classroom at the same time, and Leon did a double-take when he saw her. ",1,1,0,1,1,1,0,0,0,0,,,,,,,,None,,None,,',001,2019_Jan_22_1605,body_behavioural,59.97218981112212,
-1,,,,0,1,1,1,,,,,,,,,,,,,,,,',001,2019_Jan_22_1605,body_behavioural,59.97218981112212,

@@ -1,5 +1,0 @@
-count,storyText,locationEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,instructText,order of stories,order of perspectives,story_presses.keys,participant,session,date,expName,frameRate,
-0,Mr. Shelton and Mr. Gordon shook hands inside the foyer of the restaurant: lunch today was about big business. ,1,1,0,0,0,0,0,0,0,0,,,,,,[31 11 43 32 12 23 24 44 21 13 42 33 41 22 34 14],"['Location' 'Social' 'Social' 'Social' 'Location' 'Location' 'Social'
- 'Location' 'Location' 'Social' 'Location' 'Location' 'Social' 'Social'
- 'Social' 'Location']",None,',001,2019_Jan_22_1355,body_behavioural,59.7725079712987,
-0,,,,0,0,0,0,,,,,,,,,,,,,',001,2019_Jan_22_1355,body_behavioural,59.7725079712987,
