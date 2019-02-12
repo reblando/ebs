@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-<<<<<<< HEAD
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Wed Feb  6 15:19:55 2019
-=======
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Thu Feb  7 13:33:14 2019
->>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
+    on Tue Feb 12 11:21:54 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -74,7 +69,7 @@ introClock = core.Clock()
 welcome_2 = visual.TextStim(win=win, name='welcome_2',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, .5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -82,11 +77,7 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
 image_10 = visual.ImageStim(
     win=win, name='image_10',
     image='sin', mask=None,
-<<<<<<< HEAD
-    ori=0, pos=(0, -.5), size=(1, 0.5),
-=======
-    ori=0, pos=(0, -.5), size=.6,
->>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
+    ori=0, pos=(0, -.5), size=1,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
@@ -489,13 +480,6 @@ for thisTrial_2 in trials_2:
             image_10.tStart = t
             image_10.frameNStart = frameN  # exact frame index
             image_10.setAutoDraw(True)
-<<<<<<< HEAD
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-=======
->>>>>>> 874596046cb742a71cdccf5516a4a1d4797028f7
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
