@@ -1,0 +1,41 @@
+﻿instruct_text,this_pic,rolePic,job,instruct_text2,Q1,Q2,Q3,Q4,D1,D2,roleName,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_8.keys,key_resp_8.rt,key_resp_2.keys,key_resp_2.rt,key_resp_6.keys,key_resp_6.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,participant,session,date,expName,psychopyVersion,frameRate,
+Welcome to the Job Simulator Task!,instructions_photos/pixel.png,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,10.056315902999813,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"In this task, you’ll first be introduced to the perspectives of 8 different jobs. ",instructions_photos/i1.png,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,9.237381745000675,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+You’ll then learn 4 questions associated with each perspective. ,instructions_photos/i2.png,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,11.236883992000003,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"Subsequently, you will be asked to apply those perspectives and questions to 8 stories.",instructions_photos/i3.png,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,11.787058449999677,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"For each story you read, you will be asked to assume one of the perspectives. ",instructions_photos/i3.png,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,20.17094627699953,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"While reading, try to remember the perspective and the questions of that perspective. ",instructions_photos/i3.png,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,27.371370551999462,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"After you’re finished reading all the stories, you will be asked to recall the stories and answer questions about them. ",instructions_photos/i4.png,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,space,13.787370836999798,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+Let’s begin! The 8 perspectives are as follows:,None,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,space,7.1511535950003235,,,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,,0,0,0,1,,,,,,,,,,,,,,,space,4.0032966079998005,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,0,1,1,5,,,,,,,,,,,,,,,space,4.236863979999725,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/dean.jpg,Dean of Academic Studies,,,,,,,,,,,,,0,2,2,6,,,,,,,,,,,,,,,space,1.603299672000503,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,,0,3,3,4,,,,,,,,,,,,,,,space,3.0032277830005114,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,,0,4,4,7,,,,,,,,,,,,,,,space,1.252970199999254,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/matchmaker.jpg,Matchmaker,,,,,,,,,,,,,0,5,5,2,,,,,,,,,,,,,,,space,1.253063017000386,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/business_reporter.jpg,Business Reporter,,,,,,,,,,,,,0,6,6,0,,,,,,,,,,,,,,,space,1.4696539300002769,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,,0,7,7,3,,,,,,,,,,,,,,,space,1.0699108699991484,,,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+Each of these perspectives will be applied to one story. ,,,,(press space to continue),,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,space,3.2531969619994925,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"Each perspective has 4 questions, and you will answer these questions about each story.",,,,None,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,space,3.7532270319998133,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+You’ll answer these questions about each story after reading all 8 stories. ,,,,None,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,space,3.417600812999808,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+You’ll learn these questions with a series of pre-task quizzes and then the story reading will begin.,,,,None,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,space,2.100772390000202,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+"Once the story-reading task has begun, remember your answers to the questions for each story.",,,,None,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,space,5.286682859999928,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+Press the space bar to begin learning the perspectives and the questions for each one.,,,,None,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,space,3.6194767650003996,,,,,,,,,,,,,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,0,0,3,0,0,0,0,,,,,,,space,6.986850141999639,space,11.6370134029994,space,3.4034151899995777,space,4.4364426669999375,space,4.570832901999893,space,2.803176872000222,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,0,0,3,1,0,1,0,,,,,,,space,0.4197666370000661,space,0.21917414200015628,space,0.21735975200044777,space,0.28644068499943387,space,0.3363391769998998,space,0.8674378750001779,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,0,0,0,3,2,0,2,0,,,,,,,space,0.6860885950000011,space,0.18622078000043985,space,0.2696363349996318,space,0.33619219699994574,space,0.3532494300006874,space,0.6360725550002826,021219_p1,001,2019_Feb_12_1233,part1_subjective_segmentation,3.0.3,60.033438024560404,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.4192069849996187,space,0.3196428000001106,space,0.3029755520001345,space,0.2697525970006609,space,0.31958357199982856,space,0.48623427500024263,,,,,,,
