@@ -1378,7 +1378,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, -.3)" valType="code"/>
-        <Param name="size" updates="constant" val="1.3" valType="code"/>
+        <Param name="size" updates="constant" val="[1.5, 1]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
