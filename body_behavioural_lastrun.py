@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Wed Feb 13 10:39:49 2019
+    on Wed Feb 13 11:54:30 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1427,6 +1427,7 @@ for thisTrial in trials:
         # update component parameters for each repeat
         from psychopy import visual, core, event
         
+        event.clearEvents()
         Q = np.array([question1, question2, question3, question4, question5, question6])
         correct = np.array([1,2,3,4,0,0], dtype=int)
         randperm = np.random.permutation(6) 
@@ -1554,7 +1555,7 @@ for thisTrial in trials:
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[1] == 0:
+                else: 
                     redx.draw()
                     win.flip()
                     core.wait(1)
