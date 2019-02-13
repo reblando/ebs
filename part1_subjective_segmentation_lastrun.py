@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Wed Feb 13 10:39:17 2019
+    on Wed Feb 13 10:47:55 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -72,7 +72,7 @@ introClock = core.Clock()
 welcome_2 = visual.TextStim(win=win, name='welcome_2',
     text='default text',
     font='Arial',
-    pos=(0, .5), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, .7), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -80,7 +80,7 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
 image_10 = visual.ImageStim(
     win=win, name='image_10',
     image='sin', mask=None,
-    ori=0, pos=(0, -.3), size=1,
+    ori=0, pos=(0, -.3), size=1.3,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
@@ -90,7 +90,7 @@ shows_jobsClock = core.Clock()
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    ori=0, pos=(0, 0), size=(0.75, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
