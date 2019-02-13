@@ -1,0 +1,11 @@
+﻿instruct_text,this_pic,rolePic,job,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,key_resp_8.keys,key_resp_8.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,psychopyVersion,frameRate,
+Welcome to the Job Simulator Task!,instructions_photos/pixel.png,,,0,0,0,0,,,,,space,2.203635732999828,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+"In this task, you’ll first be introduced to the perspectives of 8 different jobs. ",instructions_photos/i1.png,,,0,1,1,1,,,,,space,0.5336803509999299,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+You’ll then learn 4 questions associated with each perspective. ,instructions_photos/i2.png,,,0,2,2,2,,,,,space,0.4856287250004243,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+"Subsequently, you will be asked to apply those perspectives and questions to 8 stories.",instructions_photos/i3.png,,,0,3,3,3,,,,,space,0.4021184980001635,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+"For each story you read, you will be asked to assume one of the perspectives. ",instructions_photos/i3.png,,,0,4,4,4,,,,,space,0.3994676519996574,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+"While reading, try to remember the perspective and the questions of that perspective. ",instructions_photos/i3.png,,,0,5,5,5,,,,,space,0.3850075200007268,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+"After you’re finished reading all the stories, you will be asked to recall the stories and answer questions about them. ",instructions_photos/i4.png,,,0,6,6,6,,,,,space,5.054927770999711,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+Let’s begin! The 8 perspectives are as follows:,None,,,0,7,7,7,,,,,space,40.652437363999525,,,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
+,,jobphotos/couples.jpeg,"Couples Therapist
+",,,,,0,0,0,7,,,space,5.037957000999995,',001,2019_Feb_12_1623,part1_subjective_segmentation,3.0.3,60.07243714698761,
