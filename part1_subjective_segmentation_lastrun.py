@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Wed Feb 13 14:06:40 2019
+    on Thu Feb 14 13:55:42 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -76,7 +76,7 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
+timer = core.Clock()
 image_10 = visual.ImageStim(
     win=win, name='image_10',
     image='sin', mask=None,
@@ -320,7 +320,7 @@ image_2 = visual.ImageStim(
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
-    pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -2181,7 +2181,8 @@ for thisTrial_9 in trials_9:
     continueRoutine = True
     # update component parameters for each repeat
     key_resp_7 = event.BuilderKeyResponse()
-    
+    instructions_time = timer.getTime()
+    thisExp.addData('instructions time', instructions_time)
     # keep track of which components have finished
     end_of_introComponents = [text, key_resp_7]
     for thisComponent in end_of_introComponents:
@@ -2227,7 +2228,6 @@ for thisTrial_9 in trials_9:
                 continueRoutine = False
         if event.getKeys(['escape']):
             core.quit()
-            
         
         # check for quit (typically the Esc key)
         if endExpNow or event.getKeys(keyList=["escape"]):
