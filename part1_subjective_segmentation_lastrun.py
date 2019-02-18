@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Thu Feb 14 16:21:30 2019
+    on Mon Feb 18 15:02:25 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1923,7 +1923,7 @@ for thisTrial_5 in trials_5:
                         check.draw()
                         win.flip()
                         core.wait(.15)
-                elif correct[1] == 0:
+                else:
                     redx.draw()
                     win.flip()
                     core.wait(1)
