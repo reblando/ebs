@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
-    on Mon Feb 18 17:45:39 2019
+    on Tue Feb 19 11:05:57 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -537,7 +537,7 @@ left_line = visual.Line(
 text_49 = visual.TextStim(win=win, name='text_49',
     text='default text',
     font='Arial',
-    pos=(-.6, .6), height=0.1, wrapWidth=None, ori=0, 
+    pos=(-.7, .6), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-8.0);
