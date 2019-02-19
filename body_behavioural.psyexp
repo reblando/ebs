@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.3">
+<PsychoPy2experiment encoding="utf-8" version="3.0.4">
   <Settings>
     <Param name="Completed URL" updates="None" val="completedURL" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
@@ -3182,18 +3182,5 @@
     <Routine name="question8"/>
     <LoopTerminator name="trials_6"/>
     <Routine name="end_of_questions"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_8">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="None" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="" valType="str"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="5" valType="code"/>
-      <Param name="name" updates="None" val="trials_8" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
-    <Routine name="end_of_task"/>
-    <LoopTerminator name="trials_8"/>
   </Flow>
 </PsychoPy2experiment>
