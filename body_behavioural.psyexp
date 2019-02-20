@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.4">
+<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
   <Settings>
     <Param name="Completed URL" updates="None" val="completedURL" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
@@ -435,9 +435,9 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="&amp;#10;&amp;#10;cursorCounter=0&amp;#10;cursorVariable='|'&amp;#10;captured_string=''&amp;#10;subject_response_finished=False&amp;#10;shift_flag = False&amp;#10;text_10.alignHoriz ='left'&amp;#10;text_10.alignVert = 'top'&amp;#10;text_10.wrapWidth = 1.8&amp;#10;text_10.height = .05&amp;#10;&amp;#10;this_recall_pic = storyDict.get(order_stories[count], {}).get('pic')&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="cursorCounter=0&amp;#10;cursorVariable='|'&amp;#10;captured_string=''&amp;#10;subject_response_finished=False&amp;#10;shift_flag = False&amp;#10;text_10.alignHoriz ='left'&amp;#10;text_10.alignVert = 'top'&amp;#10;text_10.wrapWidth = 1.8&amp;#10;text_10.height = .05&amp;#10;&amp;#10;this_recall_pic = storyDict.get(order_stories[count], {}).get('pic')&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="&amp;#10;&amp;#10;if subject_response_finished:&amp;#10;    final_response=captured_string&amp;#10;    continueRoutine=False&amp;#10;for key in event.getKeys():&amp;#10;    if key in ['tab']:&amp;#10;        trials_4.finished = 1&amp;#10;        continueRoutine = False&amp;#10;    if key in ['escape']: &amp;#10;        core.quit()&amp;#10;    elif key in ['delete','backspace']:&amp;#10;        captured_string = captured_string[:-1] &amp;#10;    elif key in ['return']:&amp;#10;        thisExp.addData('recall', captured_string)&amp;#10;        subject_response_finished=True&amp;#10;    elif key in ['space']:&amp;#10;        captured_string = captured_string+' '&amp;#10;    elif key in ['period']:&amp;#10;        captured_string = captured_string+'.'&amp;#10;    elif key in ['dollar']:&amp;#10;        captured_string = captured_string + '$'&amp;#10;    elif key in ['exclamation']:&amp;#10;        captured_string = captured_string + '!'&amp;#10;    elif key in ['lshift', 'rshift']:&amp;#10;        shift_flag = True&amp;#10;    elif key in ['comma']:&amp;#10;        captured_string = captured_string+','&amp;#10;    elif key in ['apostrophe']:&amp;#10;        captured_string = captured_string+&quot;'&quot;&amp;#10;    elif key in ['slash']:&amp;#10;        captured_string = captured_string+'/'&amp;#10;    elif key in ['semicolon']:&amp;#10;        captured_string = captured_string + ';'&amp;#10;    elif key in ['option']:&amp;#10;        captured_string = captured_string&amp;#10;    elif key in ['lshift','rshift']:&amp;#10;        shift_flag = True&amp;#10;        captured_string = captured_string + ' '&amp;#10;    elif key in ['minus']:&amp;#10;        captured_string = captured_string+'-'&amp;#10;    elif key in ['up','down','left','right','return']:&amp;#10;        pass&amp;#10;    else: &amp;#10;        captured_string = captured_string+key&amp;#10;    # this next line formats the output. you can remove or modify as necessary&amp;#10;    captured_string=captured_string.capitalize()&amp;#10;    &amp;#10;    &amp;#10;    &amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;if subject_response_finished:&amp;#10;    final_response=captured_string&amp;#10;    continueRoutine=False&amp;#10;for key in event.getKeys():&amp;#10;    if key in ['tab']:&amp;#10;        trials_4.finished = 1&amp;#10;        continueRoutine = False&amp;#10;    if key in ['escape']: &amp;#10;        core.quit()&amp;#10;    elif key in ['delete','backspace']:&amp;#10;        captured_string = captured_string[:-1] &amp;#10;    elif key in ['return']:&amp;#10;        thisExp.addData('recall', captured_string)&amp;#10;        subject_response_finished=True&amp;#10;    elif key in ['space']:&amp;#10;        captured_string = captured_string+' '&amp;#10;    elif key in ['period']:&amp;#10;        captured_string = captured_string+'.'&amp;#10;    elif key in ['dollar']:&amp;#10;        captured_string = captured_string + '$'&amp;#10;    elif key in ['exclamation']:&amp;#10;        captured_string = captured_string + '!'&amp;#10;    elif key in ['lshift', 'rshift']:&amp;#10;        shift_flag = True&amp;#10;    elif key in ['comma']:&amp;#10;        captured_string = captured_string+','&amp;#10;    elif key in ['apostrophe']:&amp;#10;        captured_string = captured_string+&quot;'&quot;&amp;#10;    elif key in ['slash']:&amp;#10;        captured_string = captured_string+'/'&amp;#10;    elif key in ['semicolon']:&amp;#10;        captured_string = captured_string + ';'&amp;#10;    elif key in ['option']:&amp;#10;        captured_string = captured_string&amp;#10;    elif key in ['lshift','rshift']:&amp;#10;        shift_flag = True&amp;#10;        captured_string = captured_string + ' '&amp;#10;    elif key in ['minus']:&amp;#10;        captured_string = captured_string+'-'&amp;#10;    elif key in ['up','down','left','right','return']:&amp;#10;        pass&amp;#10;    else: &amp;#10;        captured_string = captured_string+key&amp;#10;    # this next line formats the output. you can remove or modify as necessary&amp;#10;    captured_string=captured_string.capitalize()&amp;#10;    &amp;#10;    &amp;#10;    &amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -597,41 +597,6 @@
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
-      <TextComponent name="text_49">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
-        <Param name="name" updates="None" val="text_49" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-.7, .6)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="set every frame" val="$timeText" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <CodeComponent name="time">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="countdownClock = core.CountdownTimer(300) # 100 s = 5 minutes &amp;#10;countdownStarted = True &amp;#10;timeText = '5:00'&amp;#10;" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="timeRemaining = countdownClock.getTime() &amp;#10;if timeRemaining &lt;= 0.0: &amp;#10;    continueRoutine = False&amp;#10;else: &amp;#10;    minutes = int(timeRemaining/60.0) # the integer number of minutes &amp;#10;    seconds = int(timeRemaining - (minutes * 60.0)) &amp;#10;    if seconds &lt; 10:&amp;#10;        timeText = str(minutes) + ':0' + str(seconds) # create a string of characters representing the time &amp;#10;    else:&amp;#10;        timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time " valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="name" updates="None" val="time" valType="code"/>
-      </CodeComponent>
     </Routine>
     <Routine name="questions_instructions2">
       <KeyboardComponent name="key_resp_3">
@@ -2369,22 +2334,6 @@
         <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="name" updates="None" val="code_16" valType="code"/>
       </CodeComponent>
-      <KeyboardComponent name="key_resp_15">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_15" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
     </Routine>
     <Routine name="intro_test">
       <TextComponent name="text_37">
@@ -2676,27 +2625,6 @@
         <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="name" updates="None" val="code_18" valType="code"/>
       </CodeComponent>
-      <TextComponent name="text_48">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
-        <Param name="name" updates="None" val="text_48" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, -.5)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="(press space to continue)" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
     </Routine>
     <Routine name="recallcount">
       <TextComponent name="text_40">
@@ -3030,46 +2958,6 @@
         <Param name="name" updates="None" val="code_21" valType="code"/>
       </CodeComponent>
     </Routine>
-    <Routine name="storyimage">
-      <ImageComponent name="image_16">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$this_story_pic" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="image_16" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, .4)" valType="code"/>
-        <Param name="size" updates="constant" val="(1, 1)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
-      <KeyboardComponent name="key_resp_14">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_14" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-    </Routine>
   </Routines>
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="trials">
@@ -3101,7 +2989,6 @@
     <Routine name="perspective_test"/>
     <LoopTerminator name="trials_7"/>
     <Routine name="perspective"/>
-    <Routine name="storyimage"/>
     <LoopInitiator loopType="TrialHandler" name="trials_2">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -3115,7 +3002,6 @@
     </LoopInitiator>
     <Routine name="trial"/>
     <LoopTerminator name="trials_2"/>
-    <Routine name="storyimage"/>
     <LoopTerminator name="trials"/>
     <Routine name="RECALL_BREAK"/>
     <LoopInitiator loopType="TrialHandler" name="trials_3">
@@ -3182,5 +3068,18 @@
     <Routine name="question8"/>
     <LoopTerminator name="trials_6"/>
     <Routine name="end_of_questions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_8">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="5" valType="code"/>
+      <Param name="name" updates="None" val="trials_8" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="end_of_task"/>
+    <LoopTerminator name="trials_8"/>
   </Flow>
 </PsychoPy2experiment>
