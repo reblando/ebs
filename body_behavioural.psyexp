@@ -624,7 +624,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="countdownClock = core.CountdownTimer(300) # 100 s = 5 minutes &amp;#10;countdownStarted = True &amp;#10;timeText = '5:00'&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="timeRemaining = countdownClock.getTime() &amp;#10;if timeRemaining &lt;= 0.0: &amp;#10;    continueRoutine = False&amp;#10;else: &amp;#10;    minutes = int(timeRemaining/60.0) # the integer number of minutes &amp;#10;    seconds = int(timeRemaining - (minutes * 60.0)) &amp;#10;    timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time " valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="timeRemaining = countdownClock.getTime() &amp;#10;if timeRemaining &lt;= 0.0: &amp;#10;    continueRoutine = False&amp;#10;else: &amp;#10;    minutes = int(timeRemaining/60.0) # the integer number of minutes &amp;#10;    seconds = int(timeRemaining - (minutes * 60.0)) &amp;#10;    if seconds &lt; 10:&amp;#10;        timeText = str(minutes) + ':0' + str(seconds) # create a string of characters representing the time &amp;#10;    else:&amp;#10;        timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time " valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
