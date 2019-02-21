@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Wed Feb 20 11:59:45 2019
+    on Thu Feb 21 11:06:54 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -70,15 +70,15 @@ introClock = core.Clock()
 welcome_2 = visual.TextStim(win=win, name='welcome_2',
     text='default text',
     font='Arial',
-    pos=(0, .7), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, .5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-timer = core.Clock()
+
 image_10 = visual.ImageStim(
     win=win, name='image_10',
     image='sin', mask=None,
-    ori=0, pos=(0, -.3), size=[1.5, 1],
+    ori=0, pos=(0, -.3), size=1,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
@@ -88,14 +88,14 @@ shows_jobsClock = core.Clock()
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.75, 0.75),
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -124,14 +124,14 @@ just_perspective_2Clock = core.Clock()
 text_18 = visual.TextStim(win=win, name='text_18',
     text='default text',
     font='Arial',
-    pos=(-.4, .25), height=0.1, wrapWidth=.5, ori=0, 
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 image_9 = visual.ImageStim(
     win=win, name='image_9',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -148,14 +148,14 @@ text_8 = visual.TextStim(win=win, name='text_8',
 text_9 = visual.TextStim(win=win, name='text_9',
     text='default text',
     font='Arial',
-    pos=(-.4, .25), height=0.1, wrapWidth=.5, ori=0, 
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image_5 = visual.ImageStim(
     win=win, name='image_5',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -172,14 +172,14 @@ text_10 = visual.TextStim(win=win, name='text_10',
 text_11 = visual.TextStim(win=win, name='text_11',
     text='default text',
     font='Arial',
-    pos=(-.4, .25), height=0.1, wrapWidth=.5, ori=0, 
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image_6 = visual.ImageStim(
     win=win, name='image_6',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -196,14 +196,14 @@ text_13 = visual.TextStim(win=win, name='text_13',
 text_14 = visual.TextStim(win=win, name='text_14',
     text='default text',
     font='Arial',
-    pos=(-.4, .25), height=0.1, wrapWidth=.5, ori=0, 
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image_7 = visual.ImageStim(
     win=win, name='image_7',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -220,14 +220,14 @@ text_15 = visual.TextStim(win=win, name='text_15',
 text_16 = visual.TextStim(win=win, name='text_16',
     text='default text',
     font='Arial',
-    pos=(-.4, .25), height=0.1, wrapWidth=.5, ori=0, 
+    pos=(-.25, .25), height=0.1, wrapWidth=.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image_8 = visual.ImageStim(
     win=win, name='image_8',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -311,14 +311,14 @@ final_test_iClock = core.Clock()
 image_2 = visual.ImageStim(
     win=win, name='image_2',
     image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.75, 0.75),
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -397,7 +397,6 @@ text = visual.TextStim(win=win, name='text',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -2153,115 +2152,87 @@ for thisTrial_8 in trials_8:
 # completed 1 repeats of 'trials_8'
 
 
-# set up handler to look after randomisation of conditions etc
-trials_9 = data.TrialHandler(nReps=5, method='random', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=[None],
-    seed=None, name='trials_9')
-thisExp.addLoop(trials_9)  # add the loop to the experiment
-thisTrial_9 = trials_9.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
-if thisTrial_9 != None:
-    for paramName in thisTrial_9:
-        exec('{} = thisTrial_9[paramName]'.format(paramName))
+# ------Prepare to start Routine "end_of_intro"-------
+t = 0
+end_of_introClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+key_resp_7 = event.BuilderKeyResponse()
+# keep track of which components have finished
+end_of_introComponents = [text, key_resp_7]
+for thisComponent in end_of_introComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
 
-for thisTrial_9 in trials_9:
-    currentLoop = trials_9
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_9.rgb)
-    if thisTrial_9 != None:
-        for paramName in thisTrial_9:
-            exec('{} = thisTrial_9[paramName]'.format(paramName))
+# -------Start Routine "end_of_intro"-------
+while continueRoutine:
+    # get current time
+    t = end_of_introClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
     
-    # ------Prepare to start Routine "end_of_intro"-------
-    t = 0
-    end_of_introClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
-    # update component parameters for each repeat
-    key_resp_7 = event.BuilderKeyResponse()
-    instructions_time = timer.getTime()
-    thisExp.addData('instructions time', instructions_time)
-    # keep track of which components have finished
-    end_of_introComponents = [text, key_resp_7]
+    # *text* updates
+    if t >= 0.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *key_resp_7* updates
+    if t >= 0.0 and key_resp_7.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        key_resp_7.tStart = t
+        key_resp_7.frameNStart = frameN  # exact frame index
+        key_resp_7.status = STARTED
+        # keyboard checking is just starting
+        win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
+        event.clearEvents(eventType='keyboard')
+    if key_resp_7.status == STARTED:
+        theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            key_resp_7.keys = theseKeys[-1]  # just the last key pressed
+            key_resp_7.rt = key_resp_7.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in end_of_introComponents:
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
     
-    # -------Start Routine "end_of_intro"-------
-    while continueRoutine:
-        # get current time
-        t = end_of_introClock.getTime()
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *text* updates
-        if t >= 0.0 and text.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            text.tStart = t
-            text.frameNStart = frameN  # exact frame index
-            text.setAutoDraw(True)
-        frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if text.status == STARTED and t >= frameRemains:
-            text.setAutoDraw(False)
-        
-        # *key_resp_7* updates
-        if t >= 0.0 and key_resp_7.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            key_resp_7.tStart = t
-            key_resp_7.frameNStart = frameN  # exact frame index
-            key_resp_7.status = STARTED
-            # keyboard checking is just starting
-            win.callOnFlip(key_resp_7.clock.reset)  # t=0 on next screen flip
-            event.clearEvents(eventType='keyboard')
-        if key_resp_7.status == STARTED:
-            theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
-            
-            # check for quit:
-            if "escape" in theseKeys:
-                endExpNow = True
-            if len(theseKeys) > 0:  # at least one key was pressed
-                key_resp_7.keys = theseKeys[-1]  # just the last key pressed
-                key_resp_7.rt = key_resp_7.clock.getTime()
-                # a response ends the routine
-                continueRoutine = False
-        if event.getKeys(['escape']):
-            core.quit()
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in end_of_introComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "end_of_intro"-------
-    for thisComponent in end_of_introComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # check responses
-    if key_resp_7.keys in ['', [], None]:  # No response was made
-        key_resp_7.keys=None
-    trials_9.addData('key_resp_7.keys',key_resp_7.keys)
-    if key_resp_7.keys != None:  # we had a response
-        trials_9.addData('key_resp_7.rt', key_resp_7.rt)
-    
-    # the Routine "end_of_intro" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed 5 repeats of 'trials_9'
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
 
-
+# -------Ending Routine "end_of_intro"-------
+for thisComponent in end_of_introComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_7.keys in ['', [], None]:  # No response was made
+    key_resp_7.keys=None
+thisExp.addData('key_resp_7.keys',key_resp_7.keys)
+if key_resp_7.keys != None:  # we had a response
+    thisExp.addData('key_resp_7.rt', key_resp_7.rt)
+thisExp.nextEntry()
+# the Routine "end_of_intro" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 
 
