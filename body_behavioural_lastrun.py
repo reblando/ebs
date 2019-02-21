@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Thu Feb 21 11:43:12 2019
+    on Thu Feb 21 11:50:53 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -505,6 +505,14 @@ left_line = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
+
+text_48 = visual.TextStim(win=win, name='text_48',
+    text='default text',
+    font='Arial',
+    pos=(-.7, .7), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-9.0);
 
 # Initialize components for Routine "questions_task"
 questions_taskClock = core.Clock()
@@ -2295,6 +2303,7 @@ for thisTrial_4 in trials_4:
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
+    event.clearEvents()
     cursorCounter=0
     cursorVariable='|'
     captured_string=''
@@ -2308,8 +2317,11 @@ for thisTrial_4 in trials_4:
     this_recall_pic = storyDict.get(order_stories[count], {}).get('pic')
     
     image_4.setImage(this_recall_pic)
+    countdownClock = core.CountdownTimer(300) # 300 s = 5 minutes 
+    countdownStarted = True 
+    timeText = '5:00'
     # keep track of which components have finished
-    recall_3Components = [text_9, text_10, image_4, polygon, bottom_line, right_line_2, left_line]
+    recall_3Components = [text_9, text_10, image_4, polygon, bottom_line, right_line_2, left_line, text_48]
     for thisComponent in recall_3Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2424,6 +2436,25 @@ for thisTrial_4 in trials_4:
             left_line.tStart = t
             left_line.frameNStart = frameN  # exact frame index
             left_line.setAutoDraw(True)
+        timeRemaining = countdownClock.getTime() 
+        if timeRemaining <= 0.0: 
+            continueRoutine = False 
+        else: 
+            minutes = int(timeRemaining/60.0) # the integer number of minutes 
+            seconds = int(timeRemaining - (minutes * 60.0)) 
+            if seconds < 10:
+                timeText = str(minutes) + ':0' + str(seconds) # create a string of characters representing the time 
+            else:
+                timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time 
+        
+        # *text_48* updates
+        if t >= 0.0 and text_48.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_48.tStart = t
+            text_48.frameNStart = frameN  # exact frame index
+            text_48.setAutoDraw(True)
+        if text_48.status == STARTED:  # only update if drawing
+            text_48.setText(timeText, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or event.getKeys(keyList=["escape"]):
@@ -2446,6 +2477,7 @@ for thisTrial_4 in trials_4:
     for thisComponent in recall_3Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    
     
     # the Routine "recall_3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -4374,6 +4406,7 @@ for thisTrial_8 in trials_8:
     thisExp.nextEntry()
     
 # completed 5 repeats of 'trials_8'
+
 
 
 
