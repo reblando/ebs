@@ -1,0 +1,11 @@
+﻿count,storyText,locationEvent,socialEvent,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,order of stories,order of perspectives,participant 2 order - stories,participant 2 order  - schemas types,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,story_presses.keys,participant,session,date,expName,psychopyVersion,frameRate,
+0,,,,0,0,0,0,0,0,0,0,,,,,[31 12 42 14 21 44 23 33 11 32 43 34 13 41 22 24],"['Social' 'Location' 'Social' 'Social' 'Location' 'Location' 'Social'
+ 'Location' 'Social' 'Location' 'Social' 'Social' 'Location' 'Location'
+ 'Social' 'Location']",[11 32 43 34 13 41 22 24],"['Social' 'Location' 'Social' 'Social' 'Location' 'Location' 'Social'
+ 'Location']",space,0.30514177499935613,space,0.4530472970000119,space,1.586905783002294,,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+0,Mr. Shelton and Mr. Gordon shook hands inside the foyer of the restaurant: lunch today was about big business. ,1,1,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,None,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+0,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+1,,,,0,1,1,1,0,0,0,0,,,,,,,,,space,0.5192497069983801,space,0.3857941100031894,space,0.6363994700004696,,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+1,"It didn’t help the situation that Calvin and Jessie were running late to the airport, since Jessie had already been fuming at Calvin and preparing to end things with him.",1,1,0,1,1,1,,,,,0,0,0,0,,,,,,,,,,,None,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+1,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_25_0943,body_behavioural,3.0.4,59.812321018439896,
+,,,,,,,,,,,,,,,,,,,,space,0.33602252499986207,space,0.3198526699998183,,,,,,,,,,

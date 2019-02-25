@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Thu Feb 21 11:50:53 2019
+    on Mon Feb 25 09:43:37 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -191,7 +191,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.5, 0.5),
+    ori=0, pos=(0, .5), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -364,7 +364,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.5, 0.5),
+    ori=0, pos=(0, .5), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -2317,9 +2317,8 @@ for thisTrial_4 in trials_4:
     this_recall_pic = storyDict.get(order_stories[count], {}).get('pic')
     
     image_4.setImage(this_recall_pic)
-    countdownClock = core.CountdownTimer(300) # 300 s = 5 minutes 
-    countdownStarted = True 
-    timeText = '5:00'
+    countdownClock = core.CountdownTimer(300) # 300 s = 5 minutes  countdownStarted = True 
+    timeText = '5:00' 
     # keep track of which components have finished
     recall_3Components = [text_9, text_10, image_4, polygon, bottom_line, right_line_2, left_line, text_48]
     for thisComponent in recall_3Components:

@@ -79,7 +79,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .5)" valType="code"/>
-        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.85, 0.75)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -601,9 +601,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="countdownClock = core.CountdownTimer(300) # 300 s = 5 minutes 
-countdownStarted = True &amp;#10;timeText = '5:00'
-" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="countdownClock = core.CountdownTimer(300) # 300 s = 5 minutes  countdownStarted = True &amp;#10;timeText = '5:00' " valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="timeRemaining = countdownClock.getTime() &amp;#10;if timeRemaining &lt;= 0.0: &amp;#10;    continueRoutine = False &amp;#10;else: &amp;#10;    minutes = int(timeRemaining/60.0) # the integer number of minutes &amp;#10;    seconds = int(timeRemaining - (minutes * 60.0)) &amp;#10;    if seconds &lt; 10:&amp;#10;        timeText = str(minutes) + ':0' + str(seconds) # create a string of characters representing the time &amp;#10;    else:&amp;#10;        timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time " valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
