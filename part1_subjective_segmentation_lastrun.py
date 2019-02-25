@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Feb 25 09:37:57 2019
+    on Mon Feb 25 09:59:02 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -88,7 +88,7 @@ shows_jobsClock = core.Clock()
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.75, 0.75),
+    ori=0, pos=(0, 0), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
@@ -131,7 +131,7 @@ text_18 = visual.TextStim(win=win, name='text_18',
 image_9 = visual.ImageStim(
     win=win, name='image_9',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -155,7 +155,7 @@ text_9 = visual.TextStim(win=win, name='text_9',
 image_5 = visual.ImageStim(
     win=win, name='image_5',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -179,7 +179,7 @@ text_11 = visual.TextStim(win=win, name='text_11',
 image_6 = visual.ImageStim(
     win=win, name='image_6',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -227,7 +227,7 @@ text_16 = visual.TextStim(win=win, name='text_16',
 image_8 = visual.ImageStim(
     win=win, name='image_8',
     image='sin', mask=None,
-    ori=0, pos=(.25, .25), size=(0.75, 0.75),
+    ori=0, pos=(.25, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -311,7 +311,7 @@ final_test_iClock = core.Clock()
 image_2 = visual.ImageStim(
     win=win, name='image_2',
     image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.75, 0.75),
+    ori=0, pos=(0, 0), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
