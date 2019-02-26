@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Feb 25 16:52:53 2019
+    on Tue Feb 26 10:37:06 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -54,8 +54,8 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=False, screen=0,
-    allowGUI=True, allowStencil=False,
+    size=[1440, 900], fullscr=True, screen=0,
+    allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
@@ -1220,7 +1220,7 @@ for thisTrial in trials:
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    trials_7 = data.TrialHandler(nReps=5, method='sequential', 
+    trials_7 = data.TrialHandler(nReps=7, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_7')
@@ -1714,7 +1714,7 @@ for thisTrial in trials:
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 5 repeats of 'trials_7'
+    # completed 7 repeats of 'trials_7'
     
     
     # ------Prepare to start Routine "perspective"-------
