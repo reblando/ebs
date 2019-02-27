@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Wed Feb 27 12:13:41 2019
+    on Wed Feb 27 12:52:05 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/body_behavioural.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/SECOND_body_behavioural.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -98,67 +98,34 @@ text_33 = visual.TextStim(win=win, name='text_33',
 perspectiveClock = core.Clock()
 import numpy as np
 
-a = np.zeros(shape = [4, 4], dtype = int)
-
-s_order = np.array([10, 20, 30, 40], dtype = int)
-
-l_order = np.array([1,2,3,4], dtype = int)
-
-
-np.random.shuffle(s_order)
-np.random.shuffle(l_order)
-
-a[0] += s_order[0]
-a[1] += s_order[1]
-a[2] += s_order[2]
-a[3] += s_order[3]
-
-a[:,0] += l_order[0]
-a[:,1] += l_order[1]
-a[:, 2] += l_order[2]
-a[:, 3] += l_order[3]
-
-run1 = np.array([a[0,0], a[1,1], a[2,0], a[3,1], a[0,2], a[1,3], a[2,2], a[3,3]]) 
-run2 = np.array([a[0,1], a[1,0], a[2,1], a[3,0], a[0,3], a[1,2], a[2,3], a[3,2]]) 
-order_run1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-order_run2 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-
-randperm1 = np.random.permutation(8)
-randperm2 = np.random.permutation(8)
-
-run1 = run1[randperm1]
-run2 = run2[randperm2]
-order_run1 = order_run1[randperm1]
-order_run2 = order_run2[randperm2]
-
-
+order_stories = np.array([33,32,41,23,14,22,44,11])
+order_perspectives = np.array(['Social','Location','Social','Location','Social','Social','Location','Location'])
+from_whom = 'same'
 
 #create a dictionary for all the stories and their values
 
-storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'story_xlsx_files/11.xlsx'},
-             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'story_xlsx_files/12.xlsx'},
-             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'story_xlsx_files/13.xlsx'},
-             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic.jpg', 'storyFile': 'story_xlsx_files/14.xlsx'},
-             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic.jpg', 'storyFile': 'story_xlsx_files/21.xlsx'},
-             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic.jpg', 'storyFile': 'story_xlsx_files/22.xlsx'},
-             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic.jpg', 'storyFile': 'story_xlsx_files/23.xlsx'},
-             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic.jpg', 'storyFile': 'story_xlsx_files/24.xlsx'},
-             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic.jpg', 'storyFile': 'story_xlsx_files/31.xlsx'},
-             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic.jpg', 'storyFile': 'story_xlsx_files/32.xlsx'},
-             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic.jpg', 'storyFile': 'story_xlsx_files/33.xlsx'},
-             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic.jpg', 'storyFile': 'story_xlsx_files/34.xlsx'},
-             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'story_xlsx_files/41.xlsx'},
-             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'story_xlsx_files/42.xlsx'},
-             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'story_xlsx_files/43.xlsx'},
-             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}
+storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic', 'storyFile': 'story_xlsx_files/11.xlsx'},
+             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic', 'storyFile': 'story_xlsx_files/12.xlsx'},
+             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic', 'storyFile': 'story_xlsx_files/13.xlsx'},
+             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic', 'storyFile': 'story_xlsx_files/14.xlsx'},
+             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic', 'storyFile': 'story_xlsx_files/21.xlsx'},
+             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic', 'storyFile': 'story_xlsx_files/22.xlsx'},
+             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic', 'storyFile': 'story_xlsx_files/23.xlsx'},
+             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic', 'storyFile': 'story_xlsx_files/24.xlsx'},
+             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic', 'storyFile': 'story_xlsx_files/31.xlsx'},
+             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic', 'storyFile': 'story_xlsx_files/32.xlsx'},
+             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic', 'storyFile': 'story_xlsx_files/33.xlsx'},
+             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic', 'storyFile': 'story_xlsx_files/34.xlsx'},
+             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic', 'storyFile': 'story_xlsx_files/41.xlsx'},
+             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic', 'storyFile': 'story_xlsx_files/42.xlsx'},
+             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic', 'storyFile': 'story_xlsx_files/43.xlsx'},
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic', 'storyFile': 'story_xlsx_files/44.xlsx'}}
 
-order_stories = np.concatenate((run1, run2), axis =None)
-order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
 
 #create complementary perspectives list for non-primed questions
 other_perspectives = []
 
-for i in range(0,16):
+for i in range(0,8):
     if order_perspectives[i] == 'Social':
         other_pespectives = other_perspectives.append('Location')
     else:
@@ -166,8 +133,8 @@ for i in range(0,16):
 
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
-thisExp.addData('participant 2 order - stories', run2)
-thisExp.addData('participant 2 order  - schemas types', order_run2)
+thisExp.addData('from whom', from_whom)
+
 
 
 
@@ -191,7 +158,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.85, 0.75),
+    ori=0, pos=(0, .5), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -271,67 +238,34 @@ image_15 = visual.ImageStim(
 perspectiveClock = core.Clock()
 import numpy as np
 
-a = np.zeros(shape = [4, 4], dtype = int)
-
-s_order = np.array([10, 20, 30, 40], dtype = int)
-
-l_order = np.array([1,2,3,4], dtype = int)
-
-
-np.random.shuffle(s_order)
-np.random.shuffle(l_order)
-
-a[0] += s_order[0]
-a[1] += s_order[1]
-a[2] += s_order[2]
-a[3] += s_order[3]
-
-a[:,0] += l_order[0]
-a[:,1] += l_order[1]
-a[:, 2] += l_order[2]
-a[:, 3] += l_order[3]
-
-run1 = np.array([a[0,0], a[1,1], a[2,0], a[3,1], a[0,2], a[1,3], a[2,2], a[3,3]]) 
-run2 = np.array([a[0,1], a[1,0], a[2,1], a[3,0], a[0,3], a[1,2], a[2,3], a[3,2]]) 
-order_run1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-order_run2 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-
-randperm1 = np.random.permutation(8)
-randperm2 = np.random.permutation(8)
-
-run1 = run1[randperm1]
-run2 = run2[randperm2]
-order_run1 = order_run1[randperm1]
-order_run2 = order_run2[randperm2]
-
-
+order_stories = np.array([33,32,41,23,14,22,44,11])
+order_perspectives = np.array(['Social','Location','Social','Location','Social','Social','Location','Location'])
+from_whom = 'same'
 
 #create a dictionary for all the stories and their values
 
-storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'story_xlsx_files/11.xlsx'},
-             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'story_xlsx_files/12.xlsx'},
-             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'story_xlsx_files/13.xlsx'},
-             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic.jpg', 'storyFile': 'story_xlsx_files/14.xlsx'},
-             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic.jpg', 'storyFile': 'story_xlsx_files/21.xlsx'},
-             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic.jpg', 'storyFile': 'story_xlsx_files/22.xlsx'},
-             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic.jpg', 'storyFile': 'story_xlsx_files/23.xlsx'},
-             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic.jpg', 'storyFile': 'story_xlsx_files/24.xlsx'},
-             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic.jpg', 'storyFile': 'story_xlsx_files/31.xlsx'},
-             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic.jpg', 'storyFile': 'story_xlsx_files/32.xlsx'},
-             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic.jpg', 'storyFile': 'story_xlsx_files/33.xlsx'},
-             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic.jpg', 'storyFile': 'story_xlsx_files/34.xlsx'},
-             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'story_xlsx_files/41.xlsx'},
-             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'story_xlsx_files/42.xlsx'},
-             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'story_xlsx_files/43.xlsx'},
-             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}
+storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic', 'storyFile': 'story_xlsx_files/11.xlsx'},
+             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic', 'storyFile': 'story_xlsx_files/12.xlsx'},
+             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic', 'storyFile': 'story_xlsx_files/13.xlsx'},
+             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic', 'storyFile': 'story_xlsx_files/14.xlsx'},
+             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic', 'storyFile': 'story_xlsx_files/21.xlsx'},
+             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic', 'storyFile': 'story_xlsx_files/22.xlsx'},
+             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic', 'storyFile': 'story_xlsx_files/23.xlsx'},
+             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic', 'storyFile': 'story_xlsx_files/24.xlsx'},
+             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic', 'storyFile': 'story_xlsx_files/31.xlsx'},
+             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic', 'storyFile': 'story_xlsx_files/32.xlsx'},
+             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic', 'storyFile': 'story_xlsx_files/33.xlsx'},
+             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic', 'storyFile': 'story_xlsx_files/34.xlsx'},
+             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic', 'storyFile': 'story_xlsx_files/41.xlsx'},
+             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic', 'storyFile': 'story_xlsx_files/42.xlsx'},
+             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic', 'storyFile': 'story_xlsx_files/43.xlsx'},
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic', 'storyFile': 'story_xlsx_files/44.xlsx'}}
 
-order_stories = np.concatenate((run1, run2), axis =None)
-order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
 
 #create complementary perspectives list for non-primed questions
 other_perspectives = []
 
-for i in range(0,16):
+for i in range(0,8):
     if order_perspectives[i] == 'Social':
         other_pespectives = other_perspectives.append('Location')
     else:
@@ -339,8 +273,8 @@ for i in range(0,16):
 
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
-thisExp.addData('participant 2 order - stories', run2)
-thisExp.addData('participant 2 order  - schemas types', order_run2)
+thisExp.addData('from whom', from_whom)
+
 
 
 
@@ -364,7 +298,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.85, 0.75),
+    ori=0, pos=(0, .5), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -1030,7 +964,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count.xlsx'),
+    trialList=data.importConditions('count_8.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1054,7 +988,7 @@ for thisTrial in trials:
     # update component parameters for each repeat
     text_38.setText((count + 1))
     key_resp_8 = event.BuilderKeyResponse()
-    event.clearEvents()
+    
     # keep track of which components have finished
     storycountComponents = [text_38, key_resp_8, text_39]
     for thisComponent in storycountComponents:
@@ -1220,7 +1154,7 @@ for thisTrial in trials:
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    trials_7 = data.TrialHandler(nReps=7, method='sequential', 
+    trials_7 = data.TrialHandler(nReps=5, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_7')
@@ -1244,7 +1178,7 @@ for thisTrial in trials:
         frameN = -1
         continueRoutine = True
         # update component parameters for each repeat
-        event.clearEvents()
+        
         #set the perspective
         this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
         if this_perspective == 'Couples Therapist':
@@ -1568,7 +1502,7 @@ for thisTrial in trials:
                 question6_2.tStart = t
                 question6_2.frameNStart = frameN  # exact frame index
                 question6_2.setAutoDraw(True)
-            if this_image == 'bar5.jpg':
+            if this_image == 'bar5.jpeg':
                 thumbsup.draw()
                 win.flip()
                 core.wait(1.5)
@@ -1669,12 +1603,12 @@ for thisTrial in trials:
                 trials_7.finished = True
                 continueRoutine=False
             if checkCount == 4:
-                this_image = 'bar5.jpg'
+                this_image = 'bar5.jpeg'
             
             if checkCount == 1:
                 this_image = 'bar2.png'
             if checkCount == 2: 
-                this_image = 'bar3.jpg'
+                this_image = 'bar3.jpeg'
             if checkCount == 3:
                 this_image = 'bar4.png'
             
@@ -1714,7 +1648,7 @@ for thisTrial in trials:
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 7 repeats of 'trials_7'
+    # completed 5 repeats of 'trials_7'
     
     
     # ------Prepare to start Routine "perspective"-------
@@ -1723,7 +1657,7 @@ for thisTrial in trials:
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
-    event.clearEvents()
+    
     #set the perspective
     this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
     if this_perspective == 'Couples Therapist':
