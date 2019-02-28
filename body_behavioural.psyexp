@@ -174,7 +174,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="event.clearEvents()" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="for key in event.getKeys():&amp;#10;    if key in ['q']: &amp;#10;        trials_2.finished = 1&amp;#10;        continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>

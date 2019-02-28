@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Tue Feb 26 10:36:46 2019
+    on Thu Feb 28 11:56:05 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1030,7 +1030,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count.xlsx'),
+    trialList=data.importConditions('count_8.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1893,7 +1893,7 @@ for thisTrial in trials:
 )
         story_presses = event.BuilderKeyResponse()
         image_2.setImage(this_story_pic)
-        
+        event.clearEvents()
         # keep track of which components have finished
         trialComponents = [text, story_presses, image_2, text_34, text_35]
         for thisComponent in trialComponents:

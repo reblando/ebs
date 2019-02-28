@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Wed Feb 27 12:01:19 2019
+    on Thu Feb 28 11:38:44 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1453,7 +1453,7 @@ for thisTrial_3 in trials_3:
                 question6_2.tStart = t
                 question6_2.frameNStart = frameN  # exact frame index
                 question6_2.setAutoDraw(True)
-            if this_image == 'bar5.jpeg':
+            if this_image == 'bar5.jpg':
                 thumbsup.draw()
                 win.flip()
                 core.wait(1.5)
@@ -1555,12 +1555,12 @@ for thisTrial_3 in trials_3:
                 trials_3.finished = True
                 continueRoutine=False
             if checkCount == 4:
-                this_image = 'bar5.jpeg'
+                this_image = 'bar5.jpg'
             
             if checkCount == 1:
                 this_image = 'bar2.png'
             if checkCount == 2: 
-                this_image = 'bar3.jpeg'
+                this_image = 'bar3.jpg'
             if checkCount == 3:
                 this_image = 'bar4.png'
             
@@ -1890,7 +1890,7 @@ for thisTrial_5 in trials_5:
                 question6_3.tStart = t
                 question6_3.frameNStart = frameN  # exact frame index
                 question6_3.setAutoDraw(True)
-            if this_image == 'bar5.jpeg':
+            if this_image == 'bar5.jpg':
                 thumbsup.draw()
                 win.flip()
                 core.wait(1.5)
@@ -1992,13 +1992,13 @@ for thisTrial_5 in trials_5:
                 trials_5.finished = True
                 continueRoutine=False
             if checkCount == 4:
-                this_image = 'bar5.jpeg'
+                this_image = 'bar5.jpg'
                 trials_7.finished = True
             
             if checkCount == 1:
                 this_image = 'bar2.png'
             if checkCount == 2: 
-                this_image = 'bar3.jpeg'
+                this_image = 'bar3.jpg'
             if checkCount == 3:
                 this_image = 'bar4.png'
             
