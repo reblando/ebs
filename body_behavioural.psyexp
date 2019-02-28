@@ -2997,8 +2997,8 @@
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('count', 0)]), OrderedDict([('count', 1)]), OrderedDict([('count', 2)]), OrderedDict([('count', 3)]), OrderedDict([('count', 4)]), OrderedDict([('count', 5)]), OrderedDict([('count', 6)]), OrderedDict([('count', 7)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="count_8.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('count', 0)]), OrderedDict([('count', 1)]), OrderedDict([('count', 2)]), OrderedDict([('count', 3)]), OrderedDict([('count', 4)]), OrderedDict([('count', 5)]), OrderedDict([('count', 6)]), OrderedDict([('count', 7)]), OrderedDict([('count', 8)]), OrderedDict([('count', 9)]), OrderedDict([('count', 10)]), OrderedDict([('count', 11)]), OrderedDict([('count', 12)]), OrderedDict([('count', 13)]), OrderedDict([('count', 14)]), OrderedDict([('count', 15)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="count.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
