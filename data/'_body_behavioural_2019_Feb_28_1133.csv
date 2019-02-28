@@ -1,0 +1,12 @@
+﻿count,storyText,locationEvent,socialEvent,instructText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,order of stories,order of perspectives,participant 2 order - stories,participant 2 order  - schemas types,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,story_presses.keys,story time,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,psychopyVersion,frameRate,
+0,,,,,0,0,0,0,0,0,0,0,,,,,,,,,[32 12 14 41 34 21 43 23 42 33 22 24 11 31 13 44],"['Location' 'Social' 'Location' 'Social' 'Social' 'Location' 'Location'
+ 'Social' 'Social' 'Social' 'Location' 'Social' 'Social' 'Location'
+ 'Location' 'Location']",[42 33 22 24 11 31 13 44],"['Social' 'Social' 'Location' 'Social' 'Social' 'Location' 'Location'
+ 'Location']",space,0.671164317000148,space,0.402822082000057,space,0.4341703720001533,,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+0,"Jeff, hoping that today would be a pivotal day for his new business, had only been waiting inside the doors of the airport for a few minutes when he saw William and eagerly waved him over. ",1,1,,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,,,,,None,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+0,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+1,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,,,space,0.4696252799994909,None,,space,0.5363462000004802,,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+1,"It didn’t help the situation that Calvin and Jessie were running late to the airport, since Jessie had already been fuming at Calvin and preparing to end things with him.",1,1,,0,1,1,1,,,,,0,0,0,0,,,,,,,,,,,,,,,None,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+1,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16.745996622999883,space,0.3029981820000103,,,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
+,,,,The next task in the experiment is to recall each story to the best of your ability.,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,space,1.586262015000102,',001,2019_Feb_28_1133,body_behavioural,3.0.4,59.950631254687565,
