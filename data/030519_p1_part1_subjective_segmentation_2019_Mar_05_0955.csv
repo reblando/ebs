@@ -1,0 +1,240 @@
+﻿instruct_text,this_pic,rolePic,job,instruct_text2,Q1,Q2,Q3,Q4,D1,D2,roleName,instructText,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,loop3.thisRepN,loop3.thisTrialN,loop3.thisN,loop3.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_5.thisRepN,trials_5.thisTrialN,trials_5.thisN,trials_5.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_8.thisRepN,trials_8.thisTrialN,trials_8.thisN,trials_8.thisIndex,key_resp_8.keys,key_resp_8.rt,key_resp_2.keys,key_resp_2.rt,key_resp_6.keys,key_resp_6.rt,key_resp_14.keys,key_resp_14.rt,key_resp_10.keys,key_resp_10.rt,key_resp_11.keys,key_resp_11.rt,key_resp_12.keys,key_resp_12.rt,key_resp_13.keys,key_resp_13.rt,key_resp_4.keys,key_resp_4.rt,key_resp_3.keys,key_resp_3.rt,key_resp_5.keys,key_resp_5.rt,participant,session,date,expName,psychopyVersion,frameRate,
+Welcome to the Job Simulator Task!,instructions_photos/pixel.png,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,3.9889253150031436,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"In this task, you'll be assuming various perspectives of jobs while reading stories. ",None,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,4.534238113992615,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"First, you’ll be introduced to the perspectives of 8 different jobs. ",instructions_photos/i1.png,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,4.034634730007383,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"For example, you may be asked to take on the perspective of a Restaurant Critic while you read a story that takes place in a restaurant. ",jobphotos/restaurant_critic.jpg,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,6.137322465001489,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"You’ll learn 4 questions associated with each perspective, and you should keep them in mind while reading the story while assuming that perspective. ",instructions_photos/i2.png,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,12.851591700004064,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"For example, if you are a Restaurant Critic, you’ll learn to ask questions about the restaurant decor, menus, and the enjoyment of the food. ",jobphotos/restaurant_critic.jpg,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,7.236459010004182,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"After learning all the questions in a series of pre-task quizzes, you’ll read 8 stories, applying one perspective you’ve learned to each one. ",instructions_photos/i3.png,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,12.450608312996337,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"While reading, try to keep in mind the perspective and questions. ",instructions_photos/i3.png,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,3.986825009997119,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"After you’re finished reading all the stories, you will be asked to recall the stories and answer questions about them. ",instructions_photos/i4.png,,,,,,,,,,,,0,8,8,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,7.22065498700249,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+Let’s begin! The 8 perspectives are as follows:,None,,,,,,,,,,,,0,9,9,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,space,5.903010087000439,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,Airport Customer Experience Manager,,,,,,,,,,,,,,0,0,0,4,,,,,,,,,,,,,,,,,,,,,,,,,,,space,3.8672998800029745,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,1,1,5,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.4193783170048846,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/matchmaker.jpg,Matchmaker,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.286424933001399,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,Wedding Planner,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.2530405050056288,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/restaurant_critic.jpg,Restaurant Critic,,,,,,,,,,,,,,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,space,0.9196325249940855,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/couples.jpeg,"Couples Therapist
+",,,,,,,,,,,,,,0,5,5,7,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.4510318399989046,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,Dean of Academic Studies,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.4532069270062493,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,Business Reporter,,,,,,,,,,,,,,0,7,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,space,1.735764940007357,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+You’ll become acquainted with these perspectives more in the following pre-task quizzes where you’ll learn the questions associated with each perspective. ,,,,(press space to continue),,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,space,5.720350232993951,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+You’ll first go through all four questions for each perspective. ,,,,None,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,space,6.020169556999463,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"Then, you’ll indicate the order in which you saw the questions during the quiz by pressing the number in front of the question. ",,,,None,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,space,16.187454611994326,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"If you indicate the wrong question during the quiz, you’ll restart the learning.",,,,None,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,space,3.7362456520058913,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+"After you’ve passed the learning for each perspective, you’ll have a round of final quizzes. ",,,,None,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,space,5.600994260006701,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+Press the space bar to begin the quizzes. ,,,,None,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,space,4.802804621998803,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,0,0,0,4,0,0,0,0,,,,,,,,,,,,,,,,,,,space,3.453492835003999,space,3.719789730006596,space,8.670375738001894,space,5.6699886370042805,space,1.753882410004735,space,1.3030600720085204,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,0,0,0,4,1,0,1,0,,,,,,,,,,,,,,,,,,,space,1.6198539019969758,space,4.103237351999269,space,2.469749766998575,space,2.05372015600733,space,1.2007884600025136,space,0.553105296989088,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,0,0,0,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,0,1,1,3,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.052729247006937,space,4.652755728006014,space,2.1204055859998334,space,4.070018170008552,space,1.6182339420047356,space,0.4697994969901629,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,0,1,1,3,1,0,1,0,,,,,,,,,,,,,,,,,,,space,1.086269915002049,space,5.103268549995846,space,2.019647918001283,space,1.0863733949954621,space,0.5862665369932074,space,0.8030108549864963,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,0,1,1,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,2,2,5,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.5860377799981507,space,2.7866030219884124,space,2.903816200006986,space,2.2528181620000396,space,2.0521935150027275,space,0.5703560100082541,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,2,2,5,1,0,1,0,,,,,,,,,,,,,,,,,,,space,0.8531402500084369,space,4.337215065010241,space,4.452866564999567,space,1.8194910670135869,space,2.2033339729969157,space,0.4030148570018355,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,2,2,5,2,0,2,0,,,,,,,,,,,,,,,,,,,space,0.11974660499254242,space,5.001146790003986,space,3.535049728001468,space,3.153963474993361,space,1.8859936200024094,space,0.6865876150113763,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,0,2,2,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,0,3,3,0,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.0862859769986244,space,3.3364966900116997,space,3.503337186994031,space,4.033388137992006,space,3.2784407819999615,space,0.4875873099954333,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,0,3,3,0,1,0,1,0,,,,,,,,,,,,,,,,,,,space,0.5030827419977868,space,8.036925459993654,space,1.3531298949965276,space,5.386728950004908,space,3.6366216050082585,space,0.5029384800000116,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,0,3,3,0,2,0,2,0,,,,,,,,,,,,,,,,,,,space,1.6032276520127198,space,3.5200851150002563,space,5.936210710002342,space,7.82012757701159,space,1.6030037220043596,space,0.6006824520009104,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,0,3,3,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/restaurant_critic.jpg,,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,0,4,4,1,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.1043488449940924,space,3.8194047169963596,space,2.8870934620063053,space,4.086591202998534,space,2.0032361300109187,space,0.5692953949910589,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/restaurant_critic.jpg,,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,0,5,5,7,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.136578460005694,space,10.254260910005542,space,3.536756397006684,space,4.786304157998529,space,1.1693721519986866,space,0.6863826100016013,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,0,5,5,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/matchmaker.jpg,,,"Who notices whom first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,,0,6,6,2,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.0532975099922623,space,8.08709885001008,space,5.751091680009267,space,2.003070225007832,space,1.5530652620072942,space,0.6199755600100616,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/matchmaker.jpg,,,"Who notices whom first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,,0,6,6,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,,,"What is the lecture hall like?
+","What class are the students in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,,0,7,7,6,0,0,0,0,,,,,,,,,,,,,,,,,,,space,0.702782546999515,space,3.219570504996227,space,6.236690386998816,space,3.219695576990489,space,1.4197441549913492,space,0.5701998750009807,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,,,"What is the lecture hall like?
+","What class are the students in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,,0,7,7,6,1,0,1,0,,,,,,,,,,,,,,,,,,,space,0.11948757199570537,space,2.6197317320038565,space,2.0197565499984194,space,3.086506091989577,space,3.0697728300001472,space,0.6868142829916906,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,,,"What is the lecture hall like?
+","What class are the students in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,,0,7,7,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,1.5364388819871238,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,1,0,1,0,,,,,,,,,,,,,,,,,,,,,,,space,1.2029443500068737,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,2,0,2,0,,,,,,,,,,,,,,,,,,,,,,,space,0.6362812619918259,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,3,0,3,0,,,,,,,,,,,,,,,,,,,,,,,space,0.2862396349955816,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/business_reporter.jpg,,,What industry are the business people in?,What is being negotiated and how much money is at stake?,What is the response to the proposed deal?,What comes about from the business proposal?,Is the deal fair?,How long does it take to make the deal?,Business Reporter,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/restaurant_critic.jpg,,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.9036680470017018,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/restaurant_critic.jpg,,,How is the restaurant decorated?,What are the menus like?,"What do the clients order?
+",How do the clients like the food?,How old is the waiter?,What meal is being served?,Restaurant Critic,,,,,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/matchmaker.jpg,,,"Who notices whom first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,1.1866224269906525,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/matchmaker.jpg,,,"Who notices whom first and why do they notice the other?
+","How does the couple start talking?
+","Which of the people proposes going on an actual date and what do they propose?
+","Who leaves first and why do they have to go?
+",Is the couple going to get married?,Who shows more interest?,Matchmaker,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,1.3699224129959475,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,1,0,1,0,,,,,,,,,,,,,,,,,,,,,,,space,0.8029327169933822,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,2,0,2,0,,,,,,,,,,,,,,,,,,,,,,,space,0.703060749990982,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,3,0,3,0,,,,,,,,,,,,,,,,,,,,,,,space,0.5006350699986797,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,4,0,4,0,,,,,,,,,,,,,,,,,,,,,,,space,0.3363587549974909,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/weddingplanner.jpg,,,"How does the person who proposed feel before proposing?
+","What is the ring like?
+","Does anyone help with the proposal?
+","Who witnessed the “yes”?
+",Is anyone taking pictures of the proposal?,How long does the proposal take?,Wedding Planner,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.4701541370013729,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,1,0,1,0,,,,,,,,,,,,,,,,,,,,,,,space,0.3862586850009393,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,2,0,2,0,,,,,,,,,,,,,,,,,,,,,,,space,0.7029713950032601,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/acem.jpg,,,"When the travelers arrive at the airport, how much time do they have to go through the airport?
+","What do the travelers have to do at security to comply with the security check?
+","How do the travelers feel when they are walking to the gates?
+",Where does each traveler sit on the plane?,Are the security guards friendly or rude?,Are the airport restrooms clean?,Airport Customer Experience Manager,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,,,,,,,,,0,5,5,5,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,1.1528319450007984,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,,,,,,,,,0,5,5,5,1,0,1,0,,,,,,,,,,,,,,,,,,,,,,,space,1.0696552650042577,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,,,,,,,,,0,5,5,5,2,0,2,0,,,,,,,,,,,,,,,,,,,,,,,space,0.9363190820004093,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/gscem.jpg,,,"What is the grocery store like upon entering?
+","What items do the clients pick out?
+","How is the checkout line and how long do the clients wait in line?
+","How much are the groceries and what method of payment do the clients use?
+",How long does it take for the cashier to scan all of the customers’ groceries?,What type of grocery bags do the clients use?,"Grocery Store Customer Experience Manager
+",,,,,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,,,"What is the lecture hall like?
+","What class are the students in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,,,,,,,,,,0,6,6,6,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.9197289800067665,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/dean.jpg,,,"What is the lecture hall like?
+","What class are the students in and what is the day’s lecture about?
+","What is something taught in lecture?
+",When is the next assessment in the class?,Are the students paying attention?,Are the desks comfortable?,Dean of Academic Studies,,,,,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,,,,,,,,,0,7,7,7,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,space,0.9363701719994424,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,jobphotos/couples.jpeg,,,"How does the person who is initiating the breakup feel before they do it?
+","Why does the initiator want to break up?
+","How does the person being broken up with respond?
+",Do the partners leave on good terms?,Does the person being broken up with expect that this is coming?,For how long has the initiator been wanting to break up?,"Couples Therapist
+",,,,,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,Good job! You’ve finished the pre-task quizzes. Please notify the researcher that you have finished. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,space,8.170568919988,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,You are about to begin the main task of reading the stories. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,space,4.536215514992364,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"The stories will presented to you sentence by sentence, so you’ll read each sentence in the story individually. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,space,3.8840997549996246,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"Before reading each story, you’ll be assigned a perspective and then given a quiz like the ones you just took for that perspective.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,space,6.48697066999739,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"When you’ve finished the quiz, you’ll begin reading the story, sentence by sentence. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,space,3.6365393820015015,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"While reading the stories, you will additionally have to make a judgement about each sentence in order to advance to the next sentence. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,space,7.134469926997554,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,Some people feel that the stories have natural “parts”: we want you to make a judgement about when you think the story has transitioned from one “part” to another. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,space,9.187880850993679,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,You will press “9” if you think the sentence you are reading has begun a new “part” of the story. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,7,7,,,,,,,,,,,,,,,,,,,,,space,5.619732324994402,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"For example, you should press “9” at the beginning of a story and when you think a different “part” is beginning. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,8,8,,,,,,,,,,,,,,,,,,,,,space,6.50364719000936,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,You will press “1” if you think the sentence is in the same “part” as the sentence before. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,9,9,9,,,,,,,,,,,,,,,,,,,,,space,7.0701504349999595,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,There are no “right” answers- we just want to see what you think these transitions are. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,10,10,10,,,,,,,,,,,,,,,,,,,,,space,11.803753415006213,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,When you press “1” or “9” you will advance to the next sentence. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,11,11,11,,,,,,,,,,,,,,,,,,,,,space,2.9697922350023873,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"You will not be able to go back to previous sentences, or change the judgement you made about a sentence. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,12,12,12,,,,,,,,,,,,,,,,,,,,,space,2.3196900969924172,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,"Please use both index fingers during the story reading, with one resting on the “1” and the other on the “9.”",,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,13,13,13,,,,,,,,,,,,,,,,,,,,,space,2.086314811996999,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,
+,,,,,,,,,,,,Do you have any questions?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,14,14,14,,,,,,,,,,,,,,,,,,,,,space,0.5673527900071349,030519_p1,001,2019_Mar_05_0955,part1_subjective_segmentation,3.0.4,60.167429828017994,

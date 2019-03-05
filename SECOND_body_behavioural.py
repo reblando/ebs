@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Mar  4 15:43:42 2019
+    on Tue Mar  5 11:14:41 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -98,8 +98,8 @@ text_33 = visual.TextStim(win=win, name='text_33',
 perspectiveClock = core.Clock()
 import numpy as np
 
-order_stories = np.array([42,23,22,31,34,14,11,43])
-order_perspectives = np.array(['Social','Social','Location','Social','Location','Social','Location','Location'])
+order_stories = np.array([24,43,11,32,34,13,22,41])
+order_perspectives = np.array(['Social','Social','Social','Social','Location','Location','Location','Location'])
 
 #create a dictionary for all the stories and their values
 
@@ -237,8 +237,8 @@ image_15 = visual.ImageStim(
 perspectiveClock = core.Clock()
 import numpy as np
 
-order_stories = np.array([42,23,22,31,34,14,11,43])
-order_perspectives = np.array(['Social','Social','Location','Social','Location','Social','Location','Location'])
+order_stories = np.array([24,43,11,32,34,13,22,41])
+order_perspectives = np.array(['Social','Social','Social','Social','Location','Location','Location','Location'])
 
 #create a dictionary for all the stories and their values
 
