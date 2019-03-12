@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Fri Mar  8 12:12:43 2019
+    on Tue Mar 12 11:24:16 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -98,8 +98,8 @@ text_33 = visual.TextStim(win=win, name='text_33',
 perspectiveClock = core.Clock()
 import numpy as np
 
-order_stories = np.array([21,34,12,44,43,11,33,22])
-order_perspectives = np.array(['Location','Location','Location','Social','Location','Social','Social','Social'])
+order_stories = np.array([33,42,34,23,24,11,41,12])
+order_perspectives = np.array(['Social','Social','Location','Location','Social','Location','Location','Social'])
 #create a dictionary for all the stories and their values
 
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'story_xlsx_files/11.xlsx'},
@@ -236,8 +236,8 @@ image_15 = visual.ImageStim(
 perspectiveClock = core.Clock()
 import numpy as np
 
-order_stories = np.array([21,34,12,44,43,11,33,22])
-order_perspectives = np.array(['Location','Location','Location','Social','Location','Social','Social','Social'])
+order_stories = np.array([33,42,34,23,24,11,41,12])
+order_perspectives = np.array(['Social','Social','Location','Location','Social','Location','Location','Social'])
 #create a dictionary for all the stories and their values
 
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'story_xlsx_files/11.xlsx'},
