@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Fri Mar  8 13:31:38 2019
+    on Wed Mar 13 15:00:51 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -150,9 +150,7 @@ storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'L
              41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'story_xlsx_files/41.xlsx'},
              42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'story_xlsx_files/42.xlsx'},
              43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'story_xlsx_files/43.xlsx'},
-             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}
-
-order_stories = np.concatenate((run1, run2), axis =None)
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}order_stories = np.concatenate((run1, run2), axis =None)
 order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
 
 #create complementary perspectives list for non-primed questions
@@ -323,9 +321,7 @@ storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'L
              41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'story_xlsx_files/41.xlsx'},
              42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'story_xlsx_files/42.xlsx'},
              43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'story_xlsx_files/43.xlsx'},
-             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}
-
-order_stories = np.concatenate((run1, run2), axis =None)
+             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'story_xlsx_files/44.xlsx'}}order_stories = np.concatenate((run1, run2), axis =None)
 order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
 
 #create complementary perspectives list for non-primed questions
