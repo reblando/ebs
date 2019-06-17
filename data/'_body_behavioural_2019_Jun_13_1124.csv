@@ -1,0 +1,20 @@
+﻿count,storyText,locationEvent,socialEvent,story,instructText,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,order of stories,order of perspectives,participant 2 order - stories,participant 2 order  - schemas types,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,story_presses.keys,story time,key_resp_6.keys,key_resp_6.rt,key_resp_2.keys,key_resp_2.rt,key_resp_10.keys,key_resp_10.rt,recall,participant,session,date,expName,psychopyVersion,frameRate,
+0,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,[43 32 41 34 14 23 21 12 44 31 24 42 22 11 13 33],"['Social' 'Social' 'Location' 'Location' 'Social' 'Location' 'Social'
+ 'Location' 'Location' 'Location' 'Social' 'Social' 'Location' 'Social'
+ 'Location' 'Social']",[44 31 24 42 22 11 13 33],"['Location' 'Location' 'Social' 'Social' 'Location' 'Social' 'Location'
+ 'Social']",space,0.6745069019962102,space,0.5028714879881591,space,0.5027691739960574,,,,,,,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+0,"Carina and Simon, both distracted in thought, nearly ran into each other as they walked into the grocery store. ",1,1,43.0,,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,None,,,,,,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+0,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.170128983038012,space,1.1194521699799225,,,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,The next task in the experiment is to recall each story to the best of your ability.,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,space,1.5863832390168682,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,"You will be presented with the story title, names, the images, and a blank text box for each story.",,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,space,1.452524323016405,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,Describe the story with as many details as you can remember in the space provided. ,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,space,2.152753428032156,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,"When you are finished recalling one story, to move onto the next one hit ‘return’. ",,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,space,4.0864614869933575,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+,,,,,There is a 5 minute time limit to make your response. ,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,space,2.1030708919861354,,,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+0,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,space,0.7030244889901951,   ,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+1,,,,,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,space,1.0842899279668927, ,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+2,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,space,0.28581556997960433,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+3,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,space,0.3027444899780676,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+4,,,,,,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,space,0.08645642799092457,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+5,,,,,,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,space,0.06925470096757635,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,
+6,,,,,,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,space,0.06870174099458382,,',001,2019_Jun_13_1124,body_behavioural,3.0.4,59.954689606745156,

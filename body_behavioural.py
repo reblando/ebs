@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Tue Mar 26 13:11:50 2019
+    on Fri Jun 14 14:00:52 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -86,7 +86,7 @@ timer = core.Clock()
 # Initialize components for Routine "ask_to_assume"
 ask_to_assumeClock = core.Clock()
 text_33 = visual.TextStim(win=win, name='text_33',
-    text='PLEASE ASSUME THE ROLE OF:',
+    text='Please assume the perspective of:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -190,14 +190,14 @@ thisExp.addData('participant 2 order  - schemas types', order_run2)
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.3), height=0.15, wrapWidth=1.75, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.85, 0.75),
+    ori=0, pos=(0, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -212,7 +212,7 @@ text_5 = visual.TextStim(win=win, name='text_5',
 # Initialize components for Routine "intro_test"
 intro_testClock = core.Clock()
 text_37 = visual.TextStim(win=win, name='text_37',
-    text='indicate the order in which the questions appeared:',
+    text='Please indicate the order in which the questions appeared:',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -272,6 +272,16 @@ image_15 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
+
+# Initialize components for Routine "p_again"
+p_againClock = core.Clock()
+text_49 = visual.TextStim(win=win, name='text_49',
+    text='Here is the perspective one more time:',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Initialize components for Routine "perspective"
 perspectiveClock = core.Clock()
@@ -369,14 +379,14 @@ thisExp.addData('participant 2 order  - schemas types', order_run2)
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.3), height=0.15, wrapWidth=1.75, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 image = visual.ImageStim(
     win=win, name='image',
     image='sin', mask=None,
-    ori=0, pos=(0, .5), size=(0.85, 0.75),
+    ori=0, pos=(0, .25), size=(0.85, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
@@ -387,6 +397,16 @@ text_5 = visual.TextStim(win=win, name='text_5',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
+
+# Initialize components for Routine "story_begin"
+story_beginClock = core.Clock()
+text_50 = visual.TextStim(win=win, name='text_50',
+    text='When you are ready, press the space bar to begin reading the story. ',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -423,7 +443,7 @@ text_35 = visual.TextStim(win=win, name='text_35',
 # Initialize components for Routine "RECALL_BREAK"
 RECALL_BREAKClock = core.Clock()
 text_45 = visual.TextStim(win=win, name='text_45',
-    text='RECALL TASK',
+    text='Part 3',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -464,6 +484,13 @@ text_42 = visual.TextStim(win=win, name='text_42',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
+text_51 = visual.TextStim(win=win, name='text_51',
+    text='(press the space bar to continue)',
+    font='Arial',
+    pos=(0, -.7), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
 
 # Initialize components for Routine "recall_3"
 recall_3Clock = core.Clock()
@@ -529,7 +556,7 @@ text_48 = visual.TextStim(win=win, name='text_48',
 # Initialize components for Routine "questions_task"
 questions_taskClock = core.Clock()
 text_46 = visual.TextStim(win=win, name='text_46',
-    text='QUESTIONS TASK\n',
+    text='Part 4\n',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1261,10 +1288,10 @@ for thisTrial in trials:
         this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
         if this_perspective == 'Couples Therapist':
             display_pic = 'jobphotos/couples.jpg'
-            question1 = 'How does the person who is initiating the breakup feel before they do it?'
-            question2 ='Why does the initiator want to break up?'
-            question3 ='How does the person being broken up with respond?'
-            question4 = 'Do the partners leave on good terms?'
+            question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+            question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+            question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question4 = 'What object(s) do either partner ask for back?'
             question5 = 'Does the person being broken up with expect that this is coming?'
             question6 = 'For how long has the initiator been wanting to break up?'
         if this_perspective == 'Restaurant Critic':
@@ -1277,50 +1304,50 @@ for thisTrial in trials:
             question6 = 'How old is the waiter?'
         if this_perspective == 'Airport Customer Experience Manager':
             display_pic = 'jobphotos/acem.jpg'
-            question1 = 'When the travelers arrive at the airport, how much time do they have to go through the airport?'
-            question2 ='What do the travelers have to do at security to comply with the security check?'
-            question3 ='How do the travelers feel when they are  walking to the gates?'
-            question4 ='Where does each traveler sit on the plane?' 
-            question5 = 'Are the security guides friendly or rude?'
+            question1 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+            question2 ='What is the reason for the hold-up at security?'
+            question3 ='Toward which gate are the clients walking?'
+            question4 ='What section and seat does each client sit in on the plane?' 
+            question5 = 'Are the security guards friendly or rude?'
             question6 = 'Are the airport restrooms clean?'
         if this_perspective == 'Grocery Store Customer Experience Manager':
             display_pic = 'jobphotos/gscem.jpg'
             question1 = 'What is the grocery store like upon entering?'
             question2 ='What items do the clients pick out?'
-            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question3 ='How many checkout lanes are open and which one do the clients step into?'
             question4 = 'How much are the groceries and what method of payment do the clients use?'
             question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
             question6 = 'What type of grocery bags do the clients use?'
         if this_perspective == 'Dean of Academic Studies':
             display_pic ='jobphotos/dean.jpg'
             question1 = 'What is the lecture hall like?'
-            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question2 ='What class are the students in and what is the day’s lecture about?'
             question3 ='What is something taught in lecture?'
-            question4 = 'When is the next assessment in the class?'
+            question4 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
             question5 = 'Are the students paying attention?'
             question6 = 'Are the desks comfortable?'
         if this_perspective == 'Wedding Planner':
             display_pic = 'jobphotos/weddingplanner.jpg'
-            question1 = 'How does the person who proposed feel before proposing?'
-            question2 ='What is the ring like?'
-            question3 ='Does anyone help with the proposal?'
-            question4 = 'Who witnessed the “yes”?'
+            question1 = 'For how many years has the couple been dating?'
+            question2 ='How many diamonds are on the ring and what is the diamond color?'
+            question3 ='In/on what item is the ring presented?'
+            question4 = 'Who does the new fiancee text first?'
             question5 = 'Is anyone taking pictures of the proposal?'
             question6 = 'How long does the proposal take?'
         if this_perspective == 'Business Reporter':
             display_pic = 'jobphotos/business_reporter.jpg'
-            question1 = 'What industry are the business people in?'
-            question2 = 'What is being negotiated and how much money is at stake?'
-            question3 = 'What is the response to the proposed deal?'
-            question4 =  'What comes about from the business proposal?'
+            question1 = 'What are the job titles of both of the business people?'
+            question2 = 'How much money is at stake in the initial offer made?'
+            question3 = 'What is the name of the other industry competitor? '
+            question4 =  'With what gesture do the business partners secure the deal?'
             question5 = 'Is the deal fair?'
             question6 =  'How long does it take to make the deal?'
         if this_perspective == 'Matchmaker':
             display_pic = 'jobphotos/matchmaker.jpg'
-            question1 = 'Who notices who first and why do they notice the other?' 
-            question2 ='How does the couple start talking?'
-            question3 ='Which of the people proposes going on an actual date and what do they propose?'
-            question4 = 'Who leaves first and why do they have to go?'
+            question1 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+            question2 ='What is the initial question that begins the conversation between the couple?'
+            question3 ='When will be the next time the couple meets and for what occasion?'
+            question4 = 'What time is it when the couple parts?'
             question5 = 'Is the couple going to get married?'
             question6 = 'Who shows more interest?'
         
@@ -1729,6 +1756,84 @@ for thisTrial in trials:
     # completed 7 repeats of 'trials_7'
     
     
+    # ------Prepare to start Routine "p_again"-------
+    t = 0
+    p_againClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    key_resp_15 = event.BuilderKeyResponse()
+    # keep track of which components have finished
+    p_againComponents = [text_49, key_resp_15]
+    for thisComponent in p_againComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "p_again"-------
+    while continueRoutine:
+        # get current time
+        t = p_againClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_49* updates
+        if t >= 0.0 and text_49.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_49.tStart = t
+            text_49.frameNStart = frameN  # exact frame index
+            text_49.setAutoDraw(True)
+        
+        # *key_resp_15* updates
+        if t >= 0.0 and key_resp_15.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_15.tStart = t
+            key_resp_15.frameNStart = frameN  # exact frame index
+            key_resp_15.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_15.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_15.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_15.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_15.rt = key_resp_15.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in p_againComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "p_again"-------
+    for thisComponent in p_againComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_15.keys in ['', [], None]:  # No response was made
+        key_resp_15.keys=None
+    trials.addData('key_resp_15.keys',key_resp_15.keys)
+    if key_resp_15.keys != None:  # we had a response
+        trials.addData('key_resp_15.rt', key_resp_15.rt)
+    # the Routine "p_again" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # ------Prepare to start Routine "perspective"-------
     t = 0
     perspectiveClock.reset()  # clock
@@ -1740,10 +1845,10 @@ for thisTrial in trials:
     this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
     if this_perspective == 'Couples Therapist':
         display_pic = 'jobphotos/couples.jpg'
-        question1 = 'How does the person who is initiating the breakup feel before they do it?'
-        question2 ='Why does the initiator want to break up?'
-        question3 ='How does the person being broken up with respond?'
-        question4 = 'Do the partners leave on good terms?'
+        question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+        question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+        question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+        question4 = 'What object(s) do either partner ask for back?'
         question5 = 'Does the person being broken up with expect that this is coming?'
         question6 = 'For how long has the initiator been wanting to break up?'
     if this_perspective == 'Restaurant Critic':
@@ -1756,50 +1861,50 @@ for thisTrial in trials:
         question6 = 'How old is the waiter?'
     if this_perspective == 'Airport Customer Experience Manager':
         display_pic = 'jobphotos/acem.jpg'
-        question1 = 'When the travelers arrive at the airport, how much time do they have to go through the airport?'
-        question2 ='What do the travelers have to do at security to comply with the security check?'
-        question3 ='How do the travelers feel when they are  walking to the gates?'
-        question4 ='Where does each traveler sit on the plane?' 
-        question5 = 'Are the security guides friendly or rude?'
+        question1 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+        question2 ='What is the reason for the hold-up at security?'
+        question3 ='Toward which gate are the clients walking?'
+        question4 ='What section and seat does each client sit in on the plane?' 
+        question5 = 'Are the security guards friendly or rude?'
         question6 = 'Are the airport restrooms clean?'
     if this_perspective == 'Grocery Store Customer Experience Manager':
         display_pic = 'jobphotos/gscem.jpg'
         question1 = 'What is the grocery store like upon entering?'
         question2 ='What items do the clients pick out?'
-        question3 ='How is the checkout line and how long do the clients wait in line?'
+        question3 ='How many checkout lanes are open and which one do the clients step into?'
         question4 = 'How much are the groceries and what method of payment do the clients use?'
         question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'
         question6 = 'What type of grocery bags do the clients use?'
     if this_perspective == 'Dean of Academic Studies':
         display_pic ='jobphotos/dean.jpg'
         question1 = 'What is the lecture hall like?'
-        question2 ='What class are the students  in and what is the day’s lecture about?'
+        question2 ='What class are the students in and what is the day’s lecture about?'
         question3 ='What is something taught in lecture?'
-        question4 = 'When is the next assessment in the class?'
+        question4 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
         question5 = 'Are the students paying attention?'
         question6 = 'Are the desks comfortable?'
     if this_perspective == 'Wedding Planner':
         display_pic = 'jobphotos/weddingplanner.jpg'
-        question1 = 'How does the person who proposed feel before proposing?'
-        question2 ='What is the ring like?'
-        question3 ='Does anyone help with the proposal?'
-        question4 = 'Who witnessed the “yes”?'
+        question1 = 'For how many years has the couple been dating?'
+        question2 ='How many diamonds are on the ring and what is the diamond color?'
+        question3 ='In/on what item is the ring presented?'
+        question4 = 'Who does the new fiancee text first?'
         question5 = 'Is anyone taking pictures of the proposal?'
         question6 = 'How long does the proposal take?'
     if this_perspective == 'Business Reporter':
         display_pic = 'jobphotos/business_reporter.jpg'
-        question1 = 'What industry are the business people in?'
-        question2 = 'What is being negotiated and how much money is at stake?'
-        question3 = 'What is the response to the proposed deal?'
-        question4 =  'What comes about from the business proposal?'
+        question1 = 'What are the job titles of both of the business people?'
+        question2 = 'How much money is at stake in the initial offer made?'
+        question3 = 'What is the name of the other industry competitor? '
+        question4 =  'With what gesture do the business partners secure the deal?'
         question5 = 'Is the deal fair?'
         question6 =  'How long does it take to make the deal?'
     if this_perspective == 'Matchmaker':
         display_pic = 'jobphotos/matchmaker.jpg'
-        question1 = 'Who notices who first and why do they notice the other?' 
-        question2 ='How does the couple start talking?'
-        question3 ='Which of the people proposes going on an actual date and what do they propose?'
-        question4 = 'Who leaves first and why do they have to go?'
+        question1 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+        question2 ='What is the initial question that begins the conversation between the couple?'
+        question3 ='When will be the next time the couple meets and for what occasion?'
+        question4 = 'What time is it when the couple parts?'
         question5 = 'Is the couple going to get married?'
         question6 = 'Who shows more interest?'
     
@@ -1873,6 +1978,84 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     
     # the Routine "perspective" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "story_begin"-------
+    t = 0
+    story_beginClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    key_resp_14 = event.BuilderKeyResponse()
+    # keep track of which components have finished
+    story_beginComponents = [text_50, key_resp_14]
+    for thisComponent in story_beginComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "story_begin"-------
+    while continueRoutine:
+        # get current time
+        t = story_beginClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_50* updates
+        if t >= 0.0 and text_50.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_50.tStart = t
+            text_50.frameNStart = frameN  # exact frame index
+            text_50.setAutoDraw(True)
+        
+        # *key_resp_14* updates
+        if t >= 0.0 and key_resp_14.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_14.tStart = t
+            key_resp_14.frameNStart = frameN  # exact frame index
+            key_resp_14.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_14.clock.reset)  # t=0 on next screen flip
+            event.clearEvents(eventType='keyboard')
+        if key_resp_14.status == STARTED:
+            theseKeys = event.getKeys(keyList=['space'])
+            
+            # check for quit:
+            if "escape" in theseKeys:
+                endExpNow = True
+            if len(theseKeys) > 0:  # at least one key was pressed
+                key_resp_14.keys = theseKeys[-1]  # just the last key pressed
+                key_resp_14.rt = key_resp_14.clock.getTime()
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in story_beginComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "story_begin"-------
+    for thisComponent in story_beginComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_14.keys in ['', [], None]:  # No response was made
+        key_resp_14.keys=None
+    trials.addData('key_resp_14.keys',key_resp_14.keys)
+    if key_resp_14.keys != None:  # we had a response
+        trials.addData('key_resp_14.rt', key_resp_14.rt)
+    # the Routine "story_begin" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
@@ -2232,7 +2415,7 @@ for thisTrial_4 in trials_4:
     text_41.setText((count + 1))
     key_resp_10 = event.BuilderKeyResponse()
     # keep track of which components have finished
-    recallcount_2Components = [text_41, key_resp_10, text_42]
+    recallcount_2Components = [text_41, key_resp_10, text_42, text_51]
     for thisComponent in recallcount_2Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -2278,6 +2461,13 @@ for thisTrial_4 in trials_4:
             text_42.tStart = t
             text_42.frameNStart = frameN  # exact frame index
             text_42.setAutoDraw(True)
+        
+        # *text_51* updates
+        if t >= 0.0 and text_51.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            text_51.tStart = t
+            text_51.frameNStart = frameN  # exact frame index
+            text_51.setAutoDraw(True)
         
         # check for quit (typically the Esc key)
         if endExpNow or event.getKeys(keyList=["escape"]):
@@ -2902,10 +3092,10 @@ for thisTrial_6 in trials_6:
         this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])
         if this_perspective == 'Couples Therapist':
             pic1 = 'jobphotos/couples.jpg'
-            question1 = 'How does the person who is initiating the breakup feel before they do it?'
-            question2 ='Why does the initiator want to break up?'
-            question3 ='How does the person being broken up with respond?'
-            question4 = 'Do the partners leave on good terms?'
+            question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+            question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+            question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question4 = 'What object(s) do either partner ask for back?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -2914,46 +3104,46 @@ for thisTrial_6 in trials_6:
             question4 = 'How do the clients like the food?'
         if this_perspective == 'Airport Customer Experience Manager':
             pic1 = 'jobphotos/acem.jpg'
-            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question2 ='What do the clients have do at security to comply with the security check?'
-            question3 ='How do the clients feel when they are  walking to the gates?'
-            question4 ='Where does each client sit on the plane?' 
+            question1 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+            question2 ='What is the reason for the hold-up at security?'
+            question3 ='Toward which gate are the clients walking?'
+            question4 ='What section and seat does each client sit in on the plane?'
         if this_perspective == 'Grocery Store Customer Experience Manager':
             pic1 = 'jobphotos/gscem.jpg'
             question1 = 'What is the grocery store like upon entering?'
             question2 ='What items do the clients pick out?'
-            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question3 ='How many checkout lanes are open and which one do the clients step into?'
             question4 = 'How much are the groceries and what method of payment do the clients use?'
         if this_perspective == 'Dean of Academic Studies':
             pic1 ='jobphotos/dean.jpg'
             question1 = 'What is the lecture hall like?'
-            question2 ='What class are the students  in and what is the day’s lecture about?'
+            question2 ='What class are the students in and what is the day’s lecture about?'
             question3 ='What is something taught in lecture?'
-            question4 = 'When is the next assessment in the class?'
+            question4 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
         if this_perspective == 'Wedding Planner':
             pic1 = 'jobphotos/weddingplanner.jpg'
-            question1 = 'How does the person who proposed feel before proposing?'
-            question2 ='What is the ring like?'
-            question3 ='Does anyone help with the proposal?'
-            question4 = 'Who witnessed the “yes”?'
+            question1 = 'For how many years has the couple been dating?'
+            question2 ='How many diamonds are on the ring and what is the diamond color?'
+            question3 ='In/on what item is the ring presented?'
+            question4 = 'Who does the new fiancee text first?'
         if this_perspective == 'Business Reporter':
-            question1 = 'What industry are the business people in?'
-            question2 = 'What is being negotiated and how much money is at stake?'
-            question3 = 'What is the response to the proposed deal?'
-            question4 =  'What comes about from the business proposal?'
+            question1 = 'What are the job titles of both of the business people?'
+            question2 = 'How much money is at stake in the initial offer made?'
+            question3 = 'What is the name of the other industry competitor? '
+            question4 =  'With what gesture do the business partners secure the deal?'
         if this_perspective == 'Matchmaker':
             pic1 = 'jobphotos/matchmaker.jpg'
-            question1 = 'Who notices who first and why do they notice the other?' 
-            question2 ='How does the couple start talking?'
-            question3 ='Which of the people proposes going on an actual date and what do they propose?'
-            question4 = 'Who leaves first and why do they have to go?'
+            question1 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+            question2 ='What is the initial question that begins the conversation between the couple?'
+            question3 ='When will be the next time the couple meets and for what occasion?'
+            question4 = 'What time is it when the couple parts?'
     
         if other_perspective == 'Couples Therapist':
             pic2 = 'jobphotos/couples.jpg'
-            question5 = 'How does the person who is initiating the breakup feel before they do it?'
-            question6 ='Why does the initiator want to break up?'
-            question7 ='How does the person being broken up with respond?'
-            question8 = 'Do the partners leave on good terms?'
+            question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+            question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+            question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question8 = 'What object(s) do either partner ask for back?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
@@ -2962,48 +3152,48 @@ for thisTrial_6 in trials_6:
             question8 = 'How do the clients like the food?'
         if other_perspective == 'Airport Customer Experience Manager':
             pic2 = 'jobphotos/acem.jpg'
-            question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question6 ='What do the clients have do at security to comply with the security check?'
-            question7 ='How do the clients feel when they are  walking to the gates?'
-            question8 ='Where does each client sit on the plane?' 
+            question5 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+            question6 ='What is the reason for the hold-up at security?'
+            question7 ='Toward which gate are the clients walking?'
+            question8 ='What section and seat does each client sit in on the plane?' 
         if other_perspective == 'Grocery Store Customer Experience Manager':
             pic2 = 'jobphotos/gscem.jpg'
             question5 = 'What is the grocery store like upon entering?'
             question6 ='What items do the clients pick out?'
-            question7 ='How is the checkout line and how long do the clients wait in line?'
+            question7 ='How many checkout lanes are open and which one do the clients step into?'
             question8 = 'How much are the groceries and what method of payment do the clients use?'
         if other_perspective == 'Dean of Academic Studies':
             pic2 ='jobphotos/dean.jpg'
             question5 = 'What is the lecture hall like?'
             question6 ='What class are the students  in and what is the day’s lecture about?'
             question7 ='What is something taught in lecture?'
-            question8 = 'When is the next assessment in the class?'
+            question8 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
         if other_perspective == 'Wedding Planner':
             pic2 = 'jobphotos/weddingplanner.jpg'
-            question5 = 'How does the person who proposed feel before proposing?'
-            question6 ='What is the ring like?'
-            question7 ='Does anyone help with the proposal?'
-            question8 = 'Who witnessed the “yes”?'
+            question5 = 'For how many years has the couple been dating?'
+            question6 ='How many diamonds are on the ring and what is the diamond color?'
+            question7 ='In/on what item is the ring presented?'
+            question8 = 'Who does the new fiancee text first?'
         if other_perspective == 'Business Reporter':
             pic2 = 'jobphotos/business_reporter.jpg'
-            question5 = 'What industry are the business people in?'
-            question6 = 'What is being negotiated and how much money is at stake?'
-            question7 = 'What is the response to the proposed deal?'
-            question8 =  'What comes about from the business proposal?'
+            question5 = 'What are the job titles of both of the business people?'
+            question6 = 'How much money is at stake in the initial offer made?'
+            question7 = 'What is the name of the other industry competitor? '
+            question8 =  'With what gesture do the business partners secure the deal?'
         if other_perspective == 'Matchmaker':
             pic2 = 'jobphotos/matchmaker.jpg'
-            question5 = 'Who notices who first and why do they notice the other?'
-            question6 ='How does the couple start talking?'
-            question7 ='Which of the people proposes going on an actual date and what do they propose?'
-            question8 = 'Who leaves first and why do they have to go?'
+            question5 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+            question6 ='What is the initial question that begins the conversation between the couple?'
+            question7 ='When will be the next time the couple meets and for what occasion?'
+            question8 = 'What time is it when the couple parts?'
     else:
         question_order = 'non-primed first'
         if other_perspective == 'Couples Therapist':
             pic1 = 'jobphotos/couples.jpg'
-            question1 = 'How does the person who is initiating the breakup feel before they do it?'
-            question2 ='Why does the initiator want to break up?'
-            question3 ='How does the person being broken up with respond?'
-            question4 = 'Do the partners leave on good terms?'
+            question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+            question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+            question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question4 = 'What object(s) do either partner ask for back?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3012,47 +3202,47 @@ for thisTrial_6 in trials_6:
             question4 = 'How do the clients like the food?'
         if other_perspective == 'Airport Customer Experience Manager':
             pic1 = 'jobphotos/acem.jpg'
-            question1 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question2 ='What do the clients have do at security to comply with the security check?'
-            question3 ='How do the clients feel when they are  walking to the gates?'
-            question4 ='Where does each client sit on the plane?' 
+            question1 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+            question2 ='What is the reason for the hold-up at security?'
+            question3 ='Toward which gate are the clients walking?'
+            question4 ='What section and seat does each client sit in on the plane?' 
         if other_perspective == 'Grocery Store Customer Experience Manager':
             pic1 = 'jobphotos/gscem.jpg'
             question1 = 'What is the grocery store like upon entering?'
             question2 ='What items do the clients pick out?'
-            question3 ='How is the checkout line and how long do the clients wait in line?'
+            question3 ='How many checkout lanes are open and which one do the clients step into?'
             question4 = 'How much are the groceries and what method of payment do the clients use?'
         if other_perspective == 'Dean of Academic Studies':
             pic1 ='jobphotos/dean.jpg'
             question1 = 'What is the lecture hall like?'
             question2 ='What class are the students  in and what is the day’s lecture about?'
             question3 ='What is something taught in lecture?'
-            question4 = 'When is the next assessment in the class?'
+            question4 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
         if other_perspective == 'Wedding Planner':
             pic1 = 'jobphotos/weddingplanner.jpg'
-            question1 = 'How does the person who proposed feel before proposing?'
-            question2 ='What is the ring like?'
-            question3 ='Does anyone help with the proposal?'
-            question4 = 'Who witnessed the “yes”?'
+            question1 = 'For how many years has the couple been dating?'
+            question2 ='How many diamonds are on the ring and what is the diamond color?'
+            question3 ='In/on what item is the ring presented?'
+            question4 = 'Who does the new fiancee text first?'
         if other_perspective == 'Business Reporter':
             pic1 = 'jobphotos/business_reporter.jpg'
-            question1 = 'What industry are the business people in?'
-            question2 = 'What is being negotiated and how much money is at stake?'
-            question3 = 'What is the response to the proposed deal?'
-            question4 =  'What comes about from the business proposal?'
+            question1 = 'What are the job titles of both of the business people?'
+            question2 = 'How much money is at stake in the initial offer made?'
+            question3 = 'What is the name of the other industry competitor? '
+            question4 =  'With what gesture do the business partners secure the deal?'
         if other_perspective == 'Matchmaker':
             pic1 = 'jobphotos/matchmaker.jpg'
-            question1 = 'Who notices who first and why do they notice the other?'
-            question2 ='How does the couple start talking?'
-            question3 ='Which of the people proposes going on an actual date and what do they propose?'
-            question4 = 'Who leaves first and why do they have to go?'
+            question1 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+            question2 ='What is the initial question that begins the conversation between the couple?'
+            question3 ='When will be the next time the couple meets and for what occasion?'
+            question4 = 'What time is it when the couple parts?'
     
         if this_perspective == 'Couples Therapist':
             pic2 = 'jobphotos/couples.jpg'
-            question5 = 'How does the person who is initiating the breakup feel before they do it?'
-            question6 ='Why does the initiator want to break up?'
-            question7 ='How does the person being broken up with respond?'
-            question8 = 'Do the partners leave on good terms?'
+            question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
+            question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
+            question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question8 = 'What object(s) do either partner ask for back?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
@@ -3061,40 +3251,40 @@ for thisTrial_6 in trials_6:
             question8 = 'How do the clients like the food?'
         if this_perspective == 'Airport Customer Experience Manager':
             pic2 = 'jobphotos/acem.jpg'
-            question5 = 'When the clients arrive at the airport, how much time do they have to go through?'
-            question6 ='What do the clients have do at security to comply with the security check?'
-            question7 ='How do the clients feel when they are  walking to the gates?'
-            question8 ='Where does each client sit on the plane?' 
+            question5 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'
+            question6 ='What is the reason for the hold-up at security?'
+            question7 ='Toward which gate are the clients walking?'
+            question8 ='What section and seat does each client sit in on the plane?'
         if this_perspective == 'Grocery Store Customer Experience Manager':
             pic2 = 'jobphotos/gscem.jpg'
             question5 = 'What is the grocery store like upon entering?'
             question6 ='What items do the clients pick out?'
-            question7 ='How is the checkout line and how long do the clients wait in line?'
+            question7 ='How many checkout lanes are open and which one do the clients step into?'
             question8 = 'How much are the groceries and what method of payment do the clients use?'
         if this_perspective == 'Dean of Academic Studies':
             pic2 ='jobphotos/dean.jpg'
             question5 = 'What is the lecture hall like?'
             question6 ='What class are the students  in and what is the day’s lecture about?'
             question7 ='What is something taught in lecture?'
-            question8 = 'When is the next assessment in the class?'
+            question8 = 'What is the next assessment/assignment in class and when is it scheduled/due?'
         if this_perspective == 'Wedding Planner':
             pic2 = 'jobphotos/weddingplanner.jpg'
-            question5 = 'How does the person who proposed feel before proposing?'
-            question6 ='What is the ring like?'
-            question7 ='Does anyone help with the proposal?'
-            question8 = 'Who witnessed the “yes”?'
+            question5 = 'For how many years has the couple been dating?'
+            question6 ='How many diamonds are on the ring and what is the diamond color?'
+            question7 ='In/on what item is the ring presented?'
+            question8 = 'Who does the new fiancee text first?'
         if this_perspective == 'Business Reporter':
             pic2 = 'jobphotos/business_reporter.jpg'
-            question5 = 'What industry are the business people in?'
-            question6 = 'What is being negotiated and how much money is at stake?'
-            question7 = 'What is the response to the proposed deal?'
-            question8 =  'What comes about from the business proposal?'
+            question5 = 'What are the job titles of both of the business people?'
+            question6 = 'How much money is at stake in the initial offer made?'
+            question7 = 'What is the name of the other industry competitor? '
+            question8 =  'With what gesture do the business partners secure the deal?'
         if this_perspective == 'Matchmaker':
             pic2 = 'jobphotos/matchmaker.jpg'
-            question5 = 'Who notices who first and why do they notice the other?'
-            question6 ='How does the couple start talking?'
-            question7 ='Which of the people proposes going on an actual date and what do they propose?'
-            question8 = 'Who leaves first and why do they have to go?'
+            question5 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' 
+            question6 ='What is the initial question that begins the conversation between the couple?'
+            question7 ='When will be the next time the couple meets and for what occasion?'
+            question8 = 'What time is it when the couple parts?'
     
     
     text_14.setText(question1)
