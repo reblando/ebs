@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Sun Jun 16 20:00:15 2019
+    on Wed Jun 19 16:02:50 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -225,42 +225,42 @@ perspective_testClock = core.Clock()
 question1_2 = visual.TextStim(win=win, name='question1_2',
     text='default text',
     font='Arial',
-    pos=(0, .60), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .70), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 question2_2 = visual.TextStim(win=win, name='question2_2',
     text='default text',
     font='Arial',
-    pos=(0, .35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .45), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 question3_2 = visual.TextStim(win=win, name='question3_2',
     text='default text',
     font='Arial',
-    pos=(0, .12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .16), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 question4_2 = visual.TextStim(win=win, name='question4_2',
     text='default text',
     font='Arial',
-    pos=(0, -.12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.12), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 question5_2 = visual.TextStim(win=win, name='question5_2',
     text='default text',
     font='Arial',
-    pos=(0, -.35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.35), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 question6_2 = visual.TextStim(win=win, name='question6_2',
     text='default text',
     font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.6), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-6.0);

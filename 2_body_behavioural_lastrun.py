@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Sun Jun 16 20:11:35 2019
+    on Mon Jun 24 15:19:57 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -100,8 +100,8 @@ import numpy as np
 
 
 
-order_stories = np.array([22,42,24,44,11,33,13,31])
-order_perspectives = np.array(['Social','Location','Location','Social','Social','Social','Location','Location'])
+order_stories = np.array([41,44,21,33,13,12,24,32])
+order_perspectives = np.array(['Social','Location','Location','Location','Social','Location','Social','Social'])
 #create a dictionary for all the stories and their values
 
 
@@ -188,42 +188,42 @@ perspective_testClock = core.Clock()
 question1_2 = visual.TextStim(win=win, name='question1_2',
     text='default text',
     font='Arial',
-    pos=(0, .60), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .70), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 question2_2 = visual.TextStim(win=win, name='question2_2',
     text='default text',
     font='Arial',
-    pos=(0, .35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .45), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 question3_2 = visual.TextStim(win=win, name='question3_2',
     text='default text',
     font='Arial',
-    pos=(0, .12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .16), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 question4_2 = visual.TextStim(win=win, name='question4_2',
     text='default text',
     font='Arial',
-    pos=(0, -.12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.12), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 question5_2 = visual.TextStim(win=win, name='question5_2',
     text='default text',
     font='Arial',
-    pos=(0, -.35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.35), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 question6_2 = visual.TextStim(win=win, name='question6_2',
     text='default text',
     font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.6), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-6.0);
@@ -252,8 +252,8 @@ import numpy as np
 
 
 
-order_stories = np.array([22,42,24,44,11,33,13,31])
-order_perspectives = np.array(['Social','Location','Location','Social','Social','Social','Location','Location'])
+order_stories = np.array([41,44,21,33,13,12,24,32])
+order_perspectives = np.array(['Social','Location','Location','Location','Social','Location','Social','Social'])
 #create a dictionary for all the stories and their values
 
 
@@ -1217,9 +1217,9 @@ for thisTrial in trials:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
             question5 = 'Does the person being broken up with expect that this is coming?'
-            question6 = 'For how long has the initiator been wanting to break up?'
+            question6 = 'Who witnesses the breakup?'
         if this_perspective == 'Restaurant Critic':
             display_pic = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -1774,9 +1774,9 @@ for thisTrial in trials:
         question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
         question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
         question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-        question4 = 'What object(s) do either partner ask for back?'
+        question4 = 'What objects do either partner want back?'
         question5 = 'Does the person being broken up with expect that this is coming?'
-        question6 = 'For how long has the initiator been wanting to break up?'
+        question6 = 'Who witnesses the breakup?'
     if this_perspective == 'Restaurant Critic':
         display_pic = 'jobphotos/restaurant_critic.jpg'
         question1 = 'How is the restaurant decorated?'
@@ -3021,7 +3021,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3069,7 +3069,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
@@ -3119,7 +3119,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3168,7 +3168,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'

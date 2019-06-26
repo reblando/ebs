@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Fri Jun 14 14:00:52 2019
+    on Tue Jun 25 13:39:04 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -225,42 +225,42 @@ perspective_testClock = core.Clock()
 question1_2 = visual.TextStim(win=win, name='question1_2',
     text='default text',
     font='Arial',
-    pos=(0, .60), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .70), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 question2_2 = visual.TextStim(win=win, name='question2_2',
     text='default text',
     font='Arial',
-    pos=(0, .35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .45), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 question3_2 = visual.TextStim(win=win, name='question3_2',
     text='default text',
     font='Arial',
-    pos=(0, .12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, .16), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 question4_2 = visual.TextStim(win=win, name='question4_2',
     text='default text',
     font='Arial',
-    pos=(0, -.12), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.12), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 question5_2 = visual.TextStim(win=win, name='question5_2',
     text='default text',
     font='Arial',
-    pos=(0, -.35), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.35), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 question6_2 = visual.TextStim(win=win, name='question6_2',
     text='default text',
     font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=2, ori=0, 
+    pos=(0, -.6), height=0.08, wrapWidth=2, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-6.0);
@@ -622,14 +622,14 @@ question1Clock = core.Clock()
 text_14 = visual.TextStim(win=win, name='text_14',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_15 = visual.TextStim(win=win, name='text_15',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -643,28 +643,28 @@ image_6 = visual.ImageStim(
 polygon_3 = visual.Line(
     win=win, name='polygon_3',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_3 = visual.Line(
     win=win, name='bottom_line_3',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_3 = visual.Line(
     win=win, name='right_line_3',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_3 = visual.Line(
     win=win, name='left_line_3',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -675,14 +675,14 @@ question2Clock = core.Clock()
 text_16 = visual.TextStim(win=win, name='text_16',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_17 = visual.TextStim(win=win, name='text_17',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -696,28 +696,28 @@ image_7 = visual.ImageStim(
 polygon_4 = visual.Line(
     win=win, name='polygon_4',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_4 = visual.Line(
     win=win, name='bottom_line_4',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_4 = visual.Line(
     win=win, name='right_line_4',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_4 = visual.Line(
     win=win, name='left_line_4',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -728,14 +728,14 @@ question3Clock = core.Clock()
 text_18 = visual.TextStim(win=win, name='text_18',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_19 = visual.TextStim(win=win, name='text_19',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -749,28 +749,28 @@ image_8 = visual.ImageStim(
 polygon_5 = visual.Line(
     win=win, name='polygon_5',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_5 = visual.Line(
     win=win, name='bottom_line_5',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_5 = visual.Line(
     win=win, name='right_line_5',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_5 = visual.Line(
     win=win, name='left_line_5',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -781,14 +781,14 @@ question4Clock = core.Clock()
 text_20 = visual.TextStim(win=win, name='text_20',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_21 = visual.TextStim(win=win, name='text_21',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -802,28 +802,28 @@ image_9 = visual.ImageStim(
 polygon_6 = visual.Line(
     win=win, name='polygon_6',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_6 = visual.Line(
     win=win, name='bottom_line_6',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_6 = visual.Line(
     win=win, name='right_line_6',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_6 = visual.Line(
     win=win, name='left_line_6',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -834,14 +834,14 @@ question5Clock = core.Clock()
 text_25 = visual.TextStim(win=win, name='text_25',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_26 = visual.TextStim(win=win, name='text_26',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -855,28 +855,28 @@ image_11 = visual.ImageStim(
 polygon_7 = visual.Line(
     win=win, name='polygon_7',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_7 = visual.Line(
     win=win, name='bottom_line_7',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_7 = visual.Line(
     win=win, name='right_line_7',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_7 = visual.Line(
     win=win, name='left_line_7',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -887,14 +887,14 @@ question6Clock = core.Clock()
 text_27 = visual.TextStim(win=win, name='text_27',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_28 = visual.TextStim(win=win, name='text_28',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -908,28 +908,28 @@ image_12 = visual.ImageStim(
 polygon_8 = visual.Line(
     win=win, name='polygon_8',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_8 = visual.Line(
     win=win, name='bottom_line_8',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_8 = visual.Line(
     win=win, name='right_line_8',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_8 = visual.Line(
     win=win, name='left_line_8',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -940,14 +940,14 @@ question7Clock = core.Clock()
 text_29 = visual.TextStim(win=win, name='text_29',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_30 = visual.TextStim(win=win, name='text_30',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -961,28 +961,28 @@ image_13 = visual.ImageStim(
 polygon_9 = visual.Line(
     win=win, name='polygon_9',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_9 = visual.Line(
     win=win, name='bottom_line_9',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_9 = visual.Line(
     win=win, name='right_line_9',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_9 = visual.Line(
     win=win, name='left_line_9',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -993,14 +993,14 @@ question8Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
     text='default text',
     font='Arial',
-    pos=[0, 0], height=0.1, wrapWidth=1.5, ori=0, 
+    pos=[0, -.2], height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_32 = visual.TextStim(win=win, name='text_32',
     text='default text',
     font='Arial',
-    pos=[-.9, -0.15], height=0.1, wrapWidth=1, ori=0, 
+    pos=[-.9, -0.55], height=0.1, wrapWidth=1, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -1014,28 +1014,28 @@ image_14 = visual.ImageStim(
 polygon_10 = visual.Line(
     win=win, name='polygon_10',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.125),
+    ori=0, pos=(0, -.525),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-4.0, interpolate=True)
 bottom_line_10 = visual.Line(
     win=win, name='bottom_line_10',
     start=(-(1.85, 1)[0]/2.0, 0), end=(+(1.85, 1)[0]/2.0, 0),
-    ori=0, pos=(0, -.3),
+    ori=0, pos=(0, -.7),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-5.0, interpolate=True)
 right_line_10 = visual.Line(
     win=win, name='right_line_10',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(.925, -.2125),
+    ori=90, pos=(.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-6.0, interpolate=True)
 left_line_10 = visual.Line(
     win=win, name='left_line_10',
     start=(-(.175, 1)[0]/2.0, 0), end=(+(.175, 1)[0]/2.0, 0),
-    ori=90, pos=(-.925, -.2125),
+    ori=90, pos=(-.925, -.6125),
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
@@ -1291,9 +1291,9 @@ for thisTrial in trials:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
             question5 = 'Does the person being broken up with expect that this is coming?'
-            question6 = 'For how long has the initiator been wanting to break up?'
+            question6 = 'Who witnesses the breakup?'
         if this_perspective == 'Restaurant Critic':
             display_pic = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -1848,9 +1848,9 @@ for thisTrial in trials:
         question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
         question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
         question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-        question4 = 'What object(s) do either partner ask for back?'
+        question4 = 'What objects do either partner want back?'
         question5 = 'Does the person being broken up with expect that this is coming?'
-        question6 = 'For how long has the initiator been wanting to break up?'
+        question6 = 'Who witnesses the breakup?'
     if this_perspective == 'Restaurant Critic':
         display_pic = 'jobphotos/restaurant_critic.jpg'
         question1 = 'How is the restaurant decorated?'
@@ -3095,7 +3095,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3143,7 +3143,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
@@ -3193,7 +3193,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3242,7 +3242,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
