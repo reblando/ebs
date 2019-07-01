@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Wed Jun 19 16:02:50 2019
+    on Fri Jun 28 12:18:36 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1291,9 +1291,9 @@ for thisTrial in trials:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
             question5 = 'Does the person being broken up with expect that this is coming?'
-            question6 = 'For how long has the initiator been wanting to break up?'
+            question6 = 'Who witnesses the breakup?'
         if this_perspective == 'Restaurant Critic':
             display_pic = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -1848,9 +1848,9 @@ for thisTrial in trials:
         question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
         question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
         question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-        question4 = 'What object(s) do either partner ask for back?'
+        question4 = 'What objects do either partner want back?'
         question5 = 'Does the person being broken up with expect that this is coming?'
-        question6 = 'For how long has the initiator been wanting to break up?'
+        question6 = 'Who witnesses the breakup?'
     if this_perspective == 'Restaurant Critic':
         display_pic = 'jobphotos/restaurant_critic.jpg'
         question1 = 'How is the restaurant decorated?'
@@ -3095,7 +3095,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3143,7 +3143,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'
@@ -3193,7 +3193,7 @@ for thisTrial_6 in trials_6:
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question3 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question4 = 'What object(s) do either partner ask for back?'
+            question4 = 'What objects do either partner want back?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
             question1 = 'How is the restaurant decorated?'
@@ -3242,7 +3242,7 @@ for thisTrial_6 in trials_6:
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
             question7 ='Does the person who is being broken up with want to break up and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
-            question8 = 'What object(s) do either partner ask for back?'
+            question8 = 'What objects do either partner want back?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
             question5 = 'How is the restaurant decorated?'

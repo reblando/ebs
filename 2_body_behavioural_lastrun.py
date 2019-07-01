@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Jun 24 15:19:57 2019
+    on Fri Jun 28 14:23:00 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -100,8 +100,8 @@ import numpy as np
 
 
 
-order_stories = np.array([41,44,21,33,13,12,24,32])
-order_perspectives = np.array(['Social','Location','Location','Location','Social','Location','Social','Social'])
+order_stories = np.array([34,24,22,41,13,43,11,32])
+order_perspectives = np.array(['Location','Social','Location','Social','Social','Location','Location','Social'])
 #create a dictionary for all the stories and their values
 
 
@@ -252,8 +252,8 @@ import numpy as np
 
 
 
-order_stories = np.array([41,44,21,33,13,12,24,32])
-order_perspectives = np.array(['Social','Location','Location','Location','Social','Location','Social','Social'])
+order_stories = np.array([34,24,22,41,13,43,11,32])
+order_perspectives = np.array(['Location','Social','Location','Social','Social','Location','Location','Social'])
 #create a dictionary for all the stories and their values
 
 
