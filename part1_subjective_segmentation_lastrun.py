@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Thu Jun 20 13:00:04 2019
+    on Mon Jul  1 08:04:18 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -97,7 +97,7 @@ image_14 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 text_24 = visual.TextStim(win=win, name='text_24',
-    text='For example, you may be asked to take on the role of a restaurant critic while reading a story. ',
+    text='For example, you may be asked to take on the role of a restaurant critic while reading one of the short stories. ',
     font='Arial',
     pos=(0, .3), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -107,7 +107,7 @@ text_24 = visual.TextStim(win=win, name='text_24',
 # Initialize components for Routine "instructbox"
 instructboxClock = core.Clock()
 text_25 = visual.TextStim(win=win, name='text_25',
-    text="In this first part of the experiment, you'll also learn 4 questions associated with each perspective that you'll use when reading the stories with that particular perspective. ",
+    text="In this first part of the experiment, you'll also learn 4 questions associated with each perspective that you'll use when reading a short story with that particular perspective. ",
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -145,7 +145,7 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
 # Initialize components for Routine "first_pic"
 first_picClock = core.Clock()
 text_17 = visual.TextStim(win=win, name='text_17',
-    text='For each story, an image with the title of the story and character names like the one below will be presented on the screen while the sentences of the story appear below it. ',
+    text='For each story, an image with the title of the story, character names, and character images, like the one below, will be presented on the screen while the sentences of the story appear below it. ',
     font='Arial',
     pos=(0, .5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -153,7 +153,7 @@ text_17 = visual.TextStim(win=win, name='text_17',
     depth=-1.0);
 image_10 = visual.ImageStim(
     win=win, name='image_10',
-    image='intro_faces.jpeg', mask=None,
+    image='intro_faces.jpg', mask=None,
     ori=0, pos=(0, -.25), size=(0.75, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -188,7 +188,7 @@ text_19 = visual.TextStim(win=win, name='text_19',
     depth=0.0);
 image_12 = visual.ImageStim(
     win=win, name='image_12',
-    image='intro_faces.jpeg', mask=None,
+    image='intro_faces.jpg', mask=None,
     ori=0, pos=(0, -.25), size=(0.75, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -216,7 +216,7 @@ text_20 = visual.TextStim(win=win, name='text_20',
     depth=0.0);
 image_13 = visual.ImageStim(
     win=win, name='image_13',
-    image='intro_faces.jpeg', mask=None,
+    image='intro_faces.jpg', mask=None,
     ori=0, pos=(0, -.25), size=(0.75, 0.75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
