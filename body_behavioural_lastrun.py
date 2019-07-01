@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Jul  1 08:04:07 2019
+    on Mon Jul  1 09:42:54 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -413,7 +413,7 @@ trialClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
     text='default text',
     font='Arial',
-    pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.5), height=0.08, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -426,7 +426,7 @@ image_2 = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 
 text_34 = visual.TextStim(win=win, name='text_34',
-    text="Press '9' if you think this sentence is the beginning of a new 'part' of the story",
+    text="Press '9' if you think this sentence is the beginning of a new 'part' of the story.",
     font='Arial',
     pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -2138,7 +2138,7 @@ for thisTrial in trials:
                 image_2.frameNStart = frameN  # exact frame index
                 image_2.setAutoDraw(True)
             for key in event.getKeys():
-                if key in ['q']: 
+                if key in ['t']: 
                     trials_2.finished = 1
                     continueRoutine = False
             

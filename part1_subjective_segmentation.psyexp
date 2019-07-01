@@ -1505,7 +1505,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="In the third part of the experiment, you will be presented with the images seen when reading the stories and asked to recall the story that went with each image." valType="str"/>
+        <Param name="text" updates="constant" val="In the third part of the experiment, you will be presented with the images you saw while reading each story and asked to recall the story that went with each image." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1847,7 +1847,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="For example, 2 of the questions associated with the restaurant critic may be &quot;What are the menus like?&quot; and &quot;What do the clients order?&quot;, and you'll use these questions to interrogate the story. " valType="str"/>
+        <Param name="text" updates="constant" val="For example, 2 of the questions associated with the restaurant critic may be &quot;What are the menus like?&quot; and &quot;What do the clients order?&quot; and we encourage you to keep these questions in mind while reading the story. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>

@@ -1,0 +1,11 @@
+﻿count,storyText,locationEvent,socialEvent,story,locationEventSize,socialEventSize,socialAnswer,locationAnswer,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,order of stories,order of perspectives,participant 2 order - stories,participant 2 order  - schemas types,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,key_resp_15.keys,key_resp_15.rt,key_resp_14.keys,key_resp_14.rt,story_presses.keys,participant,session,date,expName,psychopyVersion,frameRate,
+0,,,,,,,,,0,0,0,0,0,0,0,0,,,,,[41 11 43 24 22 34 13 32 12 14 33 42 23 21 44 31],"['Social' 'Location' 'Location' 'Social' 'Location' 'Location' 'Social'
+ 'Social' 'Social' 'Location' 'Social' 'Location' 'Location' 'Social'
+ 'Social' 'Location']",[12 14 33 42 23 21 44 31],"['Social' 'Location' 'Social' 'Location' 'Location' 'Social' 'Social'
+ 'Location']",space,0.32213995000347495,space,0.4002689649933018,space,0.4701604499714449,,,,,,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+0,"James noticed Teresa immediately as she walked into the restaurant- or, more accurately, as she attempted to walk into the restaurant. ",1,1,41.0,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,space,0.4030996150104329,space,1.6532715699868277,None,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+0,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+1,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,space,1.1840638350113295,space,0.4532463399809785,space,0.41965433297446,,,,,,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+1,"Thomas, dreading the approaching breakup conversation he was about to start, got to Annika’s Finer Diner late but Sadie, his girlfriend, was not there yet.",1,1,11.0,None,None,None,None,0,1,1,1,,,,,0,0,0,0,,,,,,,,,,,space,0.3027853699750267,space,0.6700505199842155,None,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+1,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,',001,2019_Jul_01_0941,body_behavioural,3.0.4,59.87690686397561,
+,,,,,,,,,,,,,,,,,,,,,,,,,space,0.7030361849465407,None,,space,0.1866163699887693,,,,,,,,,,,,

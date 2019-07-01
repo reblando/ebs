@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Jul  1 08:40:19 2019
+    on Mon Jul  1 09:35:29 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -124,7 +124,7 @@ image_15 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 text_26 = visual.TextStim(win=win, name='text_26',
-    text='For example, 2 of the questions associated with the restaurant critic may be "What are the menus like?" and "What do the clients order?", and you\'ll use these questions to interrogate the story. ',
+    text='For example, 2 of the questions associated with the restaurant critic may be "What are the menus like?" and "What do the clients order?" and we encourage you to keep these questions in mind while reading the story. ',
     font='Arial',
     pos=(0, .3), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -180,7 +180,7 @@ welcome_2 = visual.TextStim(win=win, name='welcome_2',
 # Initialize components for Routine "second_pic"
 second_picClock = core.Clock()
 text_19 = visual.TextStim(win=win, name='text_19',
-    text='In the third part of the experiment, you will be presented with the images seen when reading the stories and asked to recall the story that went with each image.',
+    text='In the third part of the experiment, you will be presented with the images you saw while reading each story and asked to recall the story that went with each image.',
     font='Arial',
     pos=(0, 0.5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 

@@ -118,7 +118,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
         <Param name="name" updates="None" val="text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -176,7 +176,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="event.clearEvents()" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="for key in event.getKeys():&amp;#10;    if key in ['q']: &amp;#10;        trials_2.finished = 1&amp;#10;        continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="for key in event.getKeys():&amp;#10;    if key in ['t']: &amp;#10;        trials_2.finished = 1&amp;#10;        continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -201,7 +201,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="Press '9' if you think this sentence is the beginning of a new 'part' of the story" valType="str"/>
+        <Param name="text" updates="constant" val="Press '9' if you think this sentence is the beginning of a new 'part' of the story." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val=".3" valType="code"/>
       </TextComponent>

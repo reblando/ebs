@@ -201,7 +201,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="Press '9' if you think this sentence is the beginning of a new 'part' of the story" valType="str"/>
+        <Param name="text" updates="constant" val="Press '9' if you think this sentence is the beginning of a new 'part' of the story." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val=".3" valType="code"/>
       </TextComponent>
