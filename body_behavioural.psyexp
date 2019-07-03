@@ -2647,10 +2647,10 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <CodeComponent name="code_18">
-        <Param name="Begin Experiment" updates="constant" val="timer = core.Clock()" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="timer = core.Clock()&amp;#10;from psychopy import core, visual" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="event.clearEvents()" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="event.clearEvents()&amp;#10;count_image = 0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -3091,6 +3091,22 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+    </Routine>
+    <Routine name="only_story_image">
+      <CodeComponent name="code_23">
+        <Param name="Begin Experiment" updates="constant" val="&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="this_pic = $this_story_pic&amp;#10;if count_image == 0:&amp;#10;    Stim = visual.ImageStim(&amp;#10;    win, image= this_pic) &amp;#10;    Stim.draw()&amp;#10;    win.flip()&amp;#10;    core.wait(5.0)&amp;#10;    count_image =1" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_23" valType="code"/>
+      </CodeComponent>
     </Routine>
   </Routines>
   <Flow>

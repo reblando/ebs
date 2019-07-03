@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Tue Jun 25 13:39:04 2019
+    on Mon Jul  1 10:11:42 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -82,6 +82,7 @@ text_39 = visual.TextStim(win=win, name='text_39',
     languageStyle='LTR',
     depth=-2.0);
 timer = core.Clock()
+from psychopy import core, visual
 
 # Initialize components for Routine "ask_to_assume"
 ask_to_assumeClock = core.Clock()
@@ -408,12 +409,17 @@ text_50 = visual.TextStim(win=win, name='text_50',
     languageStyle='LTR',
     depth=0.0);
 
+# Initialize components for Routine "only_story_image"
+only_story_imageClock = core.Clock()
+
+
+
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
     text='default text',
     font='Arial',
-    pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, -.5), height=0.08, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -426,7 +432,7 @@ image_2 = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 
 text_34 = visual.TextStim(win=win, name='text_34',
-    text="Press '9' if you think this sentence is the beginning of a new 'part' of the story",
+    text="Press '9' if you think this sentence is the beginning of a new 'part' of the story.",
     font='Arial',
     pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1094,6 +1100,7 @@ for thisTrial in trials:
     text_38.setText((count + 1))
     key_resp_8 = event.BuilderKeyResponse()
     event.clearEvents()
+    count_image = 0
     # keep track of which components have finished
     storycountComponents = [text_38, key_resp_8, text_39]
     for thisComponent in storycountComponents:
@@ -2077,6 +2084,59 @@ for thisTrial in trials:
             for paramName in thisTrial_2:
                 exec('{} = thisTrial_2[paramName]'.format(paramName))
         
+        # ------Prepare to start Routine "only_story_image"-------
+        t = 0
+        only_story_imageClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        this_pic = $this_story_pic
+        if count_image == 0:
+            Stim = visual.ImageStim(
+            win, image= this_pic) 
+            Stim.draw()
+            win.flip()
+            core.wait(5.0)
+            count_image =1
+        # keep track of which components have finished
+        only_story_imageComponents = []
+        for thisComponent in only_story_imageComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "only_story_image"-------
+        while continueRoutine:
+            # get current time
+            t = only_story_imageClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in only_story_imageComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "only_story_image"-------
+        for thisComponent in only_story_imageComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        # the Routine "only_story_image" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
         # ------Prepare to start Routine "trial"-------
         t = 0
         trialClock.reset()  # clock
@@ -2138,7 +2198,7 @@ for thisTrial in trials:
                 image_2.frameNStart = frameN  # exact frame index
                 image_2.setAutoDraw(True)
             for key in event.getKeys():
-                if key in ['q']: 
+                if key in ['t']: 
                     trials_2.finished = 1
                     continueRoutine = False
             
@@ -4607,6 +4667,7 @@ for thisTrial_8 in trials_8:
     thisExp.nextEntry()
     
 # completed 5 repeats of 'trials_8'
+
 
 
 

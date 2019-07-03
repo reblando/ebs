@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Jul  1 09:42:54 2019
+    on Tue Jul  2 13:32:38 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -82,6 +82,7 @@ text_39 = visual.TextStim(win=win, name='text_39',
     languageStyle='LTR',
     depth=-2.0);
 timer = core.Clock()
+from psychopy import core, visual
 
 # Initialize components for Routine "ask_to_assume"
 ask_to_assumeClock = core.Clock()
@@ -1094,6 +1095,7 @@ for thisTrial in trials:
     text_38.setText((count + 1))
     key_resp_8 = event.BuilderKeyResponse()
     event.clearEvents()
+    count_image = 0
     # keep track of which components have finished
     storycountComponents = [text_38, key_resp_8, text_39]
     for thisComponent in storycountComponents:
