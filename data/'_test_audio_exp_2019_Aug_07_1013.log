@@ -1,0 +1,14 @@
+2.2134 	WARNING 	sounddevice audio lib was requested but not loaded: sounddevice not working
+29.3059 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+30.0604 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10f6fce48>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x111f85550>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+30.0604 	EXP 	window1: recordFrameIntervals = False
+30.2234 	EXP 	window1: recordFrameIntervals = True
+30.4070 	EXP 	window1: recordFrameIntervals = False
+30.5596 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='storypics/11_storypic.jpg', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='norm', win=Window(...))
+32.1616 	EXP 	Set  sound=C
+32.6088 	EXP 	Set  sound=stimrecordings/11_finaltrack.wav
+32.6088 	EXP 	Sound  set volume 1.000
+32.9161 	EXP 	Set  sound=stimrecordings/11_finaltrack.wav
+32.9408 	EXP 	Sound  started
+32.9400 	EXP 	image: autoDraw = True
+63.7451 	DATA 	Keypress: escape

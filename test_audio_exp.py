@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Wed Aug  7 16:19:27 2019
+    on Wed Aug  7 11:55:23 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/test_audio_exp_lastrun.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/test_audio_exp.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -84,7 +84,7 @@ image = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-sound_1 = sound.Sound('stimrecordings/11.2', secs=-1, stereo=True)
+sound_1 = sound.Sound('stimrecordings/11_finaltrack.wav', secs=-1, stereo=True)
 sound_1.setVolume(1)
 
 # Create some handy timers
@@ -177,7 +177,7 @@ frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 key_resp_2 = event.BuilderKeyResponse()
-sound_1.setSound('stimrecordings/11.2')
+sound_1.setSound('stimrecordings/11_finaltrack.wav')
 sound_1.setVolume(1, log=False)
 # keep track of which components have finished
 trialComponents = [image, key_resp_2, sound_1]
