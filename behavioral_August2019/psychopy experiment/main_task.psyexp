@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.4">
+<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
   <Settings>
     <Param name="Completed URL" updates="None" val="completedURL" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
@@ -3089,7 +3089,7 @@
     </Routine>
     <Routine name="play_audio_story">
       <SoundComponent name="sound_1">
-        <Param name="durationEstim" updates="None" val="5" valType="code"/>
+        <Param name="durationEstim" updates="None" val="8" valType="code"/>
         <Param name="name" updates="None" val="sound_1" valType="code"/>
         <Param name="sound" updates="set every repeat" val="$audio" valType="str"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -3117,27 +3117,11 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$sound_1.status==FINISHED" valType="code"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_16">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_16" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
     </Routine>
   </Routines>
   <Flow>
