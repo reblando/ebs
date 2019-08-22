@@ -1,0 +1,9 @@
+﻿count,audio,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_7.thisRepN,trials_7.thisTrialN,trials_7.thisN,trials_7.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,order of stories,order of perspectives,participant 2 order - stories,participant 2 order  - schemas types,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,key_resp_7.keys,key_resp_7.rt,key_resp_15.keys,key_resp_15.rt,key_resp_14.keys,key_resp_14.rt,story_presses.keys,story_presses.rt,participant,session,date,expName,psychopyVersion,frameRate,
+0,,0,0,0,0,0,0,0,0,,,,,[24 32 41 33 44 13 12 21 11 22 43 23 42 14 31 34],"['Location' 'Social' 'Location' 'Location' 'Social' 'Social' 'Location'
+ 'Social' 'Location' 'Social' 'Social' 'Location' 'Location' 'Social'
+ 'Social' 'Location']",[11 22 43 23 42 14 31 34],"['Location' 'Social' 'Social' 'Location' 'Location' 'Social' 'Social'
+ 'Location']",space,0.4432285849998152,space,0.5367887020001945,space,0.5200212250001641,,,,,,,',001,2019_Aug_22_1454,body_behavioural,3.0.4,60.00671715182994,
+0,parcelated_audio/24/24_1.aiff,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,space,0.5698376299997108,space,0.5530885579992173,1,1.2202911049998875,',001,2019_Aug_22_1454,body_behavioural,3.0.4,60.00671715182994,
+0,parcelated_audio/24/24_2.aiff,0,0,0,0,,,,,0,1,1,1,,,,,,,,,,,,,,,1,1.2702450799997678,',001,2019_Aug_22_1454,body_behavioural,3.0.4,60.00671715182994,
+0,parcelated_audio/24/24_3.aiff,0,0,0,0,,,,,0,2,2,2,,,,,,,,,,,,,,,9,0.8863218320002488,',001,2019_Aug_22_1454,body_behavioural,3.0.4,60.00671715182994,
+0,parcelated_audio/24/24_4.aiff,0,0,0,0,,,,,0,3,3,3,,,,,,,,,,,,,,,1,0.35342115000003105,',001,2019_Aug_22_1454,body_behavioural,3.0.4,60.00671715182994,
