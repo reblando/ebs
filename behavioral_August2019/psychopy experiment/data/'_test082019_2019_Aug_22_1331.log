@@ -1,0 +1,36 @@
+1.5257 	WARNING 	sounddevice audio lib was requested but not loaded: sounddevice not working
+6.4796 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10eca3438>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x112126438>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.4797 	EXP 	window1: recordFrameIntervals = False
+6.6451 	EXP 	window1: recordFrameIntervals = True
+6.8281 	EXP 	window1: recordFrameIntervals = False
+8.1849 	EXP 	Set  sound=C
+8.2281 	EXP 	Set  sound=A
+8.2281 	EXP 	Sound  set volume 1.000
+8.3339 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='ok\n', units='height', win=Window(...), wrapWidth=1)
+8.3472 	EXP 	Imported audio_excel_sheets/11_audio.xlsx as conditions, 41 conditions, 1 params
+8.3478 	EXP 	Created sequence: sequential, trialTypes=41, nReps=1, seed=None
+8.3484 	EXP 	New trial (rep=0, index=0): OrderedDict([('audio', 'parcelated_audio/11/11_1.aiff')])
+8.4015 	EXP 	Set  sound=parcelated_audio/11/11_1.aiff
+8.4129 	EXP 	Sound  started
+20.3478 	EXP 	Sound  stopped
+20.3633 	EXP 	text_2: autoDraw = True
+21.3473 	EXP 	New trial (rep=0, index=1): OrderedDict([('audio', 'parcelated_audio/11/11_2.aiff')])
+21.3748 	EXP 	Set  sound=parcelated_audio/11/11_2.aiff
+21.3969 	EXP 	Sound  started
+21.3959 	EXP 	text_2: autoDraw = False
+21.3959 	EXP 	text_2: autoDraw = False
+23.2989 	DATA 	Keypress: escape
+25.8136 	EXP 	Sound  stopped
+25.8290 	EXP 	text_2: autoDraw = True
+25.8666 	DATA 	Keypress: q
+26.0316 	DATA 	Keypress: q
+26.1813 	DATA 	Keypress: q
+26.8141 	EXP 	New trial (rep=0, index=2): OrderedDict([('audio', 'parcelated_audio/11/11_3.aiff')])
+26.8402 	EXP 	Set  sound=parcelated_audio/11/11_3.aiff
+26.8411 	EXP 	Sound  stopped
+26.8646 	EXP 	Sound  started
+26.8638 	EXP 	text_2: autoDraw = False
+26.8638 	EXP 	text_2: autoDraw = False
+26.8638 	EXP 	text_2: autoDraw = True
+26.9811 	DATA 	Keypress: escape
+31.8320 	EXP 	window1: mouseVisible = True

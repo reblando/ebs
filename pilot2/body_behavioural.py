@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.4),
-    on Mon Jul  1 10:11:42 2019
+    on Thu Aug 22 12:48:44 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/body_behavioural.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/pilot2/body_behavioural.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -408,11 +408,6 @@ text_50 = visual.TextStim(win=win, name='text_50',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
-# Initialize components for Routine "only_story_image"
-only_story_imageClock = core.Clock()
-
-
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -2083,59 +2078,6 @@ for thisTrial in trials:
         if thisTrial_2 != None:
             for paramName in thisTrial_2:
                 exec('{} = thisTrial_2[paramName]'.format(paramName))
-        
-        # ------Prepare to start Routine "only_story_image"-------
-        t = 0
-        only_story_imageClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
-        # update component parameters for each repeat
-        this_pic = $this_story_pic
-        if count_image == 0:
-            Stim = visual.ImageStim(
-            win, image= this_pic) 
-            Stim.draw()
-            win.flip()
-            core.wait(5.0)
-            count_image =1
-        # keep track of which components have finished
-        only_story_imageComponents = []
-        for thisComponent in only_story_imageComponents:
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        
-        # -------Start Routine "only_story_image"-------
-        while continueRoutine:
-            # get current time
-            t = only_story_imageClock.getTime()
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in only_story_imageComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "only_story_image"-------
-        for thisComponent in only_story_imageComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        
-        # the Routine "only_story_image" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
         
         # ------Prepare to start Routine "trial"-------
         t = 0
@@ -4667,7 +4609,6 @@ for thisTrial_8 in trials_8:
     thisExp.nextEntry()
     
 # completed 5 repeats of 'trials_8'
-
 
 
 
