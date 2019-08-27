@@ -1439,7 +1439,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="For each story, an image with the title of the story, character names, and character images, like the one below, will be presented on the screen while the sentences of the story appear below it. " valType="str"/>
+        <Param name="text" updates="constant" val="For each story, an image with the title of the story, character names, and character images, like the one below, will be presented on the screen while you hear it being played. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1465,27 +1465,6 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <TextComponent name="text_23">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
-        <Param name="name" updates="None" val="text_23" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, -.8)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="2" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="Mary and Peter walked to the park as the dawn from on high broke upon them. " valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1" valType="code"/>
-      </TextComponent>
     </Routine>
     <Routine name="second_pic">
       <TextComponent name="text_19">
@@ -1505,7 +1484,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="In the third part of the experiment, you will be presented with the images you saw while reading each story and asked to recall the story that went with each image." valType="str"/>
+        <Param name="text" updates="constant" val="In the third part of the experiment, you will be presented with the images you saw while listening to each story and be asked to recall the story that went with each image." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1566,7 +1545,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="You'll be prompted to the story you should be answering about by the same picture you saw during reading and recall. " valType="str"/>
+        <Param name="text" updates="constant" val="You'll be prompted to the story you should be answering about by the same picture you saw during listening and recall. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1747,7 +1726,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="For example, you may be asked to take on the role of a restaurant critic while reading one of the short stories. " valType="str"/>
+        <Param name="text" updates="constant" val="For example, you may be asked to take on the role of a restaurant critic while listening to one of the short stories. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1786,7 +1765,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="In this first part of the experiment, you'll also learn 4 questions associated with each perspective that you'll use when reading a short story with that particular perspective. " valType="str"/>
+        <Param name="text" updates="constant" val="In this first part of the experiment, you'll also learn 4 questions associated with each perspective that you'll use when listening to a short story with that particular perspective. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1847,7 +1826,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="For example, 2 of the questions associated with the restaurant critic may be &quot;What are the menus like?&quot; and &quot;What do the clients order?&quot; and we encourage you to keep these questions in mind while reading the story. " valType="str"/>
+        <Param name="text" updates="constant" val="For example, 2 of the questions associated with the restaurant critic may be &quot;What are the menus like?&quot; and &quot;What do the clients order?&quot;, and we encourage you to keep these questions in mind while listening to the story. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
