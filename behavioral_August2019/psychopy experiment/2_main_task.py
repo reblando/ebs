@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Tue Sep 17 16:31:40 2019
+    on Wed Sep 18 16:50:52 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/behavioral_August2019/psychopy experiment/main_task.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/behavioral_August2019/psychopy experiment/2_main_task.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -110,43 +110,12 @@ key_resp_5 = keyboard.Keyboard()
 perspectiveClock = core.Clock()
 import numpy as np
 
-a = np.zeros(shape = [4, 4], dtype = int)
-
-s_order = np.array([10, 20, 30, 40], dtype = int)
-
-l_order = np.array([1,2,3,4], dtype = int)
 
 
-np.random.shuffle(s_order)
-np.random.shuffle(l_order)
-
-a[0] += s_order[0]
-a[1] += s_order[1]
-a[2] += s_order[2]
-a[3] += s_order[3]
-
-a[:,0] += l_order[0]
-a[:,1] += l_order[1]
-a[:, 2] += l_order[2]
-a[:, 3] += l_order[3]
-
-run1 = np.array([a[0,0], a[1,1], a[2,0], a[3,1], a[0,2], a[1,3], a[2,2], a[3,3]]) 
-run2 = np.array([a[0,1], a[1,0], a[2,1], a[3,0], a[0,3], a[1,2], a[2,3], a[3,2]]) 
-order_run1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-order_run2 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-
-randperm1 = np.random.permutation(8)
-randperm2 = np.random.permutation(8)
-
-run1 = run1[randperm1]
-run2 = run2[randperm2]
-order_run1 = order_run1[randperm1]
-order_run2 = order_run2[randperm2]
-
-
+order_stories = np.array([12,13,41,23,34,22,44,31])
+order_perspectives = np.array(['Social','Location','Location','Social','Location','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
-
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},
              12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'audio_excel_sheets/12_audio.xlsx'},
              13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'audio_excel_sheets/13_audio.xlsx'},
@@ -169,23 +138,20 @@ storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'L
 
 
 
-
-order_stories = np.concatenate((run1, run2), axis =None)
-order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
-
 #create complementary perspectives list for non-primed questions
 other_perspectives = []
 
-for i in range(0,16):
+for i in range(0,8):
     if order_perspectives[i] == 'Social':
         other_pespectives = other_perspectives.append('Location')
     else:
         other_pespectives = other_perspectives.append('Social')
 
+
+
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
-thisExp.addData('participant 2 order - stories', run2)
-thisExp.addData('participant 2 order  - schemas types', order_run2)
+
 
 
 
@@ -301,43 +267,12 @@ key_resp_15 = keyboard.Keyboard()
 perspectiveClock = core.Clock()
 import numpy as np
 
-a = np.zeros(shape = [4, 4], dtype = int)
-
-s_order = np.array([10, 20, 30, 40], dtype = int)
-
-l_order = np.array([1,2,3,4], dtype = int)
 
 
-np.random.shuffle(s_order)
-np.random.shuffle(l_order)
-
-a[0] += s_order[0]
-a[1] += s_order[1]
-a[2] += s_order[2]
-a[3] += s_order[3]
-
-a[:,0] += l_order[0]
-a[:,1] += l_order[1]
-a[:, 2] += l_order[2]
-a[:, 3] += l_order[3]
-
-run1 = np.array([a[0,0], a[1,1], a[2,0], a[3,1], a[0,2], a[1,3], a[2,2], a[3,3]]) 
-run2 = np.array([a[0,1], a[1,0], a[2,1], a[3,0], a[0,3], a[1,2], a[2,3], a[3,2]]) 
-order_run1 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-order_run2 = np.array(['Location', 'Location', 'Social', 'Social', 'Social', 'Social', 'Location', 'Location'])
-
-randperm1 = np.random.permutation(8)
-randperm2 = np.random.permutation(8)
-
-run1 = run1[randperm1]
-run2 = run2[randperm2]
-order_run1 = order_run1[randperm1]
-order_run2 = order_run2[randperm2]
-
-
+order_stories = np.array([12,13,41,23,34,22,44,31])
+order_perspectives = np.array(['Social','Location','Location','Social','Location','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
-
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},
              12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'audio_excel_sheets/12_audio.xlsx'},
              13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'audio_excel_sheets/13_audio.xlsx'},
@@ -360,23 +295,20 @@ storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'L
 
 
 
-
-order_stories = np.concatenate((run1, run2), axis =None)
-order_perspectives = np.concatenate((order_run1, order_run2), axis = None)
-
 #create complementary perspectives list for non-primed questions
 other_perspectives = []
 
-for i in range(0,16):
+for i in range(0,8):
     if order_perspectives[i] == 'Social':
         other_pespectives = other_perspectives.append('Location')
     else:
         other_pespectives = other_perspectives.append('Social')
 
+
+
 thisExp.addData('order of stories', order_stories)
 thisExp.addData('order of perspectives', order_perspectives)
-thisExp.addData('participant 2 order - stories', run2)
-thisExp.addData('participant 2 order  - schemas types', order_run2)
+
 
 
 
@@ -2345,7 +2277,7 @@ for thisTrial in trials:
                     pic1.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(pic1, 'tStopRefresh')  # time at next scr refresh
                     pic1.setAutoDraw(False)
-            if event.getKeys(['b']):
+            if event.getKeys(['q']):
                 continueRoutine=False
             
             # check for quit (typically the Esc key)
