@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Tue Sep 17 16:31:40 2019
+    on Mon Sep 30 13:45:34 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -437,6 +437,7 @@ pic1 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
+ISI = clock.StaticPeriod(win=win, screenHz=expInfo['frameRate'], name='ISI')
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -1114,7 +1115,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('count_8.xlsx'),
+    trialList=data.importConditions('count.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1372,7 +1373,7 @@ for thisTrial in trials:
             display_pic = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
             question5 = 'Does the person being broken up with expect that this is coming?'
             question6 = 'Who witnesses the breakup?'
@@ -2020,7 +2021,7 @@ for thisTrial in trials:
         display_pic = 'jobphotos/couples.jpg'
         question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
         question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-        question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+        question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
         question4 = 'Who wants what items back as a result of the breakup?'
         question5 = 'Does the person being broken up with expect that this is coming?'
         question6 = 'Who witnesses the breakup?'
@@ -2299,7 +2300,7 @@ for thisTrial in trials:
         sound_1.setVolume(1, log=False)
         pic1.setImage(this_story_pic)
         # keep track of which components have finished
-        play_audio_storyComponents = [sound_1, pic1]
+        play_audio_storyComponents = [sound_1, pic1, ISI]
         for thisComponent in play_audio_storyComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2323,7 +2324,7 @@ for thisTrial in trials:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # start/stop sound_1
-            if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            if sound_1.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
                 # keep track of start time/frame for later
                 sound_1.frameNStart = frameN  # exact frame index
                 sound_1.tStart = t  # local t and not account for scr refresh
@@ -2347,6 +2348,16 @@ for thisTrial in trials:
                     pic1.setAutoDraw(False)
             if event.getKeys(['b']):
                 continueRoutine=False
+            # *ISI* period
+            if ISI.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                ISI.frameNStart = frameN  # exact frame index
+                ISI.tStart = t  # local t and not account for scr refresh
+                ISI.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(ISI, 'tStartRefresh')  # time at next scr refresh
+                ISI.start(0.5)
+            elif ISI.status == STARTED:  # one frame should pass before updating params and completing
+                ISI.complete()  # finish the static period
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2374,6 +2385,8 @@ for thisTrial in trials:
         trials_2.addData('sound_1.stopped', sound_1.tStopRefresh)
         trials_2.addData('pic1.started', pic1.tStartRefresh)
         trials_2.addData('pic1.stopped', pic1.tStopRefresh)
+        trials_2.addData('ISI.started', ISI.tStart)
+        trials_2.addData('ISI.stopped', ISI.tStop)
         # the Routine "play_audio_story" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -3710,7 +3723,7 @@ for thisTrial_6 in trials_6:
             pic1 = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
@@ -3758,7 +3771,7 @@ for thisTrial_6 in trials_6:
             pic2 = 'jobphotos/couples.jpg'
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question8 = 'Who wants what items back as a result of the breakup?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
@@ -3808,7 +3821,7 @@ for thisTrial_6 in trials_6:
             pic1 = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
@@ -3857,7 +3870,7 @@ for thisTrial_6 in trials_6:
             pic2 = 'jobphotos/couples.jpg'
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question8 = 'Who wants what items back as a result of the breakup?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Wed Sep 18 16:50:52 2019
+    on Mon Sep 30 15:29:18 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -95,6 +95,11 @@ text_39 = visual.TextStim(win=win, name='text_39',
 timer = core.Clock()
 from psychopy import core, visual
 
+import vlc
+mom=vlc.Instance()
+p=mom.media_player_new()
+#p.set_fullscreen(True)
+
 # Initialize components for Routine "ask_to_assume"
 ask_to_assumeClock = core.Clock()
 text_33 = visual.TextStim(win=win, name='text_33',
@@ -112,8 +117,8 @@ import numpy as np
 
 
 
-order_stories = np.array([12,13,41,23,34,22,44,31])
-order_perspectives = np.array(['Social','Location','Location','Social','Location','Location','Social','Social'])
+order_stories = np.array([22,33,22,44,21,43,13,31])
+order_perspectives = np.array(['Location','Social','Location','Location','Social','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},
@@ -269,8 +274,8 @@ import numpy as np
 
 
 
-order_stories = np.array([12,13,41,23,34,22,44,31])
-order_perspectives = np.array(['Social','Location','Location','Social','Location','Location','Social','Social'])
+order_stories = np.array([22,33,22,44,21,43,13,31])
+order_perspectives = np.array(['Location','Social','Location','Location','Social','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},
@@ -358,43 +363,24 @@ key_resp_14 = keyboard.Keyboard()
 
 # Initialize components for Routine "play_audio_story"
 play_audio_storyClock = core.Clock()
-sound_1 = sound.Sound('A', secs=-1, stereo=True, hamming=True,
-    name='sound_1')
-sound_1.setVolume(1)
-pic1 = visual.ImageStim(
-    win=win,
-    name='pic1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(1, 1),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
 story_presses = keyboard.Keyboard()
-image_2 = visual.ImageStim(
-    win=win,
-    name='image_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(1, 1),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
 text_34 = visual.TextStim(win=win, name='text_34',
     text="Press '9' if you think that sentence was the beginning of a new 'part' of the story.",
     font='Arial',
-    pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(.85, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
 text_35 = visual.TextStim(win=win, name='text_35',
     text="Press '1' if you think that sentence was in the same 'part' of the story as the previous sentence. ",
     font='Arial',
-    pos=(-.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(-.85, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-4.0);
+    depth=-3.0);
 
 # Initialize components for Routine "end_story"
 end_storyClock = core.Clock()
@@ -1304,7 +1290,7 @@ for thisTrial in trials:
             display_pic = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
             question5 = 'Does the person being broken up with expect that this is coming?'
             question6 = 'Who witnesses the breakup?'
@@ -1952,7 +1938,7 @@ for thisTrial in trials:
         display_pic = 'jobphotos/couples.jpg'
         question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
         question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-        question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+        question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
         question4 = 'Who wants what items back as a result of the breakup?'
         question5 = 'Does the person being broken up with expect that this is coming?'
         question6 = 'Who witnesses the breakup?'
@@ -2227,11 +2213,21 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "play_audio_story"-------
         # update component parameters for each repeat
-        sound_1.setSound(audio, hamming=True)
-        sound_1.setVolume(1, log=False)
-        pic1.setImage(this_story_pic)
+        start_time = globalClock.getTime()
+        m=mom.media_new(audio)
+        p.set_media(m)
+        p.play()
+        stim = visual.ImageStim(win, image=this_story_pic)
+        stim.draw()
+        while p.is_playing() or (globalClock.getTime()-start_time < 2):
+           stim.draw()
+           win.flip()
+        
+        p.stop()
+        
+        continueRoutine=False
         # keep track of which components have finished
-        play_audio_storyComponents = [sound_1, pic1]
+        play_audio_storyComponents = []
         for thisComponent in play_audio_storyComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2254,29 +2250,6 @@ for thisTrial in trials:
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            # start/stop sound_1
-            if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                sound_1.frameNStart = frameN  # exact frame index
-                sound_1.tStart = t  # local t and not account for scr refresh
-                sound_1.tStartRefresh = tThisFlipGlobal  # on global time
-                sound_1.play(when=win)  # sync with win flip
-            
-            # *pic1* updates
-            if pic1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                pic1.frameNStart = frameN  # exact frame index
-                pic1.tStart = t  # local t and not account for scr refresh
-                pic1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(pic1, 'tStartRefresh')  # time at next scr refresh
-                pic1.setAutoDraw(True)
-            if pic1.status == STARTED:
-                if bool(sound_1.status==FINISHED):
-                    # keep track of stop time/frame for later
-                    pic1.tStop = t  # not accounting for scr refresh
-                    pic1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(pic1, 'tStopRefresh')  # time at next scr refresh
-                    pic1.setAutoDraw(False)
             if event.getKeys(['q']):
                 continueRoutine=False
             
@@ -2301,11 +2274,6 @@ for thisTrial in trials:
         for thisComponent in play_audio_storyComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        sound_1.stop()  # ensure sound has stopped at end of routine
-        trials_2.addData('sound_1.started', sound_1.tStartRefresh)
-        trials_2.addData('sound_1.stopped', sound_1.tStopRefresh)
-        trials_2.addData('pic1.started', pic1.tStartRefresh)
-        trials_2.addData('pic1.stopped', pic1.tStopRefresh)
         # the Routine "play_audio_story" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -2313,10 +2281,11 @@ for thisTrial in trials:
         # update component parameters for each repeat
         story_presses.keys = []
         story_presses.rt = []
-        image_2.setImage(this_story_pic)
         event.clearEvents()
+        stim = visual.ImageStim(win, image=this_story_pic)
+        
         # keep track of which components have finished
-        trialComponents = [story_presses, image_2, text_34, text_35]
+        trialComponents = [story_presses, text_34, text_35]
         for thisComponent in trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2366,15 +2335,8 @@ for thisTrial in trials:
                         story_presses.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
+            stim.draw()
             
-            # *image_2* updates
-            if image_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                image_2.frameNStart = frameN  # exact frame index
-                image_2.tStart = t  # local t and not account for scr refresh
-                image_2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(image_2, 'tStartRefresh')  # time at next scr refresh
-                image_2.setAutoDraw(True)
             for key in event.getKeys():
                 if key in ['t']: 
                     trials_2.finished = 1
@@ -2427,8 +2389,6 @@ for thisTrial in trials:
             trials_2.addData('story_presses.rt', story_presses.rt)
         trials_2.addData('story_presses.started', story_presses.tStartRefresh)
         trials_2.addData('story_presses.stopped', story_presses.tStopRefresh)
-        trials_2.addData('image_2.started', image_2.tStartRefresh)
-        trials_2.addData('image_2.stopped', image_2.tStopRefresh)
         trials_2.addData('text_34.started', text_34.tStartRefresh)
         trials_2.addData('text_34.stopped', text_34.tStopRefresh)
         trials_2.addData('text_35.started', text_35.tStartRefresh)
@@ -3642,7 +3602,7 @@ for thisTrial_6 in trials_6:
             pic1 = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
         if this_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
@@ -3690,7 +3650,7 @@ for thisTrial_6 in trials_6:
             pic2 = 'jobphotos/couples.jpg'
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question8 = 'Who wants what items back as a result of the breakup?'
         if other_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'
@@ -3740,7 +3700,7 @@ for thisTrial_6 in trials_6:
             pic1 = 'jobphotos/couples.jpg'
             question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question4 = 'Who wants what items back as a result of the breakup?'
         if other_perspective == 'Restaurant Critic':
             pic1 = 'jobphotos/restaurant_critic.jpg'
@@ -3789,7 +3749,7 @@ for thisTrial_6 in trials_6:
             pic2 = 'jobphotos/couples.jpg'
             question5 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'
             question6 ='What is the initial reason stated by the initiator for why he/she is breaking up?'
-            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by the person being broken up with that he/she does or does not want to break up?'
+            question7 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'
             question8 = 'Who wants what items back as a result of the breakup?'
         if this_perspective == 'Restaurant Critic':
             pic2 = 'jobphotos/restaurant_critic.jpg'

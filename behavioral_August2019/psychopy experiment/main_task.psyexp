@@ -3489,7 +3489,7 @@
         <Param name="sound" updates="set every repeat" val="$audio" valType="str"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
@@ -3535,6 +3535,19 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_24" valType="code"/>
       </CodeComponent>
+      <StaticComponent name="ISI">
+        <Param name="code" updates="None" val="" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="name" updates="None" val="ISI" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+      </StaticComponent>
     </Routine>
     <Routine name="end_story">
       <TextComponent name="text">
@@ -3608,8 +3621,8 @@
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('count', 0)]), OrderedDict([('count', 1)]), OrderedDict([('count', 2)]), OrderedDict([('count', 3)]), OrderedDict([('count', 4)]), OrderedDict([('count', 5)]), OrderedDict([('count', 6)]), OrderedDict([('count', 7)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="count_8.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('count', 0)]), OrderedDict([('count', 1)]), OrderedDict([('count', 2)]), OrderedDict([('count', 3)]), OrderedDict([('count', 4)]), OrderedDict([('count', 5)]), OrderedDict([('count', 6)]), OrderedDict([('count', 7)]), OrderedDict([('count', 8)]), OrderedDict([('count', 9)]), OrderedDict([('count', 10)]), OrderedDict([('count', 11)]), OrderedDict([('count', 12)]), OrderedDict([('count', 13)]), OrderedDict([('count', 14)]), OrderedDict([('count', 15)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="count.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
