@@ -34,7 +34,7 @@
   <Routines>
     <Routine name="perspective">
       <CodeComponent name="code_2">
-        <Param name="Begin Experiment" updates="constant" val="import numpy as np&amp;#10;&amp;#10;&amp;#10;&amp;#10;order_stories = np.array([22,33,22,44,21,43,13,31])&amp;#10;order_perspectives = np.array(['Location','Social','Location','Location','Social','Location','Social','Social'])&amp;#10;&amp;#10;#create a dictionary for all the stories and their values&amp;#10;storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},&amp;#10;             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'audio_excel_sheets/12_audio.xlsx'},&amp;#10;             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'audio_excel_sheets/13_audio.xlsx'},&amp;#10;             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic.jpg', 'storyFile': 'audio_excel_sheets/14_audio.xlsx'},&amp;#10;             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic.jpg', 'storyFile': 'audio_excel_sheets/21_audio.xlsx'},&amp;#10;             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic.jpg', 'storyFile': 'audio_excel_sheets/22_audio.xlsx'},&amp;#10;             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic.jpg', 'storyFile': 'audio_excel_sheets/23_audio.xlsx'},&amp;#10;             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic.jpg', 'storyFile': 'audio_excel_sheets/24_audio.xlsx'},&amp;#10;             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic.jpg', 'storyFile': 'audio_excel_sheets/31_audio.xlsx'},&amp;#10;             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic.jpg', 'storyFile': 'audio_excel_sheets/32_audio.xlsx'},&amp;#10;             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic.jpg', 'storyFile': 'audio_excel_sheets/33_audio.xlsx'},&amp;#10;             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic.jpg', 'storyFile': 'audio_excel_sheets/34_audio.xlsx'},&amp;#10;             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'audio_excel_sheets/41_audio.xlsx'},&amp;#10;             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'audio_excel_sheets/42_audio.xlsx'},&amp;#10;             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'audio_excel_sheets/43_audio.xlsx'},&amp;#10;             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'audio_excel_sheets/44_audio.xlsx'}}&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;#create complementary perspectives list for non-primed questions&amp;#10;other_perspectives = []&amp;#10;&amp;#10;for i in range(0,8):&amp;#10;    if order_perspectives[i] == 'Social':&amp;#10;        other_pespectives = other_perspectives.append('Location')&amp;#10;    else:&amp;#10;        other_pespectives = other_perspectives.append('Social')&amp;#10;&amp;#10;&amp;#10;&amp;#10;thisExp.addData('order of stories', order_stories)&amp;#10;thisExp.addData('order of perspectives', order_perspectives)&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import numpy as np&amp;#10;&amp;#10;&amp;#10;&amp;#10;order_stories = np.array([23,11,13,34,44,32,21,42])&amp;#10;order_perspectives = np.array(['Location','Location','Social','Location','Social','Social','Social','Location'])&amp;#10;&amp;#10;#create a dictionary for all the stories and their values&amp;#10;storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},&amp;#10;             12: {'name':'Airport Breakup', 'Social': 'Couples Therapist', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/12_storypic.jpg', 'storyFile': 'audio_excel_sheets/12_audio.xlsx'},&amp;#10;             13: {'name':'Grocery Shopping- Break up', 'Social':'Couples Therapist', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/13_storypic.jpg', 'storyFile': 'audio_excel_sheets/13_audio.xlsx'},&amp;#10;             14: {'name':'Attending a Lecture-Breakup', 'Social':'Couples Therapist', 'Location': 'Dean of Academic Studies', 'pic':'storypics/14_storypic.jpg', 'storyFile': 'audio_excel_sheets/14_audio.xlsx'},&amp;#10;             21: {'name':'Restaurant Proposal', 'Social': 'Wedding Planner', 'Location': 'Restaurant Critic', 'pic':'storypics/21_storypic.jpg', 'storyFile': 'audio_excel_sheets/21_audio.xlsx'},&amp;#10;             22: {'name':'Airport Proposal', 'Social': 'Wedding Planner', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/22_storypic.jpg', 'storyFile': 'audio_excel_sheets/22_audio.xlsx'},&amp;#10;             23: {'name':'Grocery Shopping- Proposal', 'Social': 'Wedding Planner', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/23_storypic.jpg', 'storyFile': 'audio_excel_sheets/23_audio.xlsx'},&amp;#10;             24: {'name':'Attending a Lecture-Proposal', 'Social': 'Wedding Planner', 'Location': 'Dean of Academic Studies', 'pic':'storypics/24_storypic.jpg', 'storyFile': 'audio_excel_sheets/24_audio.xlsx'},&amp;#10;             31: {'name':'Restaurant Business Deal', 'Social':'Business Reporter', 'Location':'Restaurant Critic', 'pic':'storypics/31_storypic.jpg', 'storyFile': 'audio_excel_sheets/31_audio.xlsx'},&amp;#10;             32: {'name':'Airport Business Deal', 'Social':'Business Reporter', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/32_storypic.jpg', 'storyFile': 'audio_excel_sheets/32_audio.xlsx'},&amp;#10;             33: {'name':'Grocery Shopping- Business Deal', 'Social':'Business Reporter', 'Location':'Grocery Store Customer Experience Manager', 'pic':'storypics/33_storypic.jpg', 'storyFile': 'audio_excel_sheets/33_audio.xlsx'},&amp;#10;             34: {'name':'Attending a Lecture-Business Deal', 'Social':'Business Reporter', 'Location':'Dean of Academic Studies', 'pic':'storypics/34_storypic.jpg', 'storyFile': 'audio_excel_sheets/34_audio.xlsx'},&amp;#10;             41: {'name':'Restaurant Meet Cute', 'Social': 'Matchmaker', 'Location':'Restaurant Critic', 'pic':'storypics/41_storypic.jpg', 'storyFile': 'audio_excel_sheets/41_audio.xlsx'},&amp;#10;             42: {'name':'Airport Meet Cute', 'Social': 'Matchmaker', 'Location':'Airport Customer Experience Manager', 'pic':'storypics/42_storypic.jpg', 'storyFile': 'audio_excel_sheets/42_audio.xlsx'},&amp;#10;             43: {'name':'Grocery Shopping- Meet Cute', 'Social':'Matchmaker', 'Location': 'Grocery Store Customer Experience Manager', 'pic':'storypics/43_storypic.jpg', 'storyFile': 'audio_excel_sheets/43_audio.xlsx'},&amp;#10;             44: {'name':'Attending a Lecture-Meet Cute', 'Social':'Matchmaker', 'Location': 'Dean of Academic Studies', 'pic':'storypics/44_storypic.jpg', 'storyFile': 'audio_excel_sheets/44_audio.xlsx'}}&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;#create complementary perspectives list for non-primed questions&amp;#10;other_perspectives = []&amp;#10;&amp;#10;for i in range(0,8):&amp;#10;    if order_perspectives[i] == 'Social':&amp;#10;        other_pespectives = other_perspectives.append('Location')&amp;#10;    else:&amp;#10;        other_pespectives = other_perspectives.append('Social')&amp;#10;&amp;#10;&amp;#10;&amp;#10;thisExp.addData('order of stories', order_stories)&amp;#10;thisExp.addData('order of perspectives', order_perspectives)&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="event.clearEvents()&amp;#10;#set the perspective&amp;#10;this_perspective = storyDict.get(order_stories[count], {}).get(order_perspectives[count])&amp;#10;if this_perspective == 'Couples Therapist':&amp;#10;    display_pic = 'jobphotos/couples.jpg'&amp;#10;    question1 = 'For how long has the initiator of the breakup been thinking about breaking up with his/her partner?'&amp;#10;    question2 ='What is the initial reason stated by the initiator for why he/she is breaking up?'&amp;#10;    question3 ='Does the person who is being broken up with want to break up, and what’s the reason stated by them for this?'&amp;#10;    question4 = 'Who wants what items back as a result of the breakup?'&amp;#10;    question5 = 'Does the person being broken up with expect that this is coming?'&amp;#10;    question6 = 'Who witnesses the breakup?'&amp;#10;if this_perspective == 'Restaurant Critic':&amp;#10;    display_pic = 'jobphotos/restaurant_critic.jpg'&amp;#10;    question1 = 'How is the restaurant decorated?'&amp;#10;    question2 ='What are the menus like?'&amp;#10;    question3 = 'What does each client order?' &amp;#10;    question4 = 'How do the clients like the food?'&amp;#10;    question5 = 'What meal is being served?'&amp;#10;    question6 = 'How old is the waiter?'&amp;#10;if this_perspective == 'Airport Customer Experience Manager':&amp;#10;    display_pic = 'jobphotos/acem.jpg'&amp;#10;    question1 = 'When the clients arrive at the airport, how much time do they have until their flight departs?'&amp;#10;    question2 ='What is the reason for the hold-up at security?'&amp;#10;    question3 ='Toward which gate are the clients walking?'&amp;#10;    question4 ='What section and seat does each client sit in on the plane?' &amp;#10;    question5 = 'Are the security guards friendly or rude?'&amp;#10;    question6 = 'Are the airport restrooms clean?'&amp;#10;if this_perspective == 'Grocery Store Customer Experience Manager':&amp;#10;    display_pic = 'jobphotos/gscem.jpg'&amp;#10;    question1 = 'What is the grocery store like upon entering?'&amp;#10;    question2 ='What items do the clients pick out to buy?'&amp;#10;    question3 ='How many checkout lanes are open, and which one do the clients step into?'&amp;#10;    question4 = 'How much are the groceries, and what method of payment do the clients use?'&amp;#10;    question5 = 'How long does it take for the cashier to scan all of the customers’ groceries?'&amp;#10;    question6 = 'What type of grocery bags do the clients use?'&amp;#10;if this_perspective == 'Dean of Academic Studies':&amp;#10;    display_pic ='jobphotos/dean.jpg'&amp;#10;    question1 = 'What is the lecture hall like?'&amp;#10;    question2 ='What class are the students in, and what is the day’s lecture about?'&amp;#10;    question3 ='What is something taught in lecture?'&amp;#10;    question4 = 'What is the next assessment/assignment for the class, and when is it scheduled/due?'&amp;#10;    question5 = 'Are the students paying attention?'&amp;#10;    question6 = 'Are the desks comfortable?'&amp;#10;if this_perspective == 'Wedding Planner':&amp;#10;    display_pic = 'jobphotos/weddingplanner.jpg'&amp;#10;    question1 = 'For how long has the couple been dating?'&amp;#10;    question2 ='How many diamonds are on the ring, and what is the diamond color?'&amp;#10;    question3 ='In/on what item is the ring presented?'&amp;#10;    question4 = 'Who does the new fiancee text first?'&amp;#10;    question5 = 'Is anyone taking pictures of the proposal?'&amp;#10;    question6 = 'How long does the proposal take?'&amp;#10;if this_perspective == 'Business Reporter':&amp;#10;    display_pic = 'jobphotos/business_reporter.jpg'&amp;#10;    question1 = 'What is each business person’s job title?'&amp;#10;    question2 = 'How much money is at stake in the initial offer made?'&amp;#10;    question3 = 'What is the name of the other industry competitor? '&amp;#10;    question4 =  'With what gesture do the business partners secure the deal?'&amp;#10;    question5 = 'Is the deal fair?'&amp;#10;    question6 =  'How long does it take to make the deal?'&amp;#10;if this_perspective == 'Matchmaker':&amp;#10;    display_pic = 'jobphotos/matchmaker.jpg'&amp;#10;    question1 = 'What object is the initiator of the interaction holding when he/she first notices the other person?' &amp;#10;    question2 ='What is the initial question that begins the conversation between the couple?'&amp;#10;    question3 ='When will be the next time the couple meets and for what occasion?'&amp;#10;    question4 = 'What time is it when the couple parts?'&amp;#10;    question5 = 'Is the couple going to get married?'&amp;#10;    question6 = 'Who shows more interest?'&amp;#10;&amp;#10;#set the story file and picture&amp;#10;&amp;#10;this_story_file = storyDict.get(order_stories[count], {}).get('storyFile')&amp;#10;this_story_pic = storyDict.get(order_stories[count], {}).get('pic')&amp;#10;" valType="extendedCode"/>
@@ -141,38 +141,13 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
-      <ImageComponent name="image_2">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$this_story_pic" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="image_2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(1, 1)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
       <CodeComponent name="code_14">
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="event.clearEvents()" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="event.clearEvents()&amp;#10;stim = visual.ImageStim(win, image=this_story_pic)&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="for key in event.getKeys():&amp;#10;    if key in ['t']: &amp;#10;        trials_2.finished = 1&amp;#10;        continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="stim.draw()&amp;#10;&amp;#10;for key in event.getKeys():&amp;#10;    if key in ['t']: &amp;#10;        trials_2.finished = 1&amp;#10;        continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -193,7 +168,7 @@
         <Param name="name" updates="None" val="text_34" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(.8, -.6)" valType="code"/>
+        <Param name="pos" updates="constant" val="(.85, -.6)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -217,7 +192,7 @@
         <Param name="name" updates="None" val="text_35" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-.8, -.6)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-.85, -.6)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2963,7 +2938,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <CodeComponent name="code_18">
-        <Param name="Begin Experiment" updates="constant" val="timer = core.Clock()&amp;#10;from psychopy import core, visual" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="timer = core.Clock()&amp;#10;from psychopy import core, visual&amp;#10;&amp;#10;import vlc&amp;#10;mom=vlc.Instance()&amp;#10;p=mom.media_player_new()&amp;#10;#p.set_fullscreen(True)" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="event.clearEvents()&amp;#10;count_image = 0" valType="extendedCode"/>
@@ -3480,51 +3455,11 @@
       </CodeComponent>
     </Routine>
     <Routine name="play_audio_story">
-      <SoundComponent name="sound_1">
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="25" valType="code"/>
-        <Param name="hamming" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="sound_1" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="sound" updates="set every repeat" val="$audio" valType="str"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-        <Param name="volume" updates="constant" val="1" valType="code"/>
-      </SoundComponent>
-      <ImageComponent name="pic1">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$this_story_pic" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="pic1" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(1, 1)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="$sound_1.status==FINISHED" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
       <CodeComponent name="code_24">
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="start_time = globalClock.getTime()&amp;#10;m=mom.media_new(audio)&amp;#10;p.set_media(m)&amp;#10;p.play()&amp;#10;stim = visual.ImageStim(win, image=this_story_pic)&amp;#10;stim.draw()&amp;#10;while p.is_playing() or (globalClock.getTime()-start_time &lt; 2):&amp;#10;   stim.draw()&amp;#10;   win.flip()&amp;#10;&amp;#10;p.stop()&amp;#10;&amp;#10;continueRoutine=False" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="if event.getKeys(['q']):&amp;#10;    continueRoutine=False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -3535,19 +3470,6 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_24" valType="code"/>
       </CodeComponent>
-      <StaticComponent name="ISI">
-        <Param name="code" updates="None" val="" valType="code"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="name" updates="None" val="ISI" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
-      </StaticComponent>
     </Routine>
     <Routine name="end_story">
       <TextComponent name="text">

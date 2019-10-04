@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Mon Sep 30 15:24:41 2019
+    on Thu Oct  3 15:03:47 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -117,7 +117,7 @@ import numpy as np
 
 
 
-order_stories = np.array([22,33,22,44,21,43,13,31])
+order_stories = np.array([41,33,22,44,21,43,13,31])
 order_perspectives = np.array(['Location','Social','Location','Location','Social','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
@@ -274,7 +274,7 @@ import numpy as np
 
 
 
-order_stories = np.array([22,33,22,44,21,43,13,31])
+order_stories = np.array([41,33,22,44,21,43,13,31])
 order_perspectives = np.array(['Location','Social','Location','Location','Social','Location','Social','Social'])
 
 #create a dictionary for all the stories and their values
@@ -367,28 +367,20 @@ play_audio_storyClock = core.Clock()
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
 story_presses = keyboard.Keyboard()
-image_2 = visual.ImageStim(
-    win=win,
-    name='image_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=1,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
 text_34 = visual.TextStim(win=win, name='text_34',
     text="Press '9' if you think that sentence was the beginning of a new 'part' of the story.",
     font='Arial',
-    pos=(.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(.85, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
 text_35 = visual.TextStim(win=win, name='text_35',
     text="Press '1' if you think that sentence was in the same 'part' of the story as the previous sentence. ",
     font='Arial',
-    pos=(-.8, -.6), height=0.05, wrapWidth=.3, ori=0, 
+    pos=(-.85, -.6), height=0.05, wrapWidth=.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-4.0);
+    depth=-3.0);
 
 # Initialize components for Routine "end_story"
 end_storyClock = core.Clock()
@@ -2289,10 +2281,11 @@ for thisTrial in trials:
         # update component parameters for each repeat
         story_presses.keys = []
         story_presses.rt = []
-        image_2.setImage(this_story_pic)
         event.clearEvents()
+        stim = visual.ImageStim(win, image=this_story_pic)
+        
         # keep track of which components have finished
-        trialComponents = [story_presses, image_2, text_34, text_35]
+        trialComponents = [story_presses, text_34, text_35]
         for thisComponent in trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2342,15 +2335,8 @@ for thisTrial in trials:
                         story_presses.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
+            stim.draw()
             
-            # *image_2* updates
-            if image_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                image_2.frameNStart = frameN  # exact frame index
-                image_2.tStart = t  # local t and not account for scr refresh
-                image_2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(image_2, 'tStartRefresh')  # time at next scr refresh
-                image_2.setAutoDraw(True)
             for key in event.getKeys():
                 if key in ['t']: 
                     trials_2.finished = 1
@@ -2403,8 +2389,6 @@ for thisTrial in trials:
             trials_2.addData('story_presses.rt', story_presses.rt)
         trials_2.addData('story_presses.started', story_presses.tStartRefresh)
         trials_2.addData('story_presses.stopped', story_presses.tStopRefresh)
-        trials_2.addData('image_2.started', image_2.tStartRefresh)
-        trials_2.addData('image_2.stopped', image_2.tStopRefresh)
         trials_2.addData('text_34.started', text_34.tStartRefresh)
         trials_2.addData('text_34.stopped', text_34.tStopRefresh)
         trials_2.addData('text_35.started', text_35.tStartRefresh)
