@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Thu Oct  3 15:22:02 2019
+    on Fri Nov 22 12:09:07 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -117,8 +117,8 @@ import numpy as np
 
 
 
-order_stories = np.array([23,11,13,34,44,32,21,42])
-order_perspectives = np.array(['Location','Location','Social','Location','Social','Social','Social','Location'])
+order_stories = np.array([32,23,33,11,14,44,41,22])
+order_perspectives = np.array(['Social','Social','Location','Location','Social','Location','Social','Location'])
 
 #create a dictionary for all the stories and their values
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},
@@ -274,8 +274,8 @@ import numpy as np
 
 
 
-order_stories = np.array([23,11,13,34,44,32,21,42])
-order_perspectives = np.array(['Location','Location','Social','Location','Social','Social','Social','Location'])
+order_stories = np.array([32,23,33,11,14,44,41,22])
+order_perspectives = np.array(['Social','Social','Location','Location','Social','Location','Social','Location'])
 
 #create a dictionary for all the stories and their values
 storyDict = {11: {'name':'Restaurant Breakup', 'Social': 'Couples Therapist', 'Location':'Restaurant Critic', 'pic':'storypics/11_storypic.jpg', 'storyFile': 'audio_excel_sheets/11_audio.xlsx'},

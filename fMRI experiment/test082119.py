@@ -1,0 +1,1 @@
+from psychopy import soundhello = sound.Sound('parcelated_audio/11/11_1.aiff')hello.play()
