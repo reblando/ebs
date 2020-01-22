@@ -1,19 +1,24 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b11),
-    on Tue Jan 14 16:52:47 2020
-If you publish work using this script please cite the PsychoPy publications:
-    Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
-        Journal of Neuroscience Methods, 162(1-2), 8-13.
-    Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
-        Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
+    on Wed Jan 22 04:24:30 2020
+If you publish work using this script the most relevant publication is:
+
+    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
+        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
+        https://doi.org/10.3758/s13428-018-01193-y
+
 """
 
 from __future__ import absolute_import, division
-from psychopy import locale_setup, sound, gui, visual, core, data, event, logging, clock, microphone
+
+from psychopy import locale_setup
+from psychopy import prefs
+from psychopy import sound, gui, visual, core, data, event, logging, clock, microphone
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
+
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
@@ -21,18 +26,22 @@ from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
+from psychopy.hardware import keyboard
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
+psychopyVersion = '3.2.1'
 expName = 'recall_fmri'  # from the Builder filename that created this script
-expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'play_stories': '0', 'block': '1', 'behavioral': '0'}
-dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
+expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'block': '1', 'behavioral': '0'}
+dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
+expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + u'data/%s_%s' % (expInfo['participant'], expName)
@@ -40,12 +49,13 @@ filename = _thisDir + os.sep + u'data/%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Desktop/ebs/fMRI experiment/psychopy code/2_recall_fMRI.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/2_recall_fMRI.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
 
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
+frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Start Code - component code to be run before the window creation
 wavDirName = filename + '_wav'
@@ -57,8 +67,8 @@ if not os.path.isdir(wavDirName):
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=False, screen=0,
-    allowGUI=True, allowStencil=False,
+    size=[1440, 900], fullscr=False, screen=0, 
+    winType='pyglet', allowGUI=True, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 
@@ -70,6 +80,9 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+
+# create a default keyboard (e.g. to check for escape)
+defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "Startup"
 StartupClock = core.Clock()
@@ -207,9 +220,11 @@ text_76 = visual.TextStim(win=win, name='text_76',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+key_resp_30 = keyboard.Keyboard()
 
 # Initialize components for Routine "recall_instructions_behavioral"
 recall_instructions_behavioralClock = core.Clock()
+key_resp_10 = keyboard.Keyboard()
 text_6 = visual.TextStim(win=win, name='text_6',
     text='default text',
     font='Arial',
@@ -235,7 +250,6 @@ text_70 = visual.TextStim(win=win, name='text_70',
     languageStyle='LTR',
     depth=0.0);
 
-
 # Initialize components for Routine "Trigger"
 TriggerClock = core.Clock()
 textTrigger = visual.TextStim(win=win, name='textTrigger',
@@ -245,12 +259,13 @@ textTrigger = visual.TextStim(win=win, name='textTrigger',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
+getTrigger = keyboard.Keyboard()
 
 # Initialize components for Routine "routine_6sec_wait"
 routine_6sec_waitClock = core.Clock()
 image_23 = visual.ImageStim(
-    win=win, name='image_23',
+    win=win,
+    name='image_23', 
     image=None, mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -260,10 +275,8 @@ image_23 = visual.ImageStim(
 # Initialize components for Routine "info_recall1"
 info_recall1Clock = core.Clock()
 
-
 # Initialize components for Routine "intro_recall"
 intro_recallClock = core.Clock()
-
 text_41 = visual.TextStim(win=win, name='text_41',
     text='default text',
     font='Arial',
@@ -271,6 +284,7 @@ text_41 = visual.TextStim(win=win, name='text_41',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+key_resp_26 = keyboard.Keyboard()
 text_42 = visual.TextStim(win=win, name='text_42',
     text='Recall    of 6',
     font='Arial',
@@ -288,7 +302,6 @@ text_51 = visual.TextStim(win=win, name='text_51',
 
 # Initialize components for Routine "recall_type1"
 recall_type1Clock = core.Clock()
-
 text_9 = visual.TextStim(win=win, name='text_9',
     text='Type everything you recall here (press return to submit your response):',
     font='Arial',
@@ -304,7 +317,8 @@ text_10 = visual.TextStim(win=win, name='text_10',
     languageStyle='LTR',
     depth=-2.0);
 image_4 = visual.ImageStim(
-    win=win, name='image_4',
+    win=win,
+    name='image_4', 
     image='sin', mask=None,
     ori=0, pos=(0, .5), size=(.75, .75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -338,7 +352,6 @@ left_line = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-
 text_48 = visual.TextStim(win=win, name='text_48',
     text='default text',
     font='Arial',
@@ -349,7 +362,6 @@ text_48 = visual.TextStim(win=win, name='text_48',
 
 # Initialize components for Routine "intro_recall"
 intro_recallClock = core.Clock()
-
 text_41 = visual.TextStim(win=win, name='text_41',
     text='default text',
     font='Arial',
@@ -357,6 +369,7 @@ text_41 = visual.TextStim(win=win, name='text_41',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+key_resp_26 = keyboard.Keyboard()
 text_42 = visual.TextStim(win=win, name='text_42',
     text='Recall    of 6',
     font='Arial',
@@ -374,9 +387,9 @@ text_51 = visual.TextStim(win=win, name='text_51',
 
 # Initialize components for Routine "recall_recording1"
 recall_recording1Clock = core.Clock()
-
 image_18 = visual.ImageStim(
-    win=win, name='image_18',
+    win=win,
+    name='image_18', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(1, 1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -389,15 +402,16 @@ text_69 = visual.TextStim(win=win, name='text_69',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
+key_resp_25 = keyboard.Keyboard()
 
 # Initialize components for Routine "save_recall_data"
 save_recall_dataClock = core.Clock()
 
-
 # Initialize components for Routine "routine_6sec_wait"
 routine_6sec_waitClock = core.Clock()
 image_23 = visual.ImageStim(
-    win=win, name='image_23',
+    win=win,
+    name='image_23', 
     image=None, mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -406,7 +420,6 @@ image_23 = visual.ImageStim(
 
 # Initialize components for Routine "Block2_SR"
 Block2_SRClock = core.Clock()
-
 text_71 = visual.TextStim(win=win, name='text_71',
     text='Block 2 of Story Recall',
     font='Arial',
@@ -424,15 +437,13 @@ textTrigger = visual.TextStim(win=win, name='textTrigger',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
+getTrigger = keyboard.Keyboard()
 
 # Initialize components for Routine "info_recall2"
 info_recall2Clock = core.Clock()
 
-
 # Initialize components for Routine "intro_recall"
 intro_recallClock = core.Clock()
-
 text_41 = visual.TextStim(win=win, name='text_41',
     text='default text',
     font='Arial',
@@ -440,6 +451,7 @@ text_41 = visual.TextStim(win=win, name='text_41',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+key_resp_26 = keyboard.Keyboard()
 text_42 = visual.TextStim(win=win, name='text_42',
     text='Recall    of 6',
     font='Arial',
@@ -457,7 +469,6 @@ text_51 = visual.TextStim(win=win, name='text_51',
 
 # Initialize components for Routine "recall_type2"
 recall_type2Clock = core.Clock()
-
 text_72 = visual.TextStim(win=win, name='text_72',
     text='Type everything you recall here (press return to submit your response):',
     font='Arial',
@@ -473,7 +484,8 @@ text_73 = visual.TextStim(win=win, name='text_73',
     languageStyle='LTR',
     depth=-2.0);
 image_19 = visual.ImageStim(
-    win=win, name='image_19',
+    win=win,
+    name='image_19', 
     image='sin', mask=None,
     ori=0, pos=(0, .5), size=(.75, .75),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -507,7 +519,6 @@ left_line_11 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-
 text_74 = visual.TextStim(win=win, name='text_74',
     text='default text',
     font='Arial',
@@ -518,7 +529,6 @@ text_74 = visual.TextStim(win=win, name='text_74',
 
 # Initialize components for Routine "intro_recall"
 intro_recallClock = core.Clock()
-
 text_41 = visual.TextStim(win=win, name='text_41',
     text='default text',
     font='Arial',
@@ -526,6 +536,7 @@ text_41 = visual.TextStim(win=win, name='text_41',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+key_resp_26 = keyboard.Keyboard()
 text_42 = visual.TextStim(win=win, name='text_42',
     text='Recall    of 6',
     font='Arial',
@@ -543,9 +554,9 @@ text_51 = visual.TextStim(win=win, name='text_51',
 
 # Initialize components for Routine "recall_recording2"
 recall_recording2Clock = core.Clock()
-
 image_20 = visual.ImageStim(
-    win=win, name='image_20',
+    win=win,
+    name='image_20', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(1, 1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -558,15 +569,16 @@ text_75 = visual.TextStim(win=win, name='text_75',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
+key_resp_27 = keyboard.Keyboard()
 
 # Initialize components for Routine "save_recall_data"
 save_recall_dataClock = core.Clock()
 
-
 # Initialize components for Routine "routine_6sec_wait"
 routine_6sec_waitClock = core.Clock()
 image_23 = visual.ImageStim(
-    win=win, name='image_23',
+    win=win,
+    name='image_23', 
     image=None, mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -583,31 +595,40 @@ text_36 = visual.TextStim(win=win, name='text_36',
     languageStyle='LTR',
     depth=0.0);
 
-
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # ------Prepare to start Routine "Startup"-------
-t = 0
-StartupClock.reset()  # clock
-frameN = -1
-continueRoutine = True
 # update component parameters for each repeat
-
 # keep track of which components have finished
 StartupComponents = []
 for thisComponent in StartupComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+StartupClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
 
-# -------Start Routine "Startup"-------
+# -------Run Routine "Startup"-------
 while continueRoutine:
     # get current time
     t = StartupClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=StartupClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -618,10 +639,6 @@ while continueRoutine:
             continueRoutine = True
             break  # at least one component has not yet finished
     
-    # check for quit (the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
@@ -630,57 +647,76 @@ while continueRoutine:
 for thisComponent in StartupComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-
 # the Routine "Startup" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "recall_instructions"-------
-t = 0
-recall_instructionsClock.reset()  # clock
-frameN = -1
-continueRoutine = True
 # update component parameters for each repeat
-key_resp_30 = event.BuilderKeyResponse()
+key_resp_30.keys = []
+key_resp_30.rt = []
 # keep track of which components have finished
 recall_instructionsComponents = [text_76, key_resp_30]
 for thisComponent in recall_instructionsComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+recall_instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
 
-# -------Start Routine "recall_instructions"-------
+# -------Run Routine "recall_instructions"-------
 while continueRoutine:
     # get current time
     t = recall_instructionsClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=recall_instructionsClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
     # *text_76* updates
-    if t >= 0.0 and text_76.status == NOT_STARTED:
+    if text_76.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        text_76.tStart = t
         text_76.frameNStart = frameN  # exact frame index
+        text_76.tStart = t  # local t and not account for scr refresh
+        text_76.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_76, 'tStartRefresh')  # time at next scr refresh
         text_76.setAutoDraw(True)
     
     # *key_resp_30* updates
-    if t >= 0.0 and key_resp_30.status == NOT_STARTED:
+    waitOnFlip = False
+    if key_resp_30.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        key_resp_30.tStart = t
         key_resp_30.frameNStart = frameN  # exact frame index
+        key_resp_30.tStart = t  # local t and not account for scr refresh
+        key_resp_30.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_30, 'tStartRefresh')  # time at next scr refresh
         key_resp_30.status = STARTED
         # keyboard checking is just starting
+        waitOnFlip = True
         win.callOnFlip(key_resp_30.clock.reset)  # t=0 on next screen flip
-        event.clearEvents(eventType='keyboard')
-    if key_resp_30.status == STARTED:
-        theseKeys = event.getKeys(keyList=['space'])
-        
-        # check for quit:
-        if "escape" in theseKeys:
-            endExpNow = True
-        if len(theseKeys) > 0:  # at least one key was pressed
-            key_resp_30.keys = theseKeys[-1]  # just the last key pressed
-            key_resp_30.rt = key_resp_30.clock.getTime()
+        win.callOnFlip(key_resp_30.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_30.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_30.getKeys(keyList=['space'], waitRelease=False)
+        if len(theseKeys):
+            theseKeys = theseKeys[0]  # at least one key was pressed
+            
+            # check for quit:
+            if "escape" == theseKeys:
+                endExpNow = True
+            key_resp_30.keys = theseKeys.name  # just the last key pressed
+            key_resp_30.rt = theseKeys.rt
             # a response ends the routine
             continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -691,10 +727,6 @@ while continueRoutine:
             continueRoutine = True
             break  # at least one component has not yet finished
     
-    # check for quit (the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
@@ -703,12 +735,16 @@ while continueRoutine:
 for thisComponent in recall_instructionsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+thisExp.addData('text_76.started', text_76.tStartRefresh)
+thisExp.addData('text_76.stopped', text_76.tStopRefresh)
 # check responses
 if key_resp_30.keys in ['', [], None]:  # No response was made
-    key_resp_30.keys=None
+    key_resp_30.keys = None
 thisExp.addData('key_resp_30.keys',key_resp_30.keys)
 if key_resp_30.keys != None:  # we had a response
     thisExp.addData('key_resp_30.rt', key_resp_30.rt)
+thisExp.addData('key_resp_30.started', key_resp_30.tStartRefresh)
+thisExp.addData('key_resp_30.stopped', key_resp_30.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "recall_instructions" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -752,60 +788,82 @@ for thisBehav_recall_instruction in behav_recall_instructions:
                 exec('{} = thisTrial_3[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "recall_instructions_behavioral"-------
-        t = 0
-        recall_instructions_behavioralClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         # update component parameters for each repeat
-        key_resp_10 = event.BuilderKeyResponse()
+        key_resp_10.keys = []
+        key_resp_10.rt = []
         text_6.setText(instructText)
         # keep track of which components have finished
         recall_instructions_behavioralComponents = [key_resp_10, text_6, text_24]
         for thisComponent in recall_instructions_behavioralComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        recall_instructions_behavioralClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "recall_instructions_behavioral"-------
+        # -------Run Routine "recall_instructions_behavioral"-------
         while continueRoutine:
             # get current time
             t = recall_instructions_behavioralClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=recall_instructions_behavioralClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
             # *key_resp_10* updates
-            if t >= 0.0 and key_resp_10.status == NOT_STARTED:
+            waitOnFlip = False
+            if key_resp_10.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                key_resp_10.tStart = t
                 key_resp_10.frameNStart = frameN  # exact frame index
+                key_resp_10.tStart = t  # local t and not account for scr refresh
+                key_resp_10.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp_10, 'tStartRefresh')  # time at next scr refresh
                 key_resp_10.status = STARTED
                 # keyboard checking is just starting
+                waitOnFlip = True
                 win.callOnFlip(key_resp_10.clock.reset)  # t=0 on next screen flip
-                event.clearEvents(eventType='keyboard')
-            if key_resp_10.status == STARTED:
-                theseKeys = event.getKeys(keyList=['space'])
-                
-                # check for quit:
-                if "escape" in theseKeys:
-                    endExpNow = True
-                if len(theseKeys) > 0:  # at least one key was pressed
-                    key_resp_10.keys = theseKeys[-1]  # just the last key pressed
-                    key_resp_10.rt = key_resp_10.clock.getTime()
+                win.callOnFlip(key_resp_10.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_10.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp_10.getKeys(keyList=['space'], waitRelease=False)
+                if len(theseKeys):
+                    theseKeys = theseKeys[0]  # at least one key was pressed
+                    
+                    # check for quit:
+                    if "escape" == theseKeys:
+                        endExpNow = True
+                    key_resp_10.keys = theseKeys.name  # just the last key pressed
+                    key_resp_10.rt = theseKeys.rt
                     # a response ends the routine
                     continueRoutine = False
             
             # *text_6* updates
-            if t >= 0.0 and text_6.status == NOT_STARTED:
+            if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                text_6.tStart = t
                 text_6.frameNStart = frameN  # exact frame index
+                text_6.tStart = t  # local t and not account for scr refresh
+                text_6.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
                 text_6.setAutoDraw(True)
             
             # *text_24* updates
-            if t >= 0.0 and text_24.status == NOT_STARTED:
+            if text_24.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                text_24.tStart = t
                 text_24.frameNStart = frameN  # exact frame index
+                text_24.tStart = t  # local t and not account for scr refresh
+                text_24.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_24, 'tStartRefresh')  # time at next scr refresh
                 text_24.setAutoDraw(True)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -815,10 +873,6 @@ for thisBehav_recall_instruction in behav_recall_instructions:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
-            
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
             
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -830,10 +884,16 @@ for thisBehav_recall_instruction in behav_recall_instructions:
                 thisComponent.setAutoDraw(False)
         # check responses
         if key_resp_10.keys in ['', [], None]:  # No response was made
-            key_resp_10.keys=None
+            key_resp_10.keys = None
         trials_3.addData('key_resp_10.keys',key_resp_10.keys)
         if key_resp_10.keys != None:  # we had a response
             trials_3.addData('key_resp_10.rt', key_resp_10.rt)
+        trials_3.addData('key_resp_10.started', key_resp_10.tStartRefresh)
+        trials_3.addData('key_resp_10.stopped', key_resp_10.tStopRefresh)
+        trials_3.addData('text_6.started', text_6.tStartRefresh)
+        trials_3.addData('text_6.stopped', text_6.tStopRefresh)
+        trials_3.addData('text_24.started', text_24.tStartRefresh)
+        trials_3.addData('text_24.stopped', text_24.tStopRefresh)
         # the Routine "recall_instructions_behavioral" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -865,36 +925,54 @@ for thisTrial in trials:
             exec('{} = thisTrial[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Block1_SR"-------
-    t = 0
-    Block1_SRClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     routineTimer.add(1.000000)
     # update component parameters for each repeat
     count_recall = 0
     # keep track of which components have finished
     Block1_SRComponents = [text_70]
     for thisComponent in Block1_SRComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    Block1_SRClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "Block1_SR"-------
+    # -------Run Routine "Block1_SR"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
         t = Block1_SRClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=Block1_SRClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *text_70* updates
-        if t >= 0.0 and text_70.status == NOT_STARTED:
+        if text_70.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_70.tStart = t
             text_70.frameNStart = frameN  # exact frame index
+            text_70.tStart = t  # local t and not account for scr refresh
+            text_70.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_70, 'tStartRefresh')  # time at next scr refresh
             text_70.setAutoDraw(True)
-        frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if text_70.status == STARTED and t >= frameRemains:
-            text_70.setAutoDraw(False)
+        if text_70.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_70.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                text_70.tStop = t  # not accounting for scr refresh
+                text_70.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_70, 'tStopRefresh')  # time at next scr refresh
+                text_70.setAutoDraw(False)
         
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -905,10 +983,6 @@ for thisTrial in trials:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -917,57 +991,76 @@ for thisTrial in trials:
     for thisComponent in Block1_SRComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    
+    trials.addData('text_70.started', text_70.tStartRefresh)
+    trials.addData('text_70.stopped', text_70.tStopRefresh)
     
     # ------Prepare to start Routine "Trigger"-------
-    t = 0
-    TriggerClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     # update component parameters for each repeat
-    getTrigger = event.BuilderKeyResponse()
-    
+    getTrigger.keys = []
+    getTrigger.rt = []
     # keep track of which components have finished
     TriggerComponents = [textTrigger, getTrigger]
     for thisComponent in TriggerComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    TriggerClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "Trigger"-------
+    # -------Run Routine "Trigger"-------
     while continueRoutine:
         # get current time
         t = TriggerClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=TriggerClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *textTrigger* updates
-        if t >= 0.0 and textTrigger.status == NOT_STARTED:
+        if textTrigger.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            textTrigger.tStart = t
             textTrigger.frameNStart = frameN  # exact frame index
+            textTrigger.tStart = t  # local t and not account for scr refresh
+            textTrigger.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textTrigger, 'tStartRefresh')  # time at next scr refresh
             textTrigger.setAutoDraw(True)
         
         # *getTrigger* updates
-        if t >= 0.0 and getTrigger.status == NOT_STARTED:
+        waitOnFlip = False
+        if getTrigger.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            getTrigger.tStart = t
             getTrigger.frameNStart = frameN  # exact frame index
+            getTrigger.tStart = t  # local t and not account for scr refresh
+            getTrigger.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(getTrigger, 'tStartRefresh')  # time at next scr refresh
             getTrigger.status = STARTED
             # keyboard checking is just starting
+            waitOnFlip = True
             win.callOnFlip(getTrigger.clock.reset)  # t=0 on next screen flip
-            event.clearEvents(eventType='keyboard')
-        if getTrigger.status == STARTED:
-            theseKeys = event.getKeys(keyList=['5'])
-            
-            # check for quit:
-            if "escape" in theseKeys:
-                endExpNow = True
-            if len(theseKeys) > 0:  # at least one key was pressed
-                getTrigger.keys = theseKeys[-1]  # just the last key pressed
-                getTrigger.rt = getTrigger.clock.getTime()
+            win.callOnFlip(getTrigger.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if getTrigger.status == STARTED and not waitOnFlip:
+            theseKeys = getTrigger.getKeys(keyList=['5'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                getTrigger.keys = theseKeys.name  # just the last key pressed
+                getTrigger.rt = theseKeys.rt
                 # a response ends the routine
                 continueRoutine = False
         
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -978,10 +1071,6 @@ for thisTrial in trials:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -990,12 +1079,16 @@ for thisTrial in trials:
     for thisComponent in TriggerComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    trials.addData('textTrigger.started', textTrigger.tStartRefresh)
+    trials.addData('textTrigger.stopped', textTrigger.tStopRefresh)
     # check responses
     if getTrigger.keys in ['', [], None]:  # No response was made
-        getTrigger.keys=None
+        getTrigger.keys = None
     trials.addData('getTrigger.keys',getTrigger.keys)
     if getTrigger.keys != None:  # we had a response
         trials.addData('getTrigger.rt', getTrigger.rt)
+    trials.addData('getTrigger.started', getTrigger.tStartRefresh)
+    trials.addData('getTrigger.stopped', getTrigger.tStopRefresh)
     triggerTime = globalClock.getTime()
     thisExp.addData('triggerTime', triggerTime)
     def getRelTime(start = triggerTime):
@@ -1004,34 +1097,53 @@ for thisTrial in trials:
     routineTimer.reset()
     
     # ------Prepare to start Routine "routine_6sec_wait"-------
-    t = 0
-    routine_6sec_waitClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     routineTimer.add(6.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
     routine_6sec_waitComponents = [image_23]
     for thisComponent in routine_6sec_waitComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    routine_6sec_waitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "routine_6sec_wait"-------
+    # -------Run Routine "routine_6sec_wait"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
         t = routine_6sec_waitClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routine_6sec_waitClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *image_23* updates
-        if t >= 0.0 and image_23.status == NOT_STARTED:
+        if image_23.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            image_23.tStart = t
             image_23.frameNStart = frameN  # exact frame index
+            image_23.tStart = t  # local t and not account for scr refresh
+            image_23.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_23, 'tStartRefresh')  # time at next scr refresh
             image_23.setAutoDraw(True)
-        frameRemains = 0.0 + 6- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if image_23.status == STARTED and t >= frameRemains:
-            image_23.setAutoDraw(False)
+        if image_23.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > image_23.tStartRefresh + 6-frameTolerance:
+                # keep track of stop time/frame for later
+                image_23.tStop = t  # not accounting for scr refresh
+                image_23.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(image_23, 'tStopRefresh')  # time at next scr refresh
+                image_23.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1042,10 +1154,6 @@ for thisTrial in trials:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -1054,6 +1162,8 @@ for thisTrial in trials:
     for thisComponent in routine_6sec_waitComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    trials.addData('image_23.started', image_23.tStartRefresh)
+    trials.addData('image_23.stopped', image_23.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
     trials_4 = data.TrialHandler(nReps=1, method='sequential', 
@@ -1075,10 +1185,6 @@ for thisTrial in trials:
                 exec('{} = thisTrial_4[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "info_recall1"-------
-        t = 0
-        info_recall1Clock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         # update component parameters for each repeat
         if int(expInfo['behavioral']) == 1:
             nreps_audiorecord = 0
@@ -1106,16 +1212,31 @@ for thisTrial in trials:
         # keep track of which components have finished
         info_recall1Components = []
         for thisComponent in info_recall1Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        info_recall1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "info_recall1"-------
+        # -------Run Routine "info_recall1"-------
         while continueRoutine:
             # get current time
             t = info_recall1Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=info_recall1Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1126,10 +1247,6 @@ for thisTrial in trials:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -1138,7 +1255,6 @@ for thisTrial in trials:
         for thisComponent in info_recall1Components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        
         # the Routine "info_recall1" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1162,69 +1278,92 @@ for thisTrial in trials:
                     exec('{} = thisTrial_13[paramName]'.format(paramName))
             
             # ------Prepare to start Routine "intro_recall"-------
-            t = 0
-            intro_recallClock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             count_recall += 1
             text_41.setText(count_recall)
-            key_resp_26 = event.BuilderKeyResponse()
+            key_resp_26.keys = []
+            key_resp_26.rt = []
             # keep track of which components have finished
             intro_recallComponents = [text_41, key_resp_26, text_42, text_51]
             for thisComponent in intro_recallComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            intro_recallClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "intro_recall"-------
+            # -------Run Routine "intro_recall"-------
             while continueRoutine:
                 # get current time
                 t = intro_recallClock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=intro_recallClock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *text_41* updates
-                if t >= 0.0 and text_41.status == NOT_STARTED:
+                if text_41.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_41.tStart = t
                     text_41.frameNStart = frameN  # exact frame index
+                    text_41.tStart = t  # local t and not account for scr refresh
+                    text_41.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_41, 'tStartRefresh')  # time at next scr refresh
                     text_41.setAutoDraw(True)
                 
                 # *key_resp_26* updates
-                if t >= 0.0 and key_resp_26.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_26.tStart = t
                     key_resp_26.frameNStart = frameN  # exact frame index
+                    key_resp_26.tStart = t  # local t and not account for scr refresh
+                    key_resp_26.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_26, 'tStartRefresh')  # time at next scr refresh
                     key_resp_26.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_26.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_26.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_26.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_26.rt = key_resp_26.clock.getTime()
+                    win.callOnFlip(key_resp_26.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_26.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_26.getKeys(keyList=['space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_26.keys = theseKeys.name  # just the last key pressed
+                        key_resp_26.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
                 
                 # *text_42* updates
-                if t >= 0.0 and text_42.status == NOT_STARTED:
+                if text_42.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_42.tStart = t
                     text_42.frameNStart = frameN  # exact frame index
+                    text_42.tStart = t  # local t and not account for scr refresh
+                    text_42.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_42, 'tStartRefresh')  # time at next scr refresh
                     text_42.setAutoDraw(True)
                 
                 # *text_51* updates
-                if t >= 0.0 and text_51.status == NOT_STARTED:
+                if text_51.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_51.tStart = t
                     text_51.frameNStart = frameN  # exact frame index
+                    text_51.tStart = t  # local t and not account for scr refresh
+                    text_51.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_51, 'tStartRefresh')  # time at next scr refresh
                     text_51.setAutoDraw(True)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1235,10 +1374,6 @@ for thisTrial in trials:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -1247,21 +1382,24 @@ for thisTrial in trials:
             for thisComponent in intro_recallComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            
+            trials_13.addData('text_41.started', text_41.tStartRefresh)
+            trials_13.addData('text_41.stopped', text_41.tStopRefresh)
             # check responses
             if key_resp_26.keys in ['', [], None]:  # No response was made
-                key_resp_26.keys=None
+                key_resp_26.keys = None
             trials_13.addData('key_resp_26.keys',key_resp_26.keys)
             if key_resp_26.keys != None:  # we had a response
                 trials_13.addData('key_resp_26.rt', key_resp_26.rt)
+            trials_13.addData('key_resp_26.started', key_resp_26.tStartRefresh)
+            trials_13.addData('key_resp_26.stopped', key_resp_26.tStopRefresh)
+            trials_13.addData('text_42.started', text_42.tStartRefresh)
+            trials_13.addData('text_42.stopped', text_42.tStopRefresh)
+            trials_13.addData('text_51.started', text_51.tStartRefresh)
+            trials_13.addData('text_51.stopped', text_51.tStopRefresh)
             # the Routine "intro_recall" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
             # ------Prepare to start Routine "recall_type1"-------
-            t = 0
-            recall_type1Clock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             event.clearEvents()
             thisExp.addData('recall_StartTime', getRelTime())
@@ -1283,13 +1421,25 @@ for thisTrial in trials:
             # keep track of which components have finished
             recall_type1Components = [text_9, text_10, image_4, polygon, bottom_line, right_line_2, left_line, text_48]
             for thisComponent in recall_type1Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            recall_type1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "recall_type1"-------
+            # -------Run Routine "recall_type1"-------
             while continueRoutine:
                 # get current time
                 t = recall_type1Clock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=recall_type1Clock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
@@ -1347,54 +1497,68 @@ for thisTrial in trials:
                 
                 
                 # *text_9* updates
-                if t >= 0.0 and text_9.status == NOT_STARTED:
+                if text_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_9.tStart = t
                     text_9.frameNStart = frameN  # exact frame index
+                    text_9.tStart = t  # local t and not account for scr refresh
+                    text_9.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_9, 'tStartRefresh')  # time at next scr refresh
                     text_9.setAutoDraw(True)
                 
                 # *text_10* updates
-                if t >= 0.0 and text_10.status == NOT_STARTED:
+                if text_10.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_10.tStart = t
                     text_10.frameNStart = frameN  # exact frame index
+                    text_10.tStart = t  # local t and not account for scr refresh
+                    text_10.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_10, 'tStartRefresh')  # time at next scr refresh
                     text_10.setAutoDraw(True)
                 if text_10.status == STARTED:  # only update if drawing
                     text_10.setText(captured_string, log=False)
                 
                 # *image_4* updates
-                if t >= 0.0 and image_4.status == NOT_STARTED:
+                if image_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_4.tStart = t
                     image_4.frameNStart = frameN  # exact frame index
+                    image_4.tStart = t  # local t and not account for scr refresh
+                    image_4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(image_4, 'tStartRefresh')  # time at next scr refresh
                     image_4.setAutoDraw(True)
                 
                 # *polygon* updates
-                if t >= 0.0 and polygon.status == NOT_STARTED:
+                if polygon.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    polygon.tStart = t
                     polygon.frameNStart = frameN  # exact frame index
+                    polygon.tStart = t  # local t and not account for scr refresh
+                    polygon.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(polygon, 'tStartRefresh')  # time at next scr refresh
                     polygon.setAutoDraw(True)
                 
                 # *bottom_line* updates
-                if t >= 0.0 and bottom_line.status == NOT_STARTED:
+                if bottom_line.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    bottom_line.tStart = t
                     bottom_line.frameNStart = frameN  # exact frame index
+                    bottom_line.tStart = t  # local t and not account for scr refresh
+                    bottom_line.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(bottom_line, 'tStartRefresh')  # time at next scr refresh
                     bottom_line.setAutoDraw(True)
                 
                 # *right_line_2* updates
-                if t >= 0.0 and right_line_2.status == NOT_STARTED:
+                if right_line_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    right_line_2.tStart = t
                     right_line_2.frameNStart = frameN  # exact frame index
+                    right_line_2.tStart = t  # local t and not account for scr refresh
+                    right_line_2.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(right_line_2, 'tStartRefresh')  # time at next scr refresh
                     right_line_2.setAutoDraw(True)
                 
                 # *left_line* updates
-                if t >= 0.0 and left_line.status == NOT_STARTED:
+                if left_line.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    left_line.tStart = t
                     left_line.frameNStart = frameN  # exact frame index
+                    left_line.tStart = t  # local t and not account for scr refresh
+                    left_line.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(left_line, 'tStartRefresh')  # time at next scr refresh
                     left_line.setAutoDraw(True)
                 timeRemaining = countdownClock.getTime() 
                 if timeRemaining <= 0.0: 
@@ -1408,13 +1572,19 @@ for thisTrial in trials:
                         timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time 
                 
                 # *text_48* updates
-                if t >= 0.0 and text_48.status == NOT_STARTED:
+                if text_48.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_48.tStart = t
                     text_48.frameNStart = frameN  # exact frame index
+                    text_48.tStart = t  # local t and not account for scr refresh
+                    text_48.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_48, 'tStartRefresh')  # time at next scr refresh
                     text_48.setAutoDraw(True)
                 if text_48.status == STARTED:  # only update if drawing
                     text_48.setText(timeText, log=False)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1425,10 +1595,6 @@ for thisTrial in trials:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -1438,7 +1604,22 @@ for thisTrial in trials:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('recall_EndTime', getRelTime())
-            
+            trials_13.addData('text_9.started', text_9.tStartRefresh)
+            trials_13.addData('text_9.stopped', text_9.tStopRefresh)
+            trials_13.addData('text_10.started', text_10.tStartRefresh)
+            trials_13.addData('text_10.stopped', text_10.tStopRefresh)
+            trials_13.addData('image_4.started', image_4.tStartRefresh)
+            trials_13.addData('image_4.stopped', image_4.tStopRefresh)
+            trials_13.addData('polygon.started', polygon.tStartRefresh)
+            trials_13.addData('polygon.stopped', polygon.tStopRefresh)
+            trials_13.addData('bottom_line.started', bottom_line.tStartRefresh)
+            trials_13.addData('bottom_line.stopped', bottom_line.tStopRefresh)
+            trials_13.addData('right_line_2.started', right_line_2.tStartRefresh)
+            trials_13.addData('right_line_2.stopped', right_line_2.tStopRefresh)
+            trials_13.addData('left_line.started', left_line.tStartRefresh)
+            trials_13.addData('left_line.stopped', left_line.tStopRefresh)
+            trials_13.addData('text_48.started', text_48.tStartRefresh)
+            trials_13.addData('text_48.stopped', text_48.tStopRefresh)
             # the Routine "recall_type1" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
@@ -1466,69 +1647,92 @@ for thisTrial in trials:
                     exec('{} = thisTrial_17[paramName]'.format(paramName))
             
             # ------Prepare to start Routine "intro_recall"-------
-            t = 0
-            intro_recallClock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             count_recall += 1
             text_41.setText(count_recall)
-            key_resp_26 = event.BuilderKeyResponse()
+            key_resp_26.keys = []
+            key_resp_26.rt = []
             # keep track of which components have finished
             intro_recallComponents = [text_41, key_resp_26, text_42, text_51]
             for thisComponent in intro_recallComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            intro_recallClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "intro_recall"-------
+            # -------Run Routine "intro_recall"-------
             while continueRoutine:
                 # get current time
                 t = intro_recallClock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=intro_recallClock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *text_41* updates
-                if t >= 0.0 and text_41.status == NOT_STARTED:
+                if text_41.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_41.tStart = t
                     text_41.frameNStart = frameN  # exact frame index
+                    text_41.tStart = t  # local t and not account for scr refresh
+                    text_41.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_41, 'tStartRefresh')  # time at next scr refresh
                     text_41.setAutoDraw(True)
                 
                 # *key_resp_26* updates
-                if t >= 0.0 and key_resp_26.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_26.tStart = t
                     key_resp_26.frameNStart = frameN  # exact frame index
+                    key_resp_26.tStart = t  # local t and not account for scr refresh
+                    key_resp_26.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_26, 'tStartRefresh')  # time at next scr refresh
                     key_resp_26.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_26.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_26.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_26.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_26.rt = key_resp_26.clock.getTime()
+                    win.callOnFlip(key_resp_26.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_26.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_26.getKeys(keyList=['space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_26.keys = theseKeys.name  # just the last key pressed
+                        key_resp_26.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
                 
                 # *text_42* updates
-                if t >= 0.0 and text_42.status == NOT_STARTED:
+                if text_42.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_42.tStart = t
                     text_42.frameNStart = frameN  # exact frame index
+                    text_42.tStart = t  # local t and not account for scr refresh
+                    text_42.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_42, 'tStartRefresh')  # time at next scr refresh
                     text_42.setAutoDraw(True)
                 
                 # *text_51* updates
-                if t >= 0.0 and text_51.status == NOT_STARTED:
+                if text_51.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_51.tStart = t
                     text_51.frameNStart = frameN  # exact frame index
+                    text_51.tStart = t  # local t and not account for scr refresh
+                    text_51.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_51, 'tStartRefresh')  # time at next scr refresh
                     text_51.setAutoDraw(True)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1539,10 +1743,6 @@ for thisTrial in trials:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -1551,61 +1751,82 @@ for thisTrial in trials:
             for thisComponent in intro_recallComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            
+            trials_17.addData('text_41.started', text_41.tStartRefresh)
+            trials_17.addData('text_41.stopped', text_41.tStopRefresh)
             # check responses
             if key_resp_26.keys in ['', [], None]:  # No response was made
-                key_resp_26.keys=None
+                key_resp_26.keys = None
             trials_17.addData('key_resp_26.keys',key_resp_26.keys)
             if key_resp_26.keys != None:  # we had a response
                 trials_17.addData('key_resp_26.rt', key_resp_26.rt)
+            trials_17.addData('key_resp_26.started', key_resp_26.tStartRefresh)
+            trials_17.addData('key_resp_26.stopped', key_resp_26.tStopRefresh)
+            trials_17.addData('text_42.started', text_42.tStartRefresh)
+            trials_17.addData('text_42.stopped', text_42.tStopRefresh)
+            trials_17.addData('text_51.started', text_51.tStartRefresh)
+            trials_17.addData('text_51.stopped', text_51.tStopRefresh)
             # the Routine "intro_recall" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
             # ------Prepare to start Routine "recall_recording1"-------
-            t = 0
-            recall_recording1Clock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('recall_StartTime', getRelTime())
             this_recall_pic = storyDict.get(story_list_block1[count], {}).get('pic')
             event.clearEvents()
             image_18.setImage(this_recall_pic)
-            recall_audio = microphone.AdvAudioCapture(name='recall_audio', saveDir=wavDirName, stereo=False)
-            key_resp_25 = event.BuilderKeyResponse()
+            recall_audio = microphone.AdvAudioCapture(name='recall_audio', saveDir=wavDirName, stereo=False, chnl=0)
+            key_resp_25.keys = []
+            key_resp_25.rt = []
             # keep track of which components have finished
             recall_recording1Components = [image_18, text_69, recall_audio, key_resp_25]
             for thisComponent in recall_recording1Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            recall_recording1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "recall_recording1"-------
+            # -------Run Routine "recall_recording1"-------
             while continueRoutine:
                 # get current time
                 t = recall_recording1Clock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=recall_recording1Clock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *image_18* updates
-                if t >= 0.0 and image_18.status == NOT_STARTED:
+                if image_18.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_18.tStart = t
                     image_18.frameNStart = frameN  # exact frame index
+                    image_18.tStart = t  # local t and not account for scr refresh
+                    image_18.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(image_18, 'tStartRefresh')  # time at next scr refresh
                     image_18.setAutoDraw(True)
                 
                 # *text_69* updates
-                if t >= 0.0 and text_69.status == NOT_STARTED:
+                if text_69.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_69.tStart = t
                     text_69.frameNStart = frameN  # exact frame index
+                    text_69.tStart = t  # local t and not account for scr refresh
+                    text_69.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_69, 'tStartRefresh')  # time at next scr refresh
                     text_69.setAutoDraw(True)
                 
                 # *recall_audio* updates
-                if t >= 0.0 and recall_audio.status == NOT_STARTED:
+                if recall_audio.status == NOT_STARTED and t >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    recall_audio.tStart = t
                     recall_audio.frameNStart = frameN  # exact frame index
+                    recall_audio.tStart = t  # local t and not account for scr refresh
+                    recall_audio.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(recall_audio, 'tStartRefresh')  # time at next scr refresh
                     recall_audio.status = STARTED
                     recall_audio.record(sec=600, block=False)  # start the recording thread
                 
@@ -1613,25 +1834,34 @@ for thisTrial in trials:
                     recall_audio.status = FINISHED
                 
                 # *key_resp_25* updates
-                if t >= 0.0 and key_resp_25.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_25.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_25.tStart = t
                     key_resp_25.frameNStart = frameN  # exact frame index
+                    key_resp_25.tStart = t  # local t and not account for scr refresh
+                    key_resp_25.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_25, 'tStartRefresh')  # time at next scr refresh
                     key_resp_25.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_25.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_25.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_25.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_25.rt = key_resp_25.clock.getTime()
+                    win.callOnFlip(key_resp_25.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_25.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_25.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_25.keys = theseKeys.name  # just the last key pressed
+                        key_resp_25.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1642,10 +1872,6 @@ for thisTrial in trials:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -1655,18 +1881,26 @@ for thisTrial in trials:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('recall_EndTime', getRelTime())
+            trials_17.addData('image_18.started', image_18.tStartRefresh)
+            trials_17.addData('image_18.stopped', image_18.tStopRefresh)
+            trials_17.addData('text_69.started', text_69.tStartRefresh)
+            trials_17.addData('text_69.stopped', text_69.tStopRefresh)
             # recall_audio stop & responses
             recall_audio.stop()  # sometimes helpful
             if not recall_audio.savedFile:
                 recall_audio.savedFile = None
             # store data for trials_17 (TrialHandler)
             trials_17.addData('recall_audio.filename', recall_audio.savedFile)
+            trials_17.addData('recall_audio.started', recall_audio.tStart)
+            trials_17.addData('recall_audio.stopped', recall_audio.tStop)
             # check responses
             if key_resp_25.keys in ['', [], None]:  # No response was made
-                key_resp_25.keys=None
+                key_resp_25.keys = None
             trials_17.addData('key_resp_25.keys',key_resp_25.keys)
             if key_resp_25.keys != None:  # we had a response
                 trials_17.addData('key_resp_25.rt', key_resp_25.rt)
+            trials_17.addData('key_resp_25.started', key_resp_25.tStartRefresh)
+            trials_17.addData('key_resp_25.stopped', key_resp_25.tStopRefresh)
             # the Routine "recall_recording1" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
@@ -1675,25 +1909,36 @@ for thisTrial in trials:
         
         
         # ------Prepare to start Routine "save_recall_data"-------
-        t = 0
-        save_recall_dataClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         # update component parameters for each repeat
         thisExp.saveAsWideText(filename+'_safety.csv', appendFile=True)
         # keep track of which components have finished
         save_recall_dataComponents = []
         for thisComponent in save_recall_dataComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        save_recall_dataClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "save_recall_data"-------
+        # -------Run Routine "save_recall_data"-------
         while continueRoutine:
             # get current time
             t = save_recall_dataClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=save_recall_dataClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1704,10 +1949,6 @@ for thisTrial in trials:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -1716,39 +1957,57 @@ for thisTrial in trials:
         for thisComponent in save_recall_dataComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        
         # the Routine "save_recall_data" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
         # ------Prepare to start Routine "routine_6sec_wait"-------
-        t = 0
-        routine_6sec_waitClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         routineTimer.add(6.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         routine_6sec_waitComponents = [image_23]
         for thisComponent in routine_6sec_waitComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        routine_6sec_waitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "routine_6sec_wait"-------
+        # -------Run Routine "routine_6sec_wait"-------
         while continueRoutine and routineTimer.getTime() > 0:
             # get current time
             t = routine_6sec_waitClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routine_6sec_waitClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
             # *image_23* updates
-            if t >= 0.0 and image_23.status == NOT_STARTED:
+            if image_23.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                image_23.tStart = t
                 image_23.frameNStart = frameN  # exact frame index
+                image_23.tStart = t  # local t and not account for scr refresh
+                image_23.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(image_23, 'tStartRefresh')  # time at next scr refresh
                 image_23.setAutoDraw(True)
-            frameRemains = 0.0 + 6- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if image_23.status == STARTED and t >= frameRemains:
-                image_23.setAutoDraw(False)
+            if image_23.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > image_23.tStartRefresh + 6-frameTolerance:
+                    # keep track of stop time/frame for later
+                    image_23.tStop = t  # not accounting for scr refresh
+                    image_23.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(image_23, 'tStopRefresh')  # time at next scr refresh
+                    image_23.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1759,10 +2018,6 @@ for thisTrial in trials:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -1771,6 +2026,8 @@ for thisTrial in trials:
         for thisComponent in routine_6sec_waitComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+        trials_4.addData('image_23.started', image_23.tStartRefresh)
+        trials_4.addData('image_23.stopped', image_23.tStopRefresh)
         thisExp.nextEntry()
         
     # completed 1 repeats of 'trials_4'
@@ -1800,36 +2057,54 @@ for thisTrial_2 in trials_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Block2_SR"-------
-    t = 0
-    Block2_SRClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     routineTimer.add(1.000000)
     # update component parameters for each repeat
     count_recall = 0
     # keep track of which components have finished
     Block2_SRComponents = [text_71]
     for thisComponent in Block2_SRComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    Block2_SRClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "Block2_SR"-------
+    # -------Run Routine "Block2_SR"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
         t = Block2_SRClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=Block2_SRClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        
         # *text_71* updates
-        if t >= 0.0 and text_71.status == NOT_STARTED:
+        if text_71.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_71.tStart = t
             text_71.frameNStart = frameN  # exact frame index
+            text_71.tStart = t  # local t and not account for scr refresh
+            text_71.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_71, 'tStartRefresh')  # time at next scr refresh
             text_71.setAutoDraw(True)
-        frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if text_71.status == STARTED and t >= frameRemains:
-            text_71.setAutoDraw(False)
+        if text_71.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_71.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                text_71.tStop = t  # not accounting for scr refresh
+                text_71.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_71, 'tStopRefresh')  # time at next scr refresh
+                text_71.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1840,10 +2115,6 @@ for thisTrial_2 in trials_2:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -1852,57 +2123,76 @@ for thisTrial_2 in trials_2:
     for thisComponent in Block2_SRComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    
+    trials_2.addData('text_71.started', text_71.tStartRefresh)
+    trials_2.addData('text_71.stopped', text_71.tStopRefresh)
     
     # ------Prepare to start Routine "Trigger"-------
-    t = 0
-    TriggerClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     # update component parameters for each repeat
-    getTrigger = event.BuilderKeyResponse()
-    
+    getTrigger.keys = []
+    getTrigger.rt = []
     # keep track of which components have finished
     TriggerComponents = [textTrigger, getTrigger]
     for thisComponent in TriggerComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    TriggerClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "Trigger"-------
+    # -------Run Routine "Trigger"-------
     while continueRoutine:
         # get current time
         t = TriggerClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=TriggerClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *textTrigger* updates
-        if t >= 0.0 and textTrigger.status == NOT_STARTED:
+        if textTrigger.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            textTrigger.tStart = t
             textTrigger.frameNStart = frameN  # exact frame index
+            textTrigger.tStart = t  # local t and not account for scr refresh
+            textTrigger.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textTrigger, 'tStartRefresh')  # time at next scr refresh
             textTrigger.setAutoDraw(True)
         
         # *getTrigger* updates
-        if t >= 0.0 and getTrigger.status == NOT_STARTED:
+        waitOnFlip = False
+        if getTrigger.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            getTrigger.tStart = t
             getTrigger.frameNStart = frameN  # exact frame index
+            getTrigger.tStart = t  # local t and not account for scr refresh
+            getTrigger.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(getTrigger, 'tStartRefresh')  # time at next scr refresh
             getTrigger.status = STARTED
             # keyboard checking is just starting
+            waitOnFlip = True
             win.callOnFlip(getTrigger.clock.reset)  # t=0 on next screen flip
-            event.clearEvents(eventType='keyboard')
-        if getTrigger.status == STARTED:
-            theseKeys = event.getKeys(keyList=['5'])
-            
-            # check for quit:
-            if "escape" in theseKeys:
-                endExpNow = True
-            if len(theseKeys) > 0:  # at least one key was pressed
-                getTrigger.keys = theseKeys[-1]  # just the last key pressed
-                getTrigger.rt = getTrigger.clock.getTime()
+            win.callOnFlip(getTrigger.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if getTrigger.status == STARTED and not waitOnFlip:
+            theseKeys = getTrigger.getKeys(keyList=['5'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                getTrigger.keys = theseKeys.name  # just the last key pressed
+                getTrigger.rt = theseKeys.rt
                 # a response ends the routine
                 continueRoutine = False
         
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -1913,10 +2203,6 @@ for thisTrial_2 in trials_2:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -1925,12 +2211,16 @@ for thisTrial_2 in trials_2:
     for thisComponent in TriggerComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    trials_2.addData('textTrigger.started', textTrigger.tStartRefresh)
+    trials_2.addData('textTrigger.stopped', textTrigger.tStopRefresh)
     # check responses
     if getTrigger.keys in ['', [], None]:  # No response was made
-        getTrigger.keys=None
+        getTrigger.keys = None
     trials_2.addData('getTrigger.keys',getTrigger.keys)
     if getTrigger.keys != None:  # we had a response
         trials_2.addData('getTrigger.rt', getTrigger.rt)
+    trials_2.addData('getTrigger.started', getTrigger.tStartRefresh)
+    trials_2.addData('getTrigger.stopped', getTrigger.tStopRefresh)
     triggerTime = globalClock.getTime()
     thisExp.addData('triggerTime', triggerTime)
     def getRelTime(start = triggerTime):
@@ -1958,10 +2248,6 @@ for thisTrial_2 in trials_2:
                 exec('{} = thisTrial_20[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "info_recall2"-------
-        t = 0
-        info_recall2Clock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         # update component parameters for each repeat
         if int(expInfo['behavioral']) == 1:
             nreps_audiorecord = 0
@@ -1989,16 +2275,31 @@ for thisTrial_2 in trials_2:
         # keep track of which components have finished
         info_recall2Components = []
         for thisComponent in info_recall2Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        info_recall2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "info_recall2"-------
+        # -------Run Routine "info_recall2"-------
         while continueRoutine:
             # get current time
             t = info_recall2Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=info_recall2Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2009,10 +2310,6 @@ for thisTrial_2 in trials_2:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -2021,7 +2318,6 @@ for thisTrial_2 in trials_2:
         for thisComponent in info_recall2Components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        
         # the Routine "info_recall2" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -2045,69 +2341,92 @@ for thisTrial_2 in trials_2:
                     exec('{} = thisTrial_18[paramName]'.format(paramName))
             
             # ------Prepare to start Routine "intro_recall"-------
-            t = 0
-            intro_recallClock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             count_recall += 1
             text_41.setText(count_recall)
-            key_resp_26 = event.BuilderKeyResponse()
+            key_resp_26.keys = []
+            key_resp_26.rt = []
             # keep track of which components have finished
             intro_recallComponents = [text_41, key_resp_26, text_42, text_51]
             for thisComponent in intro_recallComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            intro_recallClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "intro_recall"-------
+            # -------Run Routine "intro_recall"-------
             while continueRoutine:
                 # get current time
                 t = intro_recallClock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=intro_recallClock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *text_41* updates
-                if t >= 0.0 and text_41.status == NOT_STARTED:
+                if text_41.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_41.tStart = t
                     text_41.frameNStart = frameN  # exact frame index
+                    text_41.tStart = t  # local t and not account for scr refresh
+                    text_41.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_41, 'tStartRefresh')  # time at next scr refresh
                     text_41.setAutoDraw(True)
                 
                 # *key_resp_26* updates
-                if t >= 0.0 and key_resp_26.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_26.tStart = t
                     key_resp_26.frameNStart = frameN  # exact frame index
+                    key_resp_26.tStart = t  # local t and not account for scr refresh
+                    key_resp_26.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_26, 'tStartRefresh')  # time at next scr refresh
                     key_resp_26.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_26.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_26.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_26.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_26.rt = key_resp_26.clock.getTime()
+                    win.callOnFlip(key_resp_26.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_26.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_26.getKeys(keyList=['space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_26.keys = theseKeys.name  # just the last key pressed
+                        key_resp_26.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
                 
                 # *text_42* updates
-                if t >= 0.0 and text_42.status == NOT_STARTED:
+                if text_42.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_42.tStart = t
                     text_42.frameNStart = frameN  # exact frame index
+                    text_42.tStart = t  # local t and not account for scr refresh
+                    text_42.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_42, 'tStartRefresh')  # time at next scr refresh
                     text_42.setAutoDraw(True)
                 
                 # *text_51* updates
-                if t >= 0.0 and text_51.status == NOT_STARTED:
+                if text_51.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_51.tStart = t
                     text_51.frameNStart = frameN  # exact frame index
+                    text_51.tStart = t  # local t and not account for scr refresh
+                    text_51.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_51, 'tStartRefresh')  # time at next scr refresh
                     text_51.setAutoDraw(True)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2118,10 +2437,6 @@ for thisTrial_2 in trials_2:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -2130,21 +2445,24 @@ for thisTrial_2 in trials_2:
             for thisComponent in intro_recallComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            
+            trials_18.addData('text_41.started', text_41.tStartRefresh)
+            trials_18.addData('text_41.stopped', text_41.tStopRefresh)
             # check responses
             if key_resp_26.keys in ['', [], None]:  # No response was made
-                key_resp_26.keys=None
+                key_resp_26.keys = None
             trials_18.addData('key_resp_26.keys',key_resp_26.keys)
             if key_resp_26.keys != None:  # we had a response
                 trials_18.addData('key_resp_26.rt', key_resp_26.rt)
+            trials_18.addData('key_resp_26.started', key_resp_26.tStartRefresh)
+            trials_18.addData('key_resp_26.stopped', key_resp_26.tStopRefresh)
+            trials_18.addData('text_42.started', text_42.tStartRefresh)
+            trials_18.addData('text_42.stopped', text_42.tStopRefresh)
+            trials_18.addData('text_51.started', text_51.tStartRefresh)
+            trials_18.addData('text_51.stopped', text_51.tStopRefresh)
             # the Routine "intro_recall" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
             # ------Prepare to start Routine "recall_type2"-------
-            t = 0
-            recall_type2Clock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             event.clearEvents()
             thisExp.addData('recall_StartTime', getRelTime())
@@ -2166,13 +2484,25 @@ for thisTrial_2 in trials_2:
             # keep track of which components have finished
             recall_type2Components = [text_72, text_73, image_19, polygon_11, bottom_line_11, right_line_11, left_line_11, text_74]
             for thisComponent in recall_type2Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            recall_type2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "recall_type2"-------
+            # -------Run Routine "recall_type2"-------
             while continueRoutine:
                 # get current time
                 t = recall_type2Clock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=recall_type2Clock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
@@ -2230,54 +2560,68 @@ for thisTrial_2 in trials_2:
                 
                 
                 # *text_72* updates
-                if t >= 0.0 and text_72.status == NOT_STARTED:
+                if text_72.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_72.tStart = t
                     text_72.frameNStart = frameN  # exact frame index
+                    text_72.tStart = t  # local t and not account for scr refresh
+                    text_72.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_72, 'tStartRefresh')  # time at next scr refresh
                     text_72.setAutoDraw(True)
                 
                 # *text_73* updates
-                if t >= 0.0 and text_73.status == NOT_STARTED:
+                if text_73.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_73.tStart = t
                     text_73.frameNStart = frameN  # exact frame index
+                    text_73.tStart = t  # local t and not account for scr refresh
+                    text_73.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_73, 'tStartRefresh')  # time at next scr refresh
                     text_73.setAutoDraw(True)
                 if text_73.status == STARTED:  # only update if drawing
                     text_73.setText(captured_string, log=False)
                 
                 # *image_19* updates
-                if t >= 0.0 and image_19.status == NOT_STARTED:
+                if image_19.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_19.tStart = t
                     image_19.frameNStart = frameN  # exact frame index
+                    image_19.tStart = t  # local t and not account for scr refresh
+                    image_19.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(image_19, 'tStartRefresh')  # time at next scr refresh
                     image_19.setAutoDraw(True)
                 
                 # *polygon_11* updates
-                if t >= 0.0 and polygon_11.status == NOT_STARTED:
+                if polygon_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    polygon_11.tStart = t
                     polygon_11.frameNStart = frameN  # exact frame index
+                    polygon_11.tStart = t  # local t and not account for scr refresh
+                    polygon_11.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(polygon_11, 'tStartRefresh')  # time at next scr refresh
                     polygon_11.setAutoDraw(True)
                 
                 # *bottom_line_11* updates
-                if t >= 0.0 and bottom_line_11.status == NOT_STARTED:
+                if bottom_line_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    bottom_line_11.tStart = t
                     bottom_line_11.frameNStart = frameN  # exact frame index
+                    bottom_line_11.tStart = t  # local t and not account for scr refresh
+                    bottom_line_11.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(bottom_line_11, 'tStartRefresh')  # time at next scr refresh
                     bottom_line_11.setAutoDraw(True)
                 
                 # *right_line_11* updates
-                if t >= 0.0 and right_line_11.status == NOT_STARTED:
+                if right_line_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    right_line_11.tStart = t
                     right_line_11.frameNStart = frameN  # exact frame index
+                    right_line_11.tStart = t  # local t and not account for scr refresh
+                    right_line_11.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(right_line_11, 'tStartRefresh')  # time at next scr refresh
                     right_line_11.setAutoDraw(True)
                 
                 # *left_line_11* updates
-                if t >= 0.0 and left_line_11.status == NOT_STARTED:
+                if left_line_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    left_line_11.tStart = t
                     left_line_11.frameNStart = frameN  # exact frame index
+                    left_line_11.tStart = t  # local t and not account for scr refresh
+                    left_line_11.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(left_line_11, 'tStartRefresh')  # time at next scr refresh
                     left_line_11.setAutoDraw(True)
                 timeRemaining = countdownClock.getTime() 
                 if timeRemaining <= 0.0: 
@@ -2291,13 +2635,19 @@ for thisTrial_2 in trials_2:
                         timeText = str(minutes) + ':' + str(seconds) # create a string of characters representing the time 
                 
                 # *text_74* updates
-                if t >= 0.0 and text_74.status == NOT_STARTED:
+                if text_74.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_74.tStart = t
                     text_74.frameNStart = frameN  # exact frame index
+                    text_74.tStart = t  # local t and not account for scr refresh
+                    text_74.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_74, 'tStartRefresh')  # time at next scr refresh
                     text_74.setAutoDraw(True)
                 if text_74.status == STARTED:  # only update if drawing
                     text_74.setText(timeText, log=False)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2308,10 +2658,6 @@ for thisTrial_2 in trials_2:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -2321,7 +2667,22 @@ for thisTrial_2 in trials_2:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('recall_EndTime', getRelTime())
-            
+            trials_18.addData('text_72.started', text_72.tStartRefresh)
+            trials_18.addData('text_72.stopped', text_72.tStopRefresh)
+            trials_18.addData('text_73.started', text_73.tStartRefresh)
+            trials_18.addData('text_73.stopped', text_73.tStopRefresh)
+            trials_18.addData('image_19.started', image_19.tStartRefresh)
+            trials_18.addData('image_19.stopped', image_19.tStopRefresh)
+            trials_18.addData('polygon_11.started', polygon_11.tStartRefresh)
+            trials_18.addData('polygon_11.stopped', polygon_11.tStopRefresh)
+            trials_18.addData('bottom_line_11.started', bottom_line_11.tStartRefresh)
+            trials_18.addData('bottom_line_11.stopped', bottom_line_11.tStopRefresh)
+            trials_18.addData('right_line_11.started', right_line_11.tStartRefresh)
+            trials_18.addData('right_line_11.stopped', right_line_11.tStopRefresh)
+            trials_18.addData('left_line_11.started', left_line_11.tStartRefresh)
+            trials_18.addData('left_line_11.stopped', left_line_11.tStopRefresh)
+            trials_18.addData('text_74.started', text_74.tStartRefresh)
+            trials_18.addData('text_74.stopped', text_74.tStopRefresh)
             # the Routine "recall_type2" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
@@ -2349,69 +2710,92 @@ for thisTrial_2 in trials_2:
                     exec('{} = thisTrial_19[paramName]'.format(paramName))
             
             # ------Prepare to start Routine "intro_recall"-------
-            t = 0
-            intro_recallClock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             count_recall += 1
             text_41.setText(count_recall)
-            key_resp_26 = event.BuilderKeyResponse()
+            key_resp_26.keys = []
+            key_resp_26.rt = []
             # keep track of which components have finished
             intro_recallComponents = [text_41, key_resp_26, text_42, text_51]
             for thisComponent in intro_recallComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            intro_recallClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "intro_recall"-------
+            # -------Run Routine "intro_recall"-------
             while continueRoutine:
                 # get current time
                 t = intro_recallClock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=intro_recallClock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *text_41* updates
-                if t >= 0.0 and text_41.status == NOT_STARTED:
+                if text_41.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_41.tStart = t
                     text_41.frameNStart = frameN  # exact frame index
+                    text_41.tStart = t  # local t and not account for scr refresh
+                    text_41.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_41, 'tStartRefresh')  # time at next scr refresh
                     text_41.setAutoDraw(True)
                 
                 # *key_resp_26* updates
-                if t >= 0.0 and key_resp_26.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_26.tStart = t
                     key_resp_26.frameNStart = frameN  # exact frame index
+                    key_resp_26.tStart = t  # local t and not account for scr refresh
+                    key_resp_26.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_26, 'tStartRefresh')  # time at next scr refresh
                     key_resp_26.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_26.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_26.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_26.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_26.rt = key_resp_26.clock.getTime()
+                    win.callOnFlip(key_resp_26.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_26.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_26.getKeys(keyList=['space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_26.keys = theseKeys.name  # just the last key pressed
+                        key_resp_26.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
                 
                 # *text_42* updates
-                if t >= 0.0 and text_42.status == NOT_STARTED:
+                if text_42.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_42.tStart = t
                     text_42.frameNStart = frameN  # exact frame index
+                    text_42.tStart = t  # local t and not account for scr refresh
+                    text_42.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_42, 'tStartRefresh')  # time at next scr refresh
                     text_42.setAutoDraw(True)
                 
                 # *text_51* updates
-                if t >= 0.0 and text_51.status == NOT_STARTED:
+                if text_51.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_51.tStart = t
                     text_51.frameNStart = frameN  # exact frame index
+                    text_51.tStart = t  # local t and not account for scr refresh
+                    text_51.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_51, 'tStartRefresh')  # time at next scr refresh
                     text_51.setAutoDraw(True)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2422,10 +2806,6 @@ for thisTrial_2 in trials_2:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -2434,61 +2814,82 @@ for thisTrial_2 in trials_2:
             for thisComponent in intro_recallComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            
+            trials_19.addData('text_41.started', text_41.tStartRefresh)
+            trials_19.addData('text_41.stopped', text_41.tStopRefresh)
             # check responses
             if key_resp_26.keys in ['', [], None]:  # No response was made
-                key_resp_26.keys=None
+                key_resp_26.keys = None
             trials_19.addData('key_resp_26.keys',key_resp_26.keys)
             if key_resp_26.keys != None:  # we had a response
                 trials_19.addData('key_resp_26.rt', key_resp_26.rt)
+            trials_19.addData('key_resp_26.started', key_resp_26.tStartRefresh)
+            trials_19.addData('key_resp_26.stopped', key_resp_26.tStopRefresh)
+            trials_19.addData('text_42.started', text_42.tStartRefresh)
+            trials_19.addData('text_42.stopped', text_42.tStopRefresh)
+            trials_19.addData('text_51.started', text_51.tStartRefresh)
+            trials_19.addData('text_51.stopped', text_51.tStopRefresh)
             # the Routine "intro_recall" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
             # ------Prepare to start Routine "recall_recording2"-------
-            t = 0
-            recall_recording2Clock.reset()  # clock
-            frameN = -1
-            continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('recall_StartTime', getRelTime())
             this_recall_pic = storyDict.get(story_list_block2[count], {}).get('pic')
             event.clearEvents()
             image_20.setImage(this_recall_pic)
-            recall_audio_2 = microphone.AdvAudioCapture(name='recall_audio_2', saveDir=wavDirName, stereo=False)
-            key_resp_27 = event.BuilderKeyResponse()
+            recall_audio_2 = microphone.AdvAudioCapture(name='recall_audio_2', saveDir=wavDirName, stereo=False, chnl=0)
+            key_resp_27.keys = []
+            key_resp_27.rt = []
             # keep track of which components have finished
             recall_recording2Components = [image_20, text_75, recall_audio_2, key_resp_27]
             for thisComponent in recall_recording2Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
                 if hasattr(thisComponent, 'status'):
                     thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            recall_recording2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
             
-            # -------Start Routine "recall_recording2"-------
+            # -------Run Routine "recall_recording2"-------
             while continueRoutine:
                 # get current time
                 t = recall_recording2Clock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=recall_recording2Clock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                
                 # *image_20* updates
-                if t >= 0.0 and image_20.status == NOT_STARTED:
+                if image_20.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_20.tStart = t
                     image_20.frameNStart = frameN  # exact frame index
+                    image_20.tStart = t  # local t and not account for scr refresh
+                    image_20.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(image_20, 'tStartRefresh')  # time at next scr refresh
                     image_20.setAutoDraw(True)
                 
                 # *text_75* updates
-                if t >= 0.0 and text_75.status == NOT_STARTED:
+                if text_75.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    text_75.tStart = t
                     text_75.frameNStart = frameN  # exact frame index
+                    text_75.tStart = t  # local t and not account for scr refresh
+                    text_75.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(text_75, 'tStartRefresh')  # time at next scr refresh
                     text_75.setAutoDraw(True)
                 
                 # *recall_audio_2* updates
-                if t >= 0.0 and recall_audio_2.status == NOT_STARTED:
+                if recall_audio_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    recall_audio_2.tStart = t
                     recall_audio_2.frameNStart = frameN  # exact frame index
+                    recall_audio_2.tStart = t  # local t and not account for scr refresh
+                    recall_audio_2.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(recall_audio_2, 'tStartRefresh')  # time at next scr refresh
                     recall_audio_2.status = STARTED
                     recall_audio_2.record(sec=600, block=False)  # start the recording thread
                 
@@ -2496,25 +2897,34 @@ for thisTrial_2 in trials_2:
                     recall_audio_2.status = FINISHED
                 
                 # *key_resp_27* updates
-                if t >= 0.0 and key_resp_27.status == NOT_STARTED:
+                waitOnFlip = False
+                if key_resp_27.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    key_resp_27.tStart = t
                     key_resp_27.frameNStart = frameN  # exact frame index
+                    key_resp_27.tStart = t  # local t and not account for scr refresh
+                    key_resp_27.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(key_resp_27, 'tStartRefresh')  # time at next scr refresh
                     key_resp_27.status = STARTED
                     # keyboard checking is just starting
+                    waitOnFlip = True
                     win.callOnFlip(key_resp_27.clock.reset)  # t=0 on next screen flip
-                    event.clearEvents(eventType='keyboard')
-                if key_resp_27.status == STARTED:
-                    theseKeys = event.getKeys(keyList=['y', 'n', 'left', 'right', 'space'])
-                    
-                    # check for quit:
-                    if "escape" in theseKeys:
-                        endExpNow = True
-                    if len(theseKeys) > 0:  # at least one key was pressed
-                        key_resp_27.keys = theseKeys[-1]  # just the last key pressed
-                        key_resp_27.rt = key_resp_27.clock.getTime()
+                    win.callOnFlip(key_resp_27.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                if key_resp_27.status == STARTED and not waitOnFlip:
+                    theseKeys = key_resp_27.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
+                    if len(theseKeys):
+                        theseKeys = theseKeys[0]  # at least one key was pressed
+                        
+                        # check for quit:
+                        if "escape" == theseKeys:
+                            endExpNow = True
+                        key_resp_27.keys = theseKeys.name  # just the last key pressed
+                        key_resp_27.rt = theseKeys.rt
                         # a response ends the routine
                         continueRoutine = False
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2525,10 +2935,6 @@ for thisTrial_2 in trials_2:
                         continueRoutine = True
                         break  # at least one component has not yet finished
                 
-                # check for quit (the Esc key)
-                if endExpNow or event.getKeys(keyList=["escape"]):
-                    core.quit()
-                
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
@@ -2538,18 +2944,26 @@ for thisTrial_2 in trials_2:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('recall_EndTime', getRelTime())
+            trials_19.addData('image_20.started', image_20.tStartRefresh)
+            trials_19.addData('image_20.stopped', image_20.tStopRefresh)
+            trials_19.addData('text_75.started', text_75.tStartRefresh)
+            trials_19.addData('text_75.stopped', text_75.tStopRefresh)
             # recall_audio_2 stop & responses
             recall_audio_2.stop()  # sometimes helpful
             if not recall_audio_2.savedFile:
                 recall_audio_2.savedFile = None
             # store data for trials_19 (TrialHandler)
             trials_19.addData('recall_audio_2.filename', recall_audio_2.savedFile)
+            trials_19.addData('recall_audio_2.started', recall_audio_2.tStart)
+            trials_19.addData('recall_audio_2.stopped', recall_audio_2.tStop)
             # check responses
             if key_resp_27.keys in ['', [], None]:  # No response was made
-                key_resp_27.keys=None
+                key_resp_27.keys = None
             trials_19.addData('key_resp_27.keys',key_resp_27.keys)
             if key_resp_27.keys != None:  # we had a response
                 trials_19.addData('key_resp_27.rt', key_resp_27.rt)
+            trials_19.addData('key_resp_27.started', key_resp_27.tStartRefresh)
+            trials_19.addData('key_resp_27.stopped', key_resp_27.tStopRefresh)
             # the Routine "recall_recording2" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
@@ -2558,25 +2972,36 @@ for thisTrial_2 in trials_2:
         
         
         # ------Prepare to start Routine "save_recall_data"-------
-        t = 0
-        save_recall_dataClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         # update component parameters for each repeat
         thisExp.saveAsWideText(filename+'_safety.csv', appendFile=True)
         # keep track of which components have finished
         save_recall_dataComponents = []
         for thisComponent in save_recall_dataComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        save_recall_dataClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "save_recall_data"-------
+        # -------Run Routine "save_recall_data"-------
         while continueRoutine:
             # get current time
             t = save_recall_dataClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=save_recall_dataClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2587,10 +3012,6 @@ for thisTrial_2 in trials_2:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -2599,39 +3020,57 @@ for thisTrial_2 in trials_2:
         for thisComponent in save_recall_dataComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        
         # the Routine "save_recall_data" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
         # ------Prepare to start Routine "routine_6sec_wait"-------
-        t = 0
-        routine_6sec_waitClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
         routineTimer.add(6.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         routine_6sec_waitComponents = [image_23]
         for thisComponent in routine_6sec_waitComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        routine_6sec_waitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # -------Start Routine "routine_6sec_wait"-------
+        # -------Run Routine "routine_6sec_wait"-------
         while continueRoutine and routineTimer.getTime() > 0:
             # get current time
             t = routine_6sec_waitClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routine_6sec_waitClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
             # *image_23* updates
-            if t >= 0.0 and image_23.status == NOT_STARTED:
+            if image_23.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                image_23.tStart = t
                 image_23.frameNStart = frameN  # exact frame index
+                image_23.tStart = t  # local t and not account for scr refresh
+                image_23.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(image_23, 'tStartRefresh')  # time at next scr refresh
                 image_23.setAutoDraw(True)
-            frameRemains = 0.0 + 6- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if image_23.status == STARTED and t >= frameRemains:
-                image_23.setAutoDraw(False)
+            if image_23.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > image_23.tStartRefresh + 6-frameTolerance:
+                    # keep track of stop time/frame for later
+                    image_23.tStop = t  # not accounting for scr refresh
+                    image_23.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(image_23, 'tStopRefresh')  # time at next scr refresh
+                    image_23.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2642,10 +3081,6 @@ for thisTrial_2 in trials_2:
                     continueRoutine = True
                     break  # at least one component has not yet finished
             
-            # check for quit (the Esc key)
-            if endExpNow or event.getKeys(keyList=["escape"]):
-                core.quit()
-            
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
@@ -2654,6 +3089,8 @@ for thisTrial_2 in trials_2:
         for thisComponent in routine_6sec_waitComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+        trials_20.addData('image_23.started', image_23.tStartRefresh)
+        trials_20.addData('image_23.stopped', image_23.tStopRefresh)
         thisExp.nextEntry()
         
     # completed 1 repeats of 'trials_20'
@@ -2683,38 +3120,56 @@ for thisTrial_8 in trials_8:
             exec('{} = thisTrial_8[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "end_of_task"-------
-    t = 0
-    end_of_taskClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
     routineTimer.add(0.500000)
     # update component parameters for each repeat
-    
     # keep track of which components have finished
     end_of_taskComponents = [text_36]
     for thisComponent in end_of_taskComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    end_of_taskClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # -------Start Routine "end_of_task"-------
+    # -------Run Routine "end_of_task"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
         t = end_of_taskClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=end_of_taskClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *text_36* updates
-        if t >= 0.0 and text_36.status == NOT_STARTED:
+        if text_36.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_36.tStart = t
             text_36.frameNStart = frameN  # exact frame index
+            text_36.tStart = t  # local t and not account for scr refresh
+            text_36.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_36, 'tStartRefresh')  # time at next scr refresh
             text_36.setAutoDraw(True)
-        frameRemains = 0.0 + .5- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if text_36.status == STARTED and t >= frameRemains:
-            text_36.setAutoDraw(False)
+        if text_36.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_36.tStartRefresh + .5-frameTolerance:
+                # keep track of stop time/frame for later
+                text_36.tStop = t  # not accounting for scr refresh
+                text_36.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_36, 'tStopRefresh')  # time at next scr refresh
+                text_36.setAutoDraw(False)
         for key in event.getKeys():
             if key in ['escape']: 
                 core.quit()
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -2725,10 +3180,6 @@ for thisTrial_8 in trials_8:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -2737,30 +3188,16 @@ for thisTrial_8 in trials_8:
     for thisComponent in end_of_taskComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    
+    trials_8.addData('text_36.started', text_36.tStartRefresh)
+    trials_8.addData('text_36.stopped', text_36.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 5 repeats of 'trials_8'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Flip one final time so any remaining win.callOnFlip() 
+# and win.timeOnFlip() tasks get executed before quitting
+win.flip()
 
 # these shouldn't be strictly necessary (should auto-save)
 thisExp.saveAsWideText(filename+'.csv')
