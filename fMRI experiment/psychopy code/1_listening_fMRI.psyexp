@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.2.4">
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -5639,14 +5639,14 @@
       </CodeComponent>
     </Routine>
     <Routine name="listening_instructions_block1">
-      <KeyboardComponent name="key_resp">
+      <KeyboardComponent name="key_resp_5">
         <Param name="allowedKeys" updates="constant" val="'9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
