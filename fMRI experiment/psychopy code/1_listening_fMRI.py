@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Thu Jan 30 09:24:00 2020
+    on Thu Jan 30 11:13:19 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -61,8 +61,8 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1680, 1050], fullscr=False, screen=0, 
-    winType='pyglet', allowGUI=True, allowStencil=False,
+    size=[1680, 1050], fullscr=True, screen=0, 
+    winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 
@@ -5343,7 +5343,7 @@ for thisTrial_4 in trials_4:
                             thumbsup.draw()
                             win.flip()
                             core.wait(1.5)
-                            trials_7.finished= True 
+                            trials_11.finished= True 
                             continueRoutine = False
                         #key press 1 
                         if event.getKeys(['1']):
@@ -5437,7 +5437,7 @@ for thisTrial_4 in trials_4:
                                 
                         
                         if event.getKeys(['q']):
-                            trials_7.finished = True
+                            trials_11.finished = True
                             continueRoutine=False
                         if checkCount == 4:
                             this_image = 'icon/bar5.jpg'

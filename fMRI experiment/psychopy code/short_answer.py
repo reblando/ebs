@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Wed Jan 29 14:54:53 2020
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+    on Thu Jan 30 12:21:01 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.1'
+psychopyVersion = '3.2.4'
 expName = 'body_behavioural'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'random_seed': '2'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/short_answer.py',
+    originPath='/Users/columbiadpml/Documents/GitHub/ebs/fMRI experiment/psychopy code/short_answer.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -61,8 +61,8 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=False, screen=0, 
-    winType='pyglet', allowGUI=True, allowStencil=False,
+    size=[1680, 1050], fullscr=True, screen=0, 
+    winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
@@ -673,17 +673,6 @@ left_line_10 = visual.Line(
     lineWidth=20, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[128,128,128], fillColorSpace='rgb255',
     opacity=1, depth=-7.0, interpolate=True)
-
-# Initialize components for Routine "end_of_questions"
-end_of_questionsClock = core.Clock()
-text_47 = visual.TextStim(win=win, name='text_47',
-    text='END OF QUESTIONS\n',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-key_resp_13 = keyboard.Keyboard()
 
 # Initialize components for Routine "end_of_task"
 end_of_taskClock = core.Clock()
@@ -2762,107 +2751,6 @@ for thisTrial_6 in trials_6:
     
 # completed 1 repeats of 'trials_6'
 
-
-# ------Prepare to start Routine "end_of_questions"-------
-# update component parameters for each repeat
-key_resp_13.keys = []
-key_resp_13.rt = []
-questions_time = timer.getTime()
-thisExp.addData('questions time', questions_time)
-# keep track of which components have finished
-end_of_questionsComponents = [text_47, key_resp_13]
-for thisComponent in end_of_questionsComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-end_of_questionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "end_of_questions"-------
-while continueRoutine:
-    # get current time
-    t = end_of_questionsClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=end_of_questionsClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text_47* updates
-    if text_47.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_47.frameNStart = frameN  # exact frame index
-        text_47.tStart = t  # local t and not account for scr refresh
-        text_47.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_47, 'tStartRefresh')  # time at next scr refresh
-        text_47.setAutoDraw(True)
-    
-    # *key_resp_13* updates
-    waitOnFlip = False
-    if key_resp_13.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        key_resp_13.frameNStart = frameN  # exact frame index
-        key_resp_13.tStart = t  # local t and not account for scr refresh
-        key_resp_13.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(key_resp_13, 'tStartRefresh')  # time at next scr refresh
-        key_resp_13.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(key_resp_13.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(key_resp_13.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if key_resp_13.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp_13.getKeys(keyList=['space'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            key_resp_13.keys = theseKeys.name  # just the last key pressed
-            key_resp_13.rt = theseKeys.rt
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in end_of_questionsComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "end_of_questions"-------
-for thisComponent in end_of_questionsComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('text_47.started', text_47.tStartRefresh)
-thisExp.addData('text_47.stopped', text_47.tStopRefresh)
-# check responses
-if key_resp_13.keys in ['', [], None]:  # No response was made
-    key_resp_13.keys = None
-thisExp.addData('key_resp_13.keys',key_resp_13.keys)
-if key_resp_13.keys != None:  # we had a response
-    thisExp.addData('key_resp_13.rt', key_resp_13.rt)
-thisExp.addData('key_resp_13.started', key_resp_13.tStartRefresh)
-thisExp.addData('key_resp_13.stopped', key_resp_13.tStopRefresh)
-thisExp.nextEntry()
-# the Routine "end_of_questions" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
 trials_8 = data.TrialHandler(nReps=1, method='sequential', 
