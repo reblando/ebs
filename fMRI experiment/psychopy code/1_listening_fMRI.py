@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Wed Jan 29 12:27:34 2020
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+    on Thu Jan 30 09:24:00 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.1'
+psychopyVersion = '3.2.4'
 expName = 'listening_fmri'  # from the Builder filename that created this script
 expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'play_stories': '0', 'block': '1', 'behavioral': '0', 'random_seed': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_bk%s_%s' % (expInfo['participant'],expI
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
+    originPath='/Users/columbiadpml/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -61,8 +61,8 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=False, allowStencil=False,
+    size=[1680, 1050], fullscr=False, screen=0, 
+    winType='pyglet', allowGUI=True, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 
@@ -242,7 +242,7 @@ image_24 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 key_resp_21 = keyboard.Keyboard()
 text_78 = visual.TextStim(win=win, name='text_78',
-    text='The numbers 1, 2, and 3, correspond to the first three fingers on your right hand. ',
+    text='The numbers "1", "2", and "3" correspond to the first three fingers on your right hand. ',
     font='Arial',
     pos=(0, -.7), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -268,7 +268,7 @@ image_26 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 key_resp_31 = keyboard.Keyboard()
 text_89 = visual.TextStim(win=win, name='text_89',
-    text='The numbers 4, 5, and 6, correspond to the first three fingers on your left hand. ',
+    text='The numbers "4", "5", and "6" correspond to the first three fingers on your left hand. ',
     font='Arial',
     pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -355,7 +355,7 @@ key_resp_35 = keyboard.Keyboard()
 # Initialize components for Routine "good_job"
 good_jobClock = core.Clock()
 text_98 = visual.TextStim(win=win, name='text_98',
-    text='Good job! We will begin the experiment now',
+    text='Good job! We will begin the experiment now.',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -394,8 +394,6 @@ text_77 = visual.TextStim(win=win, name='text_77',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
-key_resp_5 = keyboard.Keyboard()
-key_resp_16 = keyboard.Keyboard()
 
 # Initialize components for Routine "routine_6sec_wait"
 routine_6sec_waitClock = core.Clock()
@@ -715,8 +713,6 @@ text_77 = visual.TextStim(win=win, name='text_77',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
-key_resp_5 = keyboard.Keyboard()
-key_resp_16 = keyboard.Keyboard()
 
 # Initialize components for Routine "routine_6sec_wait"
 routine_6sec_waitClock = core.Clock()
@@ -1924,7 +1920,7 @@ for thisTrial_14 in trials_14:
             win.callOnFlip(key_resp_35.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_35.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_35.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_35.getKeys(keyList=['5', 'space'], waitRelease=False)
+            theseKeys = key_resp_35.getKeys(keyList=['7', 'space'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -2106,12 +2102,8 @@ for thisTrial_3 in trials_3:
     # update component parameters for each repeat
     getTrigger.keys = []
     getTrigger.rt = []
-    key_resp_5.keys = []
-    key_resp_5.rt = []
-    key_resp_16.keys = []
-    key_resp_16.rt = []
     # keep track of which components have finished
-    TriggerComponents = [textTrigger, getTrigger, text_76, text_77, key_resp_5, key_resp_16]
+    TriggerComponents = [textTrigger, getTrigger, text_76, text_77]
     for thisComponent in TriggerComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2188,58 +2180,6 @@ for thisTrial_3 in trials_3:
             win.timeOnFlip(text_77, 'tStartRefresh')  # time at next scr refresh
             text_77.setAutoDraw(True)
         
-        # *key_resp_5* updates
-        waitOnFlip = False
-        if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_5.frameNStart = frameN  # exact frame index
-            key_resp_5.tStart = t  # local t and not account for scr refresh
-            key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
-            key_resp_5.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_5.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_5.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_5.keys = theseKeys.name  # just the last key pressed
-                key_resp_5.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
-        
-        # *key_resp_16* updates
-        waitOnFlip = False
-        if key_resp_16.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_16.frameNStart = frameN  # exact frame index
-            key_resp_16.tStart = t  # local t and not account for scr refresh
-            key_resp_16.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_16, 'tStartRefresh')  # time at next scr refresh
-            key_resp_16.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_16.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_16.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_16.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_16.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_16.keys = theseKeys.name  # just the last key pressed
-                key_resp_16.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
-        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -2279,22 +2219,6 @@ for thisTrial_3 in trials_3:
     trials_3.addData('text_76.stopped', text_76.tStopRefresh)
     trials_3.addData('text_77.started', text_77.tStartRefresh)
     trials_3.addData('text_77.stopped', text_77.tStopRefresh)
-    # check responses
-    if key_resp_5.keys in ['', [], None]:  # No response was made
-        key_resp_5.keys = None
-    trials_3.addData('key_resp_5.keys',key_resp_5.keys)
-    if key_resp_5.keys != None:  # we had a response
-        trials_3.addData('key_resp_5.rt', key_resp_5.rt)
-    trials_3.addData('key_resp_5.started', key_resp_5.tStartRefresh)
-    trials_3.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
-    # check responses
-    if key_resp_16.keys in ['', [], None]:  # No response was made
-        key_resp_16.keys = None
-    trials_3.addData('key_resp_16.keys',key_resp_16.keys)
-    if key_resp_16.keys != None:  # we had a response
-        trials_3.addData('key_resp_16.rt', key_resp_16.rt)
-    trials_3.addData('key_resp_16.started', key_resp_16.tStartRefresh)
-    trials_3.addData('key_resp_16.stopped', key_resp_16.tStopRefresh)
     # the Routine "Trigger" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -4409,12 +4333,8 @@ for thisTrial_4 in trials_4:
     # update component parameters for each repeat
     getTrigger.keys = []
     getTrigger.rt = []
-    key_resp_5.keys = []
-    key_resp_5.rt = []
-    key_resp_16.keys = []
-    key_resp_16.rt = []
     # keep track of which components have finished
-    TriggerComponents = [textTrigger, getTrigger, text_76, text_77, key_resp_5, key_resp_16]
+    TriggerComponents = [textTrigger, getTrigger, text_76, text_77]
     for thisComponent in TriggerComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -4491,58 +4411,6 @@ for thisTrial_4 in trials_4:
             win.timeOnFlip(text_77, 'tStartRefresh')  # time at next scr refresh
             text_77.setAutoDraw(True)
         
-        # *key_resp_5* updates
-        waitOnFlip = False
-        if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_5.frameNStart = frameN  # exact frame index
-            key_resp_5.tStart = t  # local t and not account for scr refresh
-            key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
-            key_resp_5.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_5.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_5.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_5.keys = theseKeys.name  # just the last key pressed
-                key_resp_5.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
-        
-        # *key_resp_16* updates
-        waitOnFlip = False
-        if key_resp_16.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_16.frameNStart = frameN  # exact frame index
-            key_resp_16.tStart = t  # local t and not account for scr refresh
-            key_resp_16.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_16, 'tStartRefresh')  # time at next scr refresh
-            key_resp_16.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_16.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_16.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_16.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_16.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_16.keys = theseKeys.name  # just the last key pressed
-                key_resp_16.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
-        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -4582,22 +4450,6 @@ for thisTrial_4 in trials_4:
     trials_4.addData('text_76.stopped', text_76.tStopRefresh)
     trials_4.addData('text_77.started', text_77.tStartRefresh)
     trials_4.addData('text_77.stopped', text_77.tStopRefresh)
-    # check responses
-    if key_resp_5.keys in ['', [], None]:  # No response was made
-        key_resp_5.keys = None
-    trials_4.addData('key_resp_5.keys',key_resp_5.keys)
-    if key_resp_5.keys != None:  # we had a response
-        trials_4.addData('key_resp_5.rt', key_resp_5.rt)
-    trials_4.addData('key_resp_5.started', key_resp_5.tStartRefresh)
-    trials_4.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
-    # check responses
-    if key_resp_16.keys in ['', [], None]:  # No response was made
-        key_resp_16.keys = None
-    trials_4.addData('key_resp_16.keys',key_resp_16.keys)
-    if key_resp_16.keys != None:  # we had a response
-        trials_4.addData('key_resp_16.rt', key_resp_16.rt)
-    trials_4.addData('key_resp_16.started', key_resp_16.tStartRefresh)
-    trials_4.addData('key_resp_16.stopped', key_resp_16.tStopRefresh)
     # the Routine "Trigger" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
