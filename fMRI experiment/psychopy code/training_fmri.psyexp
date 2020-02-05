@@ -1393,19 +1393,6 @@
     </LoopInitiator>
     <Routine name="intro"/>
     <LoopTerminator name="instruct1"/>
-    <LoopInitiator loopType="TrialHandler" name="instruct2">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('instruct_text', 'For example, you may be asked to take on the role of a restaurant critic while listening to one of the short stories.')]), OrderedDict([('instruct_text', 'You should try to imagine yourself being a restaurant critic as you listen to the story.')])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="fmri_instruct2.xlsx" valType="str"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="instruct2" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
-    <Routine name="intro_pic"/>
-    <LoopTerminator name="instruct2"/>
     <LoopInitiator loopType="TrialHandler" name="instruct3">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('instruct_text', 'Some stories, however, will not have any job assigned to them, and you can simply listen to the story.')]), OrderedDict([('instruct_text', 'In this part of the experiment outside of the scanner, we will introduce you to four possible perspectives you could be asked to take on.')]), OrderedDict([('instruct_text', &quot;For each perspective, you'll also learn 4 questions associated with it to use when listening to a story.&quot;)])]" valType="str"/>
@@ -1419,7 +1406,6 @@
     </LoopInitiator>
     <Routine name="intro"/>
     <LoopTerminator name="instruct3"/>
-    <Routine name="intro1"/>
     <LoopInitiator loopType="TrialHandler" name="instruct4">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('instruct_text', 'We encourage you to keep these questions in mind while listening to the story while simulating the associated perspective.')]), OrderedDict([('instruct_text', 'When you are in the scanner, you will listen to the 12 short stories.')])]" valType="str"/>

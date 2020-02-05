@@ -1,5 +1,5 @@
-<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.1">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -23,7 +23,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="use prefs" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[1680, 1050]" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -3643,7 +3643,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if this_image == 'icon/bar5.jpg':&amp;#10;    thumbsup.draw()&amp;#10;    win.flip()&amp;#10;    core.wait(1.5)&amp;#10;    trials_7.finished= True &amp;#10;    continueRoutine = False&amp;#10;#key press 1 &amp;#10;if event.getKeys(['1']):&amp;#10;    if correct[0] == (checkCount + 1):&amp;#10;        if test1 == 0:&amp;#10;            test1 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#keypress 2&amp;#10;if event.getKeys(['2']):&amp;#10;    if correct[1] == (checkCount + 1):&amp;#10;        if test2 == 0:&amp;#10;            test2 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else: &amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#key press 3 &amp;#10;if event.getKeys(['3']):&amp;#10;    if correct[2] == (checkCount + 1):&amp;#10;        if test3 == 0:&amp;#10;            test3 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 4 selection, keypress 6 on button box&amp;#10;if event.getKeys(['6']):&amp;#10;    if correct[3] == (checkCount + 1):&amp;#10;        if test4 == 0:&amp;#10;            test4 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 5 selection, keypress 7 on button box&amp;#10;if event.getKeys(['7']):&amp;#10;    if correct[4] == (checkCount + 1):&amp;#10;        if test5 == 0:&amp;#10;            test5 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 6 collection, keypress 8 on button box&amp;#10;if event.getKeys(['8']):&amp;#10;    if correct[5] == (checkCount + 1):&amp;#10;        if test6 == 0:&amp;#10;            test6 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;        &amp;#10;&amp;#10;if event.getKeys(['q']):&amp;#10;    trials_7.finished = True&amp;#10;    continueRoutine=False&amp;#10;if checkCount == 4:&amp;#10;    this_image = 'icon/bar5.jpg'&amp;#10;&amp;#10;if checkCount == 1:&amp;#10;    this_image = 'icon/bar2.png'&amp;#10;if checkCount == 2: &amp;#10;    this_image = 'icon/bar3.jpg'&amp;#10;if checkCount == 3:&amp;#10;    this_image = 'icon/bar4.png'" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if this_image == 'icon/bar5.jpg':&amp;#10;    thumbsup.draw()&amp;#10;    win.flip()&amp;#10;    core.wait(1.5)&amp;#10;    trials_7.finished= True &amp;#10;    continueRoutine = False&amp;#10;#question 1 selection, keypress 8 on button box&amp;#10;if event.getKeys(['8']):&amp;#10;    if correct[0] == (checkCount + 1):&amp;#10;        if test1 == 0:&amp;#10;            test1 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 2 selection, keypress 7 on button box&amp;#10;if event.getKeys(['7']):&amp;#10;    if correct[1] == (checkCount + 1):&amp;#10;        if test2 == 0:&amp;#10;            test2 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else: &amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 3 selection, keypress 6 on button box&amp;#10;if event.getKeys(['6']):&amp;#10;    if correct[2] == (checkCount + 1):&amp;#10;        if test3 == 0:&amp;#10;            test3 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 4 selection, keypress 1 on button box&amp;#10;if event.getKeys(['1']):&amp;#10;    if correct[3] == (checkCount + 1):&amp;#10;        if test4 == 0:&amp;#10;            test4 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 5 selection, keypress 2 on button box&amp;#10;if event.getKeys(['2']):&amp;#10;    if correct[4] == (checkCount + 1):&amp;#10;        if test5 == 0:&amp;#10;            test5 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 6 collection, keypress 3 on button box&amp;#10;if event.getKeys(['3']):&amp;#10;    if correct[5] == (checkCount + 1):&amp;#10;        if test6 == 0:&amp;#10;            test6 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;        &amp;#10;&amp;#10;if event.getKeys(['q']):&amp;#10;    trials_7.finished = True&amp;#10;    continueRoutine=False&amp;#10;if checkCount == 4:&amp;#10;    this_image = 'icon/bar5.jpg'&amp;#10;&amp;#10;if checkCount == 1:&amp;#10;    this_image = 'icon/bar2.png'&amp;#10;if checkCount == 2: &amp;#10;    this_image = 'icon/bar3.jpg'&amp;#10;if checkCount == 3:&amp;#10;    this_image = 'icon/bar4.png'" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -3844,7 +3844,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if this_image == 'icon/bar5.jpg':&amp;#10;    thumbsup.draw()&amp;#10;    win.flip()&amp;#10;    core.wait(1.5)&amp;#10;    trials_11.finished= True &amp;#10;    continueRoutine = False&amp;#10;#key press 1 &amp;#10;if event.getKeys(['1']):&amp;#10;    if correct[0] == (checkCount + 1):&amp;#10;        if test1 == 0:&amp;#10;            test1 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#keypress 2&amp;#10;if event.getKeys(['2']):&amp;#10;    if correct[1] == (checkCount + 1):&amp;#10;        if test2 == 0:&amp;#10;            test2 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else: &amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#key press 3 &amp;#10;if event.getKeys(['3']):&amp;#10;    if correct[2] == (checkCount + 1):&amp;#10;        if test3 == 0:&amp;#10;            test3 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 4 selection, keypress 6 on button box&amp;#10;if event.getKeys(['6']):&amp;#10;    if correct[3] == (checkCount + 1):&amp;#10;        if test4 == 0:&amp;#10;            test4 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 5 selection, keypress 7 on button box&amp;#10;if event.getKeys(['7']):&amp;#10;    if correct[4] == (checkCount + 1):&amp;#10;        if test5 == 0:&amp;#10;            test5 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 6 collection, keypress 8 on button box&amp;#10;if event.getKeys(['8']):&amp;#10;    if correct[5] == (checkCount + 1):&amp;#10;        if test6 == 0:&amp;#10;            test6 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;        &amp;#10;&amp;#10;if event.getKeys(['q']):&amp;#10;    trials_11.finished = True&amp;#10;    continueRoutine=False&amp;#10;if checkCount == 4:&amp;#10;    this_image = 'icon/bar5.jpg'&amp;#10;&amp;#10;if checkCount == 1:&amp;#10;    this_image = 'icon/bar2.png'&amp;#10;if checkCount == 2: &amp;#10;    this_image = 'icon/bar3.jpg'&amp;#10;if checkCount == 3:&amp;#10;    this_image = 'icon/bar4.png'" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if this_image == 'icon/bar5.jpg':&amp;#10;    thumbsup.draw()&amp;#10;    win.flip()&amp;#10;    core.wait(1.5)&amp;#10;    trials_11.finished= True &amp;#10;    continueRoutine = False&amp;#10;#question 1 selection, keypress 8 on button box&amp;#10;if event.getKeys(['8']):&amp;#10;    if correct[0] == (checkCount + 1):&amp;#10;        if test1 == 0:&amp;#10;            test1 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 2 selection, keypress 7 on button box&amp;#10;if event.getKeys(['7']):&amp;#10;    if correct[1] == (checkCount + 1):&amp;#10;        if test2 == 0:&amp;#10;            test2 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else: &amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 3 selection, keypress 6 on button box&amp;#10;if event.getKeys(['6']):&amp;#10;    if correct[2] == (checkCount + 1):&amp;#10;        if test3 == 0:&amp;#10;            test3 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 4 selection, keypress 1 on button box&amp;#10;if event.getKeys(['1']):&amp;#10;    if correct[3] == (checkCount + 1):&amp;#10;        if test4 == 0:&amp;#10;            test4 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 5 selection, keypress 2 on button box&amp;#10;if event.getKeys(['2']):&amp;#10;    if correct[4] == (checkCount + 1):&amp;#10;        if test5 == 0:&amp;#10;            test5 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;&amp;#10;#question 6 collection, keypress 3 on button box&amp;#10;if event.getKeys(['3']):&amp;#10;    if correct[5] == (checkCount + 1):&amp;#10;        if test6 == 0:&amp;#10;            test6 = 1&amp;#10;            checkCount += 1&amp;#10;            check.draw()&amp;#10;            win.flip()&amp;#10;            core.wait(.15)&amp;#10;    else:&amp;#10;        redx.draw()&amp;#10;        win.flip()&amp;#10;        core.wait(1)&amp;#10;        continueRoutine = False&amp;#10;        &amp;#10;&amp;#10;if event.getKeys(['q']):&amp;#10;    trials_11.finished = True&amp;#10;    continueRoutine=False&amp;#10;if checkCount == 4:&amp;#10;    this_image = 'icon/bar5.jpg'&amp;#10;&amp;#10;if checkCount == 1:&amp;#10;    this_image = 'icon/bar2.png'&amp;#10;if checkCount == 2: &amp;#10;    this_image = 'icon/bar3.jpg'&amp;#10;if checkCount == 3:&amp;#10;    this_image = 'icon/bar4.png'" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -5787,7 +5787,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="The numbers &quot;1&quot;, &quot;2&quot;, and &quot;3&quot; correspond to the first three fingers on your right hand. " valType="str"/>
+        <Param name="text" updates="constant" val="The numbers &quot;4&quot;, &quot;5&quot;, and &quot;6&quot; correspond to the first three fingers on your right hand. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -5815,22 +5815,20 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-    </Routine>
-    <Routine name="left_hand">
-      <ImageComponent name="image_26">
+      <ImageComponent name="image_28">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="icon/righthand.png" valType="str"/>
+        <Param name="image" updates="constant" val="icon/lefthand.png" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="image_26" valType="code"/>
+        <Param name="name" updates="None" val="image_28" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(.5, .2)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-.5, .2)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="(0.6, 1.25)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -5842,6 +5840,8 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
+    </Routine>
+    <Routine name="left_hand">
       <KeyboardComponent name="key_resp_31">
         <Param name="allowedKeys" updates="constant" val="'9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
@@ -5880,7 +5880,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="The numbers &quot;4&quot;, &quot;5&quot;, and &quot;6&quot; correspond to the first three fingers on your left hand. " valType="str"/>
+        <Param name="text" updates="constant" val="The numbers &quot;1&quot;, &quot;2&quot;, and &quot;3&quot; correspond to the first three fingers on your left hand. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -5960,7 +5960,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_32">
-        <Param name="allowedKeys" updates="constant" val="'6','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'1','space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -6004,7 +6004,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_33">
-        <Param name="allowedKeys" updates="constant" val="'1','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'8','space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -6048,7 +6048,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_34">
-        <Param name="allowedKeys" updates="constant" val="'3','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'6','space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -6092,7 +6092,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_35">
-        <Param name="allowedKeys" updates="constant" val="'7','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'2','space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -6273,8 +6273,8 @@
     </LoopInitiator>
     <Routine name="listening_instructions_block1"/>
     <LoopTerminator name="trials_13"/>
-    <Routine name="right_hand"/>
     <Routine name="left_hand"/>
+    <Routine name="right_hand"/>
     <Routine name="practice_presses"/>
     <Routine name="test4"/>
     <Routine name="test1"/>

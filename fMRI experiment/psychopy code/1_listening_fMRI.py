@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Thu Jan 30 11:13:19 2020
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
+    on Wed Feb  5 15:37:56 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.4'
+psychopyVersion = '3.2.1'
 expName = 'listening_fmri'  # from the Builder filename that created this script
 expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'play_stories': '0', 'block': '1', 'behavioral': '0', 'random_seed': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_bk%s_%s' % (expInfo['participant'],expI
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/columbiadpml/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -61,7 +61,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1680, 1050], fullscr=True, screen=0, 
+    size=[1440, 900], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
@@ -214,7 +214,7 @@ elif int(expInfo['block']) == 2:
 
 # Initialize components for Routine "listening_instructions_block1"
 listening_instructions_block1Clock = core.Clock()
-key_resp = keyboard.Keyboard()
+key_resp_5 = keyboard.Keyboard()
 text_87 = visual.TextStim(win=win, name='text_87',
     text='default text',
     font='Arial',
@@ -230,6 +230,32 @@ text_88 = visual.TextStim(win=win, name='text_88',
     languageStyle='LTR',
     depth=-2.0);
 
+# Initialize components for Routine "left_hand"
+left_handClock = core.Clock()
+key_resp_31 = keyboard.Keyboard()
+text_89 = visual.TextStim(win=win, name='text_89',
+    text='The numbers "1", "2", and "3" correspond to the first three fingers on your left hand. ',
+    font='Arial',
+    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+image_27 = visual.ImageStim(
+    win=win,
+    name='image_27', 
+    image='icon/lefthand.png', mask=None,
+    ori=0, pos=(-.5, .2), size=(0.6, 1.25),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+text_97 = visual.TextStim(win=win, name='text_97',
+    text='(press any button to continue)',
+    font='Arial',
+    pos=(0, -.9), height=0.07, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+
 # Initialize components for Routine "right_hand"
 right_handClock = core.Clock()
 image_24 = visual.ImageStim(
@@ -242,7 +268,7 @@ image_24 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 key_resp_21 = keyboard.Keyboard()
 text_78 = visual.TextStim(win=win, name='text_78',
-    text='The numbers "1", "2", and "3" correspond to the first three fingers on your right hand. ',
+    text='The numbers "4", "5", and "6" correspond to the first three fingers on your right hand. ',
     font='Arial',
     pos=(0, -.7), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -255,40 +281,14 @@ text_96 = visual.TextStim(win=win, name='text_96',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
-
-# Initialize components for Routine "left_hand"
-left_handClock = core.Clock()
-image_26 = visual.ImageStim(
+image_28 = visual.ImageStim(
     win=win,
-    name='image_26', 
-    image='icon/righthand.png', mask=None,
-    ori=0, pos=(.5, .2), size=(0.6, 1.25),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=0.0)
-key_resp_31 = keyboard.Keyboard()
-text_89 = visual.TextStim(win=win, name='text_89',
-    text='The numbers "4", "5", and "6" correspond to the first three fingers on your left hand. ',
-    font='Arial',
-    pos=(0, -.6), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
-image_27 = visual.ImageStim(
-    win=win,
-    name='image_27', 
+    name='image_28', 
     image='icon/lefthand.png', mask=None,
     ori=0, pos=(-.5, .2), size=(0.6, 1.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-text_97 = visual.TextStim(win=win, name='text_97',
-    text='(press any button to continue)',
-    font='Arial',
-    pos=(0, -.9), height=0.07, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-4.0);
+    texRes=128, interpolate=True, depth=-2.0)
 
 # Initialize components for Routine "practice_presses"
 practice_pressesClock = core.Clock()
@@ -1102,11 +1102,11 @@ for thisTrial_14 in trials_14:
         
         # ------Prepare to start Routine "listening_instructions_block1"-------
         # update component parameters for each repeat
-        key_resp.keys = []
-        key_resp.rt = []
+        key_resp_5.keys = []
+        key_resp_5.rt = []
         text_87.setText((instructions))
         # keep track of which components have finished
-        listening_instructions_block1Components = [key_resp, text_87, text_88]
+        listening_instructions_block1Components = [key_resp_5, text_87, text_88]
         for thisComponent in listening_instructions_block1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1130,29 +1130,29 @@ for thisTrial_14 in trials_14:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *key_resp* updates
+            # *key_resp_5* updates
             waitOnFlip = False
-            if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                key_resp.frameNStart = frameN  # exact frame index
-                key_resp.tStart = t  # local t and not account for scr refresh
-                key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
-                key_resp.status = STARTED
+                key_resp_5.frameNStart = frameN  # exact frame index
+                key_resp_5.tStart = t  # local t and not account for scr refresh
+                key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
+                key_resp_5.status = STARTED
                 # keyboard checking is just starting
                 waitOnFlip = True
-                win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-                win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-            if key_resp.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp.getKeys(keyList=['9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'], waitRelease=False)
+                win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_5.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp_5.getKeys(keyList=['9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'], waitRelease=False)
                 if len(theseKeys):
                     theseKeys = theseKeys[0]  # at least one key was pressed
                     
                     # check for quit:
                     if "escape" == theseKeys:
                         endExpNow = True
-                    key_resp.keys = theseKeys.name  # just the last key pressed
-                    key_resp.rt = theseKeys.rt
+                    key_resp_5.keys = theseKeys.name  # just the last key pressed
+                    key_resp_5.rt = theseKeys.rt
                     # a response ends the routine
                     continueRoutine = False
             
@@ -1196,13 +1196,13 @@ for thisTrial_14 in trials_14:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         # check responses
-        if key_resp.keys in ['', [], None]:  # No response was made
-            key_resp.keys = None
-        trials_13.addData('key_resp.keys',key_resp.keys)
-        if key_resp.keys != None:  # we had a response
-            trials_13.addData('key_resp.rt', key_resp.rt)
-        trials_13.addData('key_resp.started', key_resp.tStartRefresh)
-        trials_13.addData('key_resp.stopped', key_resp.tStopRefresh)
+        if key_resp_5.keys in ['', [], None]:  # No response was made
+            key_resp_5.keys = None
+        trials_13.addData('key_resp_5.keys',key_resp_5.keys)
+        if key_resp_5.keys != None:  # we had a response
+            trials_13.addData('key_resp_5.rt', key_resp_5.rt)
+        trials_13.addData('key_resp_5.started', key_resp_5.tStartRefresh)
+        trials_13.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
         trials_13.addData('text_87.started', text_87.tStartRefresh)
         trials_13.addData('text_87.stopped', text_87.tStopRefresh)
         trials_13.addData('text_88.started', text_88.tStartRefresh)
@@ -1214,12 +1214,132 @@ for thisTrial_14 in trials_14:
     # completed 1 repeats of 'trials_13'
     
     
+    # ------Prepare to start Routine "left_hand"-------
+    # update component parameters for each repeat
+    key_resp_31.keys = []
+    key_resp_31.rt = []
+    # keep track of which components have finished
+    left_handComponents = [key_resp_31, text_89, image_27, text_97]
+    for thisComponent in left_handComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    left_handClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
+    
+    # -------Run Routine "left_hand"-------
+    while continueRoutine:
+        # get current time
+        t = left_handClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=left_handClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *key_resp_31* updates
+        waitOnFlip = False
+        if key_resp_31.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_31.frameNStart = frameN  # exact frame index
+            key_resp_31.tStart = t  # local t and not account for scr refresh
+            key_resp_31.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_31, 'tStartRefresh')  # time at next scr refresh
+            key_resp_31.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_31.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_31.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_31.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_31.getKeys(keyList=['9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                key_resp_31.keys = theseKeys.name  # just the last key pressed
+                key_resp_31.rt = theseKeys.rt
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *text_89* updates
+        if text_89.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_89.frameNStart = frameN  # exact frame index
+            text_89.tStart = t  # local t and not account for scr refresh
+            text_89.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_89, 'tStartRefresh')  # time at next scr refresh
+            text_89.setAutoDraw(True)
+        
+        # *image_27* updates
+        if image_27.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            image_27.frameNStart = frameN  # exact frame index
+            image_27.tStart = t  # local t and not account for scr refresh
+            image_27.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_27, 'tStartRefresh')  # time at next scr refresh
+            image_27.setAutoDraw(True)
+        
+        # *text_97* updates
+        if text_97.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_97.frameNStart = frameN  # exact frame index
+            text_97.tStart = t  # local t and not account for scr refresh
+            text_97.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_97, 'tStartRefresh')  # time at next scr refresh
+            text_97.setAutoDraw(True)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in left_handComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "left_hand"-------
+    for thisComponent in left_handComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # check responses
+    if key_resp_31.keys in ['', [], None]:  # No response was made
+        key_resp_31.keys = None
+    trials_14.addData('key_resp_31.keys',key_resp_31.keys)
+    if key_resp_31.keys != None:  # we had a response
+        trials_14.addData('key_resp_31.rt', key_resp_31.rt)
+    trials_14.addData('key_resp_31.started', key_resp_31.tStartRefresh)
+    trials_14.addData('key_resp_31.stopped', key_resp_31.tStopRefresh)
+    trials_14.addData('text_89.started', text_89.tStartRefresh)
+    trials_14.addData('text_89.stopped', text_89.tStopRefresh)
+    trials_14.addData('image_27.started', image_27.tStartRefresh)
+    trials_14.addData('image_27.stopped', image_27.tStopRefresh)
+    trials_14.addData('text_97.started', text_97.tStartRefresh)
+    trials_14.addData('text_97.stopped', text_97.tStopRefresh)
+    # the Routine "left_hand" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # ------Prepare to start Routine "right_hand"-------
     # update component parameters for each repeat
     key_resp_21.keys = []
     key_resp_21.rt = []
     # keep track of which components have finished
-    right_handComponents = [image_24, key_resp_21, text_78, text_96]
+    right_handComponents = [image_24, key_resp_21, text_78, text_96, image_28]
     for thisComponent in right_handComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1296,6 +1416,15 @@ for thisTrial_14 in trials_14:
             win.timeOnFlip(text_96, 'tStartRefresh')  # time at next scr refresh
             text_96.setAutoDraw(True)
         
+        # *image_28* updates
+        if image_28.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            image_28.frameNStart = frameN  # exact frame index
+            image_28.tStart = t  # local t and not account for scr refresh
+            image_28.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_28, 'tStartRefresh')  # time at next scr refresh
+            image_28.setAutoDraw(True)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -1331,138 +1460,9 @@ for thisTrial_14 in trials_14:
     trials_14.addData('text_78.stopped', text_78.tStopRefresh)
     trials_14.addData('text_96.started', text_96.tStartRefresh)
     trials_14.addData('text_96.stopped', text_96.tStopRefresh)
+    thisExp.addData('image_28.started', image_28.tStartRefresh)
+    thisExp.addData('image_28.stopped', image_28.tStopRefresh)
     # the Routine "right_hand" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "left_hand"-------
-    # update component parameters for each repeat
-    key_resp_31.keys = []
-    key_resp_31.rt = []
-    # keep track of which components have finished
-    left_handComponents = [image_26, key_resp_31, text_89, image_27, text_97]
-    for thisComponent in left_handComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    left_handClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "left_hand"-------
-    while continueRoutine:
-        # get current time
-        t = left_handClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=left_handClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *image_26* updates
-        if image_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            image_26.frameNStart = frameN  # exact frame index
-            image_26.tStart = t  # local t and not account for scr refresh
-            image_26.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image_26, 'tStartRefresh')  # time at next scr refresh
-            image_26.setAutoDraw(True)
-        
-        # *key_resp_31* updates
-        waitOnFlip = False
-        if key_resp_31.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_31.frameNStart = frameN  # exact frame index
-            key_resp_31.tStart = t  # local t and not account for scr refresh
-            key_resp_31.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_31, 'tStartRefresh')  # time at next scr refresh
-            key_resp_31.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_31.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_31.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_31.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_31.getKeys(keyList=['9', '8', '7', '6', '5', '4', '3', '2', '1', 'space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_31.keys = theseKeys.name  # just the last key pressed
-                key_resp_31.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
-        
-        # *text_89* updates
-        if text_89.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_89.frameNStart = frameN  # exact frame index
-            text_89.tStart = t  # local t and not account for scr refresh
-            text_89.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_89, 'tStartRefresh')  # time at next scr refresh
-            text_89.setAutoDraw(True)
-        
-        # *image_27* updates
-        if image_27.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            image_27.frameNStart = frameN  # exact frame index
-            image_27.tStart = t  # local t and not account for scr refresh
-            image_27.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image_27, 'tStartRefresh')  # time at next scr refresh
-            image_27.setAutoDraw(True)
-        
-        # *text_97* updates
-        if text_97.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_97.frameNStart = frameN  # exact frame index
-            text_97.tStart = t  # local t and not account for scr refresh
-            text_97.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_97, 'tStartRefresh')  # time at next scr refresh
-            text_97.setAutoDraw(True)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in left_handComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "left_hand"-------
-    for thisComponent in left_handComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_14.addData('image_26.started', image_26.tStartRefresh)
-    trials_14.addData('image_26.stopped', image_26.tStopRefresh)
-    # check responses
-    if key_resp_31.keys in ['', [], None]:  # No response was made
-        key_resp_31.keys = None
-    trials_14.addData('key_resp_31.keys',key_resp_31.keys)
-    if key_resp_31.keys != None:  # we had a response
-        trials_14.addData('key_resp_31.rt', key_resp_31.rt)
-    trials_14.addData('key_resp_31.started', key_resp_31.tStartRefresh)
-    trials_14.addData('key_resp_31.stopped', key_resp_31.tStopRefresh)
-    trials_14.addData('text_89.started', text_89.tStartRefresh)
-    trials_14.addData('text_89.stopped', text_89.tStopRefresh)
-    trials_14.addData('image_27.started', image_27.tStartRefresh)
-    trials_14.addData('image_27.stopped', image_27.tStopRefresh)
-    trials_14.addData('text_97.started', text_97.tStartRefresh)
-    trials_14.addData('text_97.stopped', text_97.tStopRefresh)
-    # the Routine "left_hand" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "practice_presses"-------
@@ -1626,7 +1626,7 @@ for thisTrial_14 in trials_14:
             win.callOnFlip(key_resp_32.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_32.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_32.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_32.getKeys(keyList=['6', 'space'], waitRelease=False)
+            theseKeys = key_resp_32.getKeys(keyList=['1', 'space'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -1724,7 +1724,7 @@ for thisTrial_14 in trials_14:
             win.callOnFlip(key_resp_33.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_33.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_33.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_33.getKeys(keyList=['1', 'space'], waitRelease=False)
+            theseKeys = key_resp_33.getKeys(keyList=['8', 'space'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -1822,7 +1822,7 @@ for thisTrial_14 in trials_14:
             win.callOnFlip(key_resp_34.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_34.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_34.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_34.getKeys(keyList=['3', 'space'], waitRelease=False)
+            theseKeys = key_resp_34.getKeys(keyList=['6', 'space'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -1920,7 +1920,7 @@ for thisTrial_14 in trials_14:
             win.callOnFlip(key_resp_35.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_35.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_35.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_35.getKeys(keyList=['7', 'space'], waitRelease=False)
+            theseKeys = key_resp_35.getKeys(keyList=['2', 'space'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -3108,8 +3108,8 @@ for thisTrial_3 in trials_3:
                             core.wait(1.5)
                             trials_7.finished= True 
                             continueRoutine = False
-                        #key press 1 
-                        if event.getKeys(['1']):
+                        #question 1 selection, keypress 8 on button box
+                        if event.getKeys(['8']):
                             if correct[0] == (checkCount + 1):
                                 if test1 == 0:
                                     test1 = 1
@@ -3123,8 +3123,8 @@ for thisTrial_3 in trials_3:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #keypress 2
-                        if event.getKeys(['2']):
+                        #question 2 selection, keypress 7 on button box
+                        if event.getKeys(['7']):
                             if correct[1] == (checkCount + 1):
                                 if test2 == 0:
                                     test2 = 1
@@ -3138,8 +3138,8 @@ for thisTrial_3 in trials_3:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #key press 3 
-                        if event.getKeys(['3']):
+                        #question 3 selection, keypress 6 on button box
+                        if event.getKeys(['6']):
                             if correct[2] == (checkCount + 1):
                                 if test3 == 0:
                                     test3 = 1
@@ -3153,8 +3153,8 @@ for thisTrial_3 in trials_3:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 4 selection, keypress 6 on button box
-                        if event.getKeys(['6']):
+                        #question 4 selection, keypress 1 on button box
+                        if event.getKeys(['1']):
                             if correct[3] == (checkCount + 1):
                                 if test4 == 0:
                                     test4 = 1
@@ -3168,8 +3168,8 @@ for thisTrial_3 in trials_3:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 5 selection, keypress 7 on button box
-                        if event.getKeys(['7']):
+                        #question 5 selection, keypress 2 on button box
+                        if event.getKeys(['2']):
                             if correct[4] == (checkCount + 1):
                                 if test5 == 0:
                                     test5 = 1
@@ -3183,8 +3183,8 @@ for thisTrial_3 in trials_3:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 6 collection, keypress 8 on button box
-                        if event.getKeys(['8']):
+                        #question 6 collection, keypress 3 on button box
+                        if event.getKeys(['3']):
                             if correct[5] == (checkCount + 1):
                                 if test6 == 0:
                                     test6 = 1
@@ -5343,10 +5343,10 @@ for thisTrial_4 in trials_4:
                             thumbsup.draw()
                             win.flip()
                             core.wait(1.5)
-                            trials_11.finished= True 
+                            trials_7.finished= True 
                             continueRoutine = False
-                        #key press 1 
-                        if event.getKeys(['1']):
+                        #question 1 selection, keypress 8 on button box
+                        if event.getKeys(['8']):
                             if correct[0] == (checkCount + 1):
                                 if test1 == 0:
                                     test1 = 1
@@ -5360,8 +5360,8 @@ for thisTrial_4 in trials_4:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #keypress 2
-                        if event.getKeys(['2']):
+                        #question 2 selection, keypress 7 on button box
+                        if event.getKeys(['7']):
                             if correct[1] == (checkCount + 1):
                                 if test2 == 0:
                                     test2 = 1
@@ -5375,8 +5375,8 @@ for thisTrial_4 in trials_4:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #key press 3 
-                        if event.getKeys(['3']):
+                        #question 3 selection, keypress 6 on button box
+                        if event.getKeys(['6']):
                             if correct[2] == (checkCount + 1):
                                 if test3 == 0:
                                     test3 = 1
@@ -5390,8 +5390,8 @@ for thisTrial_4 in trials_4:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 4 selection, keypress 6 on button box
-                        if event.getKeys(['6']):
+                        #question 4 selection, keypress 1 on button box
+                        if event.getKeys(['1']):
                             if correct[3] == (checkCount + 1):
                                 if test4 == 0:
                                     test4 = 1
@@ -5405,8 +5405,8 @@ for thisTrial_4 in trials_4:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 5 selection, keypress 7 on button box
-                        if event.getKeys(['7']):
+                        #question 5 selection, keypress 2 on button box
+                        if event.getKeys(['2']):
                             if correct[4] == (checkCount + 1):
                                 if test5 == 0:
                                     test5 = 1
@@ -5420,8 +5420,8 @@ for thisTrial_4 in trials_4:
                                 core.wait(1)
                                 continueRoutine = False
                         
-                        #question 6 collection, keypress 8 on button box
-                        if event.getKeys(['8']):
+                        #question 6 collection, keypress 3 on button box
+                        if event.getKeys(['3']):
                             if correct[5] == (checkCount + 1):
                                 if test6 == 0:
                                     test6 = 1
@@ -5437,7 +5437,7 @@ for thisTrial_4 in trials_4:
                                 
                         
                         if event.getKeys(['q']):
-                            trials_11.finished = True
+                            trials_7.finished = True
                             continueRoutine=False
                         if checkCount == 4:
                             this_image = 'icon/bar5.jpg'
