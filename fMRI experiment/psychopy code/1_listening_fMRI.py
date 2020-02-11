@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
-    on Wed Feb  5 15:37:56 2020
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+    on Mon Feb 10 13:28:30 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.1'
+psychopyVersion = '3.2.4'
 expName = 'listening_fmri'  # from the Builder filename that created this script
 expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'play_stories': '0', 'block': '1', 'behavioral': '0', 'random_seed': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_bk%s_%s' % (expInfo['participant'],expI
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
+    originPath='/Users/columbiadpml/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -288,7 +288,7 @@ image_28 = visual.ImageStim(
     ori=0, pos=(-.5, .2), size=(0.6, 1.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
+    texRes=128, interpolate=True, depth=-4.0)
 
 # Initialize components for Routine "practice_presses"
 practice_pressesClock = core.Clock()
@@ -1460,8 +1460,8 @@ for thisTrial_14 in trials_14:
     trials_14.addData('text_78.stopped', text_78.tStopRefresh)
     trials_14.addData('text_96.started', text_96.tStartRefresh)
     trials_14.addData('text_96.stopped', text_96.tStopRefresh)
-    thisExp.addData('image_28.started', image_28.tStartRefresh)
-    thisExp.addData('image_28.stopped', image_28.tStopRefresh)
+    trials_14.addData('image_28.started', image_28.tStartRefresh)
+    trials_14.addData('image_28.stopped', image_28.tStopRefresh)
     # the Routine "right_hand" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -5343,7 +5343,7 @@ for thisTrial_4 in trials_4:
                             thumbsup.draw()
                             win.flip()
                             core.wait(1.5)
-                            trials_7.finished= True 
+                            trials_11.finished= True 
                             continueRoutine = False
                         #question 1 selection, keypress 8 on button box
                         if event.getKeys(['8']):
@@ -5437,7 +5437,7 @@ for thisTrial_4 in trials_4:
                                 
                         
                         if event.getKeys(['q']):
-                            trials_7.finished = True
+                            trials_11.finished = True
                             continueRoutine=False
                         if checkCount == 4:
                             this_image = 'icon/bar5.jpg'
