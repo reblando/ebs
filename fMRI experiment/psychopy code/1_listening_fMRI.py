@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Mon Feb 10 13:28:30 2020
+    on Mon Feb 24 15:36:19 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '3.2.4'
 expName = 'listening_fmri'  # from the Builder filename that created this script
-expInfo = {'participant': 'test', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'play_stories': '0', 'block': '1', 'behavioral': '0', 'random_seed': ''}
+expInfo = {'participant': '022420', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '2', 'block_struct': '0', 'play_stories': '1', 'block': '1', 'behavioral': '0', 'random_seed': '4'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -61,7 +61,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=True, screen=0, 
+    size=[1680, 1050], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
@@ -2727,7 +2727,7 @@ for thisTrial_3 in trials_3:
                 routineTimer.reset()
                 
                 # set up handler to look after randomisation of conditions etc
-                trials_7 = data.TrialHandler(nReps=7, method='sequential', 
+                trials_7 = data.TrialHandler(nReps=30, method='sequential', 
                     extraInfo=expInfo, originPath=-1,
                     trialList=[None],
                     seed=None, name='trials_7')
@@ -3262,7 +3262,7 @@ for thisTrial_3 in trials_3:
                     routineTimer.reset()
                     thisExp.nextEntry()
                     
-                # completed 7 repeats of 'trials_7'
+                # completed 30 repeats of 'trials_7'
                 
                 
                 # ------Prepare to start Routine "p_again"-------
@@ -4961,7 +4961,7 @@ for thisTrial_4 in trials_4:
                 routineTimer.reset()
                 
                 # set up handler to look after randomisation of conditions etc
-                trials_11 = data.TrialHandler(nReps=7, method='sequential', 
+                trials_11 = data.TrialHandler(nReps=30, method='sequential', 
                     extraInfo=expInfo, originPath=-1,
                     trialList=[None],
                     seed=None, name='trials_11')
@@ -5499,7 +5499,7 @@ for thisTrial_4 in trials_4:
                     routineTimer.reset()
                     thisExp.nextEntry()
                     
-                # completed 7 repeats of 'trials_11'
+                # completed 30 repeats of 'trials_11'
                 
                 
                 # ------Prepare to start Routine "p_again_2"-------

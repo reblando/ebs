@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Thu Feb 13 13:25:11 2020
+    on Mon Feb 24 16:52:16 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,8 +34,8 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '3.2.4'
-expName = 'body_behavioural'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1', 'block_struct': '1', 'random_seed': '2'}
+expName = 'short_answer'  # from the Builder filename that created this script
+expInfo = {'participant': '022420', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '2', 'block_struct': '0', 'random_seed': '4'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -44,7 +44,7 @@ expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+filename = _thisDir + os.sep + u'data/%s_%s' % (expInfo['participant'], expName)
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -236,7 +236,7 @@ text_53 = visual.TextStim(win=win, name='text_53',
     pos=(0, -.5), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-4.0);
 
 # Initialize components for Routine "story_image"
 story_imageClock = core.Clock()
@@ -1089,8 +1089,8 @@ for thisTrial_6 in trials_6:
         trials.addData('key_resp_11.stopped', key_resp_11.tStopRefresh)
         trials.addData('text_44.started', text_44.tStartRefresh)
         trials.addData('text_44.stopped', text_44.tStopRefresh)
-        thisExp.addData('text_53.started', text_53.tStartRefresh)
-        thisExp.addData('text_53.stopped', text_53.tStopRefresh)
+        trials.addData('text_53.started', text_53.tStartRefresh)
+        trials.addData('text_53.stopped', text_53.tStopRefresh)
         # the Routine "questioncount" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         

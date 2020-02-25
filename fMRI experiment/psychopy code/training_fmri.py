@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Thu Feb 13 13:04:58 2020
+    on Mon Feb 24 14:07:50 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '3.2.4'
 expName = 'training_fmri'  # from the Builder filename that created this script
-expInfo = {'participant': 'alex', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1'}
+expInfo = {'participant': '022420', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '2'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -63,7 +63,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=True, screen=0, 
+    size=[1680, 1050], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
@@ -86,7 +86,7 @@ if int(expInfo['sA']) == 0:
     Dict[0] = 'intro_roles/s0.xlsx'
 elif int(expInfo['sA']) == 1:
     Dict[0] = 'intro_roles/s1.xlsx'
-if int(expInfo['sA']) == 2:
+elif int(expInfo['sA']) == 2:
     Dict[0] = 'intro_roles/s2.xlsx'
 elif int(expInfo['sA']) == 3:
     Dict[0] = 'intro_roles/s3.xlsx'
@@ -106,7 +106,7 @@ if int(expInfo['lA']) == 0:
     Dict[2] = 'intro_roles/l0.xlsx'
 elif int(expInfo['lA']) == 1:
     Dict[2] = 'intro_roles/l1.xlsx'
-if int(expInfo['lA']) == 2:
+elif int(expInfo['lA']) == 2:
     Dict[2] = 'intro_roles/l2.xlsx'
 elif int(expInfo['lA']) == 3:
     Dict[2] = 'intro_roles/l3.xlsx'
@@ -1445,7 +1445,7 @@ for thisTrial in trials:
             exec('{} = thisTrial[paramName]'.format(paramName))
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=7, method='sequential', 
+    trials_2 = data.TrialHandler(nReps=30, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions(Dict[count]),
         seed=None, name='trials_2')
@@ -2400,7 +2400,7 @@ for thisTrial in trials:
                     continueRoutine = False
                     
             
-            if event.getKeys(['q']):
+            if event.getKeys(['z']):
                 trials_2.finished = True
                 continueRoutine=False
             if checkCount == 4:
@@ -2463,7 +2463,7 @@ for thisTrial in trials:
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 7 repeats of 'trials_2'
+    # completed 30 repeats of 'trials_2'
     
     thisExp.nextEntry()
     
@@ -2559,7 +2559,7 @@ for thisTrial_4 in trials_4:
             exec('{} = thisTrial_4[paramName]'.format(paramName))
     
     # set up handler to look after randomisation of conditions etc
-    trials_3 = data.TrialHandler(nReps=7, method='sequential', 
+    trials_3 = data.TrialHandler(nReps=30, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions(Dict[count]),
         seed=None, name='trials_3')
@@ -2909,7 +2909,7 @@ for thisTrial_4 in trials_4:
                     continueRoutine = False
                     
             
-            if event.getKeys(['q']):
+            if event.getKeys(['z']):
                 trials_3.finished = True
                 continueRoutine=False
             if checkCount == 4:
@@ -2973,7 +2973,7 @@ for thisTrial_4 in trials_4:
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 7 repeats of 'trials_3'
+    # completed 30 repeats of 'trials_3'
     
     thisExp.nextEntry()
     

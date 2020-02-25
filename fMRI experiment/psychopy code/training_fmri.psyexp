@@ -6,7 +6,7 @@
     <Param name="Completed URL" updates="None" val="" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant': 'alex', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '1'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '022420', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '2'}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
@@ -23,7 +23,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="use prefs" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1680, 1050]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -34,7 +34,7 @@
   <Routines>
     <Routine name="trial">
       <CodeComponent name="code">
-        <Param name="Begin Experiment" updates="constant" val="Dict = {}&amp;#10;&amp;#10;#Dict[0] entry for sA&amp;#10;if int(expInfo['sA']) == 0:&amp;#10;    Dict[0] = 'intro_roles/s0.xlsx'&amp;#10;elif int(expInfo['sA']) == 1:&amp;#10;    Dict[0] = 'intro_roles/s1.xlsx'&amp;#10;if int(expInfo['sA']) == 2:&amp;#10;    Dict[0] = 'intro_roles/s2.xlsx'&amp;#10;elif int(expInfo['sA']) == 3:&amp;#10;    Dict[0] = 'intro_roles/s3.xlsx'&amp;#10;&amp;#10;#Dict[1] entry for sB&amp;#10;if int(expInfo['sB']) == 0:&amp;#10;    Dict[1] = 'intro_roles/s0.xlsx'&amp;#10;if int(expInfo['sB']) == 1:&amp;#10;    Dict[1] = 'intro_roles/s1.xlsx'&amp;#10;if int(expInfo['sB']) == 2:&amp;#10;    Dict[1] = 'intro_roles/s2.xlsx'&amp;#10;if int(expInfo['sB']) == 3:&amp;#10;    Dict[1] = 'intro_roles/s3.xlsx'&amp;#10;&amp;#10;#Dict[2] entry for lA&amp;#10;if int(expInfo['lA']) == 0:&amp;#10;    Dict[2] = 'intro_roles/l0.xlsx'&amp;#10;elif int(expInfo['lA']) == 1:&amp;#10;    Dict[2] = 'intro_roles/l1.xlsx'&amp;#10;if int(expInfo['lA']) == 2:&amp;#10;    Dict[2] = 'intro_roles/l2.xlsx'&amp;#10;elif int(expInfo['lA']) == 3:&amp;#10;    Dict[2] = 'intro_roles/l3.xlsx'&amp;#10;&amp;#10;#Dict[3] entry for lB&amp;#10;if int(expInfo['lB']) == 0:&amp;#10;    Dict[3] = 'intro_roles/l0.xlsx'&amp;#10;if int(expInfo['lB']) == 1:&amp;#10;    Dict[3] = 'intro_roles/l1.xlsx'&amp;#10;if int(expInfo['lB']) == 2:&amp;#10;    Dict[3] = 'intro_roles/l2.xlsx'&amp;#10;if int(expInfo['lB']) == 3:&amp;#10;    Dict[3] = 'intro_roles/l3.xlsx'" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="Dict = {}&amp;#10;&amp;#10;#Dict[0] entry for sA&amp;#10;if int(expInfo['sA']) == 0:&amp;#10;    Dict[0] = 'intro_roles/s0.xlsx'&amp;#10;elif int(expInfo['sA']) == 1:&amp;#10;    Dict[0] = 'intro_roles/s1.xlsx'&amp;#10;elif int(expInfo['sA']) == 2:&amp;#10;    Dict[0] = 'intro_roles/s2.xlsx'&amp;#10;elif int(expInfo['sA']) == 3:&amp;#10;    Dict[0] = 'intro_roles/s3.xlsx'&amp;#10;&amp;#10;#Dict[1] entry for sB&amp;#10;if int(expInfo['sB']) == 0:&amp;#10;    Dict[1] = 'intro_roles/s0.xlsx'&amp;#10;if int(expInfo['sB']) == 1:&amp;#10;    Dict[1] = 'intro_roles/s1.xlsx'&amp;#10;if int(expInfo['sB']) == 2:&amp;#10;    Dict[1] = 'intro_roles/s2.xlsx'&amp;#10;if int(expInfo['sB']) == 3:&amp;#10;    Dict[1] = 'intro_roles/s3.xlsx'&amp;#10;&amp;#10;#Dict[2] entry for lA&amp;#10;if int(expInfo['lA']) == 0:&amp;#10;    Dict[2] = 'intro_roles/l0.xlsx'&amp;#10;elif int(expInfo['lA']) == 1:&amp;#10;    Dict[2] = 'intro_roles/l1.xlsx'&amp;#10;elif int(expInfo['lA']) == 2:&amp;#10;    Dict[2] = 'intro_roles/l2.xlsx'&amp;#10;elif int(expInfo['lA']) == 3:&amp;#10;    Dict[2] = 'intro_roles/l3.xlsx'&amp;#10;&amp;#10;#Dict[3] entry for lB&amp;#10;if int(expInfo['lB']) == 0:&amp;#10;    Dict[3] = 'intro_roles/l0.xlsx'&amp;#10;if int(expInfo['lB']) == 1:&amp;#10;    Dict[3] = 'intro_roles/l1.xlsx'&amp;#10;if int(expInfo['lB']) == 2:&amp;#10;    Dict[3] = 'intro_roles/l2.xlsx'&amp;#10;if int(expInfo['lB']) == 3:&amp;#10;    Dict[3] = 'intro_roles/l3.xlsx'" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
