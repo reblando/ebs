@@ -1,0 +1,4 @@
+﻿textTrigger.started,textTrigger.stopped,getTrigger.keys,getTrigger.rt,getTrigger.started,getTrigger.stopped,image.started,image.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+11.522518012003275,None,equal,1.4837844050198328,11.522518012003275,None,,,,,,,,,,,,001,2020_Feb_25_1333,test_fmri,3.2.1,60.0292072095397,
+,,,,,,13.039282262005145,None,space,0.486647730023833,13.039282262005145,None,,,,,,001,2020_Feb_25_1333,test_fmri,3.2.1,60.0292072095397,
+,,,,,,,,,,,,space,4.224681252002483,13.555907598987687,None,,001,2020_Feb_25_1333,test_fmri,3.2.1,60.0292072095397,

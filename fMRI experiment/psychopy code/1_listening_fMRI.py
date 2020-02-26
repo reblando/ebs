@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Mon Feb 24 15:36:19 2020
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.1),
+    on Tue Feb 25 13:11:03 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.4'
+psychopyVersion = '3.2.1'
 expName = 'listening_fmri'  # from the Builder filename that created this script
 expInfo = {'participant': '022420', 'sA': '0', 'sB': '1', 'lA': '0', 'lB': '2', 'block_struct': '0', 'play_stories': '1', 'block': '1', 'behavioral': '0', 'random_seed': '4'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_bk%s_%s' % (expInfo['participant'],expI
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/columbiadpml/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
+    originPath='/Users/alexreblando/Documents/GitHub/ebs/fMRI experiment/psychopy code/1_listening_fMRI.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
