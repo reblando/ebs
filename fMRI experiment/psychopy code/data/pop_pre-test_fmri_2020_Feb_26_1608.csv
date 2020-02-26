@@ -1,0 +1,5 @@
+getTrigger.keys,getTrigger.rt,key_resp_2.keys,key_resp_2.rt,key_resp_4.keys,key_resp_4.rt,mic_1.filename,participant,session,date,expName,frameRate,
+equal,0.31937913100000515,,,,,,pop,001,2020_Feb_26_1608,pre-test_fmri,60.95476991493872,
+,,space,0.3356984160000138,,,,pop,001,2020_Feb_26_1608,pre-test_fmri,60.95476991493872,
+,,,,space,10.572221972999955,,pop,001,2020_Feb_26_1608,pre-test_fmri,60.95476991493872,
+,,,,,,/Users/alexreblando/Desktop/ebs/fMRI experiment/psychopy code/data/pop_pre-test_fmri_2020_Feb_26_1608_wav/mic_1-1582751327.417.wav,pop,001,2020_Feb_26_1608,pre-test_fmri,60.95476991493872,

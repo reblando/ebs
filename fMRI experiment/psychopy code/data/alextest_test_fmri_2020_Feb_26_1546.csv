@@ -1,0 +1,3 @@
+getTrigger.keys,getTrigger.rt,key_resp_2.keys,key_resp_2.rt,participant,session,date,expName,frameRate,
+equal,1.0873207389959134,,,alextest,001,2020_Feb_26_1546,test_fmri,59.83282541582007,
+,,space,6.855082770984154,alextest,001,2020_Feb_26_1546,test_fmri,59.83282541582007,

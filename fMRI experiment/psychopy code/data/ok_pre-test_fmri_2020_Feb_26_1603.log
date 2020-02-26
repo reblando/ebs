@@ -1,0 +1,25 @@
+6.3246 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x126f6cda0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x126dcacf8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.6002 	EXP 	Set  sound=C
+7.6003 	EXP 	/Applications/PsychoPy3.app/Contents/Resources/lib/python3.6/psychopy/microphone: switch on (48000hz) took 1.276s
+7.6003 	EXP 	window1: recordFrameIntervals = False
+7.7749 	EXP 	window1: recordFrameIntervals = True
+7.9595 	EXP 	window1: recordFrameIntervals = False
+8.0363 	EXP 	Created textTrigger = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='textTrigger', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='waiting for the scanner', units='height', win=Window(...), wrapWidth=1)
+8.1867 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='joan.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.75, 0.75]), texRes=128, units='height', win=Window(...))
+8.3546 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='plane.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.65, 1.  ]), texRes=128, units='height', win=Window(...))
+8.3919 	EXP 	textTrigger: autoDraw = True
+9.3118 	DATA 	Keypress: equal
+9.3264 	EXP 	textTrigger: autoDraw = False
+9.3264 	EXP 	image: autoDraw = True
+9.9447 	DATA 	Keypress: space
+10.0186 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='beach.png', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.75, 0.75]), texRes=128, units='height', win=Window(...))
+10.0413 	EXP 	image: autoDraw = False
+47.1997 	EXP 	frequency of recording onset marker: 19000.0
+47.2000 	EXP 	Set mic_1.marker_tone sound=19000.0
+47.2008 	EXP 	Sound mic_1.marker_tone started
+47.2008 	DATA 	AdvAudioCapture mic_1: Record: onset 1582751039, capture 120.000s
+47.2015 	EXP 	AdvAudioCapture mic_1: Record: return immediately, no blocking
+47.2216 	EXP 	image_2: autoDraw = True
+65.2782 	DATA 	Keypress: space
+65.2790 	DATA 	AdvAudioCapture mic_1: Record stopped early, new duration 18.078s
+65.2914 	EXP 	window1: mouseVisible = True

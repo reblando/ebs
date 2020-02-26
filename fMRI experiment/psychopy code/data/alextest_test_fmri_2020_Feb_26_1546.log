@@ -1,0 +1,16 @@
+8.4415 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2560, 1440]. Using actual size
+9.2411 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x124539cf8>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x125643630>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.1119 	EXP 	Set  sound=C
+10.1121 	EXP 	/Applications/PsychoPy3.app/Contents/Resources/lib/python3.6/psychopy/microphone: switch on (48000hz) took 0.871s
+10.1121 	EXP 	window1: recordFrameIntervals = False
+10.2734 	EXP 	window1: recordFrameIntervals = True
+10.4573 	EXP 	window1: recordFrameIntervals = False
+10.5584 	EXP 	Created textTrigger = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='textTrigger', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='waiting for the scanner', units='height', win=Window(...), wrapWidth=1)
+10.7227 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='joan.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.75, 0.75]), texRes=128, units='height', win=Window(...))
+11.0708 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='plane.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.65, 1.  ]), texRes=128, units='height', win=Window(...))
+11.1071 	EXP 	textTrigger: autoDraw = True
+12.1937 	DATA 	Keypress: equal
+12.2071 	EXP 	textTrigger: autoDraw = False
+12.2071 	EXP 	image: autoDraw = True
+19.0618 	DATA 	Keypress: space
+19.3349 	EXP 	window1: mouseVisible = True
